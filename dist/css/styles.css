@@ -1,0 +1,596 @@
+/*!
+ * R.S. Walsh v0.0.1
+ * A luxury landscaping company based in Florida
+ * (c) 2019 Matt McDonald
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-enable */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, src/scss/partials/_reset.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 8, src/scss/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 29, src/scss/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 33, src/scss/partials/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 36, src/scss/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 39, src/scss/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 42, src/scss/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 47, src/scss/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, src/scss/partials/_reset.scss */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/**********************************************
+ Bootstrap Overrides
+**********************************************/
+/* line 4, src/scss/partials/_bootstrap-overrides.scss */
+.container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/**********************************************
+ Fonts
+**********************************************/
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow/Barlow-Medium.woff2") format("woff2"), url("../fonts/Barlow/Barlow-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow/Barlow-Light.woff2") format("woff2"), url("../fonts/Barlow/Barlow-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/**********************************************
+ Global Styles
+**********************************************/
+/* line 4, src/scss/partials/_global.scss */
+body {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #090A0A;
+}
+
+/* line 12, src/scss/partials/_global.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #090A0A;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 17, src/scss/partials/_global.scss */
+  h1, h2 {
+    margin-bottom: 1.9vw;
+  }
+}
+
+/* line 22, src/scss/partials/_global.scss */
+h1 {
+  font-size: 32px;
+  line-height: 1.07em;
+  letter-spacing: -0.04em;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 22, src/scss/partials/_global.scss */
+  h1 {
+    font-size: 2.23vw;
+  }
+}
+
+/* line 30, src/scss/partials/_global.scss */
+h1.display {
+  font-size: 76px;
+  line-height: 0.9em;
+  letter-spacing: -0.05em;
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 30, src/scss/partials/_global.scss */
+  h1.display {
+    font-size: 5.3vw;
+  }
+}
+
+/* line 39, src/scss/partials/_global.scss */
+h2 {
+  font-size: 24px;
+  line-height: 1.07em;
+  letter-spacing: -0.034em;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 39, src/scss/partials/_global.scss */
+  h2 {
+    font-size: 1.67vw;
+  }
+}
+
+/* line 48, src/scss/partials/_global.scss */
+h3, p {
+  font-size: 18px;
+  line-height: 1.45em;
+  letter-spacing: -0.025em;
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 48, src/scss/partials/_global.scss */
+  h3, p {
+    font-size: 1.25vw;
+  }
+}
+
+/* line 57, src/scss/partials/_global.scss */
+p {
+  font-weight: 300;
+}
+
+/* line 59, src/scss/partials/_global.scss */
+p.large {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 59, src/scss/partials/_global.scss */
+  p.large {
+    font-size: 1.53vw;
+  }
+}
+
+/* line 67, src/scss/partials/_global.scss */
+a {
+  color: #00AD8D;
+  font-weight: 500;
+}
+
+/* line 72, src/scss/partials/_global.scss */
+strong, b {
+  font-weight: 600;
+}
+
+/* line 74, src/scss/partials/_global.scss */
+.btn {
+  display: inline-block;
+  position: relative;
+  color: #090A0A;
+  background: transparent;
+  border: 1px solid #090A0A;
+  font-size: 17px;
+  line-height: 44px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 20px;
+  outline: 0;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+  text-decoration: none;
+}
+
+/* line 90, src/scss/partials/_global.scss */
+.btn.white {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* line 93, src/scss/partials/_global.scss */
+.btn.white:before {
+  background: #fff;
+}
+
+/* line 96, src/scss/partials/_global.scss */
+.btn.white:hover {
+  color: #090A0A;
+}
+
+/* line 100, src/scss/partials/_global.scss */
+.btn:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  background: #090A0A;
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+  z-index: -1;
+}
+
+/* line 112, src/scss/partials/_global.scss */
+.btn:hover {
+  color: #fff;
+}
+
+/* line 114, src/scss/partials/_global.scss */
+.btn:hover:before {
+  height: 100%;
+}
+
+/* line 120, src/scss/partials/_global.scss */
+.btn.btn-small {
+  line-height: 36px;
+}
+
+/* line 124, src/scss/partials/_global.scss */
+.btn.cta {
+  background: #00AD8D;
+  border-color: #00AD8D;
+  color: #fff;
+}
+
+/* line 128, src/scss/partials/_global.scss */
+.btn.cta:before {
+  background: #26b99e;
+}
+
+/* line 131, src/scss/partials/_global.scss */
+.btn.cta:hover {
+  border-color: #26b99e;
+}
+
+/* line 137, src/scss/partials/_global.scss */
+.chevron-arrow-right:after {
+  content: '';
+  display: inline-block;
+  border-right: 2px solid #090A0A;
+  border-bottom: 2px solid #090A0A;
+  height: 6px;
+  width: 6px;
+  -webkit-transform: rotate(45deg) translateY(-3px);
+          transform: rotate(45deg) translateY(-3px);
+  margin-left: 5px;
+}
+
+/* line 147, src/scss/partials/_global.scss */
+.wrapper {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 147, src/scss/partials/_global.scss */
+  .wrapper {
+    margin-top: 60px;
+  }
+}
+
+/* line 154, src/scss/partials/_global.scss */
+.container-viewport {
+  height: 100vh;
+  width: 100vw;
+}
+
+/* line 159, src/scss/partials/_global.scss */
+.absolute-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/**********************************************
+ Header Styles
+**********************************************/
+/* line 4, src/scss/partials/_header.scss */
+header {
+  width: 100%;
+  background: #fff;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  padding: 0 40px;
+  -webkit-transition: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+@media screen and (max-width: 991px) {
+  /* line 4, src/scss/partials/_header.scss */
+  header {
+    height: 60px;
+    position: absolute;
+  }
+}
+
+/* line 20, src/scss/partials/_header.scss */
+header.reversed {
+  background: transparent;
+}
+
+/* line 22, src/scss/partials/_header.scss */
+header.reversed .logo svg path {
+  fill: #fff;
+}
+
+/* line 25, src/scss/partials/_header.scss */
+header.reversed nav a {
+  color: #fff;
+}
+
+/* line 27, src/scss/partials/_header.scss */
+header.reversed nav a:after {
+  background: #fff;
+}
+
+/* line 32, src/scss/partials/_header.scss */
+header .logo {
+  max-width: 150px;
+}
+
+/* line 35, src/scss/partials/_header.scss */
+header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 39, src/scss/partials/_header.scss */
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 41, src/scss/partials/_header.scss */
+header nav a {
+  padding: 1vw;
+  font-size: 17px;
+  font-weight: 500;
+  color: #090A0A;
+  text-decoration: none;
+  letter-spacing: -.02em;
+  position: relative;
+  opacity: 0.4;
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+}
+
+/* line 51, src/scss/partials/_header.scss */
+header nav a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background: #090A0A;
+  left: 50%;
+  bottom: 4px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
+}
+
+/* line 62, src/scss/partials/_header.scss */
+header nav a:hover {
+  opacity: 1;
+}
+
+/* line 64, src/scss/partials/_header.scss */
+header nav a:hover:after {
+  width: 50%;
+}
+
+/* line 70, src/scss/partials/_header.scss */
+header .cta-btn {
+  margin-left: 21px;
+}
+
+/* line 75, src/scss/partials/_header.scss */
+.headroom--pinned {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+/* line 78, src/scss/partials/_header.scss */
+.headroom--unpinned {
+  -webkit-transform: translateY(-80px);
+          transform: translateY(-80px);
+}
+
+/**********************************************
+ Footer Styles
+**********************************************/
+/* line 5, src/scss/partials/_footer.scss */
+footer {
+  width: 100%;
+  background: #090A0A;
+  color: #fff;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/**********************************************
+ Homepage
+**********************************************/
+/* line 5, src/scss/partials/_homepage.scss */
+.homepage-projects:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(9, 10, 10, 0.4);
+}
+
+/* line 11, src/scss/partials/_homepage.scss */
+.homepage-projects > div {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  -webkit-transition: 2s opacity 0s linear;
+  transition: 2s opacity 0s linear;
+}
+
+/* line 17, src/scss/partials/_homepage.scss */
+.homepage-projects > div.active {
+  -webkit-transition: opacity 2s cubic-bezier(0.45, 0.01, 0.3, 1);
+  transition: opacity 2s cubic-bezier(0.45, 0.01, 0.3, 1);
+  opacity: 1;
+}
+
+/* line 23, src/scss/partials/_homepage.scss */
+.homepage-bottom-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  right: 30px;
+}
+
+/* line 31, src/scss/partials/_homepage.scss */
+.homepage-bottom-content h1, .homepage-bottom-content a {
+  color: #fff;
+}
+
+/* line 34, src/scss/partials/_homepage.scss */
+.homepage-bottom-content h1 {
+  max-width: 460px;
+  margin-bottom: 0;
+}
+
+/* line 39, src/scss/partials/_homepage.scss */
+.homepage-bottom-content .homepage-project-links span {
+  position: relative;
+}
+
+/* line 42, src/scss/partials/_homepage.scss */
+.homepage-bottom-content .homepage-project-links a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 26px;
+  line-height: 1.07em;
+  letter-spacing: -0.034em;
+  text-decoration: none;
+  margin-right: 13px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 2s cubic-bezier(0.45, 0.01, 0.3, 1);
+  transition: 2s cubic-bezier(0.45, 0.01, 0.3, 1);
+  -webkit-transform: translateX(-30px);
+          transform: translateX(-30px);
+}
+
+/* line 56, src/scss/partials/_homepage.scss */
+.homepage-bottom-content .homepage-project-links a.active {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* line 62, src/scss/partials/_homepage.scss */
+.homepage-bottom-content .homepage-project-links svg {
+  width: 40px;
+  height: 20px;
+}
+
+/* line 70, src/scss/partials/_homepage.scss */
+body.homepage header nav a {
+  opacity: 1;
+}

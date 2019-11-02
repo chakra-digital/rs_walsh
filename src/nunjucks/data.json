@@ -1,22 +1,75 @@
 {
-	"name" : "My Dope Project",
+	"name" : "We can create your paradise",
 	"projects" : [{
-		"title" : "OutboundEngine Website",
-		"dataproject" : "outboundengine"
-	}, {
-		"title" : "eGo Bikeshare",
-		"dataproject" : "ego"
-	}, {
-		"title" : "Scrypt Website",
-		"dataproject" : "scrypt"
-	}, {
-		"title" : "Runa Sustainability Report",
-		"dataproject" : "runa"
-	}, {
-		"title" : "Good Grade Pill",
-		"dataproject" : "goodgradepill"
-	}, {
-		"title" : "Posters",
-		"dataproject" : "posters"
+		"title" : "Florida Colonial",
+		"imagePrefix" : "florida-colonial",
+		"imageCount" : 3,
+		"featuredImage" : "1"
+	},{
+		"title" : "Captiva Island Oasis",
+		"imagePrefix" : "captiva-island",
+		"imageCount" : 10,
+		"featuredImage" : "6"
+	},{
+		"title" : "South Seas Residence",
+		"imagePrefix" : "south-seas-resort",
+		"imageCount" : 3,
+		"featuredImage" : "2"
+	},{
+		"title" : "Sanibel Modern Tropic",
+		"imagePrefix" : "sanibel-modern-tropic",
+		"imageCount" : 9,
+		"featuredImage" : "1"
+	},{
+		"title" : "Coastal Florida",
+		"imagePrefix" : "coastal-florida",
+		"imageCount" : 5,
+		"featuredImage" : "3"
+	},{
+		"title" : "Contemporary Sanibel",
+		"imagePrefix" : "contemporary-sanibel",
+		"imageCount" : 7,
+		"featuredImage" : "1"
+	},{
+		"title" : "Sanibel British Colonial",
+		"imagePrefix" : "sanibel-british-colonial",
+		"imageCount" : 8,
+		"featuredImage" : "4"
+	},{
+		"title" : "Sanibel Island Remodel",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "Tropical Tahitian",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "Astrup Residence",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "Dubuque Residence",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "Glick Residence",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "Hay Residence",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "Landis Residence",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "Patterson Residence",
+		"imagePrefix" : "",
+		"imageCount" : 0
+	},{
+		"title" : "R.S. Captiva",
+		"imagePrefix" : "",
+		"imageCount" : 0
 	}]
 }

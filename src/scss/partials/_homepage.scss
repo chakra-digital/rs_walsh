@@ -1,0 +1,73 @@
+/**********************************************
+ Homepage
+**********************************************/
+.homepage-projects {
+	&:after {
+		content: '';
+		display: block;
+		@include position( absolute, 0);
+		background: rgba($black, .4);
+	}
+	& > div {
+		height: 100%;
+		background-size: cover;
+		background-position: center;
+		opacity: 0;
+		transition: 2s opacity 0s linear;
+		&.active {
+			transition: opacity 2s cubic-bezier(.45,.01,.3,1);
+			opacity: 1;
+		}
+	}
+}
+.homepage-bottom-content {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+	right: 30px;
+	h1, a {
+		color: #fff;
+	}
+	h1 {
+		max-width: 460px;
+		margin-bottom: 0;
+	}
+	.homepage-project-links {
+		span {
+			position: relative;
+		}
+		a {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			font-size: 26px;
+			line-height: 1.07em;
+  		letter-spacing: -0.034em;
+			text-decoration: none;
+			margin-right: 13px;
+			white-space: nowrap;
+			opacity: 0;
+			pointer-events: none;
+			transition: 2s cubic-bezier(.45,.01,.3,1);
+			transform: translateX(-30px);
+			&.active {
+				opacity: 1;
+				pointer-events: all;
+				transform: translateX(0);
+			}
+		}
+		svg {
+			width: 40px;
+			height: 20px;
+		}
+	}
+}
+
+body.homepage {
+	header nav a {
+		opacity: 1;
+	}
+}

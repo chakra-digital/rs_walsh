@@ -8,7 +8,7 @@ var settings = {
 	scripts: true,
 	polyfills: false,
 	styles: true,
-	svgs: true,
+	svgs: false,
 	copy: true,
 	reload: true
 };
@@ -40,6 +40,10 @@ var paths = {
 		output: 'dist/svg/'
 	},
 	copy: {
+		root: {
+			input: 'src/copy/root/**/*',
+			output: 'dist/'
+		},
 		css: {
 			input: 'src/copy/css/**/*',
 			output: 'dist/css/'

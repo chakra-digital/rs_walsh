@@ -1,19 +1,80 @@
 /**********************************************
  Header Styles
 **********************************************/
-
 header {
 	width: 100%;
-	background: #f6f6f6;
+	background: #fff;
 	height: $header-height;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	z-index: 1000;
+	padding: 0 40px;
+	transition: 0.4s cubic-bezier(.25,.1,.25,1);
 	@media screen and (max-width: $mq-max-lg) {
 		height: $header-height-mobile;
 		position: absolute;
 	}
+	&.reversed {
+		background: transparent;
+		.logo svg path {
+			fill: #fff;
+		}
+		nav a {
+			color: #fff;
+			&:after {
+				background: #fff;
+			}
+		}
+	}
+	.logo {
+		max-width: 150px;
+	}
+	.navigation {
+		display: flex;
+		align-items: center;
+	}
+	nav {
+		display: flex;
+		a {
+			padding: 1vw;
+			font-size: 17px;
+			font-weight: 500;
+			color: $black;
+			text-decoration: none;
+			letter-spacing: -.02em;
+			position: relative;
+			opacity: 0.4;
+			transition: 0.3s $cubic-btn;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 0%;
+				height: 1px;
+				background: $black;
+				left: 50%;
+				bottom: 4px;
+				transform: translateX(-50%);
+				transition: 0.3s $cubic-btn;
+			}
+			&:hover {
+				opacity: 1;
+				&:after {
+					width: 50%;
+				}
+			}
+		}
+	}
+	.cta-btn {
+		margin-left: 21px;
+	}
+}
+
+.headroom--pinned {
+	transform: translateY(0);
+}
+.headroom--unpinned {
+	transform: translateY(-80px);
 }

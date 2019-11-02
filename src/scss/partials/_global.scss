@@ -12,54 +12,61 @@ body {
 h1, h2, h3, h4, h5, h6 { 
   color: $text-color;
   font-family: $heading-font;
+  font-weight: 500;
 }
-
+h1, h2 {
+  @media screen and (min-width: $mq-min-15inch) {
+    margin-bottom: 1.9vw;
+  }
+}
 h1 {
-  font-size: $h1;
-  line-height: $h1-lineheight;
+  font-size: 32px;
+  line-height: 1.07em;
+  letter-spacing: -0.04em;
+  margin-bottom: 25px;
+  @media screen and (min-width: $mq-min-15inch) {
+    font-size: 2.23vw;
+  }
+  &.display {
+    font-size: 76px;
+    line-height: 0.9em;
+    letter-spacing: -0.05em;
+    @media screen and (min-width: $mq-min-15inch) {
+      font-size: 5.3vw;
+    }
+  }
 }
 h2 {
-  font-size: $h2;
-  line-height: $h2-lineheight;
+  font-size: 24px;
+  line-height: 1.07em;
+  letter-spacing: -0.034em;
+  margin-bottom: 20px;
+  @media screen and (min-width: $mq-min-15inch) {
+    font-size: 1.67vw;
+  }
 }
-h3 {
-  font-size: $h3;
-  line-height: $h3-lineheight;
-}
-h4 {
-  font-size: $h4;
-  line-height: $h4-lineheight;
-}
-h5 {
-  font-size: $h5;
-  line-height: $h5-lineheight;
-  font-weight: 400;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-}
-h6 {
-  font-size: $h6;
-  line-height: $h6-lineheight;
-  letter-spacing: 2px;
-  font-weight: 500;
-  text-transform: uppercase;
+h3, p {
+  font-size: 18px;
+  line-height: 1.45em;
+  letter-spacing: -0.025em;
+  @media screen and (min-width: $mq-min-15inch) {
+    font-size: 1.25vw;
+  }
 }
 
 p {
-  font-size: $paragraph-size;
-  line-height: $paragraph-line-height;
-  &.small {
-    font-size: 14px;
-    line-height: 27px;
-  }
+  font-weight: 300;
   &.large{
-    font-size: 20px;
-    line-height: 38px;
+    font-size: 22px;
+    @media screen and (min-width: $mq-min-15inch) {
+      font-size: 1.53vw;
+    }
   }
 }
 
 a {
-	color: $link-color;
+  color: $link-color;
+  font-weight: 500;
 }
 
 strong, b { font-weight: 600 }
@@ -67,55 +74,62 @@ strong, b { font-weight: 600 }
 .btn {
   display: inline-block;
   position: relative;
-  color: #fff;
-  background: $primary-btn-color;
-  border: $btn-stroke-width solid $primary-btn-color;
-  font-size: $btn-font-size;
-  line-height: $btn-height - ($btn-stroke-width * 2);
-  font-weight: $btn-font-weight;
+  color: $black;
+  background: transparent;
+  border: 1px solid $black;
+  font-size: 17px;
+  line-height: 46px - 2;
+  font-weight: 500;
   text-align: center;
-  padding: 0px 25px;
-  border-radius: $btn-border-radius;
+  padding: 0px 20px;
   outline: 0;
   z-index: 1;
   cursor: pointer;
-  transition: $btn-timing-function;
+  transition: 0.3s $cubic-btn;
   text-decoration: none;
+  &.white {
+    border-color: #fff;
+    color: #fff;
+    &:before {
+      background: #fff;
+    }
+    &:hover {
+      color: $black;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 0;
+    background: $black;
+    transition: 0.3s $cubic-btn;
+    z-index: -1;
+  }
   &:hover {
-    background: $primary-btn-color-hover;
-    border-color: $primary-btn-color-hover;
+    color: #fff;
+    &:before {
+      height: 100%;
+    }
   }
-  &.stroke {
-  	background: transparent;
-  	color: $primary-btn-color;
-  	&:hover {
-  		background: $primary-btn-color;
-  		border-color: $primary-btn-color;
-  		color: #fff;
-  	}
-  }
+  
 
   &.btn-small {
     line-height: 36px;
   }
 
-  &.btn-secondary {
-  	background: $secondary-btn-color;
-    border-color: $secondary-btn-color;
+  &.cta {
+  	background: $green;
+    border-color: $green;
     color: #fff;
-    &:hover {
-      background: $secondary-btn-color-hover;
-      border-color: $secondary-btn-color-hover;
-      color: #fff;
+    &:before {
+      background: tint($green, 15%);
     }
-    &.stroke {
-			background: transparent;
-			color: $secondary-btn-color;
-			&:hover {
-				border-color: $secondary-btn-color;
-				background: $secondary-btn-color;
-				color: #fff;
-			}
+    &:hover {
+      border-color: tint($green, 15%);
     }
   }
 }
@@ -135,4 +149,13 @@ strong, b { font-weight: 600 }
 	@media screen and (max-width: $mq-max-lg) {
 		margin-top: $header-height-mobile;
 	}
+}
+
+.container-viewport {
+  height: 100vh;
+  width: 100vw;
+}
+
+.absolute-0 {
+  @include position(absolute, 0);
 }

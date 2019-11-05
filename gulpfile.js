@@ -320,6 +320,18 @@ var copyImages = function (done) {
 
 };
 
+// Copy root into output folder
+var copyRoot = function (done) {
+
+	// Make sure this feature is activated before running
+	if (!settings.copy) return done();
+
+	// Copy Root files * folders
+	return src(paths.copy.root.input)
+		.pipe(dest(paths.copy.root.output));
+
+};
+
 
 
 // Watch for changes to the src directory
@@ -365,7 +377,8 @@ exports.copy = series(
 	copyCSS,
 	copyJS,
 	copyFonts,
-	copyImages
+	copyImages,
+	copyRoot
 );
 
 // Default task

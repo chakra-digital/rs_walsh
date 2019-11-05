@@ -21,8 +21,11 @@
 <body class="homepage">
 
 	{% block content %} {% endblock %}
+	<script type="text/javascript" src="/js/plugins/lodash/lodash.custom.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/body-scroll-lock@2.6.3/lib/bodyScrollLock.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-	<script type="text/javascript" src="/js/plugins/siema.min.js"></script>
+	<script type="text/javascript" src="/js/plugins/headroom.min.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
 	<script type="text/javascript" src="/js/homepage.js"></script>
 </body>
 </html>

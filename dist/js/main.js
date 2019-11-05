@@ -13,10 +13,40 @@
 if (!Element.prototype.matches) {
 	Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
 }
+const header = document.querySelector('header');
+const hamburger = document.getElementById('hamburger');
+const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+const body = document.body;
+
+hamburger.addEventListener('click', e => {
+	body.classList.toggle('mobile-nav-is-open');
+  body.classList.contains('mobile-nav-is-open') ? bodyScrollLock.disableBodyScroll(mobileNavWrapper) : bodyScrollLock.enableBodyScroll(mobileNavWrapper);
+});
+
+const mq = window.matchMedia('(min-width: 992px)');
+
+function normalize() {
+  // Hide Mobile Nav if it's open when user reduces browser width
+  if(mq.matches && body.classList.contains('mobile-nav-is-open')) {
+    body.classList.remove('mobile-nav-is-open');
+    bodyScrollLock.enableBodyScroll(mobileNavWrapper);
+  } 
+}
+
+window.addEventListener('resize', _.throttle(normalize, 100, {trailing: false}));
+
+function isMobileNavVisible(el) {
+  return el.classList.contains('mobile-nav-is-open') ? true : false;
+}
+
+
+
+
+
+
 /********************************
  Initialize Headroom
 ********************************/
-const header = document.querySelector('header');
 const options = {
 	offset: 80,
 	tolerance: 10
@@ -33,6 +63,29 @@ const sliderWrapPagination = document.querySelector('.slider-wrap-pagination');
 
 // Initialize new Siema instance for image slider with pagination
 if(sliderWrapPagination) {
+
+
+	const sliderPaginationDuration = 10000;
+
+	// Add a function that generates pagination to prototype
+	Siema.prototype.addPagination = function() {
+		
+		sliderPagination.firstChild.style.display = 'table';
+
+		for (let i = 0; i < this.innerElements.length; i++) {
+			const dot = document.createElement('button');
+			dot.classList.add('dot');
+			if( i === 0 ) dot.classList.add('active');
+			dot.addEventListener('click', _ => {
+				this.goTo(i);
+				clearTimeout(sliderTimer);
+				sliderTimer = setInterval( (function(){ mySiema.next(); }), sliderPagination );
+			});
+			sliderPagination.appendChild(dot);
+		}
+	};
+
+
 	const sliderPagination = new Siema({
 		selector: sliderWrapPagination,
 		onChange: function() {
@@ -63,22 +116,54 @@ if(sliderWrap) {
 	});
 }
 
-const quoteSlideDuration = 10000;
 
-// Add a function that generates pagination to prototype
-Siema.prototype.addPagination = function() {
-	
-	quoteCarousel.firstChild.style.display = 'table';
+/********************************
+ Accordion collapse toggle interaction
+********************************/
+function collapseAccordion(element) {
+  var dropdownHeight = element.parentElement.querySelector('.submenu').scrollHeight;
+  var dropdownTransition = element.style.transition;
+  element.style.transition = '';
 
-  for (let i = 0; i < this.innerElements.length; i++) {
-		const dot = document.createElement('button');
-		dot.classList.add('dot');
-		if( i === 0 ) dot.classList.add('active');
-    dot.addEventListener('click', _ => {
-			this.goTo(i);
-			clearTimeout(carouselTimer);
-			carouselTimer = setInterval( (function(){ mySiema.next(); }), quoteSlideDuration );
-		});
-    quotePagination.appendChild(dot);
-	}
-};
+  requestAnimationFrame((function(){
+    element.style.height = dropdownHeight + 'px';
+    element.style.transition = dropdownTransition;
+    requestAnimationFrame((function(){
+      element.style.height = 0 + 'px';
+      element.parentElement.classList.remove('expanded');
+    }));
+  }));
+
+
+  element.setAttribute('data-collapsed', 'true');
+}
+
+function expandAccordion(element){
+  element.parentElement.classList.add('expanded');
+	var dropdownHeight = element.scrollHeight;
+	var extraMargin = parseInt(window.getComputedStyle(element.lastElementChild).marginBottom.split('px')[0]);
+  element.style.height = dropdownHeight + extraMargin + 'px';
+  element.addEventListener('transitionend', (function(e) {
+    element.removeEventListener('transitionend', arguments.callee);
+    element.style.height = 'auto';
+  }));
+  element.setAttribute('data-collapsed', 'false');
+}
+
+var dropdownWrappers = document.querySelectorAll('#mobile-menu .has-submenu');
+
+if(dropdownWrappers !== undefined) {
+  dropdownWrappers.forEach(item => item.querySelector('.submenu').setAttribute('data-collapsed', 'true'));
+  dropdownWrappers.forEach(item => item.querySelector('p').addEventListener('click', (function(e){
+		var dropdown = e.target.nextElementSibling;
+		console.log(dropdown.scrollHeight)
+    var isCollapsed = dropdown.getAttribute('data-collapsed') === 'true';
+    if(isCollapsed) {
+      expandAccordion(dropdown);
+    } else {
+      collapseAccordion(dropdown);
+    }
+  })));
+}
+
+

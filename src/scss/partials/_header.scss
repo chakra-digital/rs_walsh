@@ -12,17 +12,20 @@ header {
 	top: 0;
 	z-index: 1000;
 	padding: 0 40px;
-	transition: 0.4s cubic-bezier(.25,.1,.25,1);
+	transition: transform 0.4s cubic-bezier(.25,.1,.25,1);
 	@media screen and (max-width: $mq-max-lg) {
 		height: $header-height-mobile;
 		position: absolute;
+	}
+	@media screen and (max-width: $mq-max-md) {
+		padding-left: 30px;
 	}
 	&.reversed {
 		background: transparent;
 		.logo svg path {
 			fill: #fff;
 		}
-		nav a {
+		.navigation nav a {
 			color: #fff;
 			&:after {
 				background: #fff;
@@ -32,43 +35,54 @@ header {
 	.logo {
 		max-width: 150px;
 	}
-	.navigation {
-		display: flex;
-		align-items: center;
-	}
 	nav {
-		display: flex;
-		a {
-			padding: 1vw;
+		a, p {
 			font-size: 17px;
 			font-weight: 500;
 			color: $black;
 			text-decoration: none;
 			letter-spacing: -.02em;
-			position: relative;
-			opacity: 0.4;
-			transition: 0.3s $cubic-btn;
-			&:after {
-				content: '';
-				position: absolute;
-				width: 0%;
-				height: 1px;
-				background: $black;
-				left: 50%;
-				bottom: 4px;
-				transform: translateX(-50%);
-				transition: 0.3s $cubic-btn;
+			line-height: 1.2em;
+		}
+	}
+	.navigation {
+		display: flex;
+		align-items: center;
+		nav {
+			display: flex;
+			@media screen and (max-width: $mq-max-lg) {
+				display: none;
 			}
-			&:hover {
-				opacity: 1;
+			a {
+				padding: 1vw;
+				position: relative;
+				opacity: 0.4;
+				transition: 0.3s $cubic-btn;
 				&:after {
-					width: 50%;
+					content: '';
+					position: absolute;
+					width: 0%;
+					height: 1px;
+					background: $black;
+					left: 50%;
+					bottom: 4px;
+					transform: translateX(-50%);
+					transition: 0.3s $cubic-btn;
+				}
+				&:hover {
+					opacity: 1;
+					&:after {
+						width: 50%;
+					}
 				}
 			}
 		}
 	}
 	.cta-btn {
 		margin-left: 21px;
+		@media screen and (max-width: $mq-max-lg) {
+			display: none;
+		}
 	}
 }
 
@@ -78,3 +92,138 @@ header {
 .headroom--unpinned {
 	transform: translateY(-80px);
 }
+
+
+
+
+
+
+
+
+
+#hamburger {
+	position: absolute;
+	right: 0;
+	height: 100%;
+	width: 25px;
+	padding: 0 30px;
+	box-sizing: content-box;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 10000;
+	cursor: pointer;
+	@media screen and (max-width: $mq-max-lg) {
+		display: flex;
+	}
+	span {
+		display: block;
+		background: #fff;
+		height: 2px;
+		width: 25px;
+		position: absolute;
+		transition: 0.4s cubic-bezier(.25,.1,.25,1);
+		pointer-events: none;
+		&:nth-child(1) {
+			transform: translateY(-7px);
+		}
+		&:nth-child(2) {
+			
+		}
+		&:nth-child(3) {
+			transform: translateY(7px);
+		}
+	}
+}
+
+.mobile-menu-wrap {
+	@include position(fixed, 0);
+	background: rgba($black, 0);
+	z-index: 9999;
+	pointer-events: none;
+	transition: 0.6s cubic-bezier(.35,.05,.05,1);
+	#mobile-menu {
+		@include position(absolute, 0 0 0 null);
+		background: #fff;
+		pointer-events: all;
+		width: 100%;
+		max-width: 400px;
+		transition: 0.6s cubic-bezier(.35,.05,.05,1);
+		transform: translateX(100%);
+		overflow-y: scroll;
+		& >	nav {
+			padding: 80px 40px;
+			display: inline-flex;
+			flex-direction: column;
+			a:not(.btn), p {
+				margin-bottom: 10px;
+			}
+			.btn {
+				margin-top: 5px;
+			}
+		}
+		
+	}
+	.has-submenu {
+		p {
+			cursor: pointer;
+			svg {
+				position: relative;
+				bottom: 1px;
+				left: 2px;
+				transition: 0.6s cubic-bezier(.35,.05,.05,1);
+			}
+		}
+		&.expanded p svg {
+			transform: rotate(180deg);
+		}
+	}
+	.submenu {
+		display: flex;
+		flex-direction: column;
+		height: 0;
+		transition: 0.6s cubic-bezier(.35,.05,.05,1);
+		overflow: hidden;
+		a {
+			font-size: 15px;
+			opacity: 0.4;
+		}
+	}
+}
+
+
+body {
+	&.mobile-nav-is-open {
+		.mobile-menu-wrap {
+			background: rgba($black, .5);
+		}
+		#mobile-menu {
+			transform: translateX(0);
+		}
+		#hamburger {
+			span {
+				background: $black;
+			}
+			span:nth-child(1) {
+				transform: translateY(0px) rotate(-45deg);
+			}
+			span:nth-child(2) {
+				width: 0;
+			}
+			span:nth-child(3) {
+				transform: translateY(0px) rotate(45deg);
+			}
+		}
+	}
+	&.logged-in { // Wordpress styles for when user is logged into admin
+		header {
+			@media screen and (max-width: $mq-max-lg) {
+				top: 32px;
+			}
+			@media screen and (max-width: 782px) {
+				top: 46px;
+			}
+		}
+	}
+}
+

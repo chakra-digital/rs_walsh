@@ -1,3 +1,7 @@
+const vidLoad = document.querySelector('.vidLoad');
+
+body.style.pointerEvents = 'none';
+
 const homepageProjectImages = document.querySelectorAll('.homepage-projects div');
 const homepageProjectLinks = document.querySelectorAll('.homepage-project-links a');
 
@@ -17,8 +21,11 @@ function changeImage() {
   homepageProjectLinks[i].classList.add('active');
 }
 
-
-setInterval(function(){
-  i++;
-  changeImage();
-}, 6000);
+setTimeout(function(){
+  vidLoad.classList.remove('visible');
+  body.removeAttribute('style');
+  setInterval(function(){
+    i++;
+    changeImage();
+  }, 6000);
+}, 2000);

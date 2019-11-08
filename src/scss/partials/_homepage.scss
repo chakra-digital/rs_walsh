@@ -31,6 +31,10 @@
 	@media screen and (max-width: $mq-max-md) {
 		left: 30px;
 	}
+	@media screen and (max-width: $mq-max-sm) {
+		left: 20px;
+		right: 20px;
+	}
 	h1, a {
 		color: #fff;
 	}

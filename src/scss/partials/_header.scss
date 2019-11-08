@@ -20,6 +20,9 @@ header {
 	@media screen and (max-width: $mq-max-md) {
 		padding-left: 30px;
 	}
+	@media screen and (max-width: $mq-max-sm) {
+		padding-left: 20px;;
+	}
 	&.reversed {
 		background: transparent;
 		.logo svg path {
@@ -115,6 +118,9 @@ header {
 	cursor: pointer;
 	@media screen and (max-width: $mq-max-lg) {
 		display: flex;
+	}
+	@media screen and (max-width: $mq-max-sm) {
+		padding: 0 20px;
 	}
 	span {
 		display: block;

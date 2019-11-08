@@ -44,3 +44,10 @@ setTimeout((function(){
     changeImage();
   }), 6000);
 }), 2000);
+
+
+
+window.onresize = function() {
+  document.body.style.height = window.innerHeight + 'px';
+}
+window.onresize(); // called to initially set the height.

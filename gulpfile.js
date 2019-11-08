@@ -66,7 +66,7 @@ var paths = {
 		input: 'dist/**/*',
 		find: 'http://localhost:3000',
 		replace_local: 'http://localhost:8888/rswalsh/wp-content/themes/rswalsh',
-		replace_git: 'https://mcdonamj087.github.io/R.S.-Walsh/dist'
+		replace_git: 'https://chakra-digital.github.io/rs_walsh/dist'
 	}
 };
 

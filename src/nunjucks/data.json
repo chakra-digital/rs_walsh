@@ -71,5 +71,6 @@
 		"title" : "R.S. Captiva",
 		"imagePrefix" : "",
 		"imageCount" : 0
-	}]
+	}],
+	"root_url" : "http://localhost:3000"
 }

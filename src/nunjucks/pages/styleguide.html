@@ -1,0 +1,30 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-6">
+				<h1 class="display">{{ name }}</h1>
+				<h1>{{ name }} {{ name }}</h1>
+				<p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>				
+				<a href="#" class="btn">Primary Button</a>
+				<a href="#" class="btn cta">CTA Button</a>
+				<a href="#" class="btn small">Primary Button</a>
+
+				<h2>{{ name }} {{ name }}</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>
+
+				<h3>{{ name }} {{ name }}</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro accusantium, delectus quae corporis quasi nemo architecto tenetur hic possimus. <a href="">error</a> nobis saepe ab voluptatem id dignissimos voluptatum, animi dolores.</p>
+			</div>
+		</div>
+	</div>	
+</section>
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

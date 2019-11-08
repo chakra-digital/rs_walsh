@@ -405,7 +405,7 @@ header.reversed .navigation nav a:after {
 
 /* line 35, src/scss/partials/_header.scss */
 header .logo {
-  max-width: 150px;
+  width: 150px;
 }
 
 /* line 39, src/scss/partials/_header.scss */

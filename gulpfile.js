@@ -61,7 +61,13 @@ var paths = {
 			output: 'dist/images/'
 		}
 	},
-	reload: './dist/'
+	reload: './dist/',
+	find_replace: {
+		input: 'dist/**/*',
+		find: 'http://localhost:3000',
+		replace_local: 'http://localhost:8888/rswalsh/wp-content/themes/rswalsh',
+		replace_git: 'https://mcdonamj087.github.io/R.S.-Walsh/dist'
+	}
 };
 
 
@@ -102,6 +108,7 @@ var lazypipe = require('lazypipe');
 var rename = require('gulp-rename');
 var header = require('gulp-header');
 var package = require('./package.json');
+var replace = require('gulp-replace');
 
 // Scripts
 var jshint = require('gulp-jshint');
@@ -367,6 +374,23 @@ var watchSource = function (done) {
 };
 
 
+// Find and replace root url in dist folder for local WP
+function replaceLocal() {
+	return src(paths.find_replace.input)
+		.pipe(replace(paths.find_replace.find, paths.find_replace.replace_local))
+		.pipe(dest(paths.copy.root.output));
+};
+
+// Find and replace root url in dist folder for thedonut.co
+function replaceGit() {
+	return src(paths.find_replace.input)
+		.pipe(replace(paths.find_replace.find, paths.find_replace.replace_git))
+		.pipe(dest(paths.copy.root.output));
+};
+
+
+
+
 /**
  * Export Tasks
  */
@@ -402,3 +426,6 @@ exports.watch = series(
 	startServer,
 	watchSource
 );
+
+exports.replace_local = replaceLocal;
+exports.replace_git = replaceGit;

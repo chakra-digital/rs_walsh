@@ -31,8 +31,11 @@ setTimeout(function(){
 }, 2000);
 
 
+const containerViewport = document.querySelector('.container-viewport');
 
 window.onresize = function() {
-  document.body.style.height = window.innerHeight + 'px';
+  const height = window.innerHeight + 'px';
+  document.body.style.height = height;
+  containerViewport.style.height = height;
 }
 window.onresize(); // called to initially set the height.

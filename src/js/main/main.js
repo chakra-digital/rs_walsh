@@ -106,10 +106,11 @@ if(sliderWrap) {
  Accordion collapse toggle interaction
 ********************************/
 function collapseAccordion(element) {
+	console.log('collapsing');
   var dropdownHeight = element.parentElement.querySelector('.submenu').scrollHeight;
   var dropdownTransition = element.style.transition;
   element.style.transition = '';
-
+	// console.log(dropdownHeight);
   requestAnimationFrame(function(){
     element.style.height = dropdownHeight + 'px';
     element.style.transition = dropdownTransition;
@@ -123,11 +124,17 @@ function collapseAccordion(element) {
   element.setAttribute('data-collapsed', 'true');
 }
 
+
+
 function expandAccordion(element){
+
+
+	console.log('expanding');
   element.parentElement.classList.add('expanded');
 	var dropdownHeight = element.scrollHeight;
 	var extraMargin = parseInt(window.getComputedStyle(element.lastElementChild).marginBottom.split('px')[0]);
-  element.style.height = dropdownHeight + extraMargin + 'px';
+	// console.log(dropdownHeight);
+  element.style.height = dropdownHeight + 'px';
   element.addEventListener('transitionend', function(e) {
     element.removeEventListener('transitionend', arguments.callee);
     element.style.height = 'auto';
@@ -135,19 +142,20 @@ function expandAccordion(element){
   element.setAttribute('data-collapsed', 'false');
 }
 
+
+
 var dropdownWrappers = document.querySelectorAll('#mobile-menu .has-submenu');
 
 if(dropdownWrappers !== undefined) {
   dropdownWrappers.forEach(item => item.querySelector('.submenu').setAttribute('data-collapsed', 'true'));
   dropdownWrappers.forEach(item => item.querySelector('p').addEventListener('click', function(e){
 		var dropdown = e.target.nextElementSibling;
-		console.log(dropdown.scrollHeight)
     var isCollapsed = dropdown.getAttribute('data-collapsed') === 'true';
     if(isCollapsed) {
       expandAccordion(dropdown);
     } else {
       collapseAccordion(dropdown);
-    }
+		}
   }));
 }
 

@@ -20,7 +20,12 @@
 </head>
 <body class="homepage">
 
-	{% block content %} {% endblock %}
+	<div class="100vh-wrapper">
+
+		{% block content %} {% endblock %}
+
+	</div> <!-- end .100vh-wrapper -->
+	
 	<script type="text/javascript" src="{{root_url}}/js/plugins/lodash/lodash.custom.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/body-scroll-lock@2.6.3/lib/bodyScrollLock.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>

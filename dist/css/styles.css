@@ -327,20 +327,6 @@ strong, b {
 }
 
 /* line 154, src/scss/partials/_global.scss */
-.100vh-wrapper {
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-/* line 161, src/scss/partials/_global.scss */
-.container-viewport {
-  height: 100vh;
-  width: 100vw;
-}
-
-/* line 166, src/scss/partials/_global.scss */
 .absolute-0 {
   position: absolute;
   top: 0;
@@ -740,7 +726,7 @@ footer {
  Homepage
 **********************************************/
 /* line 5, src/scss/partials/_homepage.scss */
-.homepage-projects:after {
+.homepage-projects-wrap:after {
   content: '';
   display: block;
   position: absolute;
@@ -753,7 +739,7 @@ footer {
 }
 
 /* line 11, src/scss/partials/_homepage.scss */
-.homepage-projects > div {
+.homepage-projects-wrap > div {
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -763,7 +749,7 @@ footer {
 }
 
 /* line 17, src/scss/partials/_homepage.scss */
-.homepage-projects > div.active {
+.homepage-projects-wrap > div.active {
   -webkit-transition: opacity 2s cubic-bezier(0.45, 0.01, 0.3, 1);
   transition: opacity 2s cubic-bezier(0.45, 0.01, 0.3, 1);
   opacity: 1;
@@ -866,16 +852,25 @@ footer {
 }
 
 /* line 84, src/scss/partials/_homepage.scss */
+body.homepage .wrapper {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 92, src/scss/partials/_homepage.scss */
 body.homepage header {
   height: 80px !important;
 }
 
-/* line 86, src/scss/partials/_homepage.scss */
+/* line 94, src/scss/partials/_homepage.scss */
 body.homepage header nav a {
   opacity: 1;
 }
 
-/* line 93, src/scss/partials/_homepage.scss */
+/* line 101, src/scss/partials/_homepage.scss */
 .vidLoad {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -887,13 +882,13 @@ body.homepage header nav a {
   transition: 1.5s cubic-bezier(0.4, 0, 0.1, 1);
 }
 
-/* line 99, src/scss/partials/_homepage.scss */
+/* line 107, src/scss/partials/_homepage.scss */
 .vidLoad video {
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-/* line 102, src/scss/partials/_homepage.scss */
+/* line 110, src/scss/partials/_homepage.scss */
 .vidLoad img {
   position: absolute;
   left: 50%;
@@ -905,12 +900,12 @@ body.homepage header nav a {
           transform: translate(-50%, -50%) scale(0.5);
 }
 
-/* line 110, src/scss/partials/_homepage.scss */
+/* line 118, src/scss/partials/_homepage.scss */
 .vidLoad.visible {
   opacity: 1;
 }
 
-/* line 112, src/scss/partials/_homepage.scss */
+/* line 120, src/scss/partials/_homepage.scss */
 .vidLoad.visible img {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);

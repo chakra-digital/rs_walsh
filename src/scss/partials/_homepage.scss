@@ -1,11 +1,11 @@
 /**********************************************
  Homepage
 **********************************************/
-.homepage-projects {
+.homepage-projects-wrap {
 	&:after {
 		content: '';
 		display: block;
-		@include position( absolute, 0);
+		@include position(absolute, 0);
 		background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) 30%);
 	}
 	& > div {
@@ -81,6 +81,14 @@
 }
 
 body.homepage {
+	.wrapper {
+		margin: 0;
+		height: 100vh;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+	
 	header {
 		height: $header-height!important;
 		nav a {

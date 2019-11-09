@@ -50,4 +50,4 @@ window.onresize = function() {
   })
   
 }
-window.onresize(); // called to initially set the height.
+window.onresize(); // called to initially set the height

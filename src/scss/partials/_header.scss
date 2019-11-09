@@ -142,33 +142,37 @@ header {
 	}
 }
 
-.mobile-menu-wrap {
+#mobile-menu-wrap {
 	@include position(fixed, 0);
 	background: rgba($black, 0);
 	z-index: 9999;
 	pointer-events: none;
 	transition: 0.6s cubic-bezier(.35,.05,.05,1);
-	#mobile-menu {
-		@include position(absolute, 0 0 0 null);
-		background: #fff;
-		pointer-events: all;
-		width: 100%;
-		max-width: 400px;
-		transition: 0.6s cubic-bezier(.35,.05,.05,1);
-		transform: translateX(100%);
-		overflow-y: scroll;
-		& >	nav {
-			padding: 80px 40px;
-			display: inline-flex;
-			flex-direction: column;
-			a:not(.btn), p {
-				margin-bottom: 10px;
-			}
-			.btn {
-				margin-top: 5px;
-			}
-		}
-		
+}
+
+#mobile-menu {
+	@include position(absolute, 0 0 0 null);
+	background: #fff;
+	pointer-events: all;
+	width: 100%;
+	max-width: 400px;
+	transition: 0.6s cubic-bezier(.35,.05,.05,1);
+	transform: translateX(100%);
+	overflow-y: scroll;
+	.inner,
+	.top-level-menu {
+		display: inline-flex;
+		flex-direction: column;
+	}
+	.inner {
+		padding: 80px 40px;
+	}
+	.top-level-item {
+		margin-bottom: 15px;
+		font-size: 20px;
+	}
+	.btn {
+		margin-top: 5px;
 	}
 	.has-submenu {
 		p {
@@ -178,10 +182,17 @@ header {
 				bottom: 1px;
 				left: 2px;
 				transition: 0.6s cubic-bezier(.35,.05,.05,1);
+				width: 18px;
 			}
 		}
-		&.expanded p svg {
-			transform: rotate(180deg);
+		&.expanded {
+			p svg {
+				transform: rotate(180deg);
+			
+			}
+			.submenu {
+				margin-bottom: 15px;
+			}
 		}
 	}
 	.submenu {
@@ -191,11 +202,15 @@ header {
 		transition: 0.6s cubic-bezier(.35,.05,.05,1);
 		overflow: hidden;
 		a {
-			font-size: 15px;
 			opacity: 0.4;
+			&:not(:last-of-type) {
+				margin-bottom: 10px;
+			}
 		}
 	}
+	
 }
+
 
 
 body {

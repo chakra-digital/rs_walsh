@@ -163,8 +163,8 @@ var dropdownWrappers = document.querySelectorAll('#mobile-menu .has-submenu');
 
 if(dropdownWrappers !== undefined) {
   dropdownWrappers.forEach(item => item.querySelector('.submenu').setAttribute('data-collapsed', 'true'));
-  dropdownWrappers.forEach(item => item.querySelector('p').addEventListener('click', (function(e){
-		var dropdown = e.target.nextElementSibling;
+  dropdownWrappers.forEach(item => item.querySelector('p').addEventListener('click', (function(){
+		var dropdown = this.nextElementSibling;
     var isCollapsed = dropdown.getAttribute('data-collapsed') === 'true';
     if(isCollapsed) {
       expandAccordion(dropdown);

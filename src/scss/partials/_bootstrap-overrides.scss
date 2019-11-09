@@ -8,4 +8,8 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+    @media screen and (max-width: $mq-max-sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

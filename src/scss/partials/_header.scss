@@ -215,7 +215,7 @@ header {
 
 body {
 	&.mobile-nav-is-open {
-		.mobile-menu-wrap {
+		#mobile-menu-wrap {
 			background: rgba($black, .5);
 		}
 		#mobile-menu {

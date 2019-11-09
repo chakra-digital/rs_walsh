@@ -672,7 +672,7 @@ header .cta-btn {
 }
 
 /* line 218, src/scss/partials/_header.scss */
-body.mobile-nav-is-open .mobile-menu-wrap {
+body.mobile-nav-is-open #mobile-menu-wrap {
   background: rgba(9, 10, 10, 0.5);
 }
 

@@ -37,40 +37,49 @@
 		"featuredImage" : "4"
 	},{
 		"title" : "Sanibel Island Remodel",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "sanibel-island-remodel",
+		"imageCount" : 6,
+		"featuredImage" : "6"
 	},{
 		"title" : "Tropical Tahitian",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "tropical-tahitian",
+		"imageCount" : 3,
+		"featuredImage" : "3"
 	},{
 		"title" : "Astrup Residence",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "astrup-residence",
+		"imageCount" : 7,
+		"featuredImage" : "2"
 	},{
 		"title" : "Dubuque Residence",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "dubuque-residence",
+		"imageCount" : 8,
+		"featuredImage" : "3"
 	},{
 		"title" : "Glick Residence",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "glick-residence",
+		"imageCount" : 5,
+		"featuredImage" : "3"
 	},{
 		"title" : "Hay Residence",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "hay-residence",
+		"imageCount" : 7,
+		"featuredImage" : "7"
 	},{
 		"title" : "Landis Residence",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "landis-residence",
+		"imageCount" : 4,
+		"featuredImage" : "4"
 	},{
 		"title" : "Patterson Residence",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "patterson-residence",
+		"imageCount" : 4,
+		"featuredImage" : "2"
 	},{
 		"title" : "R.S. Captiva",
-		"imagePrefix" : "",
-		"imageCount" : 0
+		"imagePrefix" : "rs-walsh-captiva",
+		"imageCount" : 6,
+		"featuredImage" : "3"
 	}],
 	"root_url" : "http://localhost:3000"
 }

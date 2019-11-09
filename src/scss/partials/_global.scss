@@ -146,9 +146,6 @@ strong, b { font-weight: 600 }
 
 .wrapper {
 	margin-top: $header-height;
-	@media screen and (max-width: $mq-max-lg) {
-		margin-top: $header-height-mobile;
-	}
 }
 
 .absolute-0 {

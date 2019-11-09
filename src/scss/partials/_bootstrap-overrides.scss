@@ -4,4 +4,8 @@
 .container-fluid {
     padding-left: 40px;
     padding-right: 40px;
+    @media screen and (max-width: $mq-max-md) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }

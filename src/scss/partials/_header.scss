@@ -14,7 +14,6 @@ header {
 	padding: 0 40px;
 	transition: transform 0.4s cubic-bezier(.25,.1,.25,1);
 	@media screen and (max-width: $mq-max-lg) {
-		height: $header-height-mobile;
 		position: absolute;
 	}
 	@media screen and (max-width: $mq-max-md) {
@@ -33,6 +32,9 @@ header {
 			&:after {
 				background: #fff;
 			}
+		}
+		#hamburger span {
+			background: #fff;
 		}
 	}
 	.logo {
@@ -124,7 +126,7 @@ header {
 	}
 	span {
 		display: block;
-		background: #fff;
+		background: $black;
 		height: 2px;
 		width: 25px;
 		position: absolute;

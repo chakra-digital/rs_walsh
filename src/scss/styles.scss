@@ -1,7 +1,7 @@
 @import '../../node_modules/bourbon/core/bourbon';
 @import 'partials/reset';
-@import 'partials/bootstrap-overrides';
 @import 'partials/variables';
+@import 'partials/bootstrap-overrides';
 @import 'partials/fonts';
 @import 'partials/global';
 @import 'partials/header';
@@ -9,3 +9,4 @@
 
 // Templates ///////////////////////////////////////// 
 @import 'partials/homepage';
+@import 'partials/projects'

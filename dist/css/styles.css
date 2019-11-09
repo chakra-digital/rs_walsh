@@ -374,7 +374,7 @@ header {
 @media screen and (max-width: 991px) {
   /* line 4, src/scss/partials/_header.scss */
   header {
-    position: absolute;
+    height: 70px;
   }
 }
 
@@ -393,36 +393,11 @@ header {
 }
 
 /* line 25, src/scss/partials/_header.scss */
-header.reversed {
-  background: transparent;
-}
-
-/* line 27, src/scss/partials/_header.scss */
-header.reversed .logo svg path {
-  fill: #fff;
-}
-
-/* line 30, src/scss/partials/_header.scss */
-header.reversed .navigation nav a {
-  color: #fff;
-}
-
-/* line 32, src/scss/partials/_header.scss */
-header.reversed .navigation nav a:after {
-  background: #fff;
-}
-
-/* line 36, src/scss/partials/_header.scss */
-header.reversed #hamburger span {
-  background: #fff;
-}
-
-/* line 40, src/scss/partials/_header.scss */
 header .logo {
   width: 150px;
 }
 
-/* line 44, src/scss/partials/_header.scss */
+/* line 29, src/scss/partials/_header.scss */
 header nav a, header nav p {
   font-size: 17px;
   font-weight: 500;
@@ -432,7 +407,7 @@ header nav a, header nav p {
   line-height: 1.2em;
 }
 
-/* line 53, src/scss/partials/_header.scss */
+/* line 38, src/scss/partials/_header.scss */
 header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -442,7 +417,7 @@ header .navigation {
           align-items: center;
 }
 
-/* line 56, src/scss/partials/_header.scss */
+/* line 41, src/scss/partials/_header.scss */
 header .navigation nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,13 +425,13 @@ header .navigation nav {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 56, src/scss/partials/_header.scss */
+  /* line 41, src/scss/partials/_header.scss */
   header .navigation nav {
     display: none;
   }
 }
 
-/* line 61, src/scss/partials/_header.scss */
+/* line 46, src/scss/partials/_header.scss */
 header .navigation nav a {
   padding: 1vw;
   position: relative;
@@ -465,7 +440,7 @@ header .navigation nav a {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 66, src/scss/partials/_header.scss */
+/* line 51, src/scss/partials/_header.scss */
 header .navigation nav a:after {
   content: '';
   position: absolute;
@@ -480,45 +455,48 @@ header .navigation nav a:after {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 77, src/scss/partials/_header.scss */
+/* line 62, src/scss/partials/_header.scss */
 header .navigation nav a:hover {
   opacity: 1;
 }
 
-/* line 79, src/scss/partials/_header.scss */
+/* line 64, src/scss/partials/_header.scss */
 header .navigation nav a:hover:after {
   width: 50%;
 }
 
-/* line 86, src/scss/partials/_header.scss */
+/* line 71, src/scss/partials/_header.scss */
 header .cta-btn {
   margin-left: 21px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 86, src/scss/partials/_header.scss */
+  /* line 71, src/scss/partials/_header.scss */
   header .cta-btn {
     display: none;
   }
 }
 
-/* line 94, src/scss/partials/_header.scss */
-.headroom--pinned {
+/* line 79, src/scss/partials/_header.scss */
+.headroom--pinned,
+#hamburger.pinned {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-/* line 97, src/scss/partials/_header.scss */
-.headroom--unpinned {
+/* line 83, src/scss/partials/_header.scss */
+.headroom--unpinned,
+#hamburger.unpinned {
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
 }
 
-/* line 109, src/scss/partials/_header.scss */
+/* line 96, src/scss/partials/_header.scss */
 #hamburger {
-  position: absolute;
+  position: fixed;
+  top: 0;
   right: 0;
-  height: 100%;
+  height: 80px;
   width: 25px;
   padding: 0 30px;
   -webkit-box-sizing: content-box;
@@ -531,11 +509,15 @@ header .cta-btn {
       -ms-flex-align: center;
           align-items: center;
   z-index: 10000;
+  -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: -webkit-transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), -webkit-transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   cursor: pointer;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 109, src/scss/partials/_header.scss */
+  /* line 96, src/scss/partials/_header.scss */
   #hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -544,13 +526,13 @@ header .cta-btn {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 109, src/scss/partials/_header.scss */
+  /* line 96, src/scss/partials/_header.scss */
   #hamburger {
     padding: 0 20px;
   }
 }
 
-/* line 127, src/scss/partials/_header.scss */
+/* line 116, src/scss/partials/_header.scss */
 #hamburger span {
   display: block;
   background: #090A0A;
@@ -562,19 +544,26 @@ header .cta-btn {
   pointer-events: none;
 }
 
-/* line 135, src/scss/partials/_header.scss */
+/* line 124, src/scss/partials/_header.scss */
 #hamburger span:nth-child(1) {
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
-/* line 141, src/scss/partials/_header.scss */
+/* line 130, src/scss/partials/_header.scss */
 #hamburger span:nth-child(3) {
   -webkit-transform: translateY(7px);
           transform: translateY(7px);
 }
 
-/* line 147, src/scss/partials/_header.scss */
+@media screen and (max-width: 991px) {
+  /* line 96, src/scss/partials/_header.scss */
+  #hamburger {
+    height: 70px;
+  }
+}
+
+/* line 139, src/scss/partials/_header.scss */
 #mobile-menu-wrap {
   position: fixed;
   top: 0;
@@ -588,7 +577,7 @@ header .cta-btn {
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 155, src/scss/partials/_header.scss */
+/* line 147, src/scss/partials/_header.scss */
 #mobile-menu {
   position: absolute;
   top: 0;
@@ -605,7 +594,7 @@ header .cta-btn {
   overflow-y: scroll;
 }
 
-/* line 164, src/scss/partials/_header.scss */
+/* line 156, src/scss/partials/_header.scss */
 #mobile-menu .inner,
 #mobile-menu .top-level-menu {
   display: -webkit-inline-box;
@@ -617,49 +606,47 @@ header .cta-btn {
           flex-direction: column;
 }
 
-/* line 169, src/scss/partials/_header.scss */
+/* line 161, src/scss/partials/_header.scss */
 #mobile-menu .inner {
   padding: 80px 40px;
 }
 
-/* line 172, src/scss/partials/_header.scss */
+/* line 164, src/scss/partials/_header.scss */
 #mobile-menu .top-level-item {
-  margin-bottom: 15px;
   font-size: 20px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #090A0A;
+  text-decoration: none;
 }
 
-/* line 176, src/scss/partials/_header.scss */
+/* line 171, src/scss/partials/_header.scss */
 #mobile-menu .btn {
   margin-top: 5px;
 }
 
-/* line 180, src/scss/partials/_header.scss */
+/* line 175, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu p {
   cursor: pointer;
 }
 
-/* line 182, src/scss/partials/_header.scss */
+/* line 177, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu p svg {
   position: relative;
   bottom: 1px;
   left: 2px;
   -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
-  width: 18px;
+  width: 14px;
 }
 
-/* line 191, src/scss/partials/_header.scss */
+/* line 186, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu.expanded p svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 195, src/scss/partials/_header.scss */
-#mobile-menu .has-submenu.expanded .submenu {
-  margin-bottom: 15px;
-}
-
-/* line 200, src/scss/partials/_header.scss */
+/* line 192, src/scss/partials/_header.scss */
 #mobile-menu .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,58 +661,81 @@ header .cta-btn {
   overflow: hidden;
 }
 
-/* line 206, src/scss/partials/_header.scss */
+/* line 198, src/scss/partials/_header.scss */
 #mobile-menu .submenu a {
   opacity: 0.4;
+  color: #090A0A;
+  text-decoration: none;
+  line-height: 36px;
 }
 
-/* line 208, src/scss/partials/_header.scss */
-#mobile-menu .submenu a:not(:last-of-type) {
-  margin-bottom: 10px;
+/* line 211, src/scss/partials/_header.scss */
+body.reversed-header header {
+  background: transparent;
 }
 
-/* line 220, src/scss/partials/_header.scss */
+/* line 213, src/scss/partials/_header.scss */
+body.reversed-header header .logo svg path {
+  fill: #fff;
+}
+
+/* line 216, src/scss/partials/_header.scss */
+body.reversed-header header .navigation nav a {
+  color: #fff;
+}
+
+/* line 218, src/scss/partials/_header.scss */
+body.reversed-header header .navigation nav a:after {
+  background: #fff;
+}
+
+/* line 223, src/scss/partials/_header.scss */
+body.reversed-header #hamburger span {
+  background: #fff;
+}
+
+/* line 228, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #mobile-menu-wrap {
   background: rgba(9, 10, 10, 0.5);
 }
 
-/* line 223, src/scss/partials/_header.scss */
+/* line 231, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #mobile-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 227, src/scss/partials/_header.scss */
+/* line 235, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span {
   background: #090A0A;
 }
 
-/* line 230, src/scss/partials/_header.scss */
+/* line 238, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(1) {
   -webkit-transform: translateY(0px) rotate(-45deg);
           transform: translateY(0px) rotate(-45deg);
 }
 
-/* line 233, src/scss/partials/_header.scss */
+/* line 241, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(2) {
   width: 0;
 }
 
-/* line 236, src/scss/partials/_header.scss */
+/* line 244, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(3) {
   -webkit-transform: translateY(0px) rotate(45deg);
           transform: translateY(0px) rotate(45deg);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 242, src/scss/partials/_header.scss */
+  /* line 251, src/scss/partials/_header.scss */
   body.logged-in header {
     top: 32px;
   }
 }
 
 @media screen and (max-width: 782px) {
-  /* line 242, src/scss/partials/_header.scss */
+  /* line 251, src/scss/partials/_header.scss */
   body.logged-in header {
     top: 46px;
   }

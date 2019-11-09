@@ -14,28 +14,13 @@ header {
 	padding: 0 40px;
 	transition: transform 0.4s cubic-bezier(.25,.1,.25,1);
 	@media screen and (max-width: $mq-max-lg) {
-		position: absolute;
+		height: $header-height-mobile;
 	}
 	@media screen and (max-width: $mq-max-md) {
 		padding-left: 30px;
 	}
 	@media screen and (max-width: $mq-max-sm) {
 		padding-left: 20px;;
-	}
-	&.reversed {
-		background: transparent;
-		.logo svg path {
-			fill: #fff;
-		}
-		.navigation nav a {
-			color: #fff;
-			&:after {
-				background: #fff;
-			}
-		}
-		#hamburger span {
-			background: #fff;
-		}
 	}
 	.logo {
 		width: 150px;
@@ -91,11 +76,13 @@ header {
 	}
 }
 
-.headroom--pinned {
+.headroom--pinned,
+#hamburger.pinned {
 	transform: translateY(0);
 }
-.headroom--unpinned {
-	transform: translateY(-80px);
+.headroom--unpinned,
+#hamburger.unpinned {
+	transform: translateY(-$header-height);
 }
 
 
@@ -107,9 +94,10 @@ header {
 
 
 #hamburger {
-	position: absolute;
+	position: fixed;
+	top: 0;
 	right: 0;
-	height: 100%;
+	height: $header-height;
 	width: 25px;
 	padding: 0 30px;
 	box-sizing: content-box;
@@ -117,6 +105,7 @@ header {
 	justify-content: center;
 	align-items: center;
 	z-index: 10000;
+	transition: transform 0.4s cubic-bezier(.25,.1,.25,1);
 	cursor: pointer;
 	@media screen and (max-width: $mq-max-lg) {
 		display: flex;
@@ -141,6 +130,9 @@ header {
 		&:nth-child(3) {
 			transform: translateY(7px);
 		}
+	}
+	@media screen and (max-width: $mq-max-lg) {
+		height: $header-height-mobile;
 	}
 }
 
@@ -170,8 +162,11 @@ header {
 		padding: 80px 40px;
 	}
 	.top-level-item {
-		margin-bottom: 15px;
 		font-size: 20px;
+		line-height: 40px;
+		font-weight: 500;
+		color: $black;
+		text-decoration: none;
 	}
 	.btn {
 		margin-top: 5px;
@@ -184,16 +179,13 @@ header {
 				bottom: 1px;
 				left: 2px;
 				transition: 0.6s cubic-bezier(.35,.05,.05,1);
-				width: 18px;
+				width: 14px;
 			}
 		}
 		&.expanded {
 			p svg {
 				transform: rotate(180deg);
 			
-			}
-			.submenu {
-				margin-bottom: 15px;
 			}
 		}
 	}
@@ -205,17 +197,33 @@ header {
 		overflow: hidden;
 		a {
 			opacity: 0.4;
-			&:not(:last-of-type) {
-				margin-bottom: 10px;
-			}
+			color: $black;
+			text-decoration: none;
+			line-height: 36px;
 		}
 	}
-	
 }
 
 
 
 body {
+	&.reversed-header {
+		header {
+			background: transparent;
+			.logo svg path {
+				fill: #fff;
+			}
+			.navigation nav a {
+				color: #fff;
+				&:after {
+					background: #fff;
+				}
+			}
+		}
+		#hamburger span {
+			background: #fff;
+		}
+	}
 	&.mobile-nav-is-open {
 		#mobile-menu-wrap {
 			background: rgba($black, .5);
@@ -238,6 +246,7 @@ body {
 			}
 		}
 	}
+
 	&.logged-in { // Wordpress styles for when user is logged into admin
 		header {
 			@media screen and (max-width: $mq-max-lg) {
@@ -249,4 +258,5 @@ body {
 		}
 	}
 }
+
 

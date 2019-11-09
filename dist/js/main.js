@@ -49,7 +49,15 @@ function isMobileNavVisible(el) {
 ********************************/
 const options = {
 	offset: 80,
-	tolerance: 10
+  tolerance: 4,
+  onUnpin : function() {
+    hamburger.classList.remove('pinned');
+    hamburger.classList.add('unpinned');
+  },
+  onPin : function() {
+    hamburger.classList.remove('unpinned');
+    hamburger.classList.add('pinned');
+  }
 }
 const headroom  = new Headroom(header, options);
 headroom.init();

@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="{{root_url}}/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="{{root_url}}/css/styles.css">
 </head>
-<body class="{% if body_class %}{{ body_class }}{% endif %}">
+<body class="{% if body_class %} {{ body_class }} {% if body_class == "homepage" %}reversed-header{% endif %}{% endif %}">
 
 	<div class="wrapper">
 

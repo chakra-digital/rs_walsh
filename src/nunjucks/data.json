@@ -4,7 +4,8 @@
 		"title" : "Florida Colonial",
 		"imagePrefix" : "florida-colonial",
 		"imageCount" : 3,
-		"featuredImage" : "1"
+		"featuredImage" : "1",
+		"href" : "./project-single.html"
 	},{
 		"title" : "Captiva Island Oasis",
 		"imagePrefix" : "captiva-island",

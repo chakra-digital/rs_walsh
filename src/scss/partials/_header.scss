@@ -15,10 +15,9 @@ header {
 	transition: transform 0.4s cubic-bezier(.25,.1,.25,1);
 	@media screen and (max-width: $mq-max-lg) {
 		height: $header-height-mobile;
-	}
-	@media screen and (max-width: $mq-max-md) {
 		padding-left: 30px;
 	}
+	
 	@media screen and (max-width: $mq-max-sm) {
 		padding-left: 20px;;
 	}
@@ -59,7 +58,8 @@ header {
 					transform: translateX(-50%);
 					transition: 0.3s $cubic-btn;
 				}
-				&:hover {
+				&:hover,
+				&.active {
 					opacity: 1;
 					&:after {
 						width: 50%;

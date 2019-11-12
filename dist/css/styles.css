@@ -89,7 +89,7 @@ html {
   padding-right: 40px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) {
   /* line 4, src/scss/partials/_bootstrap-overrides.scss */
   .container-fluid {
     padding-left: 30px;
@@ -102,6 +102,22 @@ html {
   .container-fluid {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 17, src/scss/partials/_bootstrap-overrides.scss */
+  [class^='col-'] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 24, src/scss/partials/_bootstrap-overrides.scss */
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
   }
 }
 
@@ -301,19 +317,19 @@ strong, b {
 }
 
 /* line 124, src/scss/partials/_global.scss */
-.btn.cta {
+.btn.green {
   background: #00AD8D;
   border-color: #00AD8D;
   color: #fff;
 }
 
 /* line 128, src/scss/partials/_global.scss */
-.btn.cta:before {
+.btn.green:before {
   background: #26b99e;
 }
 
 /* line 131, src/scss/partials/_global.scss */
-.btn.cta:hover {
+.btn.green:hover {
   border-color: #26b99e;
 }
 
@@ -375,12 +391,6 @@ header {
   /* line 4, src/scss/partials/_header.scss */
   header {
     height: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /* line 4, src/scss/partials/_header.scss */
-  header {
     padding-left: 30px;
   }
 }
@@ -392,12 +402,12 @@ header {
   }
 }
 
-/* line 25, src/scss/partials/_header.scss */
+/* line 24, src/scss/partials/_header.scss */
 header .logo {
   width: 150px;
 }
 
-/* line 29, src/scss/partials/_header.scss */
+/* line 28, src/scss/partials/_header.scss */
 header nav a, header nav p {
   font-size: 17px;
   font-weight: 500;
@@ -407,7 +417,7 @@ header nav a, header nav p {
   line-height: 1.2em;
 }
 
-/* line 38, src/scss/partials/_header.scss */
+/* line 37, src/scss/partials/_header.scss */
 header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,7 +427,7 @@ header .navigation {
           align-items: center;
 }
 
-/* line 41, src/scss/partials/_header.scss */
+/* line 40, src/scss/partials/_header.scss */
 header .navigation nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,13 +435,13 @@ header .navigation nav {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 41, src/scss/partials/_header.scss */
+  /* line 40, src/scss/partials/_header.scss */
   header .navigation nav {
     display: none;
   }
 }
 
-/* line 46, src/scss/partials/_header.scss */
+/* line 45, src/scss/partials/_header.scss */
 header .navigation nav a {
   padding: 1vw;
   position: relative;
@@ -440,7 +450,7 @@ header .navigation nav a {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 51, src/scss/partials/_header.scss */
+/* line 50, src/scss/partials/_header.scss */
 header .navigation nav a:after {
   content: '';
   position: absolute;
@@ -455,13 +465,13 @@ header .navigation nav a:after {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 62, src/scss/partials/_header.scss */
-header .navigation nav a:hover {
+/* line 61, src/scss/partials/_header.scss */
+header .navigation nav a:hover, header .navigation nav a.active {
   opacity: 1;
 }
 
 /* line 64, src/scss/partials/_header.scss */
-header .navigation nav a:hover:after {
+header .navigation nav a:hover:after, header .navigation nav a.active:after {
   width: 50%;
 }
 
@@ -954,7 +964,7 @@ section.projects {
 }
 
 /* line 9, src/scss/partials/_projects.scss */
-.project-wrap {
+.project-tile {
   width: 100%;
   height: 0;
   padding-bottom: 72%;
@@ -963,13 +973,20 @@ section.projects {
   display: block;
 }
 
-/* line 16, src/scss/partials/_projects.scss */
-.project-wrap > div {
+@media screen and (max-width: 991px) {
+  /* line 9, src/scss/partials/_projects.scss */
+  .project-tile {
+    margin-bottom: 20px;
+  }
+}
+
+/* line 20, src/scss/partials/_projects.scss */
+.project-tile.project > div {
   overflow: hidden;
 }
 
-/* line 19, src/scss/partials/_projects.scss */
-.project-wrap img {
+/* line 23, src/scss/partials/_projects.scss */
+.project-tile.project img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -977,8 +994,8 @@ section.projects {
   position: absolute;
 }
 
-/* line 25, src/scss/partials/_projects.scss */
-.project-wrap .overlay {
+/* line 29, src/scss/partials/_projects.scss */
+.project-tile.project .overlay {
   background: rgba(0, 173, 141, 0.7);
   -webkit-transition: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   transition: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -994,8 +1011,8 @@ section.projects {
   opacity: 0;
 }
 
-/* line 33, src/scss/partials/_projects.scss */
-.project-wrap h2 {
+/* line 37, src/scss/partials/_projects.scss */
+.project-tile.project h2 {
   color: #fff;
   font-size: 20px;
   position: relative;
@@ -1004,23 +1021,190 @@ section.projects {
   margin: 0;
 }
 
-/* line 41, src/scss/partials/_projects.scss */
-.project-wrap:hover .overlay {
+/* line 45, src/scss/partials/_projects.scss */
+.project-tile.project:hover .overlay {
   opacity: 1;
 }
 
-/* line 44, src/scss/partials/_projects.scss */
-.project-wrap:hover h2 {
+/* line 48, src/scss/partials/_projects.scss */
+.project-tile.project:hover h2 {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-/* line 53, src/scss/partials/_projects.scss */
-[class^='col-']:nth-child(3n) .project-wrap .overlay {
+/* line 54, src/scss/partials/_projects.scss */
+.project-tile.cta > div {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 54, src/scss/partials/_projects.scss */
+  .project-tile.cta > div {
+    position: relative;
+    padding: 40px 0;
+  }
+}
+
+/* line 65, src/scss/partials/_projects.scss */
+.project-tile.cta .inner {
+  width: 80%;
+  max-width: 340px;
+}
+
+/* line 69, src/scss/partials/_projects.scss */
+.project-tile.cta .btn {
+  margin-bottom: .7em;
+}
+
+/* line 72, src/scss/partials/_projects.scss */
+.project-tile.cta h1 {
+  max-width: 80%;
+  margin: 0 auto 0.6em;
+}
+
+@media screen and (min-width: 992px) {
+  /* line 72, src/scss/partials/_projects.scss */
+  .project-tile.cta h1 {
+    font-size: 2.23vw;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* line 79, src/scss/partials/_projects.scss */
+  .project-tile.cta p {
+    font-size: 1.25vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 53, src/scss/partials/_projects.scss */
+  .project-tile.cta {
+    height: inherit;
+    padding-bottom: inherit;
+  }
+}
+
+/* line 95, src/scss/partials/_projects.scss */
+[class^='col-']:nth-child(3n) .project-tile.project .overlay {
   background: rgba(83, 200, 231, 0.7);
 }
 
-/* line 60, src/scss/partials/_projects.scss */
-[class^='col-']:nth-child(2n) .project-wrap .overlay {
+/* line 102, src/scss/partials/_projects.scss */
+[class^='col-']:nth-child(2n) .project-tile.project .overlay {
   background: rgba(0, 129, 201, 0.7);
+}
+
+/**********************************************
+ Services
+**********************************************/
+/* line 5, src/scss/partials/_services.scss */
+section.service-pillars {
+  height: calc(100vh - 80px);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 400px;
+  cursor: pointer;
+}
+
+/* line 11, src/scss/partials/_services.scss */
+section.service-pillars div:not(.description) {
+  height: 100%;
+}
+
+/* line 16, src/scss/partials/_services.scss */
+.pillar-mask {
+  overflow: hidden;
+}
+
+/* line 20, src/scss/partials/_services.scss */
+.pillar {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 27, src/scss/partials/_services.scss */
+.pillar:hover .main {
+  -webkit-box-flex: unset;
+      -ms-flex: unset;
+          flex: unset;
+}
+
+/* line 31, src/scss/partials/_services.scss */
+.pillar .main {
+  position: relative;
+  z-index: 1;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transition: -webkit-box-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
+  transition: -webkit-box-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
+  transition: flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
+  transition: flex 0.5s cubic-bezier(0.25, 0.1, 0, 1), -webkit-box-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1), -ms-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+/* line 39, src/scss/partials/_services.scss */
+.pillar h1 {
+  position: absolute;
+  right: 2vw;
+  bottom: 0;
+  left: 2vw;
+  color: #fff;
+}
+
+/* line 43, src/scss/partials/_services.scss */
+.pillar .description,
+.pillar .dummy {
+  position: relative;
+  -webkit-transition: 0.5s cubic-bezier(0.25, 0.1, 0, 1);
+  transition: 0.5s cubic-bezier(0.25, 0.1, 0, 1);
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  padding: 2vw;
+}
+
+/* line 50, src/scss/partials/_services.scss */
+.pillar .description p,
+.pillar .dummy p {
+  margin-bottom: 20px;
+}
+
+/* line 53, src/scss/partials/_services.scss */
+.pillar .description svg,
+.pillar .dummy svg {
+  height: 40px;
+}
+
+/* line 57, src/scss/partials/_services.scss */
+.pillar .description {
+  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* line 61, src/scss/partials/_services.scss */
+.pillar .dummy {
+  opacity: 0;
 }

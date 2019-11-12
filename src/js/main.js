@@ -2,7 +2,34 @@ const header = document.querySelector('header');
 const hamburger = document.getElementById('hamburger');
 const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
 const body = document.body;
+const topLevelNavItems = document.querySelectorAll('header nav a');
 
+const topLevelPages = [
+  "projects",
+  "services",
+  "garden-center",
+  "about-us",
+  "contact"
+];
+
+let currentPage = '';
+topLevelPages.forEach( item => {
+  currentPage = body.classList.contains(item) ? item : '';
+  if(currentPage !== '') {
+    topLevelNavItems.forEach( item => {
+      if(item.dataset.page === currentPage) {
+        item.classList.add('active');
+      }
+    });
+  }
+});
+
+
+
+
+/********************************
+ Mobile Nav Slider
+********************************/
 hamburger.addEventListener('click', e => {
 	body.classList.toggle('mobile-nav-is-open');
   body.classList.contains('mobile-nav-is-open') ? bodyScrollLock.disableBodyScroll(mobileNavWrapper) : bodyScrollLock.enableBodyScroll(mobileNavWrapper);
@@ -178,7 +205,7 @@ if(dropdownWrappers !== undefined) {
 ********************************/
 
 
-const projects = document.querySelectorAll('.project-wrap');
+const projects = document.querySelectorAll('.project-tile.project');
 
 const maxTransform = 15;
 const duration = 0.6;

@@ -1,0 +1,67 @@
+/**********************************************
+ Services
+**********************************************/
+
+section.service-pillars {
+	height: calc(100vh - #{$header-height});
+	padding-top: 40px;
+	padding-bottom: 40px;
+	min-height: 400px;
+	cursor: pointer;
+	div:not(.description) {
+		height: 100%;
+	}
+}
+
+.pillar-mask {
+	overflow: hidden;
+}
+
+.pillar {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	&:hover {
+		.main {
+			flex: unset;
+		}
+	}
+	.main {
+		position: relative;
+		z-index: 1;
+		background-position: center center;
+		background-size: cover;
+		transition: flex 0.5s cubic-bezier(.25,.1,0,1);
+		flex: 1 0 auto;
+	}
+	h1 {
+		@include position(absolute, null 2vw 0 2vw);
+		color: #fff;
+	}
+	.description,
+	.dummy {
+		position: relative;
+		transition: 0.5s cubic-bezier(.25,.1,0,1);
+		flex: 0;
+		padding: 2vw;
+
+		p {
+			margin-bottom: 20px;
+		}
+		svg {
+			height: 40px;
+		}
+	}
+	.description {
+		background: $gray-gradient;
+		@include position(absolute, null 0 0 0);
+	}
+	.dummy {
+		opacity: 0;
+	}
+
+	
+}
+

@@ -6,57 +6,99 @@ section.projects {
 	padding-top: 40px;
 }
 
-.project-wrap {
+.project-tile {
 	width: 100%;
 	height: 0;
 	padding-bottom: 72%;
 	position: relative;
 	margin-bottom: 30px;
 	display: block;
-	& > div {
-		overflow: hidden;
+	@media screen and (max-width: $mq-max-lg) {
+		margin-bottom: 20px;
 	}
-	img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		position: absolute;
-	}
-	.overlay {
-		background: rgba($green, 0.7);
-		transition: 0.4s cubic-bezier(.25,.1,.25,1);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		opacity: 0;
-	}
-	h2 {
-		color: #fff;
-		font-size: 20px;
-		position: relative;
-		transform: translateY(200%);
-		margin: 0;
-	}
-	&:hover {
+	&.project {
+		& > div {
+			overflow: hidden;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+		}
 		.overlay {
-			opacity: 1;
+			background: rgba($green, 0.7);
+			transition: 0.4s cubic-bezier(.25,.1,.25,1);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
 		}
 		h2 {
-			transform: translateY(0);
+			color: #fff;
+			font-size: 20px;
+			position: relative;
+			transform: translateY(200%);
+			margin: 0;
+		}
+		&:hover {
+			.overlay {
+				opacity: 1;
+			}
+			h2 {
+				transform: translateY(0);
+			}
+		}
+	}
+	&.cta {
+		& > div {
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: $gray-gradient;
+			@media screen and (max-width: $mq-max-md) {
+				position: relative;
+				padding: 40px 0;
+			}
+		}
+		.inner {
+			width: 80%;
+			max-width: 340px;
+		}
+		.btn {
+			margin-bottom: .7em;
+		}
+		h1 {
+			max-width: 80%;
+			margin: 0 auto 0.6em;
+			@media screen and (min-width: $mq-min-lg) {
+				font-size: 2.23vw;
+			}
+		}
+		p {
+			@media screen and (min-width: $mq-min-lg) {
+				font-size: 1.25vw;
+			}
+			
+		}
+		@media screen and (max-width: $mq-max-md) {
+			height: inherit;
+			padding-bottom: inherit;
 		}
 	}
 }
 
 [class^='col-'] {
 	&:nth-child(3n) {
-		.project-wrap {
+		.project-tile.project {
 			.overlay {
 				background: rgba($skyblue, 0.7);
 			}
 		}
 	}
 	&:nth-child(2n) {
-		.project-wrap {
+		.project-tile.project {
 			.overlay {
 				background: rgba($blue, 0.7);
 			}

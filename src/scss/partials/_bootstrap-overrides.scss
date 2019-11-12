@@ -4,12 +4,26 @@
 .container-fluid {
     padding-left: 40px;
     padding-right: 40px;
-    @media screen and (max-width: $mq-max-md) {
+    @media screen and (max-width: $mq-max-lg) {
         padding-left: 30px;
         padding-right: 30px;
     }
     @media screen and (max-width: $mq-max-sm) {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+[class^='col-'] {
+    @media screen and (max-width: $mq-max-lg) {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+}
+
+.row {
+    @media screen and (max-width: $mq-max-lg) {
+        margin-left: -10px;
+        margin-right: -10px
     }
 }

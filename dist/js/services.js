@@ -91,4 +91,5 @@ const defaultTransition = {
 // Init barba.js with your transition.
 barba.init({
   transitions: [ defaultTransition ],
+  debut: true
 });

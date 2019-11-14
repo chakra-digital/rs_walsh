@@ -404,10 +404,15 @@ header {
 
 /* line 24, src/scss/partials/_header.scss */
 header .logo {
-  width: 150px;
+  font-size: 0;
 }
 
-/* line 28, src/scss/partials/_header.scss */
+/* line 26, src/scss/partials/_header.scss */
+header .logo svg {
+  height: 46px;
+}
+
+/* line 31, src/scss/partials/_header.scss */
 header nav a, header nav p {
   font-size: 17px;
   font-weight: 500;
@@ -417,7 +422,7 @@ header nav a, header nav p {
   line-height: 1.2em;
 }
 
-/* line 37, src/scss/partials/_header.scss */
+/* line 40, src/scss/partials/_header.scss */
 header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -427,7 +432,7 @@ header .navigation {
           align-items: center;
 }
 
-/* line 40, src/scss/partials/_header.scss */
+/* line 43, src/scss/partials/_header.scss */
 header .navigation nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,13 +440,13 @@ header .navigation nav {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 40, src/scss/partials/_header.scss */
+  /* line 43, src/scss/partials/_header.scss */
   header .navigation nav {
     display: none;
   }
 }
 
-/* line 45, src/scss/partials/_header.scss */
+/* line 48, src/scss/partials/_header.scss */
 header .navigation nav a {
   padding: 1vw;
   position: relative;
@@ -450,7 +455,7 @@ header .navigation nav a {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 50, src/scss/partials/_header.scss */
+/* line 53, src/scss/partials/_header.scss */
 header .navigation nav a:after {
   content: '';
   position: absolute;
@@ -465,43 +470,43 @@ header .navigation nav a:after {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 61, src/scss/partials/_header.scss */
+/* line 64, src/scss/partials/_header.scss */
 header .navigation nav a:hover, header .navigation nav a.active {
   opacity: 1;
 }
 
-/* line 64, src/scss/partials/_header.scss */
+/* line 67, src/scss/partials/_header.scss */
 header .navigation nav a:hover:after, header .navigation nav a.active:after {
   width: 50%;
 }
 
-/* line 71, src/scss/partials/_header.scss */
+/* line 74, src/scss/partials/_header.scss */
 header .cta-btn {
   margin-left: 21px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 71, src/scss/partials/_header.scss */
+  /* line 74, src/scss/partials/_header.scss */
   header .cta-btn {
     display: none;
   }
 }
 
-/* line 79, src/scss/partials/_header.scss */
+/* line 82, src/scss/partials/_header.scss */
 .headroom--pinned,
 #hamburger.pinned {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-/* line 83, src/scss/partials/_header.scss */
+/* line 86, src/scss/partials/_header.scss */
 .headroom--unpinned,
 #hamburger.unpinned {
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
 }
 
-/* line 96, src/scss/partials/_header.scss */
+/* line 99, src/scss/partials/_header.scss */
 #hamburger {
   position: fixed;
   top: 0;
@@ -527,7 +532,7 @@ header .cta-btn {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 96, src/scss/partials/_header.scss */
+  /* line 99, src/scss/partials/_header.scss */
   #hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -536,13 +541,13 @@ header .cta-btn {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 96, src/scss/partials/_header.scss */
+  /* line 99, src/scss/partials/_header.scss */
   #hamburger {
     padding: 0 20px;
   }
 }
 
-/* line 116, src/scss/partials/_header.scss */
+/* line 119, src/scss/partials/_header.scss */
 #hamburger span {
   display: block;
   background: #090A0A;
@@ -554,26 +559,26 @@ header .cta-btn {
   pointer-events: none;
 }
 
-/* line 124, src/scss/partials/_header.scss */
+/* line 127, src/scss/partials/_header.scss */
 #hamburger span:nth-child(1) {
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
-/* line 130, src/scss/partials/_header.scss */
+/* line 133, src/scss/partials/_header.scss */
 #hamburger span:nth-child(3) {
   -webkit-transform: translateY(7px);
           transform: translateY(7px);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 96, src/scss/partials/_header.scss */
+  /* line 99, src/scss/partials/_header.scss */
   #hamburger {
     height: 70px;
   }
 }
 
-/* line 139, src/scss/partials/_header.scss */
+/* line 142, src/scss/partials/_header.scss */
 #mobile-menu-wrap {
   position: fixed;
   top: 0;
@@ -587,7 +592,7 @@ header .cta-btn {
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 147, src/scss/partials/_header.scss */
+/* line 150, src/scss/partials/_header.scss */
 #mobile-menu {
   position: absolute;
   top: 0;
@@ -604,7 +609,7 @@ header .cta-btn {
   overflow-y: scroll;
 }
 
-/* line 156, src/scss/partials/_header.scss */
+/* line 159, src/scss/partials/_header.scss */
 #mobile-menu .inner,
 #mobile-menu .top-level-menu {
   display: -webkit-inline-box;
@@ -616,12 +621,12 @@ header .cta-btn {
           flex-direction: column;
 }
 
-/* line 161, src/scss/partials/_header.scss */
+/* line 164, src/scss/partials/_header.scss */
 #mobile-menu .inner {
   padding: 80px 40px;
 }
 
-/* line 164, src/scss/partials/_header.scss */
+/* line 167, src/scss/partials/_header.scss */
 #mobile-menu .top-level-item {
   font-size: 20px;
   line-height: 40px;
@@ -630,17 +635,17 @@ header .cta-btn {
   text-decoration: none;
 }
 
-/* line 171, src/scss/partials/_header.scss */
+/* line 174, src/scss/partials/_header.scss */
 #mobile-menu .btn {
   margin-top: 15px;
 }
 
-/* line 175, src/scss/partials/_header.scss */
+/* line 178, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu p {
   cursor: pointer;
 }
 
-/* line 177, src/scss/partials/_header.scss */
+/* line 180, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu p svg {
   position: relative;
   bottom: 1px;
@@ -650,13 +655,13 @@ header .cta-btn {
   width: 14px;
 }
 
-/* line 186, src/scss/partials/_header.scss */
+/* line 189, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu.expanded p svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 192, src/scss/partials/_header.scss */
+/* line 195, src/scss/partials/_header.scss */
 #mobile-menu .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,7 +676,7 @@ header .cta-btn {
   overflow: hidden;
 }
 
-/* line 198, src/scss/partials/_header.scss */
+/* line 201, src/scss/partials/_header.scss */
 #mobile-menu .submenu a {
   opacity: 0.4;
   color: #090A0A;
@@ -679,73 +684,89 @@ header .cta-btn {
   line-height: 36px;
 }
 
-/* line 211, src/scss/partials/_header.scss */
+/* line 214, src/scss/partials/_header.scss */
 body.reversed-header header {
   background: transparent;
 }
 
-/* line 213, src/scss/partials/_header.scss */
+/* line 216, src/scss/partials/_header.scss */
 body.reversed-header header .logo svg path {
   fill: #fff;
 }
 
-/* line 216, src/scss/partials/_header.scss */
+/* line 220, src/scss/partials/_header.scss */
+body.reversed-header header .navigation .cta-btn a {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* line 223, src/scss/partials/_header.scss */
+body.reversed-header header .navigation .cta-btn a:before {
+  background: #fff;
+}
+
+/* line 226, src/scss/partials/_header.scss */
+body.reversed-header header .navigation .cta-btn a:hover {
+  color: #090A0A;
+}
+
+/* line 230, src/scss/partials/_header.scss */
 body.reversed-header header .navigation nav a {
   color: #fff;
 }
 
-/* line 218, src/scss/partials/_header.scss */
+/* line 232, src/scss/partials/_header.scss */
 body.reversed-header header .navigation nav a:after {
   background: #fff;
 }
 
-/* line 223, src/scss/partials/_header.scss */
+/* line 238, src/scss/partials/_header.scss */
 body.reversed-header #hamburger span {
   background: #fff;
 }
 
-/* line 228, src/scss/partials/_header.scss */
+/* line 243, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #mobile-menu-wrap {
   background: rgba(9, 10, 10, 0.5);
 }
 
-/* line 231, src/scss/partials/_header.scss */
+/* line 246, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #mobile-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 235, src/scss/partials/_header.scss */
+/* line 250, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span {
   background: #090A0A;
 }
 
-/* line 238, src/scss/partials/_header.scss */
+/* line 253, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(1) {
   -webkit-transform: translateY(0px) rotate(-45deg);
           transform: translateY(0px) rotate(-45deg);
 }
 
-/* line 241, src/scss/partials/_header.scss */
+/* line 256, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(2) {
   width: 0;
 }
 
-/* line 244, src/scss/partials/_header.scss */
+/* line 259, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(3) {
   -webkit-transform: translateY(0px) rotate(45deg);
           transform: translateY(0px) rotate(45deg);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 251, src/scss/partials/_header.scss */
+  /* line 266, src/scss/partials/_header.scss */
   body.logged-in header {
     top: 32px;
   }
 }
 
 @media screen and (max-width: 782px) {
-  /* line 251, src/scss/partials/_header.scss */
+  /* line 266, src/scss/partials/_header.scss */
   body.logged-in header {
     top: 46px;
   }
@@ -1107,62 +1128,48 @@ section.projects {
 /**********************************************
  Services
 **********************************************/
-/* line 5, src/scss/partials/_services.scss */
-section.service-pillars {
-  height: calc(100vh - 80px);
+/* line 4, src/scss/partials/_services.scss */
+.service-content {
   padding-top: 40px;
-  padding-bottom: 40px;
-  min-height: 400px;
-  cursor: pointer;
 }
 
-/* line 11, src/scss/partials/_services.scss */
+/* line 8, src/scss/partials/_services.scss */
+section.service-pillars {
+  height: calc(100vh - 80px - 40px);
+  padding-bottom: 40px;
+  min-height: 400px;
+}
+
+/* line 12, src/scss/partials/_services.scss */
 section.service-pillars div:not(.description) {
   height: 100%;
 }
 
-/* line 16, src/scss/partials/_services.scss */
+/* line 17, src/scss/partials/_services.scss */
 .pillar-mask {
   overflow: hidden;
 }
 
-/* line 20, src/scss/partials/_services.scss */
+/* line 21, src/scss/partials/_services.scss */
 .pillar {
   height: 100%;
   position: relative;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: block;
+  color: #090A0A;
 }
 
 /* line 27, src/scss/partials/_services.scss */
-.pillar:hover .main {
-  -webkit-box-flex: unset;
-      -ms-flex: unset;
-          flex: unset;
-}
-
-/* line 31, src/scss/partials/_services.scss */
 .pillar .main {
   position: relative;
   z-index: 1;
   background-position: center center;
   background-size: cover;
-  -webkit-transition: -webkit-box-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
-  transition: -webkit-box-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
-  transition: flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
-  transition: flex 0.5s cubic-bezier(0.25, 0.1, 0, 1), -webkit-box-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1), -ms-flex 0.5s cubic-bezier(0.25, 0.1, 0, 1);
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
+  -webkit-transition: height 0.5s cubic-bezier(0.25, 0.1, 0, 1);
+  transition: height 0.5s cubic-bezier(0.25, 0.1, 0, 1);
 }
 
-/* line 39, src/scss/partials/_services.scss */
+/* line 34, src/scss/partials/_services.scss */
 .pillar h1 {
   position: absolute;
   right: 2vw;
@@ -1171,40 +1178,22 @@ section.service-pillars div:not(.description) {
   color: #fff;
 }
 
-/* line 43, src/scss/partials/_services.scss */
-.pillar .description,
-.pillar .dummy {
-  position: relative;
-  -webkit-transition: 0.5s cubic-bezier(0.25, 0.1, 0, 1);
-  transition: 0.5s cubic-bezier(0.25, 0.1, 0, 1);
-  -webkit-box-flex: 0;
-      -ms-flex: 0;
-          flex: 0;
-  padding: 2vw;
-}
-
-/* line 50, src/scss/partials/_services.scss */
-.pillar .description p,
-.pillar .dummy p {
-  margin-bottom: 20px;
-}
-
-/* line 53, src/scss/partials/_services.scss */
-.pillar .description svg,
-.pillar .dummy svg {
-  height: 40px;
-}
-
-/* line 57, src/scss/partials/_services.scss */
+/* line 38, src/scss/partials/_services.scss */
 .pillar .description {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 2vw;
 }
 
-/* line 61, src/scss/partials/_services.scss */
-.pillar .dummy {
-  opacity: 0;
+/* line 42, src/scss/partials/_services.scss */
+.pillar .description p {
+  margin-bottom: 20px;
+}
+
+/* line 45, src/scss/partials/_services.scss */
+.pillar .description svg {
+  height: 40px;
 }

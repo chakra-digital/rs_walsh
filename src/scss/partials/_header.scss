@@ -19,10 +19,13 @@ header {
 	}
 	
 	@media screen and (max-width: $mq-max-sm) {
-		padding-left: 20px;;
+		padding-left: 20px;
 	}
 	.logo {
-		width: 150px;
+		font-size: 0;
+		svg {
+			height: 46px;
+		}
 	}
 	nav {
 		a, p {
@@ -213,10 +216,22 @@ body {
 			.logo svg path {
 				fill: #fff;
 			}
-			.navigation nav a {
-				color: #fff;
-				&:after {
-					background: #fff;
+			.navigation {
+				.cta-btn a {
+					border-color: #fff;
+					color: #fff;
+					&:before {
+						background: #fff;
+					}
+					&:hover {
+						color: $black;
+					}
+				}
+				nav a {
+					color: #fff;
+					&:after {
+						background: #fff;
+					}
 				}
 			}
 		}

@@ -1,60 +1,112 @@
 
 const pillarMasks = document.querySelectorAll('.pillar-mask');
 const mains = document.querySelectorAll('.main')
+const servicePillars = document.querySelectorAll('.pillar');
 
-function initPillarHoverTransforms() {
-  const servicePillars = document.querySelectorAll('.pillar');
-  console.log('adding event listeners to pillars')
+
+
+if(servicePillars.length) {
+
+
+  // GSAP animation on services parent page load
+  function animatePillarsIn() {
+    gsap.from(pillarMasks, {
+      duration: 1,
+      stagger: 0.2,
+      height: 0,
+      ease: 'expo.inOut'
+    });
+  }
+  animatePillarsIn();
+
+
+
+
+
+  //console.log('adding event listeners to pillars')
   servicePillars.forEach(pillar => {
     const main = pillar.querySelector('.main');
 
     pillar.addEventListener('mouseenter', function(){
       const descHeight = pillar.querySelector('.description').clientHeight;
       main.style.height = `calc(100% - ${descHeight}px`;
-      console.log('mouseenter')
+      //console.log('mouseenter')
     });
 
     pillar.addEventListener('mouseleave', function(){
       main.style.height = '100%';
     });
   });
-}
-
-initPillarHoverTransforms();
-
-// Set .pillar height on browser resize
-// function setPillarHeights() {
-//   requestAnimationFrame(function(){
-//     servicePillars.forEach(pillar => pillar.style.height = pillarMasks[0].clientHeight + 'px');
-//   })
-// }
-// setPillarHeights();
-// window.addEventListener('resize', setPillarHeights);
-
-// Launch the page when a service pillar is clicked
-// function launchPage(href) {
-  // Run barba.js page transitions
-// }
 
 
 
-// servicePillars.forEach(pillar => pillar.addEventListener('click', function(e){
-//   servicePillars.forEach(pillar => pillar.style.pointerEvents = 'none')
-//   e.preventDefault();
-//   const href = this.href;
-//   goToService(href);
-// }));
+  // Set .pillar height on browser resize
+  // function setPillarHeights() {
+  //   requestAnimationFrame(function(){
+  //     servicePillars.forEach(pillar => pillar.style.height = pillarMasks[0].clientHeight + 'px');
+  //   })
+  // }
+  // setPillarHeights();
+  // window.addEventListener('resize', setPillarHeights);
 
-// Gsap animation when a pillar is clicked
-function goToService(href) {
-  gsap.to(pillarMasks, {
+
+
+  // When service pillar is clicked
+  servicePillars.forEach(pillar => pillar.addEventListener('click', function(e){
+    servicePillars.forEach(pillar => pillar.style.pointerEvents = 'none')
+    e.preventDefault();
+    //console.log(this)
+    const service = this.dataset.service;
+    animatePillarsOut(service);
+  }));
+
+  // Gsap animation when a pillar is clicked
+  function animatePillarsOut(service) {
+    gsap.to(pillarMasks, {
+      duration: 1,
+      stagger: 0.2,
+      height: 0,
+      ease: 'expo.inOut',
+      onComplete: goToService,
+      onCompleteParams: [service]
+    });
+  }
+
+  function goToService(service) {
+    window.location.href = `http://localhost:3000/services/${service}.html`
+  }
+
+
+} else {
+
+
+  
+  const serviceSection = document.querySelector('.service-section');
+  const serviceSectionRows = serviceSection.querySelectorAll('.animate-in');
+  console.log(serviceSectionRows)
+  serviceSection.classList.add('showing');
+  gsap.from(serviceSection, {
+    delay: .75,
     duration: 1,
-    stagger: 0.2,
-    height: 0,
-    ease: 'expo.inOut',
-    onComplete: launchPage,
-    onCompleteParams: [href]
-  });
+    opacity: 0,
+    ease: 'power1.out'
+  })
+  
+  gsap.from(serviceSectionRows, {
+    delay: .75,
+    stagger: .2,
+    duration: 1,
+    y: 100,
+    ease: 'power1.out'
+  })
+
+}
+
+
+const serviceSection = document.querySelector('.service-section');
+if(serviceSection) {
+  animateServiceSection();
+  console.log('hi')
 }
 
 
@@ -64,24 +116,13 @@ function goToService(href) {
 
 
 
-const defaultTransition = {
-  leave({ current }) {
-    // Create your tween
-    const done = this.async();
-      gsap.to(pillarMasks, {
-        duration: 1,
-        stagger: 0.2,
-        height: 0,
-        ease: 'expo.inOut',
-        onComplete: done
-      });
-  },
-  enter({ next }) {
-    
-  },
-};
-// Init barba.js with your transition.
-barba.init({
-  transitions: [ defaultTransition ],
-  debut: true
-});
+
+
+
+
+
+
+
+
+
+

@@ -1131,26 +1131,27 @@ section.projects {
 /* line 4, src/scss/partials/_services.scss */
 .service-content {
   padding-top: 40px;
+  position: relative;
 }
 
-/* line 8, src/scss/partials/_services.scss */
+/* line 9, src/scss/partials/_services.scss */
 section.service-pillars {
   height: calc(100vh - 80px - 40px);
   padding-bottom: 40px;
   min-height: 400px;
 }
 
-/* line 12, src/scss/partials/_services.scss */
+/* line 13, src/scss/partials/_services.scss */
 section.service-pillars div:not(.description) {
   height: 100%;
 }
 
-/* line 17, src/scss/partials/_services.scss */
+/* line 18, src/scss/partials/_services.scss */
 .pillar-mask {
   overflow: hidden;
 }
 
-/* line 21, src/scss/partials/_services.scss */
+/* line 22, src/scss/partials/_services.scss */
 .pillar {
   height: 100%;
   position: relative;
@@ -1159,7 +1160,7 @@ section.service-pillars div:not(.description) {
   color: #090A0A;
 }
 
-/* line 27, src/scss/partials/_services.scss */
+/* line 28, src/scss/partials/_services.scss */
 .pillar .main {
   position: relative;
   z-index: 1;
@@ -1169,7 +1170,7 @@ section.service-pillars div:not(.description) {
   transition: height 0.5s cubic-bezier(0.25, 0.1, 0, 1);
 }
 
-/* line 34, src/scss/partials/_services.scss */
+/* line 35, src/scss/partials/_services.scss */
 .pillar h1 {
   position: absolute;
   right: 2vw;
@@ -1178,7 +1179,7 @@ section.service-pillars div:not(.description) {
   color: #fff;
 }
 
-/* line 38, src/scss/partials/_services.scss */
+/* line 39, src/scss/partials/_services.scss */
 .pillar .description {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   position: absolute;
@@ -1188,12 +1189,12 @@ section.service-pillars div:not(.description) {
   padding: 2vw;
 }
 
-/* line 42, src/scss/partials/_services.scss */
+/* line 43, src/scss/partials/_services.scss */
 .pillar .description p {
   margin-bottom: 20px;
 }
 
-/* line 45, src/scss/partials/_services.scss */
+/* line 46, src/scss/partials/_services.scss */
 .pillar .description svg {
   height: 40px;
 }

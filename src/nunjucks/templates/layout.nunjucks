@@ -38,7 +38,6 @@
 		{% endif %}
 
 		{% if body_class == 'services' %}
-			<script type="text/javascript" src="{{root_url}}/js/plugins/@barba/core/dist/barba.umd.js"></script>
 			<script type="text/javascript" src="{{root_url}}/js/services.js"></script>
 		{% endif %}
 	{% endif %}

@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="{{root_url}}/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" type="text/css" href="{{root_url}}/css/styles.css">
 </head>
-<body class="{% if body_class %}{{ body_class }}{% if body_class == "homepage" or body_class == "project-single" %} reversed-header{% endif %}{% endif %}">
+<body class="{% if body_class %}{{ body_class }}{% if body_class == "homepage" %} reversed-header{% endif %}{% endif %}">
 
 	<div class="wrapper">
 
@@ -40,6 +40,15 @@
 		{% if body_class == 'services' %}
 			<script type="text/javascript" src="{{root_url}}/js/services.js"></script>
 		{% endif %}
+
+		{% if body_class == 'project-single' %}
+			<script type="text/javascript" src="{{root_url}}/js/plugins/siema.min.js"></script>
+		{% endif %}
+
+		{% if body_class == 'project-single' or body_class == 'projects' %}
+			<script type="text/javascript" src="{{root_url}}/js/projects.js"></script>
+		{% endif %}
+		
 	{% endif %}
 </body>
 </html>

@@ -1126,6 +1126,33 @@ section.projects {
 }
 
 /**********************************************
+ Project Single
+**********************************************/
+/* line 6, src/scss/partials/_project-single.scss */
+body.project-single .wrapper {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 16, src/scss/partials/_project-single.scss */
+.slider-wrap div {
+  height: 100%;
+}
+
+/* line 22, src/scss/partials/_project-single.scss */
+.project-image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/**********************************************
  Services
 **********************************************/
 /* line 4, src/scss/partials/_services.scss */

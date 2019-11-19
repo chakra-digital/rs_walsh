@@ -6,7 +6,6 @@
  * http://link-to-your-git-repo.com
  */
 
-const wrapper = document.querySelector('.wrapper');
 const homepageProjectImages = document.querySelectorAll('.homepage-projects-wrap div');
 const homepageProjectLinks = document.querySelectorAll('.homepage-project-links a');
 
@@ -48,14 +47,3 @@ setTimeout((function(){
 }), 2000);
 
 
-
-
-window.onresize = function() {
-  const height = window.innerHeight + 'px';
-  this.requestAnimationFrame((function(){
-    document.body.style.height = height;
-    wrapper.style.height = height;
-  }))
-  
-}
-window.onresize(); // called to initially set the height

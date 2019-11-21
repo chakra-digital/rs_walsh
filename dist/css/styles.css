@@ -1137,19 +1137,231 @@ body.project-single .wrapper {
   overflow: hidden;
 }
 
-/* line 16, src/scss/partials/_project-single.scss */
-.slider-wrap div {
+/* line 13, src/scss/partials/_project-single.scss */
+body.project-single.mobile-layout {
+  height: unset !important;
+}
+
+/* line 15, src/scss/partials/_project-single.scss */
+body.project-single.mobile-layout .wrapper {
+  height: unset !important;
+}
+
+/* line 18, src/scss/partials/_project-single.scss */
+body.project-single.mobile-layout .slider-wrap {
+  position: relative;
+}
+
+/* line 27, src/scss/partials/_project-single.scss */
+.project-single .slider-wrap div {
   height: 100%;
 }
 
-/* line 22, src/scss/partials/_project-single.scss */
-.project-image img {
+/* line 30, src/scss/partials/_project-single.scss */
+.project-single .slider-wrap:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(9, 10, 10, 0)), to(rgba(9, 10, 10, 0.3)));
+  background: linear-gradient(to top, rgba(9, 10, 10, 0) 50%, rgba(9, 10, 10, 0.3));
+  z-index: 1;
+}
+
+/* line 39, src/scss/partials/_project-single.scss */
+.project-single .title {
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  color: #fff;
+  z-index: 100;
+  max-width: 310px;
+  -webkit-transition: color 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+  transition: color 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+}
+
+/* line 48, src/scss/partials/_project-single.scss */
+.project-single .image-wrap img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+/* line 56, src/scss/partials/_project-single.scss */
+.project-single .slider-controls {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 110px;
+  z-index: 1;
+}
+
+/* line 60, src/scss/partials/_project-single.scss */
+.project-single .slider-controls img {
+  pointer-events: none;
+}
+
+/* line 65, src/scss/partials/_project-single.scss */
+.project-single .control {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+/* line 73, src/scss/partials/_project-single.scss */
+.project-single .control.next {
+  float: right;
+}
+
+/* line 76, src/scss/partials/_project-single.scss */
+.project-single .control.prev {
+  float: left;
+}
+
+/* line 78, src/scss/partials/_project-single.scss */
+.project-single .control.prev img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* line 82, src/scss/partials/_project-single.scss */
+.project-single .control img {
+  padding-left: 3px;
+}
+
+/* line 87, src/scss/partials/_project-single.scss */
+.project-single .back-to-all {
+  display: block;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+/* line 95, src/scss/partials/_project-single.scss */
+.project-single.project-info-panel--is-open .project-info-panel {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* line 98, src/scss/partials/_project-single.scss */
+.project-single.project-info-panel--is-open .title {
+  color: #090A0A;
+}
+
+/* line 101, src/scss/partials/_project-single.scss */
+.project-single.project-info-panel--is-open .project-info-trigger {
+  -webkit-transform: translateX(364px);
+          transform: translateX(364px);
+}
+
+/* line 103, src/scss/partials/_project-single.scss */
+.project-single.project-info-panel--is-open .project-info-trigger .close-x {
+  opacity: 1;
+}
+
+/* line 106, src/scss/partials/_project-single.scss */
+.project-single.project-info-panel--is-open .project-info-trigger .info {
+  opacity: 0;
+}
+
+/* line 115, src/scss/partials/_project-single.scss */
+.project-info-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 400px;
+  z-index: 1;
+  background: #fff;
+  -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+  transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+/* line 122, src/scss/partials/_project-single.scss */
+.project-info-panel:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(white, rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+/* line 131, src/scss/partials/_project-single.scss */
+.project-info-panel .scroll-inner {
+  overflow-y: scroll;
+  height: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* line 137, src/scss/partials/_project-single.scss */
+.project-info-panel .scroll-inner::-webkit-scrollbar {
+  display: none;
+}
+
+/* line 141, src/scss/partials/_project-single.scss */
+.project-info-panel main {
+  padding: 0 40px 60px;
+}
+
+/* line 144, src/scss/partials/_project-single.scss */
+.project-info-panel .meta {
+  padding: 160px 0 0;
+  height: calc(100vh);
+}
+
+/* line 147, src/scss/partials/_project-single.scss */
+.project-info-panel .meta > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* line 152, src/scss/partials/_project-single.scss */
+.project-info-trigger {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 1;
+  -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+  transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+}
+
+/* line 156, src/scss/partials/_project-single.scss */
+.project-info-trigger svg {
+  -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+  transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
+  pointer-events: none;
+}
+
+/* line 160, src/scss/partials/_project-single.scss */
+.project-info-trigger .close-x {
+  position: absolute;
+  opacity: 0;
 }
 
 /**********************************************

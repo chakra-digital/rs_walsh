@@ -106,14 +106,17 @@ if(body.classList.contains('homepage') || body.classList.contains('project-singl
   Helps fix issues on mobile with 100vh wrappers
   *********************************************/
 
-  window.onresize = function() {
+  window.addEventListener('resize', controlHeights);
+  
+  function controlHeights(){
     const height = window.innerHeight + 'px';
     this.requestAnimationFrame((function(){
       document.body.style.height = height;
       wrapper.style.height = height;
     }))
   }
-  window.onresize(); // called to initially set the height
+
+  controlHeights(); // called to initially set the height
 }
 
 

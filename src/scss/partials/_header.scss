@@ -165,9 +165,10 @@ header {
 		padding: 80px 40px;
 	}
 	.top-level-item {
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 40px;
 		font-weight: 500;
+		letter-spacing: -0.025em;
 		color: $black;
 		text-decoration: none;
 	}

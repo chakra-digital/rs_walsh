@@ -628,24 +628,25 @@ header .cta-btn {
 
 /* line 167, src/scss/partials/_header.scss */
 #mobile-menu .top-level-item {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px;
   font-weight: 500;
+  letter-spacing: -0.025em;
   color: #090A0A;
   text-decoration: none;
 }
 
-/* line 174, src/scss/partials/_header.scss */
+/* line 175, src/scss/partials/_header.scss */
 #mobile-menu .btn {
   margin-top: 15px;
 }
 
-/* line 178, src/scss/partials/_header.scss */
+/* line 179, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu p {
   cursor: pointer;
 }
 
-/* line 180, src/scss/partials/_header.scss */
+/* line 181, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu p svg {
   position: relative;
   bottom: 1px;
@@ -655,13 +656,13 @@ header .cta-btn {
   width: 14px;
 }
 
-/* line 189, src/scss/partials/_header.scss */
+/* line 190, src/scss/partials/_header.scss */
 #mobile-menu .has-submenu.expanded p svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 195, src/scss/partials/_header.scss */
+/* line 196, src/scss/partials/_header.scss */
 #mobile-menu .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -676,7 +677,7 @@ header .cta-btn {
   overflow: hidden;
 }
 
-/* line 201, src/scss/partials/_header.scss */
+/* line 202, src/scss/partials/_header.scss */
 #mobile-menu .submenu a {
   opacity: 0.4;
   color: #090A0A;
@@ -684,89 +685,89 @@ header .cta-btn {
   line-height: 36px;
 }
 
-/* line 214, src/scss/partials/_header.scss */
+/* line 215, src/scss/partials/_header.scss */
 body.reversed-header header {
   background: transparent;
 }
 
-/* line 216, src/scss/partials/_header.scss */
+/* line 217, src/scss/partials/_header.scss */
 body.reversed-header header .logo svg path {
   fill: #fff;
 }
 
-/* line 220, src/scss/partials/_header.scss */
+/* line 221, src/scss/partials/_header.scss */
 body.reversed-header header .navigation .cta-btn a {
   border-color: #fff;
   color: #fff;
 }
 
-/* line 223, src/scss/partials/_header.scss */
+/* line 224, src/scss/partials/_header.scss */
 body.reversed-header header .navigation .cta-btn a:before {
   background: #fff;
 }
 
-/* line 226, src/scss/partials/_header.scss */
+/* line 227, src/scss/partials/_header.scss */
 body.reversed-header header .navigation .cta-btn a:hover {
   color: #090A0A;
 }
 
-/* line 230, src/scss/partials/_header.scss */
+/* line 231, src/scss/partials/_header.scss */
 body.reversed-header header .navigation nav a {
   color: #fff;
 }
 
-/* line 232, src/scss/partials/_header.scss */
+/* line 233, src/scss/partials/_header.scss */
 body.reversed-header header .navigation nav a:after {
   background: #fff;
 }
 
-/* line 238, src/scss/partials/_header.scss */
+/* line 239, src/scss/partials/_header.scss */
 body.reversed-header #hamburger span {
   background: #fff;
 }
 
-/* line 243, src/scss/partials/_header.scss */
+/* line 244, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #mobile-menu-wrap {
   background: rgba(9, 10, 10, 0.5);
 }
 
-/* line 246, src/scss/partials/_header.scss */
+/* line 247, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #mobile-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 250, src/scss/partials/_header.scss */
+/* line 251, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span {
   background: #090A0A;
 }
 
-/* line 253, src/scss/partials/_header.scss */
+/* line 254, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(1) {
   -webkit-transform: translateY(0px) rotate(-45deg);
           transform: translateY(0px) rotate(-45deg);
 }
 
-/* line 256, src/scss/partials/_header.scss */
+/* line 257, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(2) {
   width: 0;
 }
 
-/* line 259, src/scss/partials/_header.scss */
+/* line 260, src/scss/partials/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(3) {
   -webkit-transform: translateY(0px) rotate(45deg);
           transform: translateY(0px) rotate(45deg);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 266, src/scss/partials/_header.scss */
+  /* line 267, src/scss/partials/_header.scss */
   body.logged-in header {
     top: 32px;
   }
 }
 
 @media screen and (max-width: 782px) {
-  /* line 266, src/scss/partials/_header.scss */
+  /* line 267, src/scss/partials/_header.scss */
   body.logged-in header {
     top: 46px;
   }
@@ -790,6 +791,14 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/**********************************************
+ Project Inquiry CTA
+**********************************************/
+/* line 6, src/scss/partials/_project-inquiry-cta.scss */
+.project-inquiry-cta a {
+  margin-bottom: 25px;
 }
 
 /**********************************************
@@ -1207,7 +1216,14 @@ body.project-single.mobile-layout .slider-wrap {
   pointer-events: none;
 }
 
-/* line 65, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 767px) {
+  /* line 56, src/scss/partials/_project-single.scss */
+  .project-single .slider-controls {
+    display: none;
+  }
+}
+
+/* line 68, src/scss/partials/_project-single.scss */
 .project-single .control {
   height: 50px;
   width: 50px;
@@ -1225,28 +1241,28 @@ body.project-single.mobile-layout .slider-wrap {
   cursor: pointer;
 }
 
-/* line 73, src/scss/partials/_project-single.scss */
+/* line 76, src/scss/partials/_project-single.scss */
 .project-single .control.next {
   float: right;
 }
 
-/* line 76, src/scss/partials/_project-single.scss */
+/* line 79, src/scss/partials/_project-single.scss */
 .project-single .control.prev {
   float: left;
 }
 
-/* line 78, src/scss/partials/_project-single.scss */
+/* line 81, src/scss/partials/_project-single.scss */
 .project-single .control.prev img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 82, src/scss/partials/_project-single.scss */
+/* line 85, src/scss/partials/_project-single.scss */
 .project-single .control img {
   padding-left: 3px;
 }
 
-/* line 87, src/scss/partials/_project-single.scss */
+/* line 90, src/scss/partials/_project-single.scss */
 .project-single .back-to-all {
   display: block;
   padding: 10px;
@@ -1256,36 +1272,45 @@ body.project-single.mobile-layout .slider-wrap {
   z-index: 1;
 }
 
-/* line 95, src/scss/partials/_project-single.scss */
+/* line 98, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-panel {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 98, src/scss/partials/_project-single.scss */
+/* line 101, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .title {
   color: #090A0A;
 }
 
-/* line 101, src/scss/partials/_project-single.scss */
+/* line 104, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger {
   -webkit-transform: translateX(364px);
           transform: translateX(364px);
 }
 
-/* line 103, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 767px) {
+  /* line 104, src/scss/partials/_project-single.scss */
+  .project-single.project-info-panel--is-open .project-info-trigger {
+    -webkit-transform: translateX(330px);
+            transform: translateX(330px);
+    background: transparent;
+  }
+}
+
+/* line 110, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger .close-x {
   opacity: 1;
 }
 
-/* line 106, src/scss/partials/_project-single.scss */
+/* line 113, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger .info {
   opacity: 0;
 }
 
-/* line 115, src/scss/partials/_project-single.scss */
+/* line 123, src/scss/partials/_project-single.scss */
 .project-info-panel {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1298,7 +1323,7 @@ body.project-single.mobile-layout .slider-wrap {
           transform: translateX(-100%);
 }
 
-/* line 122, src/scss/partials/_project-single.scss */
+/* line 130, src/scss/partials/_project-single.scss */
 .project-info-panel:before {
   content: '';
   display: block;
@@ -1313,7 +1338,7 @@ body.project-single.mobile-layout .slider-wrap {
   pointer-events: none;
 }
 
-/* line 132, src/scss/partials/_project-single.scss */
+/* line 140, src/scss/partials/_project-single.scss */
 .project-info-panel .scroll-inner {
   overflow-y: scroll;
   height: 100%;
@@ -1321,28 +1346,35 @@ body.project-single.mobile-layout .slider-wrap {
   scrollbar-width: none;
 }
 
-/* line 138, src/scss/partials/_project-single.scss */
+/* line 145, src/scss/partials/_project-single.scss */
 .project-info-panel .scroll-inner::-webkit-scrollbar {
   display: none;
 }
 
-/* line 142, src/scss/partials/_project-single.scss */
+/* line 149, src/scss/partials/_project-single.scss */
 .project-info-panel main {
   padding: 0 40px 60px;
 }
 
-/* line 145, src/scss/partials/_project-single.scss */
+/* line 152, src/scss/partials/_project-single.scss */
 .project-info-panel .meta {
-  padding: 160px 0 0;
-  height: calc(100vh);
+  padding-top: 160px;
+  height: calc(100vh + 60px);
+  min-height: 600px;
 }
 
-/* line 148, src/scss/partials/_project-single.scss */
+/* line 156, src/scss/partials/_project-single.scss */
 .project-info-panel .meta > div:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* line 153, src/scss/partials/_project-single.scss */
+/* line 160, src/scss/partials/_project-single.scss */
+.project-info-panel .cta {
+  padding: 40px;
+  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
+}
+
+/* line 165, src/scss/partials/_project-single.scss */
 .project-info-trigger {
   position: fixed;
   bottom: 10px;
@@ -1352,14 +1384,14 @@ body.project-single.mobile-layout .slider-wrap {
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 157, src/scss/partials/_project-single.scss */
+/* line 169, src/scss/partials/_project-single.scss */
 .project-info-trigger svg {
   -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   pointer-events: none;
 }
 
-/* line 161, src/scss/partials/_project-single.scss */
+/* line 173, src/scss/partials/_project-single.scss */
 .project-info-trigger .close-x {
   position: absolute;
   opacity: 0;

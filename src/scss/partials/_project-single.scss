@@ -60,6 +60,9 @@ body.project-single {
 		img {
 			pointer-events: none;
 		}
+		@media screen and (max-width: $mq-max-md) {
+			display: none;
+		}
 	}
 
 	.control {
@@ -100,6 +103,10 @@ body.project-single {
 		}
 		.project-info-trigger {
 			transform: translateX(364px);
+			@media screen and (max-width: $mq-max-md) {
+				transform: translateX(330px);
+				background: transparent;
+			}
 			.close-x {
 				opacity: 1;
 			}
@@ -107,13 +114,14 @@ body.project-single {
 				opacity: 0;
 			}
 		}
+		
 	}
 
 	
 }
 
 .project-info-panel {
-	@include position(absolute, 0 null 0 0);
+	@include position(fixed, 0 null 0 0);
 	max-width: 400px;
 	z-index: 1;
 	background: #fff;
@@ -134,7 +142,6 @@ body.project-single {
 		height: 100%;
 		-ms-overflow-style: none;
 		scrollbar-width: none; // firefox
-
 		&::-webkit-scrollbar {
 			display: none;
 		}
@@ -143,11 +150,16 @@ body.project-single {
 		padding: 0 40px 60px;
 	}
 	.meta {
-		padding: 160px 0 0;
-		height: calc(100vh);
+		padding-top: 160px;
+		height: calc(100vh + 60px);
+		min-height: 600px;
 		& > div:not(:last-child) {
 			margin-bottom: 20px;
 		}
+	}
+	.cta {
+		padding: 40px;
+		background: $gray-gradient;
 	}
 }
 .project-info-trigger {

@@ -14,14 +14,15 @@ if( body.classList.contains('projects')) {
   const projects = document.querySelectorAll('.project-tile.project');
   const maxTransform = 15;
   const duration = 0.6;
-  const easeFunction = 'Power3.easeOut';
+  const easeFunction = 'power3.out';
 
 
   projects.forEach( project => project.addEventListener('mouseleave', (function() {
     const projectText = project.querySelectorAll('h2');
     const image = project.querySelector('img');
     
-    TweenMax.to([projectText, image], duration, {
+    gsap.to([projectText, image], {
+      duration: duration,
       y: 0, 
       x: 0,
       scale: 1,
@@ -57,19 +58,19 @@ if( body.classList.contains('projects')) {
     
     
     projectText.forEach(text => {
-      TweenMax.to(text, duration, {
+      gsap.to(text, {
+        duration: duration,
         y: maxTransform * -mousePercentageY, 
         x: maxTransform * -mousePercentageX,
-        ease: easeFunction,
-        // transformPerspective: 900,
-        // transformOrigin: 'center'
+        ease: easeFunction
       });  
     });
     
-    TweenMax.to(image, duration, {
+    gsap.to(image, {
+      duration: duration,
       y: maxTransform * mousePercentageY, 
       x: maxTransform * mousePercentageX,
-      scale: 1.1,
+      scale: 1.12,
       ease: easeFunction
     });
     
@@ -160,16 +161,18 @@ if(body.classList.contains('project-single')) {
     else slider.prev();
   });
 
-
+  const infoPanel = document.querySelector('.project-info-panel');
   const infoTrigger = document.querySelector('.project-info-trigger');
 
   ['click', 'touchstart'].forEach( event => {
     window.addEventListener(event, e => {
       const target = e.target;
-      console.log(target)
+      // console.log(target)
       if(target == infoTrigger && !body.classList.contains('project-info-panel--is-open')) {
-        body.classList.add('project-info-panel--is-open');
 
+        body.classList.add('project-info-panel--is-open');
+        bodyScrollLock.disableBodyScroll(infoPanel);
+        
         gsap.from('.meta > div', {
           opacity: 0,
           y: 60,
@@ -180,12 +183,25 @@ if(body.classList.contains('project-single')) {
         })
         
       } else {
-        if(!target.closest('.project-info-panel') && !target.closest('.slider-controls') && !target.closest('.back-to-all'))
-        body.classList.remove('project-info-panel--is-open');
+        if(!target.closest('.project-info-panel') && !target.closest('.slider-controls') && !target.closest('.back-to-all')) {
+          body.classList.remove('project-info-panel--is-open');
+          bodyScrollLock.enableBodyScroll(infoPanel);
+        }
       }
     });
   })
 
+  function initMobileLayout() {
+    slider.destroy(true);
+    window.removeEventListener('resize', controlHeights);
+    body.classList.add('mobile-layout');
+  }
+
+  function initDesktopLayout() {
+    slider.init();
+    window.addEventListener('resize', controlHeights);
+    body.classList.remove('mobile-layout');
+  }
   
   if(matchMedia){
     var mq = window.matchMedia('(max-width: 767px)');
@@ -196,18 +212,10 @@ if(body.classList.contains('project-single')) {
   function widthChange(mq) {
     requestAnimationFrame((function(){
       if(mq.matches) {
-        slider.destroy(true);
-        window.removeEventListener('resize', controlHeights);
-        body.classList.add('mobile-layout');
-        
+        initMobileLayout();
       } else {
-        slider.init();
-        window.addEventListener('resize', controlHeights);
-        body.classList.remove('mobile-layout');
-        
+        initDesktopLayout();
       }
     }))
-    
   }
-
 }

@@ -22,6 +22,7 @@ function changeImage() {
 *********************************************/
 const vidLoad = document.querySelector('.vidLoad');
 const video = vidLoad.querySelector('video');
+const homepageMain = document.getElementById('homepage-main');
 
 wrapper.style.pointerEvents = 'none';
 // Let video play for 2 seconds
@@ -37,5 +38,9 @@ setTimeout(function(){
     changeImage();
   }, 6000);
 }, 2000);
+
+setTimeout(function(){
+  homepageMain.style.display = 'block';
+}, 1999)
 
 

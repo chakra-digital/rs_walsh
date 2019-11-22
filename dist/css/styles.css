@@ -1306,13 +1306,14 @@ body.project-single.mobile-layout .slider-wrap {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 1;
   height: 150px;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(white, rgba(255, 255, 255, 0));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to bottom, white 40%, rgba(255, 255, 255, 0));
   pointer-events: none;
 }
 
-/* line 131, src/scss/partials/_project-single.scss */
+/* line 132, src/scss/partials/_project-single.scss */
 .project-info-panel .scroll-inner {
   overflow-y: scroll;
   height: 100%;
@@ -1320,28 +1321,28 @@ body.project-single.mobile-layout .slider-wrap {
   scrollbar-width: none;
 }
 
-/* line 137, src/scss/partials/_project-single.scss */
+/* line 138, src/scss/partials/_project-single.scss */
 .project-info-panel .scroll-inner::-webkit-scrollbar {
   display: none;
 }
 
-/* line 141, src/scss/partials/_project-single.scss */
+/* line 142, src/scss/partials/_project-single.scss */
 .project-info-panel main {
   padding: 0 40px 60px;
 }
 
-/* line 144, src/scss/partials/_project-single.scss */
+/* line 145, src/scss/partials/_project-single.scss */
 .project-info-panel .meta {
   padding: 160px 0 0;
   height: calc(100vh);
 }
 
-/* line 147, src/scss/partials/_project-single.scss */
+/* line 148, src/scss/partials/_project-single.scss */
 .project-info-panel .meta > div:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* line 152, src/scss/partials/_project-single.scss */
+/* line 153, src/scss/partials/_project-single.scss */
 .project-info-trigger {
   position: fixed;
   bottom: 10px;
@@ -1351,14 +1352,14 @@ body.project-single.mobile-layout .slider-wrap {
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 156, src/scss/partials/_project-single.scss */
+/* line 157, src/scss/partials/_project-single.scss */
 .project-info-trigger svg {
   -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   pointer-events: none;
 }
 
-/* line 160, src/scss/partials/_project-single.scss */
+/* line 161, src/scss/partials/_project-single.scss */
 .project-info-trigger .close-x {
   position: absolute;
   opacity: 0;

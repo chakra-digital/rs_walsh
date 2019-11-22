@@ -155,26 +155,28 @@ if(body.classList.contains('project-single')) {
 
   const infoTrigger = document.querySelector('.project-info-trigger');
 
-  window.addEventListener('click', e => {
-    const target = e.target;
-    console.log(target)
-    if(target == infoTrigger && !body.classList.contains('project-info-panel--is-open')) {
-      body.classList.add('project-info-panel--is-open');
+  ['click', 'touchstart'].forEach( event => {
+    window.addEventListener(event, e => {
+      const target = e.target;
+      console.log(target)
+      if(target == infoTrigger && !body.classList.contains('project-info-panel--is-open')) {
+        body.classList.add('project-info-panel--is-open');
 
-      gsap.from('.meta > div', {
-        opacity: 0,
-        y: 60,
-        delay: .4,
-        duration: 1,
-        stagger: .075,
-        ease: "power4.out"
-      })
-      
-    } else {
-      if(!target.closest('.project-info-panel') && !target.closest('.slider-controls') && !target.closest('.back-to-all'))
-      body.classList.remove('project-info-panel--is-open');
-    }
-  });
+        gsap.from('.meta > div', {
+          opacity: 0,
+          y: 60,
+          delay: .4,
+          duration: 1,
+          stagger: .075,
+          ease: "power4.out"
+        })
+        
+      } else {
+        if(!target.closest('.project-info-panel') && !target.closest('.slider-controls') && !target.closest('.back-to-all'))
+        body.classList.remove('project-info-panel--is-open');
+      }
+    });
+  })
 
   
   if(matchMedia){

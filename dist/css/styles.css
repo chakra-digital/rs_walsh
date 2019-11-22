@@ -1180,7 +1180,15 @@ body.project-single.mobile-layout .slider-wrap {
   z-index: 1;
 }
 
-/* line 39, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 767px) {
+  /* line 30, src/scss/partials/_project-single.scss */
+  .project-single .slider-wrap:before {
+    height: 160px;
+    bottom: unset;
+  }
+}
+
+/* line 43, src/scss/partials/_project-single.scss */
 .project-single .title {
   position: fixed;
   top: 30px;
@@ -1192,7 +1200,15 @@ body.project-single.mobile-layout .slider-wrap {
   transition: color 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 48, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 575px) {
+  /* line 43, src/scss/partials/_project-single.scss */
+  .project-single .title {
+    top: 20px;
+    left: 20px;
+  }
+}
+
+/* line 56, src/scss/partials/_project-single.scss */
 .project-single .image-wrap img {
   height: 100%;
   width: 100%;
@@ -1202,7 +1218,7 @@ body.project-single.mobile-layout .slider-wrap {
      object-position: center;
 }
 
-/* line 56, src/scss/partials/_project-single.scss */
+/* line 64, src/scss/partials/_project-single.scss */
 .project-single .slider-controls {
   position: fixed;
   right: 10px;
@@ -1211,19 +1227,19 @@ body.project-single.mobile-layout .slider-wrap {
   z-index: 1;
 }
 
-/* line 60, src/scss/partials/_project-single.scss */
+/* line 68, src/scss/partials/_project-single.scss */
 .project-single .slider-controls img {
   pointer-events: none;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/partials/_project-single.scss */
+  /* line 64, src/scss/partials/_project-single.scss */
   .project-single .slider-controls {
     display: none;
   }
 }
 
-/* line 68, src/scss/partials/_project-single.scss */
+/* line 76, src/scss/partials/_project-single.scss */
 .project-single .control {
   height: 50px;
   width: 50px;
@@ -1241,28 +1257,28 @@ body.project-single.mobile-layout .slider-wrap {
   cursor: pointer;
 }
 
-/* line 76, src/scss/partials/_project-single.scss */
+/* line 84, src/scss/partials/_project-single.scss */
 .project-single .control.next {
   float: right;
 }
 
-/* line 79, src/scss/partials/_project-single.scss */
+/* line 87, src/scss/partials/_project-single.scss */
 .project-single .control.prev {
   float: left;
 }
 
-/* line 81, src/scss/partials/_project-single.scss */
+/* line 89, src/scss/partials/_project-single.scss */
 .project-single .control.prev img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 85, src/scss/partials/_project-single.scss */
+/* line 93, src/scss/partials/_project-single.scss */
 .project-single .control img {
   padding-left: 3px;
 }
 
-/* line 90, src/scss/partials/_project-single.scss */
+/* line 98, src/scss/partials/_project-single.scss */
 .project-single .back-to-all {
   display: block;
   padding: 10px;
@@ -1272,25 +1288,33 @@ body.project-single.mobile-layout .slider-wrap {
   z-index: 1;
 }
 
-/* line 98, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 767px) {
+  /* line 98, src/scss/partials/_project-single.scss */
+  .project-single .back-to-all {
+    top: 15px;
+    right: 10px;
+  }
+}
+
+/* line 110, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-panel {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 101, src/scss/partials/_project-single.scss */
+/* line 113, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .title {
   color: #090A0A;
 }
 
-/* line 104, src/scss/partials/_project-single.scss */
+/* line 116, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger {
   -webkit-transform: translateX(364px);
           transform: translateX(364px);
 }
 
 @media screen and (max-width: 767px) {
-  /* line 104, src/scss/partials/_project-single.scss */
+  /* line 116, src/scss/partials/_project-single.scss */
   .project-single.project-info-panel--is-open .project-info-trigger {
     -webkit-transform: translateX(330px);
             transform: translateX(330px);
@@ -1298,17 +1322,31 @@ body.project-single.mobile-layout .slider-wrap {
   }
 }
 
-/* line 110, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 400px) {
+  /* line 116, src/scss/partials/_project-single.scss */
+  .project-single.project-info-panel--is-open .project-info-trigger {
+    bottom: unset;
+    left: unset;
+    top: 13px;
+    right: 5px;
+    -webkit-transform: unset;
+            transform: unset;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+}
+
+/* line 130, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger .close-x {
   opacity: 1;
 }
 
-/* line 113, src/scss/partials/_project-single.scss */
+/* line 133, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger .info {
   opacity: 0;
 }
 
-/* line 123, src/scss/partials/_project-single.scss */
+/* line 143, src/scss/partials/_project-single.scss */
 .project-info-panel {
   position: fixed;
   top: 0;
@@ -1323,7 +1361,7 @@ body.project-single.mobile-layout .slider-wrap {
           transform: translateX(-100%);
 }
 
-/* line 130, src/scss/partials/_project-single.scss */
+/* line 150, src/scss/partials/_project-single.scss */
 .project-info-panel:before {
   content: '';
   display: block;
@@ -1338,43 +1376,58 @@ body.project-single.mobile-layout .slider-wrap {
   pointer-events: none;
 }
 
-/* line 140, src/scss/partials/_project-single.scss */
+/* line 160, src/scss/partials/_project-single.scss */
 .project-info-panel .scroll-inner {
   overflow-y: scroll;
+  overflow-scrolling: touch;
   height: 100%;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-/* line 145, src/scss/partials/_project-single.scss */
+/* line 166, src/scss/partials/_project-single.scss */
 .project-info-panel .scroll-inner::-webkit-scrollbar {
   display: none;
 }
 
-/* line 149, src/scss/partials/_project-single.scss */
+/* line 170, src/scss/partials/_project-single.scss */
 .project-info-panel main {
   padding: 0 40px 60px;
 }
 
-/* line 152, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 575px) {
+  /* line 170, src/scss/partials/_project-single.scss */
+  .project-info-panel main {
+    padding: 0 20px 60px;
+  }
+}
+
+/* line 176, src/scss/partials/_project-single.scss */
 .project-info-panel .meta {
   padding-top: 160px;
   height: calc(100vh + 60px);
   min-height: 600px;
 }
 
-/* line 156, src/scss/partials/_project-single.scss */
+/* line 180, src/scss/partials/_project-single.scss */
 .project-info-panel .meta > div:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* line 160, src/scss/partials/_project-single.scss */
+/* line 184, src/scss/partials/_project-single.scss */
 .project-info-panel .cta {
   padding: 40px;
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
 }
 
-/* line 165, src/scss/partials/_project-single.scss */
+@media screen and (max-width: 575px) {
+  /* line 184, src/scss/partials/_project-single.scss */
+  .project-info-panel .cta {
+    padding: 40px 20px;
+  }
+}
+
+/* line 192, src/scss/partials/_project-single.scss */
 .project-info-trigger {
   position: fixed;
   bottom: 10px;
@@ -1384,14 +1437,14 @@ body.project-single.mobile-layout .slider-wrap {
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 169, src/scss/partials/_project-single.scss */
+/* line 196, src/scss/partials/_project-single.scss */
 .project-info-trigger svg {
   -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   pointer-events: none;
 }
 
-/* line 173, src/scss/partials/_project-single.scss */
+/* line 200, src/scss/partials/_project-single.scss */
 .project-info-trigger .close-x {
   position: absolute;
   opacity: 0;

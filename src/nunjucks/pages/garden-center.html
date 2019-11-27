@@ -1,0 +1,150 @@
+{% set body_class = 'garden-center' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<section class="gc-hero">
+	<div class="container-fluid">
+
+		<div class="half-col slider-wrap-pagination">
+			<div class="slide-wrap"><img src="{{root_url}}/images/garden-center/gc-hero-slide-1.jpg"></div>
+			<div class="slide-wrap"><img src="{{root_url}}/images/garden-center/gc-hero-slide-2.jpg"></div>
+			<div class="slide-wrap"><img src="{{root_url}}/images/garden-center/gc-hero-slide-3.jpg"></div>
+		</div>
+
+		<div class="half-col main-content">
+			<img src="{{root_url}}/images/garden-center/rs-walsh-garden-center-logo-color.svg" alt="R.S. Walsh Garden Center Logo">
+			<p class="large">Visit our beautiful retail Garden Center and Outdoor Showroom - In The Garden.  Get seasonal ideas to freshen up your landscape and consult with our on-site landscape design professionals about ideas for your garden!</p>
+			<div class="inpage-nav-wrap">
+				<a href="#events">Upcoming Events</a>
+				<a href="#ask-a-gardener">Ask a Gardener</a>
+				<a href="#schedule-tour">Schedule a Tour</a>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+
+<section class="gc-tile-showcase">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-5">
+				<h1>Located on Sanibel Island</h1>
+				<p>In The Garden is a tropical garden oasis with wandering paths through display gardens, bountiful plant nursery and garden gift shop.</p>
+			</div>
+			<div class="col-4">
+				<div class="tile-wrap">
+					<img src="{{root_url}}/images/garden-center/garden-center-tile-1.jpg">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="tile-wrap">
+					<img src="{{root_url}}/images/garden-center/garden-center-tile-2.jpg">
+				</div>
+			</div>
+			<div class="col-4 offset-2">
+				<div class="tile-wrap">
+					<img src="{{root_url}}/images/garden-center/garden-center-tile-3.jpg">
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="tile-wrap">
+					<img src="{{root_url}}/images/garden-center/garden-center-tile-4.jpg">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="gc-get-inspired">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-5">
+
+				<h1>Come get inspired.</h1>
+				<p class="large">This is the perfect place to get the latest landscape design and outdoor living trends. </p>
+				<a href="#visit-us" class="btn">See Hours of Operation</a>
+			
+			</div>
+			<div class="col">
+
+				<div class="icon-col">
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/plant.svg">
+						<p class="large">Native and tropical plants</p>
+					</div>
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/pottery.svg">
+						<p class="large">Pottery</p>
+					</div>
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/fountain.svg">
+						<p class="large">Fountains</p>
+					</div>
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/chair.svg">
+						<p class="large">Unique outdoor seating</p>
+					</div>
+				</div>
+
+				<div class="icon-col">
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/accessories.svg">
+						<p class="large">Garden Accessories</p>
+					</div>
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/gift.svg">
+						<p class="large">Gifts for gardening lovers</p>
+					</div>
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/local-art.svg">
+						<p class="large">Local art</p>
+					</div>
+					<div class="icon-row">
+						<img src="{{root_url}}/svg/icons/plant.svg">
+						<p class="large">Native and tropical plants</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<section class="gc-events">
+	<h1>Events will go here!</h1>
+</section>
+
+
+<section class="gc-ask-a-gardener">
+	<div class="half-col main-content">
+		<h1>Ask a Gardener</h1>
+		<form action="">
+			<div class="form-row">
+				<input id="name" type="text" placeholder="Name">
+			</div>
+			<div class="form-row half">
+				<input id="phone" type="tel" placeholder="Phone Number">
+			</div>
+			<div class="form-row half">
+				<input id="email" type="email" placeholder="Email">
+			</div>
+			<div class="form-row">
+				<textarea id="name" rows="5" placeholder="Ask us anything!"></textarea>
+			</div>
+			<div class="form-row">
+				<input id="submit" type="submit" value="Submit">
+			</div>
+		</form>
+	</div>
+</section>
+	
+{% endblock %}

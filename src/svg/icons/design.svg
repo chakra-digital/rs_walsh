@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon / Design</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group-31" transform="translate(5.000000, 5.000000)" stroke="#000000">
+            <polyline id="Stroke-1" points="31.3757 49.7921 49.1157 49.7921 49.1157 24.6471 23.9717 49.7921 28.4437 49.7921"></polyline>
+            <polygon id="Stroke-3" points="44.1799 44.8561 44.1799 35.9001 35.2239 44.8561"></polygon>
+            <g id="Group-12" transform="translate(47.000000, 31.792300)">
+                <line x1="2.116" y1="1.2371" x2="0.174" y2="1.2371" id="Stroke-4"></line>
+                <line x1="2.116" y1="5.1795" x2="0.174" y2="5.1795" id="Stroke-6"></line>
+                <line x1="2.116" y1="9.1214" x2="0.174" y2="9.1214" id="Stroke-8"></line>
+                <line x1="2.116" y1="13.0638" x2="0.174" y2="13.0638" id="Stroke-10"></line>
+            </g>
+            <polyline id="Stroke-13" points="26.5046 14.0621 35.1876 5.3791 39.8376 10.0291 22.9386 26.9281 18.2886 22.2781 23.8866 16.6801"></polyline>
+            <g id="Group-30" transform="translate(0.000000, 0.792300)">
+                <polygon id="Stroke-14" points="39.8376 9.2366 35.1876 4.5866 37.7296 2.0456 42.3796 6.6946"></polygon>
+                <path d="M42.3791,6.6951 L37.7291,2.0451 L39.0691,0.7051 C39.7331,0.0421 40.8081,0.0421 41.4721,0.7051 L43.7191,2.9521 C44.3821,3.6161 44.3821,4.6921 43.7191,5.3551 L42.3791,6.6951 Z" id="Stroke-16"></path>
+                <polyline id="Stroke-18" points="18.2883 21.4857 16.2593 28.1657 22.9383 26.1357"></polyline>
+                <line x1="29.5295" y1="10.2444" x2="8.3575" y2="10.2444" id="Stroke-20"></line>
+                <polyline id="Stroke-22" points="45.4509 27.5208 45.4509 10.2448 38.8299 10.2448"></polyline>
+                <path d="M0.0002,38.0037 C0.0002,40.9187 2.3632,43.2817 5.2782,43.2817 L29.6892,43.2817" id="Stroke-24"></path>
+                <path d="M0.0002,38.0037 C0.0002,35.0887 2.3632,32.7257 5.2782,32.7257 L5.2782,29.6467 L5.2782,2.0707 C2.3632,2.0707 0.0002,4.4337 0.0002,7.3487 L0.0002,35.1077 L0.0002,38.0037 Z" id="Stroke-26"></path>
+                <line x1="11.5827" y1="31.7318" x2="32.9887" y2="31.7318" id="Stroke-28"></line>
+            </g>
+        </g>
+    </g>
+</svg>

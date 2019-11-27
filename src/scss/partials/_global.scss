@@ -152,3 +152,28 @@ strong, b { font-weight: 600 }
   @include position(absolute, 0);
 }
 
+.half-col {
+  width: 50%;
+}
+
+.slider-wrap-pagination {
+  position: relative;
+  .dot-container {
+    @include position(absolute, null null 20px 50%);
+    transform: translateX(-50%);
+    .dot {
+      cursor: pointer;
+      @include size(14px);
+      margin: 0 7px;
+      appearance: none;
+      border: none;
+      background: #fff;
+      opacity: .5;
+      border-radius: 50%;
+      display: inline-block;
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}

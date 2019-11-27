@@ -8,7 +8,7 @@ var settings = {
 	scripts: true,
 	polyfills: false,
 	styles: true,
-	svgs: false,
+	svgs: true,
 	copy: true,
 	reload: true
 };
@@ -36,7 +36,7 @@ var paths = {
 		templates: 'src/nunjucks/templates'
 	},
 	svgs: {
-		input: 'src/svg/*.svg',
+		input: 'src/svg/**/*.svg',
 		output: 'dist/svg/'
 	},
 	copy: {

@@ -182,3 +182,70 @@ if(animateIn.length) {
     ease: 'expo.out'
   })
 }
+
+
+/********************************
+ Siema Sliders
+********************************/
+const sliderWrap = document.querySelector('.slider-wrap');
+const sliderWrapPagination = document.querySelector('.slider-wrap-pagination');
+
+
+
+// Initialize new Siema instance for image slider
+if(sliderWrap) {
+  console.log(Siema)
+  var slider = new Siema({
+    selector: sliderWrap,
+    duration: 400,
+    easing: 'cubic-bezier(0.4, 0.0, 0.2, 1)',
+    loop: true
+  });
+}
+
+// Initialize new Siema instance for image slider with pagination
+if(sliderWrapPagination) {
+
+
+  // Add a function that generates pagination to prototype
+  Siema.prototype.addPagination = function() {
+    console.log(sliderWrapPagination.firstChild)
+    
+    // sliderWrapPagination.firstChild.style.display = 'table';
+    const dotContainer = document.createElement('div');
+    dotContainer.classList.add('dot-container');
+    sliderWrapPagination.appendChild(dotContainer);
+
+    for (let i = 0; i < this.innerElements.length; i++) {
+      const dot = document.createElement('div');
+      dot.classList.add('dot');
+      if( i === 0 ) dot.classList.add('active');
+      dot.addEventListener('click', _ => {
+        this.goTo(i);
+        clearTimeout(sliderTimer);
+        sliderTimer = setInterval( (function(){ mySiema.next(); }), sliderPagination );
+      });
+      dotContainer.appendChild(dot);
+    }
+  };
+
+
+  const sliderPagination = new Siema({
+    selector: sliderWrapPagination,
+    onChange: function() {
+      const currentSlide = this.currentSlide;
+      dots.forEach( dot => dot.classList.remove('active'));
+      dots[currentSlide].classList.add('active');
+    },
+    duration: 400,
+    easing: 'cubic-bezier(0.4, 0.0, 0.2, 1)',
+    loop: true
+  });
+
+
+  // Trigger pagination creator
+  sliderPagination.addPagination();
+  const dots = document.querySelectorAll('.dot');
+
+  let carouselTimer =	setInterval( (function(){ sliderPagination.next();	}), 6000 );
+}

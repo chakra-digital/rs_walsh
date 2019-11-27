@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon / Chair</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-Chair" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Group-39" transform="translate(1.000000, 11.000000)" stroke="#090A0A">
+            <path d="M58.0001,13.6653 L58.0001,13.6653 C53.4891,13.6653 49.8331,17.3223 49.8331,21.8323 L49.8331,36.2733" id="Stroke-1"></path>
+            <path d="M0.0001,13.6653 L0.0001,13.6653 C4.5111,13.6653 8.1671,17.3223 8.1671,21.8323 L8.1671,36.2733" id="Stroke-3"></path>
+            <line x1="8.2267" y1="31.243" x2="49.7737" y2="31.243" id="Stroke-5"></line>
+            <line x1="8.2857" y1="23.7859" x2="49.8327" y2="23.7859" id="Stroke-7"></line>
+            <path d="M46.6661,23.7264 L11.3331,23.7264 L11.3331,9.1674 C11.3331,4.6564 14.9901,0.9994 19.5011,0.9994 L38.4991,0.9994 C43.0101,0.9994 46.6661,4.6564 46.6661,9.1674 L46.6661,23.7264 Z" id="Stroke-9"></path>
+            <line x1="21.5826" y1="19.4163" x2="25.8186" y2="23.6523" id="Stroke-11"></line>
+            <line x1="11.3336" y1="9.1673" x2="18.6526" y2="16.4863" id="Stroke-13"></line>
+            <line x1="24.5509" y1="16.5247" x2="28.8249" y2="20.7987" id="Stroke-15"></line>
+            <line x1="12.6891" y1="4.6634" x2="21.5831" y2="13.5564" id="Stroke-17"></line>
+            <line x1="36.0675" y1="19.4163" x2="40.3035" y2="23.6523" id="Stroke-19"></line>
+            <line x1="17.8243" y1="1.1731" x2="33.1073" y2="16.4561" id="Stroke-21"></line>
+            <line x1="38.9972" y1="16.4866" x2="46.3162" y2="23.8056" id="Stroke-23"></line>
+            <line x1="23.5855" y1="1.0745" x2="36.0675" y2="13.5565" id="Stroke-25"></line>
+            <line x1="46.316" y1="9.1673" x2="31.831" y2="23.6523" id="Stroke-27"></line>
+            <line x1="44.9605" y1="4.6634" x2="25.8185" y2="23.8054" id="Stroke-29"></line>
+            <line x1="28.8248" y1="12.1736" x2="17.3458" y2="23.6526" id="Stroke-31"></line>
+            <line x1="39.8253" y1="1.1731" x2="31.7543" y2="9.2441" id="Stroke-33"></line>
+            <line x1="25.8951" y1="9.2439" x2="11.3331" y2="23.8059" id="Stroke-35"></line>
+            <line x1="34.0645" y1="1.0745" x2="28.8245" y2="6.3145" id="Stroke-37"></line>
+        </g>
+    </g>
+</svg>

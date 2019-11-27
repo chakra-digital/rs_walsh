@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon / Right Plant Right Place</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icon-/-Right-Plant-Right-Place" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Group-33" transform="translate(6.000000, 6.000000)" stroke="#000000">
+            <polyline id="Stroke-1" points="5.6893 45.7063 7.3313 47.0633 10.9183 42.0433"></polyline>
+            <polyline id="Stroke-3" points="20.6331 45.7063 22.2751 47.0633 25.8621 42.0433"></polyline>
+            <polyline id="Stroke-5" points="35.5731 45.7063 37.2161 47.0633 40.8021 42.0433"></polyline>
+            <path d="M32.5736,22.0052 C32.5736,27.2292 28.3386,31.4632 23.1156,31.4632 C17.8916,31.4632 13.6566,27.2292 13.6566,22.0052 C13.6566,15.2472 16.6486,0.0002 23.1156,0.0002 C29.6296,0.0002 32.5736,15.2472 32.5736,22.0052 Z" id="Stroke-7"></path>
+            <line x1="8.3001" y1="38.8948" x2="8.3001" y2="20.4608" id="Stroke-9"></line>
+            <line x1="5.598" y1="24.1282" x2="8.276" y2="26.8062" id="Stroke-11"></line>
+            <line x1="10.7372" y1="26.3299" x2="8.3002" y2="28.7669" id="Stroke-13"></line>
+            <line x1="38.2118" y1="38.8948" x2="38.2118" y2="22.5238" id="Stroke-15"></line>
+            <line x1="35.5096" y1="26.1917" x2="38.1876" y2="28.8697" id="Stroke-17"></line>
+            <line x1="40.6488" y1="28.3938" x2="38.2118" y2="30.8308" id="Stroke-19"></line>
+            <line x1="23.2479" y1="38.8948" x2="23.2479" y2="17.0708" id="Stroke-21"></line>
+            <line x1="20.5453" y1="24.1282" x2="23.2233" y2="26.8062" id="Stroke-23"></line>
+            <line x1="25.6849" y1="26.3299" x2="23.2479" y2="28.7669" id="Stroke-25"></line>
+            <line x1="25.6849" y1="20.0872" x2="23.2479" y2="22.5242" id="Stroke-27"></line>
+            <path d="M13.6566,22.0052 C13.6566,21.7072 13.6646,21.3882 13.6766,21.0592 L8.3006,1.9302 L-0.0004,31.4632 L8.3006,31.4632 L16.6006,31.4632 L15.5226,27.6282 C14.3556,26.0552 13.6566,24.1142 13.6566,22.0052 Z" id="Stroke-29" stroke-linejoin="round"></path>
+            <path d="M38.0794,11.72 C35.6784,11.72 33.4704,12.514 31.6784,13.84 C32.2814,16.909 32.5734,19.878 32.5734,22.005 C32.5734,24.783 31.3694,27.273 29.4624,29.003 C31.4324,31.622 34.5484,33.329 38.0794,33.329 C44.0464,33.329 48.8834,28.491 48.8834,22.524 C48.8834,16.557 44.0464,11.72 38.0794,11.72 Z" id="Stroke-31"></path>
+        </g>
+    </g>
+</svg>

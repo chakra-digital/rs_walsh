@@ -360,6 +360,46 @@ strong, b {
   left: 0;
 }
 
+/* line 155, src/scss/partials/_global.scss */
+.half-col {
+  width: 50%;
+}
+
+/* line 159, src/scss/partials/_global.scss */
+.slider-wrap-pagination {
+  position: relative;
+}
+
+/* line 161, src/scss/partials/_global.scss */
+.slider-wrap-pagination .dot-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+/* line 164, src/scss/partials/_global.scss */
+.slider-wrap-pagination .dot-container .dot {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 7px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  background: #fff;
+  opacity: .5;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* line 174, src/scss/partials/_global.scss */
+.slider-wrap-pagination .dot-container .dot.active {
+  opacity: 1;
+}
+
 /**********************************************
  Header Styles
 **********************************************/
@@ -1522,4 +1562,19 @@ section.service-pillars div:not(.description) {
 /* line 46, src/scss/partials/_services.scss */
 .pillar .description svg {
   height: 40px;
+}
+
+/**********************************************
+ Garden Center
+**********************************************/
+/* line 5, src/scss/partials/_garden-center.scss */
+.gc-hero {
+  padding-top: 40px;
+}
+
+/* line 7, src/scss/partials/_garden-center.scss */
+.gc-hero .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

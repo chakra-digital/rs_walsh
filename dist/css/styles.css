@@ -1309,15 +1309,15 @@ body.project-single.mobile-layout .slider-wrap {
 
 /* line 116, src/scss/partials/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger {
-  -webkit-transform: translateX(364px);
-          transform: translateX(364px);
+  -webkit-transform: translateX(-36px);
+          transform: translateX(-36px);
 }
 
 @media screen and (max-width: 767px) {
   /* line 116, src/scss/partials/_project-single.scss */
   .project-single.project-info-panel--is-open .project-info-trigger {
-    -webkit-transform: translateX(330px);
-            transform: translateX(330px);
+    -webkit-transform: translateX(-70px);
+            transform: translateX(-70px);
     background: transparent;
   }
 }
@@ -1430,8 +1430,8 @@ body.project-single.mobile-layout .slider-wrap {
 /* line 192, src/scss/partials/_project-single.scss */
 .project-info-trigger {
   position: fixed;
+  right: -60px;
   bottom: 10px;
-  left: 10px;
   z-index: 1;
   -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);

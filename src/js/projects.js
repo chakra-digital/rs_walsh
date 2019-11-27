@@ -159,7 +159,7 @@ if(body.classList.contains('project-single')) {
   ['click', 'touchstart'].forEach( event => {
     window.addEventListener(event, e => {
       const target = e.target;
-      // console.log(target)
+      console.log(target)
       if(target == infoTrigger && !body.classList.contains('project-info-panel--is-open')) {
 
         body.classList.add('project-info-panel--is-open');
@@ -175,11 +175,10 @@ if(body.classList.contains('project-single')) {
         })
         
       } else {
-        if(!target.closest('.project-info-panel') && !target.closest('.slider-controls') && !target.closest('.back-to-all')) {
-          body.classList.remove('project-info-panel--is-open');
-          bodyScrollLock.enableBodyScroll(infoPanel);
-        }
+        body.classList.remove('project-info-panel--is-open');
+        bodyScrollLock.enableBodyScroll(infoPanel);
       }
+      
     });
   })
 

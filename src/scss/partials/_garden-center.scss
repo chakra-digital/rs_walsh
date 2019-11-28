@@ -6,5 +6,321 @@
   padding-top: 40px;
   .container-fluid {
     display: flex;
+    @media screen and (max-width: $mq-max-lg) {
+      flex-direction: column;
+    }
+  }
+  .slider {
+    @media screen and (max-width: $mq-max-lg) {
+      order: 2;
+      height: 400px;
+    }
+  }
+  .main-content {
+    background: $gray-gradient;
+    display: flex;
+    flex-direction: column;
+    .top {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 520px;
+      margin: auto;
+      padding: 80px 30px 90px;
+      justify-content: center;
+      @media screen and (max-width: $mq-max-lg) {
+        max-width: $mq-max-md;
+        text-align: center;
+      }
+      @media screen and (max-width: $mq-max-sm) {
+        padding: 60px 20px 60px;
+      }
+      img {
+        max-width: 370px;
+        padding-bottom: 60px;
+        @media screen and (max-width: $mq-max-lg) {
+          margin: auto;
+        }
+        @media screen and (max-width: $mq-max-sm) {
+          max-width: 260px;
+          padding-bottom: 40px;
+        }
+      }
+    }
+    
+  }
+  .inpage-nav {
+    flex: 0 0 100px;
+    display: flex;
+    @media screen and (max-width: $mq-max-sm) {
+      flex-direction: column;
+    }
+    a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: black;
+      transition:  0.3s ease-out;
+      border-top: 1px solid #c8cbcb;
+      text-align: center;
+      @media screen and (max-width: $mq-max-sm) {
+        padding: 15px 0;
+      }
+      &:not(:last-child) {
+        @media screen and (min-width: $mq-min-sm) {
+          border-right: 1px solid #c8cbcb;
+        }
+      }
+      span {
+        transform: translateX(13px);
+        transition: 0.3s ease-out;
+      }
+      svg {
+        transform: translateY(-3px);
+        width: 15px;
+        margin-left: 11px;
+        opacity: 0;
+        transition: 0.3s ease-out;
+      }
+      &:hover {
+        background: black;
+        color: lightgray;
+        border-color: black;
+        span {
+          transform: translateX(0);
+        }
+        svg {
+          animation: arrow-bounce 1s ease infinite;
+          opacity: .6;
+        }
+      }
+    }
   }
 }
+
+@keyframes arrow-bounce {
+  0% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
+
+
+
+.gc-tile-showcase {
+  padding: 100px 0 70px;
+  .row > div {
+    height: 290px;
+    margin-bottom: 30px;
+    @media screen and (max-width: $mq-max-lg) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: $mq-max-md) {
+      height: 200px;
+    }
+  }
+  .tile-wrap {
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: $mq-max-lg) {
+      height: inherit!important;
+      margin-bottom: 60px!important;
+    }
+    .inner {
+      max-width: 360px;
+      @media screen and (max-width: $mq-max-lg) {
+        text-align: center;
+        max-width: $mq-max-md;
+      }
+    }
+  }
+}
+
+
+.gc-get-inspired {
+  .container-fluid {
+    background: linear-gradient(to top right, #E5EAEA, #F2F4F4);
+    padding: 80px 0 90px
+  }
+  .content {
+    @media screen and (max-width: $mq-max-lg) {
+      margin-bottom: 40px;
+    }
+    .inner {
+      max-width: 420px;
+      margin: auto;
+      padding: 0 30px;
+      @media screen and (max-width: $mq-max-lg) {
+        max-width: $mq-max-md;
+        text-align: center;
+      }
+    }
+    .top {
+      margin-bottom: 60px;
+    }
+  }
+  .icon-bullets {
+    .inner {
+      display: flex;
+      @media screen and (max-width: $mq-max-md) {
+        padding: 0 20px;
+      }
+      @media screen and (max-width: $mq-max-sm) {
+        flex-direction: column;
+      }
+    }
+  }
+  .icon-col {
+    flex: 1;
+    &:first-child {
+      @media screen and (max-width: $mq-max-sm) {
+        margin-bottom:28px;
+      }
+    }
+    
+  }
+  .icon-row {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom:28px
+    }
+    @media screen and (max-width: $mq-max-lg) {
+      flex-direction: column;
+    }
+    p {
+      margin-left: 14px;
+      @media screen and (max-width: $mq-max-lg) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+
+
+.gc-events {
+  padding: 100px 0;
+  .title {
+    margin-bottom: 60px;
+    h1 {
+      text-align: center;
+    }
+    hr {
+      display: block;
+      width: 1px;
+      height: 40px;
+      background: black;
+      border: none;
+    }
+  }
+  .calendar {
+    background: lightgray;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+.slider-wrap-pagination div {
+  height: 100%;
+}
+.slide-wrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right center;
+}
+
+
+
+
+
+
+
+
+
+.gc-ask-a-gardener {
+  display: flex;
+  position: relative;
+  .main-content {
+    background: $gray-gradient;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 110px;
+    h1 {
+      @media screen and (max-width: $mq-max-lg) {
+        text-align: center;
+        color: #fff;
+      }
+    }
+    @media screen and (max-width: $mq-max-lg) {
+      z-index: 1;
+      background: rgba($black, .6);
+    }
+    .rs-form {
+      input:not([type=submit]), 
+      textarea {
+        @media screen and (max-width: $mq-max-lg) {
+          background: rgba(#fff, .9);
+          border-color: rgba(#fff, .9);
+        }
+      }
+      .form-submit {
+        @media screen and (max-width: $mq-max-lg) {
+          display: block;
+        }
+      }
+    }
+    h1 {
+      margin-bottom: 30px;
+    }
+    .inner {
+      width: 100%;
+      max-width: 575px;
+      padding: 0 30px;
+    }
+  }
+  .image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media screen and (max-width: $mq-max-lg) {
+      @include position(absolute, 0);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+

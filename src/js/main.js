@@ -199,14 +199,16 @@ if(sliderWrap) {
 if(sliderWrapPagination) {
 
 
+
   // Add a function that generates pagination to prototype
   Siema.prototype.addPagination = function() {
-    console.log(sliderWrapPagination.firstChild)
+    const sliderParent = sliderWrapPagination.parentElement;
     
     // sliderWrapPagination.firstChild.style.display = 'table';
     const dotContainer = document.createElement('div');
     dotContainer.classList.add('dot-container');
-    sliderWrapPagination.appendChild(dotContainer);
+    sliderParent.style.position = 'relative';
+    sliderParent.appendChild(dotContainer);
 
     for (let i = 0; i < this.innerElements.length; i++) {
       const dot = document.createElement('div');
@@ -215,7 +217,7 @@ if(sliderWrapPagination) {
       dot.addEventListener('click', _ => {
         this.goTo(i);
         clearTimeout(sliderTimer);
-        sliderTimer = setInterval( function(){ mySiema.next(); }, sliderPagination );
+        sliderTimer = setInterval( function(){ sliderPagination.next(); }, 6000 );
       });
       dotContainer.appendChild(dot);
     }
@@ -239,5 +241,5 @@ if(sliderWrapPagination) {
   sliderPagination.addPagination();
   const dots = document.querySelectorAll('.dot');
 
-  let carouselTimer =	setInterval( function(){ sliderPagination.next();	}, 6000 );
+  let sliderTimer =	setInterval( function(){ sliderPagination.next();	}, 6000 );
 }

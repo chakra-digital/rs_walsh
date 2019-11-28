@@ -107,7 +107,7 @@ html {
 
 @media screen and (max-width: 991px) {
   /* line 17, src/scss/partials/_bootstrap-overrides.scss */
-  [class^='col-'] {
+  [class^='col'] {
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -144,27 +144,21 @@ html {
 /* line 4, src/scss/partials/_global.scss */
 body {
   font-family: "Barlow", sans-serif;
+  font-size: 17px;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #090A0A;
 }
 
-/* line 12, src/scss/partials/_global.scss */
+/* line 13, src/scss/partials/_global.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #090A0A;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
 }
 
-@media screen and (min-width: 1440px) {
-  /* line 17, src/scss/partials/_global.scss */
-  h1, h2 {
-    margin-bottom: 1.9vw;
-  }
-}
-
-/* line 22, src/scss/partials/_global.scss */
+/* line 23, src/scss/partials/_global.scss */
 h1 {
   font-size: 32px;
   line-height: 1.07em;
@@ -172,28 +166,14 @@ h1 {
   margin-bottom: 25px;
 }
 
-@media screen and (min-width: 1440px) {
-  /* line 22, src/scss/partials/_global.scss */
-  h1 {
-    font-size: 2.23vw;
-  }
-}
-
-/* line 30, src/scss/partials/_global.scss */
+/* line 31, src/scss/partials/_global.scss */
 h1.display {
   font-size: 76px;
   line-height: 0.9em;
   letter-spacing: -0.05em;
 }
 
-@media screen and (min-width: 1440px) {
-  /* line 30, src/scss/partials/_global.scss */
-  h1.display {
-    font-size: 5.3vw;
-  }
-}
-
-/* line 39, src/scss/partials/_global.scss */
+/* line 40, src/scss/partials/_global.scss */
 h2 {
   font-size: 24px;
   line-height: 1.07em;
@@ -201,56 +181,35 @@ h2 {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1440px) {
-  /* line 39, src/scss/partials/_global.scss */
-  h2 {
-    font-size: 1.67vw;
-  }
-}
-
-/* line 48, src/scss/partials/_global.scss */
+/* line 49, src/scss/partials/_global.scss */
 h3, p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.45em;
   letter-spacing: -0.025em;
 }
 
-@media screen and (min-width: 1440px) {
-  /* line 48, src/scss/partials/_global.scss */
-  h3, p {
-    font-size: 1.25vw;
-  }
-}
-
-/* line 57, src/scss/partials/_global.scss */
+/* line 58, src/scss/partials/_global.scss */
 p {
   font-weight: 300;
 }
 
-/* line 59, src/scss/partials/_global.scss */
+/* line 60, src/scss/partials/_global.scss */
 p.large {
-  font-size: 22px;
+  font-size: 20px;
 }
 
-@media screen and (min-width: 1440px) {
-  /* line 59, src/scss/partials/_global.scss */
-  p.large {
-    font-size: 1.53vw;
-  }
-}
-
-/* line 67, src/scss/partials/_global.scss */
+/* line 68, src/scss/partials/_global.scss */
 a {
   color: #00AD8D;
   font-weight: 500;
 }
 
-/* line 72, src/scss/partials/_global.scss */
+/* line 73, src/scss/partials/_global.scss */
 strong, b {
   font-weight: 600;
 }
 
-/* line 74, src/scss/partials/_global.scss */
+/* line 75, src/scss/partials/_global.scss */
 .btn {
   display: inline-block;
   position: relative;
@@ -270,23 +229,23 @@ strong, b {
   text-decoration: none;
 }
 
-/* line 90, src/scss/partials/_global.scss */
+/* line 91, src/scss/partials/_global.scss */
 .btn.white {
   border-color: #fff;
   color: #fff;
 }
 
-/* line 93, src/scss/partials/_global.scss */
+/* line 94, src/scss/partials/_global.scss */
 .btn.white:before {
   background: #fff;
 }
 
-/* line 96, src/scss/partials/_global.scss */
+/* line 97, src/scss/partials/_global.scss */
 .btn.white:hover {
   color: #090A0A;
 }
 
-/* line 100, src/scss/partials/_global.scss */
+/* line 101, src/scss/partials/_global.scss */
 .btn:before {
   content: '';
   display: block;
@@ -301,39 +260,39 @@ strong, b {
   z-index: -1;
 }
 
-/* line 112, src/scss/partials/_global.scss */
+/* line 113, src/scss/partials/_global.scss */
 .btn:hover {
   color: #fff;
 }
 
-/* line 114, src/scss/partials/_global.scss */
+/* line 115, src/scss/partials/_global.scss */
 .btn:hover:before {
   height: 100%;
 }
 
-/* line 120, src/scss/partials/_global.scss */
+/* line 121, src/scss/partials/_global.scss */
 .btn.btn-small {
   line-height: 36px;
 }
 
-/* line 124, src/scss/partials/_global.scss */
+/* line 125, src/scss/partials/_global.scss */
 .btn.green {
   background: #00AD8D;
   border-color: #00AD8D;
   color: #fff;
 }
 
-/* line 128, src/scss/partials/_global.scss */
+/* line 129, src/scss/partials/_global.scss */
 .btn.green:before {
   background: #26b99e;
 }
 
-/* line 131, src/scss/partials/_global.scss */
+/* line 132, src/scss/partials/_global.scss */
 .btn.green:hover {
   border-color: #26b99e;
 }
 
-/* line 137, src/scss/partials/_global.scss */
+/* line 138, src/scss/partials/_global.scss */
 .chevron-arrow-right:after {
   content: '';
   display: inline-block;
@@ -346,12 +305,12 @@ strong, b {
   margin-left: 5px;
 }
 
-/* line 147, src/scss/partials/_global.scss */
+/* line 148, src/scss/partials/_global.scss */
 .wrapper {
   margin-top: 80px;
 }
 
-/* line 151, src/scss/partials/_global.scss */
+/* line 152, src/scss/partials/_global.scss */
 .absolute-0 {
   position: absolute;
   top: 0;
@@ -360,18 +319,26 @@ strong, b {
   left: 0;
 }
 
-/* line 155, src/scss/partials/_global.scss */
+/* line 156, src/scss/partials/_global.scss */
 .half-col {
   width: 50%;
 }
 
-/* line 159, src/scss/partials/_global.scss */
-.slider-wrap-pagination {
-  position: relative;
+@media screen and (max-width: 991px) {
+  /* line 156, src/scss/partials/_global.scss */
+  .half-col {
+    width: 100%;
+  }
 }
 
-/* line 161, src/scss/partials/_global.scss */
-.slider-wrap-pagination .dot-container {
+/* line 163, src/scss/partials/_global.scss */
+.slider-wrap-pagination {
+  position: relative;
+  height: 100%;
+}
+
+/* line 168, src/scss/partials/_global.scss */
+.dot-container {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -379,8 +346,8 @@ strong, b {
           transform: translateX(-50%);
 }
 
-/* line 164, src/scss/partials/_global.scss */
-.slider-wrap-pagination .dot-container .dot {
+/* line 171, src/scss/partials/_global.scss */
+.dot-container .dot {
   cursor: pointer;
   height: 14px;
   width: 14px;
@@ -393,11 +360,38 @@ strong, b {
   opacity: .5;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
-/* line 174, src/scss/partials/_global.scss */
-.slider-wrap-pagination .dot-container .dot.active {
+/* line 182, src/scss/partials/_global.scss */
+.dot-container .dot.active {
   opacity: 1;
+}
+
+/* line 189, src/scss/partials/_global.scss */
+.section-block {
+  margin: 0 40px;
+}
+
+/* line 191, src/scss/partials/_global.scss */
+.section-block .container-fluid,
+.section-block .container {
+  padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 197, src/scss/partials/_global.scss */
+  .section-block {
+    margin: 0 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 202, src/scss/partials/_global.scss */
+  .section-block {
+    margin: 0 20px;
+  }
 }
 
 /**********************************************
@@ -831,6 +825,72 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/**********************************************
+ R.S. Walsh Forms
+**********************************************/
+/* line 6, src/scss/partials/_rs-forms.scss */
+form.rs-form input,
+form.rs-form textarea {
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid rgba(9, 10, 10, 0.3);
+  padding: 0;
+  display: block;
+  background: rgba(9, 10, 10, 0.02);
+  font-size: 17px;
+  line-height: 26px;
+  padding: 9px 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+}
+
+/* line 21, src/scss/partials/_rs-forms.scss */
+form.rs-form input:focus,
+form.rs-form textarea:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 26, src/scss/partials/_rs-forms.scss */
+form.rs-form input[type=submit] {
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+  background: transparent;
+}
+
+/* line 34, src/scss/partials/_rs-forms.scss */
+form.rs-form textarea {
+  resize: none;
+}
+
+/* line 38, src/scss/partials/_rs-forms.scss */
+form.rs-form .form-row.half {
+  width: 47%;
+  float: left;
+  margin-right: 6%;
+}
+
+/* line 42, src/scss/partials/_rs-forms.scss */
+form.rs-form .form-row.half.last {
+  margin: 0;
+}
+
+/* line 46, src/scss/partials/_rs-forms.scss */
+form.rs-form .form-row:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/* line 50, src/scss/partials/_rs-forms.scss */
+form.rs-form .form-submit {
+  display: inline-block;
 }
 
 /**********************************************
@@ -1577,4 +1637,547 @@ section.service-pillars div:not(.description) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 7, src/scss/partials/_garden-center.scss */
+  .gc-hero .container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 13, src/scss/partials/_garden-center.scss */
+  .gc-hero .slider {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    height: 400px;
+  }
+}
+
+/* line 19, src/scss/partials/_garden-center.scss */
+.gc-hero .main-content {
+  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 23, src/scss/partials/_garden-center.scss */
+.gc-hero .main-content .top {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 520px;
+  margin: auto;
+  padding: 80px 30px 90px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 23, src/scss/partials/_garden-center.scss */
+  .gc-hero .main-content .top {
+    max-width: 767px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 23, src/scss/partials/_garden-center.scss */
+  .gc-hero .main-content .top {
+    padding: 60px 20px 60px;
+  }
+}
+
+/* line 38, src/scss/partials/_garden-center.scss */
+.gc-hero .main-content .top img {
+  max-width: 370px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 38, src/scss/partials/_garden-center.scss */
+  .gc-hero .main-content .top img {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 38, src/scss/partials/_garden-center.scss */
+  .gc-hero .main-content .top img {
+    max-width: 260px;
+    padding-bottom: 40px;
+  }
+}
+
+/* line 52, src/scss/partials/_garden-center.scss */
+.gc-hero .inpage-nav {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100px;
+          flex: 0 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 52, src/scss/partials/_garden-center.scss */
+  .gc-hero .inpage-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 58, src/scss/partials/_garden-center.scss */
+.gc-hero .inpage-nav a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  border-top: 1px solid #c8cbcb;
+  text-align: center;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 58, src/scss/partials/_garden-center.scss */
+  .gc-hero .inpage-nav a {
+    padding: 15px 0;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  /* line 71, src/scss/partials/_garden-center.scss */
+  .gc-hero .inpage-nav a:not(:last-child) {
+    border-right: 1px solid #c8cbcb;
+  }
+}
+
+/* line 76, src/scss/partials/_garden-center.scss */
+.gc-hero .inpage-nav a span {
+  -webkit-transform: translateX(13px);
+          transform: translateX(13px);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+/* line 80, src/scss/partials/_garden-center.scss */
+.gc-hero .inpage-nav a svg {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  width: 15px;
+  margin-left: 11px;
+  opacity: 0;
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+/* line 87, src/scss/partials/_garden-center.scss */
+.gc-hero .inpage-nav a:hover {
+  background: black;
+  color: lightgray;
+  border-color: black;
+}
+
+/* line 91, src/scss/partials/_garden-center.scss */
+.gc-hero .inpage-nav a:hover span {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* line 94, src/scss/partials/_garden-center.scss */
+.gc-hero .inpage-nav a:hover svg {
+  -webkit-animation: arrow-bounce 1s ease infinite;
+          animation: arrow-bounce 1s ease infinite;
+  opacity: .6;
+}
+
+@-webkit-keyframes arrow-bounce {
+  0% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+}
+
+@keyframes arrow-bounce {
+  0% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+}
+
+/* line 118, src/scss/partials/_garden-center.scss */
+.gc-tile-showcase {
+  padding: 100px 0 70px;
+}
+
+/* line 120, src/scss/partials/_garden-center.scss */
+.gc-tile-showcase .row > div {
+  height: 290px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 120, src/scss/partials/_garden-center.scss */
+  .gc-tile-showcase .row > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 120, src/scss/partials/_garden-center.scss */
+  .gc-tile-showcase .row > div {
+    height: 200px;
+  }
+}
+
+/* line 130, src/scss/partials/_garden-center.scss */
+.gc-tile-showcase .tile-wrap {
+  height: 100%;
+}
+
+/* line 132, src/scss/partials/_garden-center.scss */
+.gc-tile-showcase .tile-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* line 138, src/scss/partials/_garden-center.scss */
+.gc-tile-showcase .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 138, src/scss/partials/_garden-center.scss */
+  .gc-tile-showcase .content {
+    height: inherit !important;
+    margin-bottom: 60px !important;
+  }
+}
+
+/* line 146, src/scss/partials/_garden-center.scss */
+.gc-tile-showcase .content .inner {
+  max-width: 360px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 146, src/scss/partials/_garden-center.scss */
+  .gc-tile-showcase .content .inner {
+    text-align: center;
+    max-width: 767px;
+  }
+}
+
+/* line 158, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .container-fluid {
+  background: -webkit-gradient(linear, left bottom, right top, from(#E5EAEA), to(#F2F4F4));
+  background: linear-gradient(to top right, #E5EAEA, #F2F4F4);
+  padding: 80px 0 90px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 162, src/scss/partials/_garden-center.scss */
+  .gc-get-inspired .content {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 166, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .content .inner {
+  max-width: 420px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 166, src/scss/partials/_garden-center.scss */
+  .gc-get-inspired .content .inner {
+    max-width: 767px;
+    text-align: center;
+  }
+}
+
+/* line 175, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .content .top {
+  margin-bottom: 60px;
+}
+
+/* line 180, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .icon-bullets .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 180, src/scss/partials/_garden-center.scss */
+  .gc-get-inspired .icon-bullets .inner {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 180, src/scss/partials/_garden-center.scss */
+  .gc-get-inspired .icon-bullets .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 190, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .icon-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 192, src/scss/partials/_garden-center.scss */
+  .gc-get-inspired .icon-col:first-child {
+    margin-bottom: 28px;
+  }
+}
+
+/* line 199, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .icon-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 202, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .icon-row:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 199, src/scss/partials/_garden-center.scss */
+  .gc-get-inspired .icon-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* line 208, src/scss/partials/_garden-center.scss */
+.gc-get-inspired .icon-row p {
+  margin-left: 14px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 208, src/scss/partials/_garden-center.scss */
+  .gc-get-inspired .icon-row p {
+    margin-left: 0;
+  }
+}
+
+/* line 220, src/scss/partials/_garden-center.scss */
+.gc-events {
+  padding: 100px 0;
+}
+
+/* line 222, src/scss/partials/_garden-center.scss */
+.gc-events .title {
+  margin-bottom: 60px;
+}
+
+/* line 224, src/scss/partials/_garden-center.scss */
+.gc-events .title h1 {
+  text-align: center;
+}
+
+/* line 227, src/scss/partials/_garden-center.scss */
+.gc-events .title hr {
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: black;
+  border: none;
+}
+
+/* line 235, src/scss/partials/_garden-center.scss */
+.gc-events .calendar {
+  background: lightgray;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 251, src/scss/partials/_garden-center.scss */
+.slider-wrap-pagination div {
+  height: 100%;
+}
+
+/* line 254, src/scss/partials/_garden-center.scss */
+.slide-wrap img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right center;
+     object-position: right center;
+}
+
+/* line 269, src/scss/partials/_garden-center.scss */
+.gc-ask-a-gardener {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+/* line 272, src/scss/partials/_garden-center.scss */
+.gc-ask-a-gardener .main-content {
+  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px 0 110px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 278, src/scss/partials/_garden-center.scss */
+  .gc-ask-a-gardener .main-content h1 {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 272, src/scss/partials/_garden-center.scss */
+  .gc-ask-a-gardener .main-content {
+    z-index: 1;
+    background: rgba(9, 10, 10, 0.6);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 289, src/scss/partials/_garden-center.scss */
+  .gc-ask-a-gardener .main-content .rs-form input:not([type=submit]),
+  .gc-ask-a-gardener .main-content .rs-form textarea {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 296, src/scss/partials/_garden-center.scss */
+  .gc-ask-a-gardener .main-content .rs-form .form-submit {
+    display: block;
+  }
+}
+
+/* line 302, src/scss/partials/_garden-center.scss */
+.gc-ask-a-gardener .main-content h1 {
+  margin-bottom: 30px;
+}
+
+/* line 305, src/scss/partials/_garden-center.scss */
+.gc-ask-a-gardener .main-content .inner {
+  width: 100%;
+  max-width: 575px;
+  padding: 0 30px;
+}
+
+/* line 311, src/scss/partials/_garden-center.scss */
+.gc-ask-a-gardener .image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 311, src/scss/partials/_garden-center.scss */
+  .gc-ask-a-gardener .image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+/* line 318, src/scss/partials/_garden-center.scss */
+.gc-ask-a-gardener .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

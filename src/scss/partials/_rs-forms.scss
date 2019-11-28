@@ -1,0 +1,60 @@
+/**********************************************
+ R.S. Walsh Forms
+**********************************************/
+
+form.rs-form {
+  input, 
+  textarea {
+    width: 100%;
+    outline: none;
+    appearance: none;
+    border: 1px solid rgba($black,.3);
+    padding: 0;
+    display: block;
+    background: rgba($black, .02);
+    font-size: 17px;
+    line-height: 26px;
+    padding: 9px 16px;
+    font-family: $body-font;
+    font-weight: 300;
+    transition: background 0.3s ease-out;
+    &:focus {
+      background: rgba(#fff, .5);
+    }
+  }
+  input {
+    &[type=submit] {
+      border: none;
+      color: #fff;
+      font-weight: 500;
+      position: relative;
+      background: transparent;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+  .form-row {
+    &.half {
+      width: 47%;
+      float: left;
+      margin-right: 6%;
+      &.last {
+        margin: 0;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  .form-submit {
+    display: inline-block;
+  }
+}
+
+
+
+
+
+
+

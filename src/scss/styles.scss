@@ -4,10 +4,12 @@
 @import 'partials/bootstrap-overrides';
 @import 'partials/fonts';
 @import 'partials/global';
-@import 'partials/header';
-@import 'partials/footer';
+
 
 // Components ////////////////////////////////////////
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/rs-forms';
 @import 'partials/project-inquiry-cta';
 
 // Templates ///////////////////////////////////////// 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="25px" viewBox="0 0 15 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Arrow / Down / Black</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Arrow-/-Down-/-Black" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polyline id="Path" stroke="#090A0A" transform="translate(7.500000, 20.000000) rotate(90.000000) translate(-7.500000, -20.000000) " points="4 13 11 20 4 27"></polyline>
+        <line x1="7.5" y1="23" x2="7.5" y2="1" id="Line" stroke="#090A0A" stroke-linecap="square"></line>
+    </g>
+</svg>

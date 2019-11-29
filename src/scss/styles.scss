@@ -1,20 +1,23 @@
+// Globals ////////////////////////////////////////
 @import '../../node_modules/bourbon/core/bourbon';
-@import 'partials/reset';
-@import 'partials/variables';
-@import 'partials/bootstrap-overrides';
-@import 'partials/fonts';
-@import 'partials/global';
+@import 'partials/globals/reset';
+@import 'partials/globals/variables';
+@import 'partials/globals/bootstrap-overrides';
+@import 'partials/globals/fonts';
+@import 'partials/globals/global';
 
 
 // Components ////////////////////////////////////////
-@import 'partials/header';
-@import 'partials/footer';
-@import 'partials/rs-forms';
-@import 'partials/project-inquiry-cta';
+@import 'partials/components/header';
+@import 'partials/components/footer';
+@import 'partials/components/rs-forms';
+@import 'partials/components/slider-defaults';
+@import 'partials/components/project-inquiry-cta';
 
-// Templates ///////////////////////////////////////// 
-@import 'partials/homepage';
-@import 'partials/projects';
-@import 'partials/project-single';
-@import 'partials/services';
-@import 'partials/garden-center';
+
+// Pages ///////////////////////////////////////// 
+@import 'partials/pages/homepage';
+@import 'partials/pages/projects';
+@import 'partials/pages/project-single';
+@import 'partials/pages/services';
+@import 'partials/pages/garden-center';

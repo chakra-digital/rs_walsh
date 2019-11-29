@@ -26,8 +26,11 @@
       flex-direction: column;
       max-width: 520px;
       margin: auto;
-      padding: 80px 30px 90px;
+      padding: 80px 30px;
       justify-content: center;
+      @media screen and (max-width: $mq-max-xl) {
+        padding: 70px 30px;
+      }
       @media screen and (max-width: $mq-max-lg) {
         max-width: $mq-max-md;
         text-align: center;
@@ -50,7 +53,7 @@
     
   }
   .inpage-nav {
-    flex: 0 0 100px;
+    flex: 1;
     display: flex;
     @media screen and (max-width: $mq-max-sm) {
       flex-direction: column;
@@ -65,6 +68,7 @@
       transition:  0.3s ease-out;
       border-top: 1px solid #c8cbcb;
       text-align: center;
+      padding: 37px 0;
       @media screen and (max-width: $mq-max-sm) {
         padding: 15px 0;
       }
@@ -116,7 +120,7 @@
 
 
 .gc-tile-showcase {
-  padding: 100px 0 70px;
+  margin-bottom: -30px;
   .row > div {
     height: 290px;
     margin-bottom: 30px;
@@ -129,10 +133,20 @@
   }
   .tile-wrap {
     height: 100%;
+    position: relative;
+    &:hover {
+      img.primary {
+        opacity: 0;
+      }
+    }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      &.primary {
+        position: absolute;
+        transition: .4s ease-out;
+      }
     }
   }
   .content {
@@ -218,18 +232,10 @@
 
 
 .gc-events {
-  padding: 100px 0;
   .title {
     margin-bottom: 60px;
     h1 {
       text-align: center;
-    }
-    hr {
-      display: block;
-      width: 1px;
-      height: 40px;
-      background: black;
-      border: none;
     }
   }
   .calendar {
@@ -240,28 +246,6 @@
     justify-content: center;
   }
 }
-
-
-
-
-
-
-
-
-.slider-wrap-pagination div {
-  height: 100%;
-}
-.slide-wrap img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: right center;
-}
-
-
-
-
-
 
 
 
@@ -324,3 +308,78 @@
 }
 
 
+.gc-visit-us {
+  .map {
+    @media screen and (max-width: $mq-max-md) {
+      order: 2;
+    }
+  }
+  .map-placeholder {
+    background: url('http://localhost:3000/images/map-placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 500px;
+    p {
+      background: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    }
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0 110px;
+    .inner {
+      max-width: 410px;
+      padding: 0 30px;
+      & > p {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .glyph-bullet {
+    display: flex;
+    margin-bottom: 15px;
+
+    svg {
+      margin-right: 16px;
+      position: relative;
+      top: 5px;
+      opacity: .3;
+    }
+    a {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  .hours-of-operation {
+    margin-top: 30px;
+    & > div {
+      display: flex;
+      justify-content: space-between;
+    }
+    .days {
+      font-weight: 500;
+    }
+    .hours {
+      width: 100%;
+      max-width: 160px;
+    }
+  }
+}
+
+.schedule-tour {
+  margin: 40px 0 100px;
+  h1 {
+    margin-top: 60px;
+  }
+  [class^='col'] {
+    text-align: center;
+  }
+}

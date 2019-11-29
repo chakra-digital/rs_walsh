@@ -251,3 +251,15 @@ if(sliderWrapPagination) {
 
   let sliderTimer =	setInterval( (function(){ sliderPagination.next();	}), 6000 );
 }
+
+
+
+/********************************
+ Smooth Scroll
+********************************/
+var scroll = new SmoothScroll('a[href*="#"]', {
+  offset: '100px',
+  speed: 700,
+  speedAsDuration: true,
+  easing: 'easeInOutQuint'
+});

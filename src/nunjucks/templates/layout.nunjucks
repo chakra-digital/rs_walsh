@@ -26,6 +26,7 @@
 
 	
 	<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+	<script src="{{root_url}}/js/plugins/smooth-scroll.polyfills.min.js"></script>
 	<script src="{{root_url}}/js/plugins/lodash/lodash.custom.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@2.6.3/lib/bodyScrollLock.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
@@ -49,7 +50,12 @@
 		{% if body_class == 'project-single' or body_class == 'projects' %}
 			<script type="text/javascript" src="{{root_url}}/js/projects.js"></script>
 		{% endif %}
-		
+
+		{% if body_class == 'garden-center' %}
+			<script type="text/javascript" src="{{root_url}}/js/garden-center.js"></script>
+		{% endif %}
+
+
 	{% endif %}
 </body>
 </html>

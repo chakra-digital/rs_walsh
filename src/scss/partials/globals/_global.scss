@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $text-color;
+  letter-spacing: -.02em;
 }
 
 h1, h2, h3, h4, h5, h6 { 
@@ -15,26 +16,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   font-weight: 500;
 }
-// h1, h2 {
-//   @media screen and (min-width: $mq-min-15inch) {
-//     margin-bottom: 1.9vw;
-//   }
-// }
 h1 {
   font-size: 32px;
   line-height: 1.07em;
   letter-spacing: -0.04em;
   margin-bottom: 25px;
-  // @media screen and (min-width: $mq-min-15inch) {
-  //   font-size: 2.23vw;
-  // }
   &.display {
     font-size: 76px;
     line-height: 0.9em;
     letter-spacing: -0.05em;
-    // @media screen and (min-width: $mq-min-15inch) {
-    //   font-size: 5.3vw;
-    // }
   }
 }
 h2 {
@@ -42,26 +32,17 @@ h2 {
   line-height: 1.07em;
   letter-spacing: -0.034em;
   margin-bottom: 20px;
-  // @media screen and (min-width: $mq-min-15inch) {
-  //   font-size: 1.67vw;
-  // }
 }
 h3, p {
   font-size: 17px;
   line-height: 1.45em;
-  letter-spacing: -0.025em;
-  // @media screen and (min-width: $mq-min-15inch) {
-  //   font-size: 1.25vw;
-  // }
 }
 
 p {
   font-weight: 300;
-  &.large{
-    font-size: 20px;
-    // @media screen and (min-width: $mq-min-15inch) {
-    //   font-size: 1.53vw;
-    // }
+  &.large {
+    font-size: 22px;
+    line-height: 1.3em;
   }
 }
 
@@ -146,7 +127,7 @@ strong, b { font-weight: 600 }
 }
 
 .wrapper {
-	margin-top: $header-height;
+	margin-top: $header-height + 40px;
 }
 
 .absolute-0 {
@@ -185,25 +166,22 @@ strong, b { font-weight: 600 }
   }
 }
 
-
-.section-block {
-  margin: 0 40px;
-  .container-fluid,
-  .container {
-    padding: 0;
+.map-placeholder {
+  background: url('http://localhost:3000/images/map-placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 500px;
+  p {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
   }
 }
-@media screen and (max-width: 991px) {
-  .section-block {
-      margin: 0 30px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .section-block {
-      margin: 0 20px;
-  }
-}
-
 
 .section-margin-top {
   margin-top: 100px;
@@ -216,4 +194,41 @@ hr.vertical {
   height: 40px;
   background: black;
   border: none;
+}
+
+
+.glyph-bullet {
+  display: flex;
+  margin: 20px 0;
+  svg {
+    margin-right: 16px;
+    position: relative;
+    top: 3px;
+    opacity: .3;
+  }
+  a, p {
+    font-weight: 500;
+    text-decoration: none;
+    color: $black;
+    line-height: 1.45em;
+  }
+}
+
+.hours-of-operation {
+  margin-top: 30px;
+  & > div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .days {
+    font-weight: 500;
+  }
+  .hours {
+    width: 100%;
+    max-width: 160px;
+  }
+}
+
+.copy-block {
+  margin-bottom: 40px;
 }

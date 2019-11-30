@@ -1,0 +1,86 @@
+{% set body_class = 'contact' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<section class="contact-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 animate-in">
+				<h1>Get in touch!</h1>
+			</div>
+			<div class="col-md-4 animate-in">
+				<h2>Main Office</h2>
+				<p>Have questions about our company or are thinking about starting a project?  Call our main office to set up a meeting with one of our talented architects and designers.</p>
+				<div class="glyph-bullet">
+					<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M2.69 19C11.69 19 19 11.7 19 2.69c0-.4-.27-.74-.65-.82l-3.66-.85c-.4-.09-.8.12-.97.49l-1.68 3.94a.84.84 0 00.24.98l2.13 1.75a13.03 13.03 0 01-6.23 6.23l-1.74-2.14a.84.84 0 00-.99-.24l-3.94 1.69a.85.85 0 00-.49.97l.85 3.66c.08.38.42.65.82.65z" fill="#090A0A" fill-rule="nonzero"></path></svg>
+					<a href="tel:239-395-5859">239-395-5859</a>
+				</div>
+				<a href="{{root_url}}/start-a-project.html" class="btn green">Project Inquiries</a>
+			</div>
+			<div class="col-md-4 animate-in">
+				<h2>Mailing Address</h2>
+				<p>No customer access at this location.</p>
+				<div class="glyph-bullet">
+					<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M14.94 19c.93 0 1.68-.76 1.68-1.69v-1.69h.7c.24 0 .43-.18.43-.42v-1.4a.42.42 0 00-.42-.43h-.7v-2.25h.7c.23 0 .42-.18.42-.42V9.3a.42.42 0 00-.42-.43h-.7V6.62h.7c.23 0 .42-.18.42-.42V4.8a.42.42 0 00-.42-.43h-.7V2.7c0-.93-.76-1.69-1.7-1.69H3.7C2.76 1 2 1.76 2 2.69V17.3c0 .93.76 1.69 1.69 1.69h11.25zM9.3 10a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zm3.15 4.5h-6.3c-.43 0-.79-.3-.79-.68v-.67c0-1.12 1.06-2.03 2.37-2.03h.17a3.64 3.64 0 002.8 0h.18c1.3 0 2.36.91 2.36 2.03v.67c0 .38-.35.68-.79.68z" fill="#090A0A" fill-rule="nonzero"></path></svg>
+					<p>8050 Penzance Blvd.<br>Fort Myers, FL 33912</p>
+				</div>
+			</div>
+			<div class="col-md-4 animate-in">
+				<h2>Design & Accounting Office</h2>
+				<div class="glyph-bullet">
+					<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M14.94 19c.93 0 1.68-.76 1.68-1.69v-1.69h.7c.24 0 .43-.18.43-.42v-1.4a.42.42 0 00-.42-.43h-.7v-2.25h.7c.23 0 .42-.18.42-.42V9.3a.42.42 0 00-.42-.43h-.7V6.62h.7c.23 0 .42-.18.42-.42V4.8a.42.42 0 00-.42-.43h-.7V2.7c0-.93-.76-1.69-1.7-1.69H3.7C2.76 1 2 1.76 2 2.69V17.3c0 .93.76 1.69 1.69 1.69h11.25zM9.3 10a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zm3.15 4.5h-6.3c-.43 0-.79-.3-.79-.68v-.67c0-1.12 1.06-2.03 2.37-2.03h.17a3.64 3.64 0 002.8 0h.18c1.3 0 2.36.91 2.36 2.03v.67c0 .38-.35.68-.79.68z" fill="#090A0A" fill-rule="nonzero"></path></svg>
+					<p>13723 Jetport Parkway<br>Fort Myers, FL 33913</p>
+				</div>		
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="contact-gc section-margin-top animate-in">
+	<div class="container-fluid">
+		<div class="row no-gutters">
+​
+			<div class="col-md-6 content">
+				<div class="inner">
+					<h1>Looking for the garden center?</h1>
+					<p>Come get excited about the landscape opportunities for your corner of paradise!</p>
+					<div class="glyph-bullet">
+						<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M2.69 19C11.69 19 19 11.7 19 2.69c0-.4-.27-.74-.65-.82l-3.66-.85c-.4-.09-.8.12-.97.49l-1.68 3.94a.84.84 0 00.24.98l2.13 1.75a13.03 13.03 0 01-6.23 6.23l-1.74-2.14a.84.84 0 00-.99-.24l-3.94 1.69a.85.85 0 00-.49.97l.85 3.66c.08.38.42.65.82.65z" fill="#090A0A" fill-rule="nonzero"></path></svg>
+						<p><a href="tel:239-395-5859">239-395-5859</a></p>
+					</div>
+					<div class="glyph-bullet">
+						<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M14.94 19c.93 0 1.68-.76 1.68-1.69v-1.69h.7c.24 0 .43-.18.43-.42v-1.4a.42.42 0 00-.42-.43h-.7v-2.25h.7c.23 0 .42-.18.42-.42V9.3a.42.42 0 00-.42-.43h-.7V6.62h.7c.23 0 .42-.18.42-.42V4.8a.42.42 0 00-.42-.43h-.7V2.7c0-.93-.76-1.69-1.7-1.69H3.7C2.76 1 2 1.76 2 2.69V17.3c0 .93.76 1.69 1.69 1.69h11.25zM9.3 10a2.25 2.25 0 110-4.5 2.25 2.25 0 010 4.5zm3.15 4.5h-6.3c-.43 0-.79-.3-.79-.68v-.67c0-1.12 1.06-2.03 2.37-2.03h.17a3.64 3.64 0 002.8 0h.18c1.3 0 2.36.91 2.36 2.03v.67c0 .38-.35.68-.79.68z" fill="#090A0A" fill-rule="nonzero"></path></svg>
+						<p><a href="https://goo.gl/maps/UYSWDUvF6JbYcbEJ6" target="_blank">3889 Sanibel Captiva Rd<br>Sanibel, FL 33957 USA</a></p>
+					</div>
+					<div class="hours-of-operation">
+						<div>
+							<p class="large days">Monday - Friday</p>
+							<p class="large hours">10am - 4pm</p>
+						</div>
+						<div>
+							<p class="large days">Saturday</p>
+							<p class="large hours">9am - 1pm</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 map">
+				<div class="map-placeholder">
+					<p>A live google map will go here</p>
+				</div>
+			</div>
+​
+			
+		</div>
+	</div>
+</section>
+
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

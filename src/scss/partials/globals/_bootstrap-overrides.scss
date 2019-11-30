@@ -21,7 +21,7 @@
     }
 }
 
-.row {
+.row:not(.no-gutters) {
     @media screen and (max-width: $mq-max-lg) {
         margin-left: -10px;
         margin-right: -10px

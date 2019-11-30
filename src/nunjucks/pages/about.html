@@ -1,0 +1,93 @@
+{% set body_class = 'about-us' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<div class="container-fluid about-outer">
+
+	<div class="inpage-nav">
+		<nav>
+			<div class="active">
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#who-we-are">who we are</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#team">our team</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#space">our space</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#community">community</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#awards">awards</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="{{root_url}}/blog.html">blog</a>
+			</div>
+		</nav>
+	</div>
+
+	<main>
+		<div class="container">
+
+			<div class="row" id="who-we-are">
+				<div class="col-md-6 content">
+					<div class="copy-block">
+						<h1>Who we are</h1>
+						<p class="large">R.S. Walsh Landscaping is a family owned and operated, full service landscape design-build company that specializes in custom residential landscape design, installation, and maintenance.</p>
+					</div>
+					<div class="copy-block">
+						<h2>Our Mission</h2>
+						<p>Our mission is to present a unique, personalized landscape design that reflects our client's taste, and exceeds their expectations, providing an invaluable addition to their property. Our devotion to superior client service, from initial concept and design to landscape installation, is the foundation of our company and critical to maintaining lasting relationships with our clients.</p>
+					</div>
+					<div class="copy-block">
+						<h2>Our History</h2>
+						<p>Bob is a visionary person and talented designer.  Through hard work and sheer determination, he built a successful, multi-disciplinary company comprised of a landscape architecture and design division, professional landscape installation and custom maintenance division, a tree nursery location and  a retail garden center located on Sanibel Island.  The company continues to evolve to meet the needs of our clients and supporting the community in which we live and work.</p>
+					</div>
+				</div>
+				<div class="col-md-6 images">
+					<div class="video-wrap">
+						<video autoplay loop muted playsinline poster="{{root_url}}/video/rs-captiva-about-snippet.jpg">
+							<source src="{{root_url}}/video/rs-captiva-about-snippet.webm" type="video/webm">
+							<source src="{{root_url}}/video/rs-captiva-about-snippet.mp4" type="video/mp4">
+							<source src="{{root_url}}/video/rs-captiva-about-snippet.ogv" type="video/ogg">
+						</video>
+					</div>
+					<img src="{{root_url}}/images/about/lisa-and-bob-walsh.jpg" alt="Lisa and Bob Walsh">
+				</div>
+			</div>
+		</div>
+
+		<div class="row section-margin-top" id="team">
+			<div class="col-12">
+				<div class="copy-block">
+					<h1>Our Team</h1>
+					<p class="large">Certe, inquam, pertinax non possim accommodare torquatos nostros? quos tu tam egregios viros censes aut odit aut in culpa, qui officia deserunt mollitia animi.</p>
+				</div>
+			</div>
+
+			{% for member in team %}
+			<a href="{{root_url}}/team-single.html" class="col-md-4 team-single">
+				<div class="pic">
+					<div class="absolute-0">
+						<img src="{{root_url}}/images/about/{{member.img_url}}" alt="{{member.name}}">
+					</div>
+				</div>
+				<div class="meta">
+					<h3 class="name">{{member.name}}</h3> <span>|</span> <p class="title">{{member.title}}</p>
+				</div>
+			</a>
+			{% endfor %}
+		</div>
+
+	</main>
+
+</div>
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

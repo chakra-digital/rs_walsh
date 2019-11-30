@@ -3,14 +3,8 @@
 **********************************************/
 
 .gc-hero {
-  padding-top: 40px;
-  .container-fluid {
-    display: flex;
-    @media screen and (max-width: $mq-max-lg) {
-      flex-direction: column;
-    }
-  }
   .slider {
+    max-height: 700px;
     @media screen and (max-width: $mq-max-lg) {
       order: 2;
       height: 400px;
@@ -55,6 +49,9 @@
   .inpage-nav {
     flex: 1;
     display: flex;
+    @media screen and (min-width: $mq-min-sm) {
+      max-height: 160px;
+    }
     @media screen and (max-width: $mq-max-sm) {
       flex-direction: column;
     }
@@ -169,7 +166,7 @@
 
 
 .gc-get-inspired {
-  .container-fluid {
+  .row {
     background: linear-gradient(to top right, #E5EAEA, #F2F4F4);
     padding: 80px 0 90px
   }
@@ -253,6 +250,9 @@
 .gc-ask-a-gardener {
   display: flex;
   position: relative;
+  .row {
+    position: relative;
+  }
   .main-content {
     background: $gray-gradient;
     display: flex;
@@ -314,22 +314,6 @@
       order: 2;
     }
   }
-  .map-placeholder {
-    background: url('http://localhost:3000/images/map-placeholder.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    min-height: 500px;
-    p {
-      background: white;
-      padding: 10px 20px;
-      border-radius: 30px;
-      box-shadow: 0 10px 20px rgba(0,0,0,.2);
-    }
-  }
   .content {
     display: flex;
     align-items: center;
@@ -341,35 +325,6 @@
       & > p {
         margin-bottom: 30px;
       }
-    }
-  }
-  .glyph-bullet {
-    display: flex;
-    margin-bottom: 15px;
-
-    svg {
-      margin-right: 16px;
-      position: relative;
-      top: 5px;
-      opacity: .3;
-    }
-    a {
-      text-decoration: none;
-      color: $black;
-    }
-  }
-  .hours-of-operation {
-    margin-top: 30px;
-    & > div {
-      display: flex;
-      justify-content: space-between;
-    }
-    .days {
-      font-weight: 500;
-    }
-    .hours {
-      width: 100%;
-      max-width: 160px;
     }
   }
 }

@@ -1,0 +1,93 @@
+/**********************************************
+ About Page
+**********************************************/
+
+
+.about-outer {
+  display: flex;
+  .inpage-nav {
+    flex: 1 0 200px;
+    nav {
+      & > div {
+        margin-bottom: 15px;
+        position: relative;
+        &.active {
+          img {
+            opacity: 1;
+          }
+          a {
+            opacity: 1;
+            transform: translateX(40px);
+          }
+        }
+        &:hover {
+          a {
+            opacity: 1;
+          }
+        }
+      }
+      a,img {
+        transition: 0.3s ease-out;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: $black;
+        opacity: .4;
+        
+      }
+      img {
+        position: absolute;
+        opacity: 0;
+      }
+    }
+    
+  }
+  main {
+    .container {
+      padding: 0;
+      max-width: unset;
+    }
+  }
+}
+
+#who-we-are {
+  .images {
+    margin-top: 60px;
+  }
+  video {
+    margin-bottom: 30px;
+  }
+  video, img {
+    width: 100%;
+    display: block;
+  }
+}
+
+#team {
+  .team-single {
+    text-decoration: none;
+    color: $black;
+    margin-bottom: 30px;
+  }
+  .pic {
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    position: relative;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .meta {
+    * {
+      display: inline-block;
+    }
+    span {
+      margin: 0 10px;
+    }
+  }
+}

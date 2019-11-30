@@ -82,5 +82,42 @@
 		"imageCount" : 6,
 		"featuredImage" : "3"
 	}],
+	"team" : [{
+		"name" : "Mariah Bakke",
+		"img_url" : "mariah-bakke.jpg",
+		"title" : "Landscape Architect"
+	},{
+		"name" : "Bob Melzer",
+		"img_url" : "bob-melzer.jpg",
+		"title" : "Landscape Architect"
+	},{
+		"name" : "Robert S. Walsh",
+		"img_url" : "robert-walsh.jpg",
+		"title" : "Owner & Senior Sesigner"
+	},{
+		"name" : "Fred Montalvo",
+		"img_url" : "fred-montalvo.jpg",
+		"title" : "Senior Landscape Designer"
+	},{
+		"name" : "Richard Sbuttoni",
+		"img_url" : "richard-sbuttoni.jpg",
+		"title" : "Landscape Designer"
+	},{
+		"name" : "Luke Mancuso",
+		"img_url" : "luke-mancuso.jpg",
+		"title" : "Landscape Designer"
+	},{
+		"name" : "Jeremy Walsh",
+		"img_url" : "jeremy-walsh.jpg",
+		"title" : "Project Manager"
+	},{
+		"name" : "Trevor Sulzbach",
+		"img_url" : "trevor-sulzbach.jpg",
+		"title" : "Maintenance Manager"
+	},{
+		"name" : "Justin Walsh",
+		"img_url" : "justin-walsh.jpg",
+		"title" : "Head of Operations"
+	}],
 	"root_url" : "http://localhost:3000"
 }

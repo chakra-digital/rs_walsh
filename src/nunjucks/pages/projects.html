@@ -12,11 +12,11 @@
 
 			{% for project in projects %}
 			<div class="col-lg-4 col-sm-6">
-				<a class="project-tile project animate-in" href="{{project.href}}" title="{{project.title}}">
+				<a class="project-tile project mouse-interact animate-in" href="{{project.href}}" title="{{project.title}}">
 					<div class="absolute-0">
 						<img src="{{root_url}}/images/{{project.imagePrefix}}-{{project.featuredImage}}.jpg">
 						<div class="overlay absolute-0">
-							<h2>{{project.title}}</h2>
+							<h2>{{project.title}} &rarr;</h2>
 						</div>
 					</div>
 				</a>

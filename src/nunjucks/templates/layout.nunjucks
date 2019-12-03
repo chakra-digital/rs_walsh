@@ -55,6 +55,10 @@
 			<script type="text/javascript" src="{{root_url}}/js/garden-center.js"></script>
 		{% endif %}
 
+		{% if body_class == 'about-us' %}
+			<script type="text/javascript" src="{{root_url}}/js/about.js"></script>
+		{% endif %}
+
 
 	{% endif %}
 </body>

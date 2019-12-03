@@ -3,7 +3,14 @@
 **********************************************/
 
 form.rs-form {
-  input, 
+  width: 100%;
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  input[type='text'],
+  input[type='tel'], 
+  input[type='email'],
   textarea {
     width: 100%;
     outline: none;
@@ -25,27 +32,71 @@ form.rs-form {
   }
   input {
     &[type=submit] {
-      border: none;
-      color: #fff;
+      font-size: 17px;
       font-weight: 500;
-      position: relative;
+      color: #fff;
       background: transparent;
+      border: none;
+      position: relative;
     }
   }
   textarea {
     resize: none;
   }
-  .form-row {
-    &.half {
-      width: 47%;
+  input[type='radio'] {
+    width: 0;
+    height: 0;
+    border: 0;
+    -webkit-appearance: none;
+    margin: 0;
+    &:checked {
+      & ~ label {
+        &:after {
+          display: block;
+        }
+      }
+    }
+    & ~ label {
       float: left;
-      margin-right: 6%;
+      position: relative;
+      padding-left: 30px;
+      &:before {
+        content: '';
+        display: block;
+        @include size(20px);
+        border-radius: 50%;
+        border: 1px solid rgba($black,.3);
+        background: rgba($black, .02);
+        position: absolute;
+        left: 0;
+      }
+      &:after {
+        content: '';
+        display: none;
+        @include size(12px);
+        border-radius: 50%;
+        background: $black;
+        @include position(absolute, 4px null null 4px);
+        
+      }
+    }
+
+  }
+  .form-row {
+    margin-bottom: 30px;
+    &.half {
+      width: 47.3%;
+      float: left;
+      margin-right: 5.4%;
       &.last {
         margin: 0;
       }
     }
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    &.radio {
+      label {
+        font-weight: 300;
+      }
+
     }
   }
   .form-submit {

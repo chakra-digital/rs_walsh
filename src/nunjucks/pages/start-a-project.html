@@ -1,0 +1,178 @@
+{% set body_class = "start-a-project thin-container" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<section class="section-margin-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="display">Let's start your next big project.</h1>
+			</div>
+
+			<div class="spacer-60"></div>
+
+			<div class="col-12">
+				<h1>Contact Information</h1>
+			</div>
+		</div>
+
+		<form action="" class="rs-form">
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="client_name">Client Name</label>
+					<input id="client_name" type="text">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="company_name">Company name</label>
+					<input id="company_name" type="text">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="client_contact_email">Client Contact Email</label>
+					<input id="client_contact_email" type="email">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="contact_phone">Contact Phone</label>
+					<input id="contact_phone" type="tel">
+				</div>
+			</div>
+
+			<div class="spacer-60"></div>
+
+			<div class="col-12">
+				<h1>Property Information</h1>
+			</div>
+
+			<div class="col-12">
+				<div class="form-row">
+					<label for="address">Legal Property Address</label>
+					<input id="address" type="text">
+				</div>
+			</div>
+
+			<div class="col-12">
+				<div class="form-row">
+					<label for="scope_description">Please provide a description of the project scope</label>
+					<textarea id="scope_description" rows="6"></textarea>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<h3 style="margin-bottom: 10px">Type of project</h3>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="form-row radio">
+					<input type="radio" id="type_residential" name="project_type">
+					<label for="type_residential">Residential</label>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="form-row radio">
+					<input type="radio" id="type_commercial" name="project_type">
+					<label for="type_commercial">Commercial, Mixed-Use</label>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+				<div class="form-row radio">
+					<input type="radio" id="type_other" name="project_type">
+					<label for="type_other">Other</label>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<h3 style="margin-bottom: 10px">Is your project:</h3>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-row radio">
+					<input type="radio" id="status_construction" name="project_status">
+					<label for="status_construction">Already under construction</label>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-row radio">
+					<input type="radio" id="status_soon" name="project_status">
+					<label for="status_soon">Will begin construction soon</label>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-row radio">
+					<input type="radio" id="status_not_started" name="project_status">
+					<label for="status_not_started">Construction has not started</label>
+				</div>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-row radio">
+					<input type="radio" id="status_renovation" name="project_status">
+					<label for="status_renovation">Renovation</label>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<h3 style="margin-bottom: 10px">Please list other professional consultants working on this project:</h3>
+			</div>
+
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="consultant_architect">Architect</label>
+					<input id="consultant_architect" type="text">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="consultant_intdesigner">Interior Designer</label>
+					<input id="consultant_intdesigner" type="text">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="consultant_general">General Contractor</label>
+					<input id="consultant_general" type="text">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="form-row">
+					<label for="consultant_other">Other, please specify</label>
+					<input id="consultant_other" type="text">
+				</div>
+			</div>
+
+			<div class="col-12">
+				<div class="form-row">
+					<div class="form-submit btn green">
+						<input id="submit" type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		</form>
+			
+
+			
+		</div>
+	</div>
+</section>
+
+{% include "partials/footer.html" %}
+
+	
+{% endblock %}

@@ -22,7 +22,7 @@ h1 {
   letter-spacing: -0.04em;
   margin-bottom: 25px;
   &.display {
-    font-size: 76px;
+    font-size: 56px;
     line-height: 0.9em;
     letter-spacing: -0.05em;
   }
@@ -183,8 +183,16 @@ strong, b { font-weight: 600 }
   }
 }
 
+
+.section-padding {
+  padding: 100px 0;
+}
 .section-margin-top {
   margin-top: 100px;
+}
+
+.section-margin-bottom {
+  margin-bottom: 100px;
 }
 
 
@@ -231,4 +239,9 @@ hr.vertical {
 
 .copy-block {
   margin-bottom: 40px;
+}
+
+.spacer-60 {
+  height: 60px;
+  width: 100%;
 }

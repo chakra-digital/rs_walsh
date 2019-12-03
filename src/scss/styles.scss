@@ -10,6 +10,7 @@
 // Components ////////////////////////////////////////
 @import 'partials/components/header';
 @import 'partials/components/footer';
+@import 'partials/components/mouse-interact-items';
 @import 'partials/components/rs-forms';
 @import 'partials/components/slider-defaults';
 @import 'partials/components/project-inquiry-cta';
@@ -23,3 +24,7 @@
 @import 'partials/pages/garden-center';
 @import 'partials/pages/about';
 @import 'partials/pages/contact';
+
+
+// Templates ////////////////////////////////////////
+@import 'partials/templates/thin-container';

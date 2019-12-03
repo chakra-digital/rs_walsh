@@ -1,0 +1,10 @@
+/**********************************************
+ Template - Thin Container
+**********************************************/
+
+
+.thin-container {
+  [class^='container'] {
+    max-width: 760px!important;;
+  }
+}

@@ -11,6 +11,91 @@ const body = document.body;
 const wrapper = document.querySelector('.wrapper');
 
 
+/********************************
+ Mouse Interactions (if existing)
+********************************/
+const mouseInteractItems = document.querySelectorAll('.mouse-interact');
+if(mouseInteractItems.length) {
+
+  const maxTransform = 15;
+  const duration = 0.6;
+  const easeFunction = 'power3.out';
+  
+  
+  mouseInteractItems.forEach( item => item.addEventListener('mouseleave', (function() {
+    const actionText = item.querySelectorAll('h2');
+    const image = item.querySelector('img');
+    
+    gsap.to([actionText, image], {
+      duration: duration,
+      y: 0, 
+      x: 0,
+      scale: 1,
+      ease: easeFunction
+    }); 
+  
+  })));
+  
+  mouseInteractItems.forEach( item => item.addEventListener('mousemove', (function(e){
+    const bcr = item.getBoundingClientRect();
+    const xPos = bcr.x;
+    const yPos = bcr.y;
+    const w = bcr.width;
+    const h = bcr.height;
+    
+    // Get mouse position relative to window
+    const mouseWindowY = e.clientY;
+    const mouseWindowX = e.clientX;
+    
+    // Get mouse position relative to mouse-interact item - center point being zero
+    const mouseItemX = Math.floor(mouseWindowX - xPos - w/2);
+    const mouseItemY = Math.floor(mouseWindowY - yPos - h/2);
+    
+    // Get mouse position on mouse-interact item card
+    const mousePercentageX = Math.round(1000 * (mouseItemX / (w/2))) / 1000;
+    const mousePercentageY = Math.round(1000 * (mouseItemY / (h/2))) / 1000;
+    
+    // console.log(mousePercentageX, mousePercentageY)
+    
+    const actionText = item.querySelectorAll('h2');
+    const image = item.querySelector('img');
+    
+    
+    
+    actionText.forEach(text => {
+      gsap.to(text, {
+        duration: duration,
+        y: maxTransform * -mousePercentageY, 
+        x: maxTransform * -mousePercentageX,
+        ease: easeFunction
+      });  
+    });
+    
+    gsap.to(image, {
+      duration: duration,
+      y: maxTransform * mousePercentageY, 
+      x: maxTransform * mousePercentageX,
+      scale: 1.12,
+      ease: easeFunction
+    });
+    
+  })));
+
+} 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 if(header) {
   const hamburger = document.getElementById('hamburger');
   const topLevelNavItems = document.querySelectorAll('header nav a');
@@ -21,7 +106,7 @@ if(header) {
    Add class 'active' to current parent page
   ********************************/
   const topLevelPages = [
-    "projects",
+    "mouseInteractItems",
     "services",
     "garden-center",
     "about-us",

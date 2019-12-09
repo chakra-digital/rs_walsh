@@ -817,79 +817,84 @@ body.reversed-header header .logo svg path {
   fill: #fff;
 }
 
-/* line 221, src/scss/partials/components/_header.scss */
+/* line 219, src/scss/partials/components/_header.scss */
+body.reversed-header header .logo svg path.color {
+  fill: transparent;
+}
+
+/* line 224, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation .cta-btn a {
   border-color: #fff;
   color: #fff;
 }
 
-/* line 224, src/scss/partials/components/_header.scss */
+/* line 227, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation .cta-btn a:before {
   background: #fff;
 }
 
-/* line 227, src/scss/partials/components/_header.scss */
+/* line 230, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation .cta-btn a:hover {
   color: #090A0A;
 }
 
-/* line 231, src/scss/partials/components/_header.scss */
+/* line 234, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation nav a {
   color: #fff;
 }
 
-/* line 233, src/scss/partials/components/_header.scss */
+/* line 236, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation nav a:after {
   background: #fff;
 }
 
-/* line 239, src/scss/partials/components/_header.scss */
+/* line 242, src/scss/partials/components/_header.scss */
 body.reversed-header #hamburger span {
   background: #fff;
 }
 
-/* line 244, src/scss/partials/components/_header.scss */
+/* line 247, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #mobile-menu-wrap {
   background: rgba(9, 10, 10, 0.5);
 }
 
-/* line 247, src/scss/partials/components/_header.scss */
+/* line 250, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #mobile-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 251, src/scss/partials/components/_header.scss */
+/* line 254, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span {
   background: #090A0A;
 }
 
-/* line 254, src/scss/partials/components/_header.scss */
+/* line 257, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(1) {
   -webkit-transform: translateY(0px) rotate(-45deg);
           transform: translateY(0px) rotate(-45deg);
 }
 
-/* line 257, src/scss/partials/components/_header.scss */
+/* line 260, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(2) {
   width: 0;
 }
 
-/* line 260, src/scss/partials/components/_header.scss */
+/* line 263, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(3) {
   -webkit-transform: translateY(0px) rotate(45deg);
           transform: translateY(0px) rotate(45deg);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 267, src/scss/partials/components/_header.scss */
+  /* line 270, src/scss/partials/components/_header.scss */
   body.logged-in header {
     top: 32px;
   }
 }
 
 @media screen and (max-width: 782px) {
-  /* line 267, src/scss/partials/components/_header.scss */
+  /* line 270, src/scss/partials/components/_header.scss */
   body.logged-in header {
     top: 46px;
   }
@@ -1139,6 +1144,88 @@ form.rs-form .form-submit {
 /* line 6, src/scss/partials/components/_project-inquiry-cta.scss */
 .project-inquiry-cta a {
   margin-bottom: 25px;
+}
+
+/**********************************************
+ Component - Blog Post Item Card
+**********************************************/
+/* line 6, src/scss/partials/components/_post-card.scss */
+.post-item .post-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 60%;
+  margin-bottom: 20px;
+}
+
+/* line 12, src/scss/partials/components/_post-card.scss */
+.post-item .post-thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* line 17, src/scss/partials/components/_post-card.scss */
+.post-item .post-thumbnail .date-bubble {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 29, src/scss/partials/components/_post-card.scss */
+.post-item .post-thumbnail .date-bubble p {
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+/* line 34, src/scss/partials/components/_post-card.scss */
+.post-item .post-thumbnail .date-bubble .month,
+.post-item .post-thumbnail .date-bubble .year {
+  font-size: 14px;
+}
+
+/* line 38, src/scss/partials/components/_post-card.scss */
+.post-item .post-thumbnail .date-bubble .month {
+  line-height: 0.8em;
+}
+
+/* line 41, src/scss/partials/components/_post-card.scss */
+.post-item .post-thumbnail .date-bubble .day {
+  font-size: 40px;
+}
+
+/* line 46, src/scss/partials/components/_post-card.scss */
+.post-item .absolute-0 {
+  overflow: hidden;
+}
+
+/* line 49, src/scss/partials/components/_post-card.scss */
+.post-item .title {
+  margin-bottom: 10px;
+}
+
+/* line 52, src/scss/partials/components/_post-card.scss */
+.post-item .excerpt {
+  margin-bottom: 20px;
 }
 
 /**********************************************
@@ -2472,43 +2559,44 @@ section.service-pillars div:not(.description) {
 .about-outer .inpage-nav nav img {
   position: absolute;
   opacity: 0;
+  pointer-events: none;
 }
 
-/* line 51, src/scss/partials/pages/_about.scss */
+/* line 52, src/scss/partials/pages/_about.scss */
 .about-outer main .container {
   padding: 0;
   max-width: unset;
 }
 
-/* line 59, src/scss/partials/pages/_about.scss */
+/* line 60, src/scss/partials/pages/_about.scss */
 #who-we-are .images {
   margin-top: 60px;
 }
 
-/* line 62, src/scss/partials/pages/_about.scss */
+/* line 63, src/scss/partials/pages/_about.scss */
 #who-we-are video {
   margin-bottom: 30px;
 }
 
-/* line 65, src/scss/partials/pages/_about.scss */
+/* line 66, src/scss/partials/pages/_about.scss */
 #who-we-are video, #who-we-are img {
   width: 100%;
   display: block;
 }
 
-/* line 71, src/scss/partials/pages/_about.scss */
+/* line 72, src/scss/partials/pages/_about.scss */
 #team {
   margin-bottom: -30px;
 }
 
-/* line 73, src/scss/partials/pages/_about.scss */
+/* line 74, src/scss/partials/pages/_about.scss */
 #team .team-single {
   text-decoration: none;
   color: #090A0A;
   margin-bottom: 30px;
 }
 
-/* line 78, src/scss/partials/pages/_about.scss */
+/* line 79, src/scss/partials/pages/_about.scss */
 #team .pic {
   width: 100%;
   height: 0;
@@ -2517,7 +2605,7 @@ section.service-pillars div:not(.description) {
   margin-bottom: 5px;
 }
 
-/* line 84, src/scss/partials/pages/_about.scss */
+/* line 85, src/scss/partials/pages/_about.scss */
 #team .pic img {
   width: 100%;
   height: 100%;
@@ -2525,17 +2613,17 @@ section.service-pillars div:not(.description) {
      object-fit: cover;
 }
 
-/* line 91, src/scss/partials/pages/_about.scss */
+/* line 92, src/scss/partials/pages/_about.scss */
 #team .meta * {
   display: inline-block;
 }
 
-/* line 94, src/scss/partials/pages/_about.scss */
+/* line 95, src/scss/partials/pages/_about.scss */
 #team .meta span {
   margin: 0 5px;
 }
 
-/* line 101, src/scss/partials/pages/_about.scss */
+/* line 102, src/scss/partials/pages/_about.scss */
 #space .img-wrap {
   width: 100%;
   height: 0;
@@ -2543,7 +2631,7 @@ section.service-pillars div:not(.description) {
   position: relative;
 }
 
-/* line 106, src/scss/partials/pages/_about.scss */
+/* line 107, src/scss/partials/pages/_about.scss */
 #space .img-wrap img {
   width: 100%;
   height: 100%;

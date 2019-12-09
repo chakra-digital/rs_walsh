@@ -1,0 +1,55 @@
+/**********************************************
+ Component - Blog Post Item Card
+**********************************************/
+
+.post-item {
+  .post-thumbnail {
+    position:relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 60%;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .date-bubble {
+      background: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      p {
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 1em;
+      }
+      .month,
+      .year {
+        font-size: 14px;
+      }
+      .month {
+        line-height: 0.8em;
+      }
+      .day {
+        font-size: 40px;
+      }
+    }
+  }
+  .absolute-0 {
+    overflow: hidden;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .excerpt {
+    margin-bottom: 20px;
+  }
+}

@@ -98,7 +98,7 @@ if(header) {
    Add class 'active' to current parent page
   ********************************/
   const topLevelPages = [
-    "mouseInteractItems",
+    "projects",
     "services",
     "garden-center",
     "about-us",

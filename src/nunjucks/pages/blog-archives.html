@@ -1,0 +1,63 @@
+{% set body_class = 'blog' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<div class="container-fluid about-outer">
+
+	<div class="inpage-nav">
+		<nav>
+			<div class="active">
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#">all</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#">garden center</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#">landscaping</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#">news</a>
+			</div>
+			<div>
+				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#">uncategorized</a>
+			</div>
+		</nav>
+	</div>
+
+	<main>
+		<div class="container">
+			<div class="row">
+
+			
+				{% for article in blog_archives %}
+				<div class="col-lg-6 col-xl-4 post-item animate-in">
+					<div class="post-thumbnail">
+						<div class="absolute-0">
+								<img src="{{root_url}}/images/blog/dummy-{{loop.index}}.jpg">
+						</div>
+						<div class="date-bubble">
+								<p class="month">Oct</p>
+								<p class="day">31</p>
+								<p class="year">2019</p>
+						</div>
+					</div>
+					<h2 class="title">{{article.title}}</h2>
+					<p class="excerpt">{{article.excerpt}}</p>
+					<a class="btn" href="#">Read More</a>
+				</div>
+				{% endfor %}
+
+			</div>
+		</div>
+
+	</main>
+
+</div>
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

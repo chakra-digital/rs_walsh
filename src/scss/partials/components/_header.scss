@@ -216,6 +216,9 @@ body {
 			background: transparent;
 			.logo svg path {
 				fill: #fff;
+				&.color {
+					fill: transparent;
+				}
 			}
 			.navigation {
 				.cta-btn a {

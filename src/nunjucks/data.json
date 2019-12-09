@@ -119,5 +119,15 @@
 		"img_url" : "justin-walsh.jpg",
 		"title" : "Head of Operations"
 	}],
+	"blog_archives" : [{
+		"title" : "In The Garden employees earn certification.",
+		"excerpt" : "Cindi Vos and Chris Stack of In The Garden have become Certified Horticulture Professionals through the Florida Nursery, Growers and Landscape Association (FNGLA)."
+	},{
+		"title" : "In The Garden spirit tree benefits the community house/Sanibel community Association",
+		"excerpt" : "In The Garden – Sanibel’s Retail Garden Center and Outdoor Showroom – has planted a spirit tree that will benefit island non-profits. The Olive tree was chosen because it …"
+	}, {
+		"title" : "Hurricane Palm: A true survivor",
+		"excerpt" : "Hurricane palm (Dictyosperma) is a superior survivor in the face of high winds and punishing hurricane conditions which earned it the nickname ‘hurricane palm.’ …"
+	}],
 	"root_url" : "http://localhost:3000"
 }

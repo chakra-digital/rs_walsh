@@ -534,7 +534,21 @@ header .logo svg {
   height: 46px;
 }
 
-/* line 31, src/scss/partials/components/_header.scss */
+@media screen and (max-width: 991px) {
+  /* line 26, src/scss/partials/components/_header.scss */
+  header .logo svg {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 26, src/scss/partials/components/_header.scss */
+  header .logo svg {
+    height: 35px;
+  }
+}
+
+/* line 37, src/scss/partials/components/_header.scss */
 header nav a, header nav p {
   font-size: 17px;
   font-weight: 500;
@@ -544,7 +558,7 @@ header nav a, header nav p {
   line-height: 1.2em;
 }
 
-/* line 40, src/scss/partials/components/_header.scss */
+/* line 46, src/scss/partials/components/_header.scss */
 header .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,7 +568,7 @@ header .navigation {
           align-items: center;
 }
 
-/* line 43, src/scss/partials/components/_header.scss */
+/* line 49, src/scss/partials/components/_header.scss */
 header .navigation nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,13 +576,13 @@ header .navigation nav {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 43, src/scss/partials/components/_header.scss */
+  /* line 49, src/scss/partials/components/_header.scss */
   header .navigation nav {
     display: none;
   }
 }
 
-/* line 48, src/scss/partials/components/_header.scss */
+/* line 54, src/scss/partials/components/_header.scss */
 header .navigation nav a {
   padding: 1vw;
   position: relative;
@@ -577,7 +591,7 @@ header .navigation nav a {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 53, src/scss/partials/components/_header.scss */
+/* line 59, src/scss/partials/components/_header.scss */
 header .navigation nav a:after {
   content: '';
   position: absolute;
@@ -592,43 +606,43 @@ header .navigation nav a:after {
   transition: 0.3s cubic-bezier(0.17, 0.67, 0.5, 1);
 }
 
-/* line 64, src/scss/partials/components/_header.scss */
+/* line 70, src/scss/partials/components/_header.scss */
 header .navigation nav a:hover, header .navigation nav a.active {
   opacity: 1;
 }
 
-/* line 67, src/scss/partials/components/_header.scss */
+/* line 73, src/scss/partials/components/_header.scss */
 header .navigation nav a:hover:after, header .navigation nav a.active:after {
   width: 50%;
 }
 
-/* line 74, src/scss/partials/components/_header.scss */
+/* line 80, src/scss/partials/components/_header.scss */
 header .cta-btn {
   margin-left: 21px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 74, src/scss/partials/components/_header.scss */
+  /* line 80, src/scss/partials/components/_header.scss */
   header .cta-btn {
     display: none;
   }
 }
 
-/* line 82, src/scss/partials/components/_header.scss */
+/* line 88, src/scss/partials/components/_header.scss */
 .headroom--pinned,
 #hamburger.pinned {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-/* line 86, src/scss/partials/components/_header.scss */
+/* line 92, src/scss/partials/components/_header.scss */
 .headroom--unpinned,
 #hamburger.unpinned {
   -webkit-transform: translateY(-80px);
           transform: translateY(-80px);
 }
 
-/* line 99, src/scss/partials/components/_header.scss */
+/* line 105, src/scss/partials/components/_header.scss */
 #hamburger {
   position: fixed;
   top: 0;
@@ -654,7 +668,7 @@ header .cta-btn {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 99, src/scss/partials/components/_header.scss */
+  /* line 105, src/scss/partials/components/_header.scss */
   #hamburger {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -663,13 +677,13 @@ header .cta-btn {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 99, src/scss/partials/components/_header.scss */
+  /* line 105, src/scss/partials/components/_header.scss */
   #hamburger {
     padding: 0 20px;
   }
 }
 
-/* line 119, src/scss/partials/components/_header.scss */
+/* line 125, src/scss/partials/components/_header.scss */
 #hamburger span {
   display: block;
   background: #090A0A;
@@ -681,26 +695,26 @@ header .cta-btn {
   pointer-events: none;
 }
 
-/* line 127, src/scss/partials/components/_header.scss */
+/* line 133, src/scss/partials/components/_header.scss */
 #hamburger span:nth-child(1) {
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
 }
 
-/* line 133, src/scss/partials/components/_header.scss */
+/* line 139, src/scss/partials/components/_header.scss */
 #hamburger span:nth-child(3) {
   -webkit-transform: translateY(7px);
           transform: translateY(7px);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 99, src/scss/partials/components/_header.scss */
+  /* line 105, src/scss/partials/components/_header.scss */
   #hamburger {
     height: 70px;
   }
 }
 
-/* line 142, src/scss/partials/components/_header.scss */
+/* line 148, src/scss/partials/components/_header.scss */
 #mobile-menu-wrap {
   position: fixed;
   top: 0;
@@ -714,7 +728,7 @@ header .cta-btn {
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 150, src/scss/partials/components/_header.scss */
+/* line 156, src/scss/partials/components/_header.scss */
 #mobile-menu {
   position: absolute;
   top: 0;
@@ -731,7 +745,7 @@ header .cta-btn {
   overflow-y: scroll;
 }
 
-/* line 159, src/scss/partials/components/_header.scss */
+/* line 165, src/scss/partials/components/_header.scss */
 #mobile-menu .inner,
 #mobile-menu .top-level-menu {
   display: -webkit-inline-box;
@@ -743,12 +757,12 @@ header .cta-btn {
           flex-direction: column;
 }
 
-/* line 164, src/scss/partials/components/_header.scss */
+/* line 170, src/scss/partials/components/_header.scss */
 #mobile-menu .inner {
   padding: 80px 40px;
 }
 
-/* line 167, src/scss/partials/components/_header.scss */
+/* line 173, src/scss/partials/components/_header.scss */
 #mobile-menu .top-level-item {
   font-size: 18px;
   line-height: 40px;
@@ -758,17 +772,17 @@ header .cta-btn {
   text-decoration: none;
 }
 
-/* line 175, src/scss/partials/components/_header.scss */
+/* line 181, src/scss/partials/components/_header.scss */
 #mobile-menu .btn {
   margin-top: 15px;
 }
 
-/* line 179, src/scss/partials/components/_header.scss */
+/* line 185, src/scss/partials/components/_header.scss */
 #mobile-menu .has-submenu p {
   cursor: pointer;
 }
 
-/* line 181, src/scss/partials/components/_header.scss */
+/* line 187, src/scss/partials/components/_header.scss */
 #mobile-menu .has-submenu p svg {
   position: relative;
   bottom: 1px;
@@ -778,13 +792,13 @@ header .cta-btn {
   width: 14px;
 }
 
-/* line 190, src/scss/partials/components/_header.scss */
+/* line 196, src/scss/partials/components/_header.scss */
 #mobile-menu .has-submenu.expanded p svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-/* line 196, src/scss/partials/components/_header.scss */
+/* line 202, src/scss/partials/components/_header.scss */
 #mobile-menu .submenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -799,7 +813,7 @@ header .cta-btn {
   overflow: hidden;
 }
 
-/* line 202, src/scss/partials/components/_header.scss */
+/* line 208, src/scss/partials/components/_header.scss */
 #mobile-menu .submenu a {
   opacity: 0.4;
   color: #090A0A;
@@ -807,94 +821,94 @@ header .cta-btn {
   line-height: 36px;
 }
 
-/* line 215, src/scss/partials/components/_header.scss */
+/* line 221, src/scss/partials/components/_header.scss */
 body.reversed-header header {
   background: transparent;
 }
 
-/* line 217, src/scss/partials/components/_header.scss */
+/* line 223, src/scss/partials/components/_header.scss */
 body.reversed-header header .logo svg path {
   fill: #fff;
 }
 
-/* line 219, src/scss/partials/components/_header.scss */
+/* line 225, src/scss/partials/components/_header.scss */
 body.reversed-header header .logo svg path.color {
   fill: transparent;
 }
 
-/* line 224, src/scss/partials/components/_header.scss */
+/* line 230, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation .cta-btn a {
   border-color: #fff;
   color: #fff;
 }
 
-/* line 227, src/scss/partials/components/_header.scss */
+/* line 233, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation .cta-btn a:before {
   background: #fff;
 }
 
-/* line 230, src/scss/partials/components/_header.scss */
+/* line 236, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation .cta-btn a:hover {
   color: #090A0A;
 }
 
-/* line 234, src/scss/partials/components/_header.scss */
+/* line 240, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation nav a {
   color: #fff;
 }
 
-/* line 236, src/scss/partials/components/_header.scss */
+/* line 242, src/scss/partials/components/_header.scss */
 body.reversed-header header .navigation nav a:after {
   background: #fff;
 }
 
-/* line 242, src/scss/partials/components/_header.scss */
+/* line 248, src/scss/partials/components/_header.scss */
 body.reversed-header #hamburger span {
   background: #fff;
 }
 
-/* line 247, src/scss/partials/components/_header.scss */
+/* line 253, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #mobile-menu-wrap {
   background: rgba(9, 10, 10, 0.5);
 }
 
-/* line 250, src/scss/partials/components/_header.scss */
+/* line 256, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #mobile-menu {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 254, src/scss/partials/components/_header.scss */
+/* line 260, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span {
   background: #090A0A;
 }
 
-/* line 257, src/scss/partials/components/_header.scss */
+/* line 263, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(1) {
   -webkit-transform: translateY(0px) rotate(-45deg);
           transform: translateY(0px) rotate(-45deg);
 }
 
-/* line 260, src/scss/partials/components/_header.scss */
+/* line 266, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(2) {
   width: 0;
 }
 
-/* line 263, src/scss/partials/components/_header.scss */
+/* line 269, src/scss/partials/components/_header.scss */
 body.mobile-nav-is-open #hamburger span:nth-child(3) {
   -webkit-transform: translateY(0px) rotate(45deg);
           transform: translateY(0px) rotate(45deg);
 }
 
 @media screen and (max-width: 991px) {
-  /* line 270, src/scss/partials/components/_header.scss */
+  /* line 276, src/scss/partials/components/_header.scss */
   body.logged-in header {
     top: 32px;
   }
 }
 
 @media screen and (max-width: 782px) {
-  /* line 270, src/scss/partials/components/_header.scss */
+  /* line 276, src/scss/partials/components/_header.scss */
   body.logged-in header {
     top: 46px;
   }
@@ -1149,7 +1163,12 @@ form.rs-form .form-submit {
 /**********************************************
  Component - Blog Post Item Card
 **********************************************/
-/* line 6, src/scss/partials/components/_post-card.scss */
+/* line 5, src/scss/partials/components/_post-card.scss */
+.post-item {
+  margin-bottom: 70px;
+}
+
+/* line 7, src/scss/partials/components/_post-card.scss */
 .post-item .post-thumbnail {
   position: relative;
   width: 100%;
@@ -1158,7 +1177,7 @@ form.rs-form .form-submit {
   margin-bottom: 20px;
 }
 
-/* line 12, src/scss/partials/components/_post-card.scss */
+/* line 13, src/scss/partials/components/_post-card.scss */
 .post-item .post-thumbnail img {
   width: 100%;
   height: 100%;
@@ -1166,7 +1185,7 @@ form.rs-form .form-submit {
      object-fit: cover;
 }
 
-/* line 17, src/scss/partials/components/_post-card.scss */
+/* line 18, src/scss/partials/components/_post-card.scss */
 .post-item .post-thumbnail .date-bubble {
   background: rgba(255, 255, 255, 0.8);
   position: absolute;
@@ -1190,40 +1209,40 @@ form.rs-form .form-submit {
           justify-content: center;
 }
 
-/* line 29, src/scss/partials/components/_post-card.scss */
+/* line 30, src/scss/partials/components/_post-card.scss */
 .post-item .post-thumbnail .date-bubble p {
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1em;
 }
 
-/* line 34, src/scss/partials/components/_post-card.scss */
+/* line 35, src/scss/partials/components/_post-card.scss */
 .post-item .post-thumbnail .date-bubble .month,
 .post-item .post-thumbnail .date-bubble .year {
   font-size: 14px;
 }
 
-/* line 38, src/scss/partials/components/_post-card.scss */
+/* line 39, src/scss/partials/components/_post-card.scss */
 .post-item .post-thumbnail .date-bubble .month {
   line-height: 0.8em;
 }
 
-/* line 41, src/scss/partials/components/_post-card.scss */
+/* line 42, src/scss/partials/components/_post-card.scss */
 .post-item .post-thumbnail .date-bubble .day {
   font-size: 40px;
 }
 
-/* line 46, src/scss/partials/components/_post-card.scss */
+/* line 47, src/scss/partials/components/_post-card.scss */
 .post-item .absolute-0 {
   overflow: hidden;
 }
 
-/* line 49, src/scss/partials/components/_post-card.scss */
+/* line 50, src/scss/partials/components/_post-card.scss */
 .post-item .title {
   margin-bottom: 10px;
 }
 
-/* line 52, src/scss/partials/components/_post-card.scss */
+/* line 53, src/scss/partials/components/_post-card.scss */
 .post-item .excerpt {
   margin-bottom: 20px;
 }

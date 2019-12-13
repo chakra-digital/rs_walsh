@@ -25,6 +25,12 @@ header {
 		font-size: 0;
 		svg {
 			height: 46px;
+			@media screen and (max-width: $mq-max-lg) {
+				height: 40px;
+			}
+			@media screen and (max-width: $mq-max-sm) {
+				height: 35px;
+			}
 		}
 	}
 	nav {

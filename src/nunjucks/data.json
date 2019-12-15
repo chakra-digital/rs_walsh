@@ -144,5 +144,57 @@
 		"title" : "The fishtail palm is perfect for island living",
 		"excerpt" : "The fishtail palm (Caryota mitis) is originally from Southeast Asia and does well in our warm climate and it will even withstand some of the cold snaps that occur in Southwest Florida. "
 	}],
+	"community_orgs" : [{
+		"title" : "ASLA (American Society of Landscape Architects – Florida Chapter)",
+		"url_suffix" : "asla"
+	},{
+		"title" : "Bailey-Matthews National Seashell Museum",
+		"url_suffix" : "shell-museum"
+	},{
+		"title" : "Big Arts Sanibel Island",
+		"url_suffix" : "big-arts"
+	},{
+		"title" : "CROW (Clinic for the Rehabilitation Of Wildlife)",
+		"url_suffix" : "crow"
+	},{
+		"title" : "Captains for Clean Water",
+		"url_suffix" : "cfcw"
+	},{
+		"title" : "Captiva Island Historical Society",
+		"url_suffix" : "cihs"
+	},{
+		"title" : "Children's Education Center of the Islands",
+		"url_suffix" : "ceci"
+	},{
+		"title" : "Community Housing Resource",
+		"url_suffix" : "chr"
+	},{
+		"title" : "Ding Darling Wildlife Society",
+		"url_suffix" : "ding"
+	},{
+		"title" : "FISH (Friends In Service Here)",
+		"url_suffix" : "fish-of-sanibel"
+	},{
+		"title" : "FNGLA (Florida Nursery, Growers and Landscape Association)",
+		"url_suffix" : "fngla"
+	},{
+		"title" : "Golisano Children's Hospital",
+		"url_suffix" : "golisano"
+	},{
+		"title" : "Sanibel Captiva Chamber of Commerce",
+		"url_suffix" : "sccoc"
+	},{
+		"title" : "Sanibel Captiva Conservation Foundation",
+		"url_suffix" : "sccf"
+	},{
+		"title" : "Sanibel Community House",
+		"url_suffix" : "community-house"
+	},{
+		"title" : "Sanibel Historical Museum",
+		"url_suffix" : "shmv"
+	},{
+		"title" : "Sanibel Youth Sports",
+		"url_suffix" : "sanibel-sports"
+	}],
 	"root_url" : "http://localhost:3000"
 }

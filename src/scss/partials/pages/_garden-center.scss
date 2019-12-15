@@ -128,18 +128,14 @@
       height: 200px;
     }
   }
-  .tile-wrap {
+  .img-wrap {
     height: 100%;
-    position: relative;
     &:hover {
       img.primary {
         opacity: 0;
       }
     }
     img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
       &.primary {
         position: absolute;
         transition: .4s ease-out;

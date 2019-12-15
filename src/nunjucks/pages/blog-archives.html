@@ -6,9 +6,9 @@
 
 {% include "partials/header.html" %}
 
-<div class="container-fluid about-outer">
+<div class="container-fluid left-nav-right-container">
 
-	<div class="inpage-nav">
+	<div class="left-nav">
 		<nav>
 			<div class="active">
 				<img src="{{root_url}}/svg/bird-bullet.svg"><a href="#">all</a>
@@ -34,8 +34,8 @@
 
 			
 				{% for article in blog_archives %}
-				<div class="col-lg-6 col-xl-4 post-item animate-in">
-					<div class="post-thumbnail">
+				<div class="col-12 col-sm-6 col-xl-4 post-item animate-in">
+					<div class="img-wrap post-thumbnail">
 						<div class="absolute-0">
 								<img src="{{root_url}}/images/blog/dummy-{{loop.index}}.jpg">
 						</div>
@@ -47,7 +47,7 @@
 					</div>
 					<h2 class="title">{{article.title}}</h2>
 					<p class="excerpt">{{article.excerpt}}</p>
-					<a class="btn" href="#">Read More</a>
+					<a class="btn" href="{{root_url}}/blog-single.html">Read More</a>
 				</div>
 				{% endfor %}
 

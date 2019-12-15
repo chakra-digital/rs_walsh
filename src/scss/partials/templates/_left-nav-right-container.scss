@@ -1,0 +1,69 @@
+/**********************************************
+ Template - Left Nav / Right Container
+**********************************************/
+
+
+.left-nav-right-container {
+  display: flex;
+  @media screen and (max-width: $mq-max-md) {
+    flex-wrap: wrap;
+  }
+  .left-nav {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 60px;
+    @media screen and (max-width: $mq-max-lg) {
+      max-width: 200px;
+    }
+    @media screen and (max-width: $mq-max-md) {
+      max-width: inherit;
+    }
+    nav {
+      position: fixed;
+      @media screen and (max-width: $mq-max-md) {
+        position: relative;
+      }
+      & > div {
+        margin-bottom: 15px;
+        position: relative;
+        &.active {
+          img {
+            opacity: 1;
+          }
+          a {
+            opacity: 1;
+            transform: translateX(40px);
+          }
+        }
+        &:hover {
+          a {
+            opacity: 1;
+          }
+        }
+      }
+      a,img {
+        transition: 0.3s ease-out;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: $black;
+        opacity: .4;
+        
+      }
+      img {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+    
+  }
+  main {
+    flex: 1;
+    .container {
+      padding: 0;
+      max-width: unset;
+    }
+  }
+}

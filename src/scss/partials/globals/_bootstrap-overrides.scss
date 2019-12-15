@@ -1,7 +1,8 @@
 /**********************************************
  Bootstrap Overrides
 **********************************************/
-.container-fluid {
+.container-fluid,
+.container {
     padding-left: 40px;
     padding-right: 40px;
     @media screen and (max-width: $mq-max-lg) {

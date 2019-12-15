@@ -258,14 +258,16 @@ function expandAccordion(element){
 ********************************/
 const animateIn = document.querySelectorAll('.animate-in');
 if(animateIn.length) {
-
-  gsap.from(animateIn, {
-    stagger: .1,
-    duration: 1,
-    y: 100,
-    opacity: 0,
-    ease: 'expo.out'
-  })
+  //window.addEventListener('load', function(){
+    gsap.from(animateIn, {
+      stagger: .1,
+      duration: 1,
+      y: 100,
+      opacity: 0,
+      ease: 'expo.out'
+    })
+  //})
+  
 }
 
 

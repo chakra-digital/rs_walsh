@@ -1,0 +1,36 @@
+/**********************************************
+ Team Single
+**********************************************/
+
+.nav-back {
+  text-decoration: none;
+  color: $black;
+  svg {
+    margin-right: 15px;
+  }
+}
+
+.team-mate-details {
+  .copy-block {
+    @media screen and (min-width: $mq-min-lg) {
+      max-width: 300px;
+    }    
+  }
+  .title {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-bottom: 30px;
+  }
+}
+
+.team-mate-image {
+  .img-wrap {
+    height: 500px;
+    @media screen and (max-width: $mq-max-lg) {
+      height: 0;
+      padding-bottom: 70%;
+    }
+  }
+}

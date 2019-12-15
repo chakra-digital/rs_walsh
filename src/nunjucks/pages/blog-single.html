@@ -1,0 +1,48 @@
+{% set body_class = "blog thin-container" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<section class="section-margin-bottom">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12 blog-container">
+				<a class="nav-back animate-in" href="{{root_url}}/blog-archives.html">
+					<svg width="29" height="12" viewBox="0 0 29 12" xmlns="http://www.w3.org/2000/svg"><g stroke="#090A0A" fill="none" fill-rule="evenodd"><path d="M6 1L1 6l5 5M1 6h28"/></g></svg>
+					Blog Home
+				</a>
+
+				<div class="blog-meta animate-in">
+					<h2 class="publish-date">October 21, 2019</h2>
+					<hr class="vertical">
+					<h1 class="display title">In The Garden employees earn certification.</h1>
+					<p class="author">by R.S. Walsh</p>
+				</div>
+				
+				<div class="img-wrap featured-image animate-in">
+					<div class="absolute-0">
+						<img src="{{root_url}}/images/blog/dummy-1.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="blog-content animate-in">
+					<p>Cindi Vos and Chris Stack of In The Garden have become Certified Horticulture Professionals through the Florida Nursery, Growers and Landscape Association (FNGLA).<br><br>
+							The 8-week FNGLA Certified Horticulture Professional (FCHP) program is the industry’s only standard for measuring horticulture knowledge on everything from plant and pest identification to landscape management. Candidates must pass a comprehensive four-part online written exam to demonstrate knowledge about plant identification, disease and insect control, plant biology and landscape management.<br><br>
+							Vos is the general manager of In The Garden and Stack works with customers, manages the grounds and plant stock and coordinates installations of items purchased at the garden center.</p>
+				</div>
+
+				
+			</div>
+
+		</div>
+	</div>
+</section>
+
+{% include "partials/footer.html" %}
+
+	
+{% endblock %}

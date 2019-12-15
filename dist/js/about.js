@@ -10,7 +10,7 @@
  About Page Scripts
 ********************************/
 
-const inpageNavLinks = document.querySelectorAll('.inpage-nav a');
+const inpageNavLinks = document.querySelectorAll('.left-nav a');
 
 inpageNavLinks.forEach(link => link.addEventListener('click', (function(){
   inpageNavLinks.forEach(link => link.parentElement.classList.remove('active'))

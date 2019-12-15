@@ -1,0 +1,46 @@
+{% set body_class = 'about-us' %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+<div class="container-fluid left-nav-right-container">
+
+	<div class="left-nav">
+		<a class="nav-back" href="{{root_url}}/about.html#team">
+			<svg width="29" height="12" viewBox="0 0 29 12" xmlns="http://www.w3.org/2000/svg"><g stroke="#090A0A" fill="none" fill-rule="evenodd"><path d="M6 1L1 6l5 5M1 6h28"/></g></svg>
+			Back to team
+		</a>	
+	</div>
+
+	<main class="section-padding-bottom">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-lg-4 team-mate-details">
+					<div class="copy-block">
+						<h1>Mariah Bakke</h1>
+						<p class="title">Landscape Architect</p>
+						<p class="bio">Sunt autem vel eum fugiat, quo ignorare vos arbitrer, sed quia consequuntur magni dolores et dolore disputandum putant sed ut et accusamus et quasi naturalem atque corrupti, quos tu paulo ante cum memoriter, tum etiam ac ratione neque disputatione, quam interrogare aut petat aut odit.</p>
+					</div>
+				</div>
+
+				<div class="col-lg-8 team-mate-image">
+					<div class="img-wrap">
+						<div class="absolute-0">
+							<img src="{{root_url}}/images/about/mariah-bakke.jpg" alt="Mariah Bakke">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</div>
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

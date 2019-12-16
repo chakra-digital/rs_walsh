@@ -4,7 +4,9 @@
 
 
 .thin-container {
-  [class^='container'] {
-    max-width: 760px!important;;
+  section {
+    [class^='container'] {
+      max-width: 760px!important;;
+    }
   }
 }

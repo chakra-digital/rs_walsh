@@ -110,6 +110,7 @@ if(header) {
     "services",
     "garden-center",
     "about-us",
+    "blog",
     "contact"
   ];
   
@@ -259,11 +260,12 @@ function expandAccordion(element){
 const animateIn = document.querySelectorAll('.animate-in');
 if(animateIn.length) {
   //window.addEventListener('load', function(){
-    gsap.from(animateIn, {
+    gsap.to(animateIn, {
       stagger: .1,
-      duration: 1,
-      y: 100,
-      opacity: 0,
+      delay: .2,
+      duration: 1.5,
+      y: 0,
+      opacity: 1,
       ease: 'expo.out'
     })
   //})
@@ -345,7 +347,7 @@ if(sliderWrapPagination) {
  Smooth Scroll
 ********************************/
 var scroll = new SmoothScroll('a[href*="#"]', {
-  offset: '100px',
+  offset: '115px',
   speed: 700,
   speedAsDuration: true,
   easing: 'easeInOutQuint'

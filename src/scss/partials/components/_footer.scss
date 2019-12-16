@@ -3,11 +3,35 @@
 **********************************************/
 
 footer {
-	width: 100%;
-	background: $black;
-	color: #fff;
-	height: 300px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	border-top: 1px solid #cdcdcd;
+	padding: 20px 0;
+	p {
+		font-size: 15px;
+		a {
+			text-decoration: none;
+			color: $black;
+			font-weight: inherit;
+		}
+	}
+	.copyright {
+		@media screen and (max-width: $mq-max-lg) {
+			margin-bottom: 30px;
+		}
+	}
+	.address {
+		@media screen and (max-width: $mq-max-lg) {
+			margin-bottom: 30px;
+		}
+	}
+	.social-icons {
+		display: flex;
+		justify-content: flex-end;
+		margin: -6px;
+		@media screen and (max-width: $mq-max-lg) {
+			justify-content: flex-start;
+		}
+		a {
+			padding: 6px;
+		}
+	}
 }

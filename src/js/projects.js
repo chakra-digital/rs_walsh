@@ -16,7 +16,7 @@ if(body.classList.contains('project-single')) {
   const infoPanel = document.querySelector('.project-info-panel');
   const infoTrigger = document.querySelector('.project-info-trigger');
 
-  ['click', 'touchstart'].forEach( event => {
+  ['click'].forEach( event => {
     window.addEventListener(event, e => {
       const target = e.target;
       console.log(target)

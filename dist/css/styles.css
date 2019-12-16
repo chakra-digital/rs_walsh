@@ -196,23 +196,38 @@ p {
 }
 
 /* line 42, src/scss/partials/globals/_global.scss */
+p.small {
+  font-size: 15px;
+}
+
+/* line 45, src/scss/partials/globals/_global.scss */
 p.large {
   font-size: 22px;
   line-height: 1.3em;
 }
 
-/* line 48, src/scss/partials/globals/_global.scss */
+/* line 49, src/scss/partials/globals/_global.scss */
+p.quote {
+  font-size: 24px;
+  line-height: 1.25em;
+  font-style: italic;
+  padding: 5px 30px;
+  margin: 30px 0 30px 60px;
+  border-left: 1px solid #00AD8D;
+}
+
+/* line 59, src/scss/partials/globals/_global.scss */
 a {
   color: #00AD8D;
   font-weight: 500;
 }
 
-/* line 53, src/scss/partials/globals/_global.scss */
+/* line 64, src/scss/partials/globals/_global.scss */
 strong, b {
-  font-weight: 600;
+  font-weight: 500;
 }
 
-/* line 55, src/scss/partials/globals/_global.scss */
+/* line 66, src/scss/partials/globals/_global.scss */
 .btn {
   display: inline-block;
   position: relative;
@@ -220,10 +235,10 @@ strong, b {
   background: transparent;
   border: 1px solid #090A0A;
   font-size: 17px;
-  line-height: 44px;
+  line-height: 41px;
   font-weight: 500;
   text-align: center;
-  padding: 0px 20px;
+  padding: 0px 20px 3px;
   outline: 0;
   z-index: 1;
   cursor: pointer;
@@ -232,23 +247,23 @@ strong, b {
   text-decoration: none;
 }
 
-/* line 71, src/scss/partials/globals/_global.scss */
+/* line 82, src/scss/partials/globals/_global.scss */
 .btn.white {
   border-color: #fff;
   color: #fff;
 }
 
-/* line 74, src/scss/partials/globals/_global.scss */
+/* line 85, src/scss/partials/globals/_global.scss */
 .btn.white:before {
   background: #fff;
 }
 
-/* line 77, src/scss/partials/globals/_global.scss */
+/* line 88, src/scss/partials/globals/_global.scss */
 .btn.white:hover {
   color: #090A0A;
 }
 
-/* line 81, src/scss/partials/globals/_global.scss */
+/* line 92, src/scss/partials/globals/_global.scss */
 .btn:before {
   content: '';
   display: block;
@@ -263,39 +278,39 @@ strong, b {
   z-index: -1;
 }
 
-/* line 93, src/scss/partials/globals/_global.scss */
+/* line 104, src/scss/partials/globals/_global.scss */
 .btn:hover {
   color: #fff;
 }
 
-/* line 95, src/scss/partials/globals/_global.scss */
+/* line 106, src/scss/partials/globals/_global.scss */
 .btn:hover:before {
   height: 100%;
 }
 
-/* line 101, src/scss/partials/globals/_global.scss */
+/* line 112, src/scss/partials/globals/_global.scss */
 .btn.btn-small {
   line-height: 36px;
 }
 
-/* line 105, src/scss/partials/globals/_global.scss */
+/* line 116, src/scss/partials/globals/_global.scss */
 .btn.green {
   background: #00AD8D;
   border-color: #00AD8D;
   color: #fff;
 }
 
-/* line 109, src/scss/partials/globals/_global.scss */
+/* line 120, src/scss/partials/globals/_global.scss */
 .btn.green:before {
   background: #26b99e;
 }
 
-/* line 112, src/scss/partials/globals/_global.scss */
+/* line 123, src/scss/partials/globals/_global.scss */
 .btn.green:hover {
   border-color: #26b99e;
 }
 
-/* line 118, src/scss/partials/globals/_global.scss */
+/* line 129, src/scss/partials/globals/_global.scss */
 .chevron-arrow-right:after {
   content: '';
   display: inline-block;
@@ -308,12 +323,12 @@ strong, b {
   margin-left: 5px;
 }
 
-/* line 128, src/scss/partials/globals/_global.scss */
+/* line 139, src/scss/partials/globals/_global.scss */
 .wrapper {
   margin-top: 120px;
 }
 
-/* line 132, src/scss/partials/globals/_global.scss */
+/* line 143, src/scss/partials/globals/_global.scss */
 .absolute-0 {
   position: absolute;
   top: 0;
@@ -322,25 +337,25 @@ strong, b {
   left: 0;
 }
 
-/* line 136, src/scss/partials/globals/_global.scss */
+/* line 147, src/scss/partials/globals/_global.scss */
 .half-col {
   width: 50%;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 136, src/scss/partials/globals/_global.scss */
+  /* line 147, src/scss/partials/globals/_global.scss */
   .half-col {
     width: 100%;
   }
 }
 
-/* line 143, src/scss/partials/globals/_global.scss */
+/* line 154, src/scss/partials/globals/_global.scss */
 .slider-wrap-pagination {
   position: relative;
   height: 100%;
 }
 
-/* line 148, src/scss/partials/globals/_global.scss */
+/* line 159, src/scss/partials/globals/_global.scss */
 .dot-container {
   position: absolute;
   bottom: 20px;
@@ -349,7 +364,7 @@ strong, b {
           transform: translateX(-50%);
 }
 
-/* line 151, src/scss/partials/globals/_global.scss */
+/* line 162, src/scss/partials/globals/_global.scss */
 .dot-container .dot {
   cursor: pointer;
   height: 14px;
@@ -367,12 +382,12 @@ strong, b {
   transition: .3s ease;
 }
 
-/* line 162, src/scss/partials/globals/_global.scss */
+/* line 173, src/scss/partials/globals/_global.scss */
 .dot-container .dot.active {
   opacity: 1;
 }
 
-/* line 168, src/scss/partials/globals/_global.scss */
+/* line 179, src/scss/partials/globals/_global.scss */
 .map-placeholder {
   background: url("https://chakra-digital.github.io/rs_walsh/dist/images/map-placeholder.jpg");
   background-size: cover;
@@ -390,7 +405,7 @@ strong, b {
   min-height: 500px;
 }
 
-/* line 177, src/scss/partials/globals/_global.scss */
+/* line 188, src/scss/partials/globals/_global.scss */
 .map-placeholder p {
   background: white;
   padding: 10px 20px;
@@ -399,27 +414,32 @@ strong, b {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* line 186, src/scss/partials/globals/_global.scss */
+/* line 197, src/scss/partials/globals/_global.scss */
 .section-padding {
   padding: 100px 0;
 }
 
-/* line 189, src/scss/partials/globals/_global.scss */
+/* line 200, src/scss/partials/globals/_global.scss */
 .section-padding-bottom {
   padding-bottom: 100px;
 }
 
-/* line 192, src/scss/partials/globals/_global.scss */
+/* line 203, src/scss/partials/globals/_global.scss */
+.section-padding-top {
+  padding-top: 100px;
+}
+
+/* line 206, src/scss/partials/globals/_global.scss */
 .section-margin-top {
   margin-top: 100px;
 }
 
-/* line 196, src/scss/partials/globals/_global.scss */
+/* line 210, src/scss/partials/globals/_global.scss */
 .section-margin-bottom {
   margin-bottom: 100px;
 }
 
-/* line 201, src/scss/partials/globals/_global.scss */
+/* line 215, src/scss/partials/globals/_global.scss */
 hr.vertical {
   display: block;
   width: 1px;
@@ -428,7 +448,7 @@ hr.vertical {
   border: none;
 }
 
-/* line 210, src/scss/partials/globals/_global.scss */
+/* line 224, src/scss/partials/globals/_global.scss */
 .glyph-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,7 +456,7 @@ hr.vertical {
   margin: 20px 0;
 }
 
-/* line 213, src/scss/partials/globals/_global.scss */
+/* line 227, src/scss/partials/globals/_global.scss */
 .glyph-bullet svg {
   margin-right: 16px;
   position: relative;
@@ -444,7 +464,7 @@ hr.vertical {
   opacity: .3;
 }
 
-/* line 219, src/scss/partials/globals/_global.scss */
+/* line 233, src/scss/partials/globals/_global.scss */
 .glyph-bullet a, .glyph-bullet p {
   font-weight: 500;
   text-decoration: none;
@@ -452,12 +472,19 @@ hr.vertical {
   line-height: 1.45em;
 }
 
-/* line 227, src/scss/partials/globals/_global.scss */
+/* line 240, src/scss/partials/globals/_global.scss */
+.animate-in {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+/* line 244, src/scss/partials/globals/_global.scss */
 .hours-of-operation {
   margin-top: 30px;
 }
 
-/* line 229, src/scss/partials/globals/_global.scss */
+/* line 246, src/scss/partials/globals/_global.scss */
 .hours-of-operation > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,47 +494,47 @@ hr.vertical {
           justify-content: space-between;
 }
 
-/* line 233, src/scss/partials/globals/_global.scss */
+/* line 250, src/scss/partials/globals/_global.scss */
 .hours-of-operation .days {
   font-weight: 500;
 }
 
-/* line 236, src/scss/partials/globals/_global.scss */
+/* line 253, src/scss/partials/globals/_global.scss */
 .hours-of-operation .hours {
   width: 100%;
   max-width: 160px;
 }
 
-/* line 242, src/scss/partials/globals/_global.scss */
+/* line 259, src/scss/partials/globals/_global.scss */
 .copy-block {
   margin-bottom: 40px;
 }
 
-/* line 246, src/scss/partials/globals/_global.scss */
+/* line 263, src/scss/partials/globals/_global.scss */
 .spacer-60 {
   height: 60px;
   width: 100%;
 }
 
-/* line 251, src/scss/partials/globals/_global.scss */
+/* line 268, src/scss/partials/globals/_global.scss */
 .gray-tile {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   border-radius: 6px;
 }
 
-/* line 254, src/scss/partials/globals/_global.scss */
+/* line 271, src/scss/partials/globals/_global.scss */
 .gray-tile img {
   mix-blend-mode: darken;
 }
 
-/* line 259, src/scss/partials/globals/_global.scss */
+/* line 276, src/scss/partials/globals/_global.scss */
 .img-wrap {
   position: relative;
   width: 100%;
   height: 0;
 }
 
-/* line 263, src/scss/partials/globals/_global.scss */
+/* line 280, src/scss/partials/globals/_global.scss */
 .img-wrap img, .img-wrap video {
   height: 100%;
   width: 100%;
@@ -954,19 +981,59 @@ body.mobile-nav-is-open #hamburger span:nth-child(3) {
 **********************************************/
 /* line 5, src/scss/partials/components/_footer.scss */
 footer {
-  width: 100%;
-  background: #090A0A;
-  color: #fff;
-  height: 300px;
+  border-top: 1px solid #cdcdcd;
+  padding: 20px 0;
+}
+
+/* line 8, src/scss/partials/components/_footer.scss */
+footer p {
+  font-size: 15px;
+}
+
+/* line 10, src/scss/partials/components/_footer.scss */
+footer p a {
+  text-decoration: none;
+  color: #090A0A;
+  font-weight: inherit;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 16, src/scss/partials/components/_footer.scss */
+  footer .copyright {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 21, src/scss/partials/components/_footer.scss */
+  footer .address {
+    margin-bottom: 30px;
+  }
+}
+
+/* line 26, src/scss/partials/components/_footer.scss */
+footer .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: -6px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 26, src/scss/partials/components/_footer.scss */
+  footer .social-icons {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+/* line 33, src/scss/partials/components/_footer.scss */
+footer .social-icons a {
+  padding: 6px;
 }
 
 /**********************************************
@@ -2759,11 +2826,59 @@ section.service-pillars div:not(.description) {
   margin-bottom: 40px;
 }
 
+/* line 21, src/scss/partials/pages/_blog-single.scss */
+.blog-container .blog-content {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #090A0A;
+}
+
+/* line 25, src/scss/partials/pages/_blog-single.scss */
+.blog-container .blog-prev-next {
+  margin-top: 30px;
+}
+
+/* line 27, src/scss/partials/pages/_blog-single.scss */
+.blog-container .blog-prev-next a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  float: left;
+  height: 100px;
+  text-decoration: none;
+}
+
+/* line 34, src/scss/partials/pages/_blog-single.scss */
+.blog-container .blog-prev-next a p {
+  color: #090A0A;
+  font-size: 15px;
+  padding: 15px;
+}
+
+/* line 41, src/scss/partials/pages/_blog-single.scss */
+.blog-container .blog-prev-next .prev {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-right: 1px solid #090A0A;
+}
+
+/* line 45, src/scss/partials/pages/_blog-single.scss */
+.blog-container .blog-prev-next .next {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
 /**********************************************
  Template - Thin Container
 **********************************************/
-/* line 7, src/scss/partials/templates/_thin-container.scss */
-.thin-container [class^='container'] {
+/* line 8, src/scss/partials/templates/_thin-container.scss */
+.thin-container section [class^='container'] {
   max-width: 760px !important;
 }
 
@@ -2820,7 +2935,7 @@ section.service-pillars div:not(.description) {
 
 /* line 26, src/scss/partials/templates/_left-nav-right-container.scss */
 .left-nav-right-container .left-nav nav > div {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   position: relative;
 }
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>social-icon-fb</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer-/-White" transform="translate(-1262.000000, -20.000000)">
+            <rect id="Rectangle" stroke-opacity="0.204682037" stroke="#090A0A" x="-0.5" y="-0.5" width="1441" height="116"></rect>
+            <g id="_Icons-/-16px---Social-/-Black-/-Facebook" transform="translate(1266.000000, 20.000000)" fill="#090A0A">
+                <path d="M3.09852217,17 L3.09852217,9.48650246 L0.569458128,9.48650246 L0.569458128,6.54541872 L3.09852217,6.54541872 L3.09852217,4.38147783 C3.09852217,1.87251232 4.63270936,0.505812808 6.87034483,0.505812808 C7.62439909,0.504168358 8.378018,0.542184743 9.12807882,0.619704433 L9.12807882,3.24256158 L7.58719212,3.24256158 C6.36788177,3.24256158 6.13004926,3.81871921 6.13004926,4.66955665 L6.13004926,6.54206897 L9.04433498,6.54206897 L8.66581281,9.48315271 L6.11330049,9.48315271 L6.11330049,17 L3.09852217,17 Z" id="Icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

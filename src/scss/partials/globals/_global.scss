@@ -39,9 +39,20 @@ h3, p {
 
 p {
   font-weight: 300;
+  &.small {
+    font-size: 15px;
+  }
   &.large {
     font-size: 22px;
     line-height: 1.3em;
+  }
+  &.quote {
+    font-size: 24px;
+    line-height: 1.25em;
+    font-style: italic;
+    padding: 5px 30px;
+    margin: 30px 0 30px 60px;
+    border-left: 1px solid $green;
   }
 }
 
@@ -50,7 +61,7 @@ a {
   font-weight: 500;
 }
 
-strong, b { font-weight: 600 }
+strong, b { font-weight: 500 }
 
 .btn {
   display: inline-block;
@@ -59,10 +70,10 @@ strong, b { font-weight: 600 }
   background: transparent;
   border: 1px solid $black;
   font-size: 17px;
-  line-height: 46px - 2;
+  line-height: 43px - 2;
   font-weight: 500;
   text-align: center;
-  padding: 0px 20px;
+  padding: 0px 20px 3px;
   outline: 0;
   z-index: 1;
   cursor: pointer;
@@ -189,6 +200,9 @@ strong, b { font-weight: 600 }
 .section-padding-bottom {
   padding-bottom: 100px;
 }
+.section-padding-top {
+  padding-top: 100px;
+}
 .section-margin-top {
   margin-top: 100px;
 }
@@ -223,7 +237,10 @@ hr.vertical {
     line-height: 1.45em;
   }
 }
-
+.animate-in {
+  opacity: 0;
+  transform: translateY(100px);
+}
 .hours-of-operation {
   margin-top: 30px;
   & > div {

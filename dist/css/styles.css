@@ -236,7 +236,21 @@ strong, b {
   font-weight: 500;
 }
 
-/* line 66, src/scss/partials/globals/_global.scss */
+/* line 67, src/scss/partials/globals/_global.scss */
+ul, ol {
+  padding-left: 15px;
+}
+
+/* line 69, src/scss/partials/globals/_global.scss */
+ul li, ol li {
+  font-size: 17px;
+  line-height: 1.45em;
+  font-weight: 300;
+  list-style: disc;
+  padding-left: 5px;
+}
+
+/* line 80, src/scss/partials/globals/_global.scss */
 .btn {
   display: inline-block;
   position: relative;
@@ -256,23 +270,23 @@ strong, b {
   text-decoration: none;
 }
 
-/* line 82, src/scss/partials/globals/_global.scss */
+/* line 96, src/scss/partials/globals/_global.scss */
 .btn.white {
   border-color: #fff;
   color: #fff;
 }
 
-/* line 85, src/scss/partials/globals/_global.scss */
+/* line 99, src/scss/partials/globals/_global.scss */
 .btn.white:before {
   background: #fff;
 }
 
-/* line 88, src/scss/partials/globals/_global.scss */
+/* line 102, src/scss/partials/globals/_global.scss */
 .btn.white:hover {
   color: #090A0A;
 }
 
-/* line 92, src/scss/partials/globals/_global.scss */
+/* line 106, src/scss/partials/globals/_global.scss */
 .btn:before {
   content: '';
   display: block;
@@ -287,39 +301,39 @@ strong, b {
   z-index: -1;
 }
 
-/* line 104, src/scss/partials/globals/_global.scss */
+/* line 118, src/scss/partials/globals/_global.scss */
 .btn:hover {
   color: #fff;
 }
 
-/* line 106, src/scss/partials/globals/_global.scss */
+/* line 120, src/scss/partials/globals/_global.scss */
 .btn:hover:before {
   height: 100%;
 }
 
-/* line 112, src/scss/partials/globals/_global.scss */
+/* line 126, src/scss/partials/globals/_global.scss */
 .btn.btn-small {
   line-height: 36px;
 }
 
-/* line 116, src/scss/partials/globals/_global.scss */
+/* line 130, src/scss/partials/globals/_global.scss */
 .btn.green {
   background: #00AD8D;
   border-color: #00AD8D;
   color: #fff;
 }
 
-/* line 120, src/scss/partials/globals/_global.scss */
+/* line 134, src/scss/partials/globals/_global.scss */
 .btn.green:before {
   background: #26b99e;
 }
 
-/* line 123, src/scss/partials/globals/_global.scss */
+/* line 137, src/scss/partials/globals/_global.scss */
 .btn.green:hover {
   border-color: #26b99e;
 }
 
-/* line 129, src/scss/partials/globals/_global.scss */
+/* line 143, src/scss/partials/globals/_global.scss */
 .chevron-arrow-right:after {
   content: '';
   display: inline-block;
@@ -332,26 +346,26 @@ strong, b {
   margin-left: 5px;
 }
 
-/* line 139, src/scss/partials/globals/_global.scss */
+/* line 153, src/scss/partials/globals/_global.scss */
 .wrapper {
   margin-top: 120px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 139, src/scss/partials/globals/_global.scss */
+  /* line 153, src/scss/partials/globals/_global.scss */
   .wrapper {
     margin-top: 110px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 139, src/scss/partials/globals/_global.scss */
+  /* line 153, src/scss/partials/globals/_global.scss */
   .wrapper {
     margin-top: 100px;
   }
 }
 
-/* line 149, src/scss/partials/globals/_global.scss */
+/* line 163, src/scss/partials/globals/_global.scss */
 .absolute-0 {
   position: absolute;
   top: 0;
@@ -360,25 +374,25 @@ strong, b {
   left: 0;
 }
 
-/* line 153, src/scss/partials/globals/_global.scss */
+/* line 167, src/scss/partials/globals/_global.scss */
 .half-col {
   width: 50%;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 153, src/scss/partials/globals/_global.scss */
+  /* line 167, src/scss/partials/globals/_global.scss */
   .half-col {
     width: 100%;
   }
 }
 
-/* line 160, src/scss/partials/globals/_global.scss */
+/* line 174, src/scss/partials/globals/_global.scss */
 .slider-wrap-pagination {
   position: relative;
   height: 100%;
 }
 
-/* line 165, src/scss/partials/globals/_global.scss */
+/* line 179, src/scss/partials/globals/_global.scss */
 .dot-container {
   position: absolute;
   bottom: 20px;
@@ -387,7 +401,7 @@ strong, b {
           transform: translateX(-50%);
 }
 
-/* line 168, src/scss/partials/globals/_global.scss */
+/* line 182, src/scss/partials/globals/_global.scss */
 .dot-container .dot {
   cursor: pointer;
   height: 14px;
@@ -405,12 +419,12 @@ strong, b {
   transition: .3s ease;
 }
 
-/* line 179, src/scss/partials/globals/_global.scss */
+/* line 193, src/scss/partials/globals/_global.scss */
 .dot-container .dot.active {
   opacity: 1;
 }
 
-/* line 185, src/scss/partials/globals/_global.scss */
+/* line 199, src/scss/partials/globals/_global.scss */
 .map-placeholder {
   background: url("https://chakra-digital.github.io/rs_walsh/dist/images/map-placeholder.jpg");
   background-size: cover;
@@ -428,7 +442,7 @@ strong, b {
   min-height: 500px;
 }
 
-/* line 194, src/scss/partials/globals/_global.scss */
+/* line 208, src/scss/partials/globals/_global.scss */
 .map-placeholder p {
   background: white;
   padding: 10px 20px;
@@ -437,32 +451,32 @@ strong, b {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* line 203, src/scss/partials/globals/_global.scss */
+/* line 217, src/scss/partials/globals/_global.scss */
 .section-padding {
   padding: 100px 0;
 }
 
-/* line 206, src/scss/partials/globals/_global.scss */
+/* line 220, src/scss/partials/globals/_global.scss */
 .section-padding-bottom {
   padding-bottom: 100px;
 }
 
-/* line 209, src/scss/partials/globals/_global.scss */
+/* line 223, src/scss/partials/globals/_global.scss */
 .section-padding-top {
   padding-top: 100px;
 }
 
-/* line 212, src/scss/partials/globals/_global.scss */
+/* line 226, src/scss/partials/globals/_global.scss */
 .section-margin-top {
   margin-top: 100px;
 }
 
-/* line 216, src/scss/partials/globals/_global.scss */
+/* line 230, src/scss/partials/globals/_global.scss */
 .section-margin-bottom {
   margin-bottom: 100px;
 }
 
-/* line 221, src/scss/partials/globals/_global.scss */
+/* line 235, src/scss/partials/globals/_global.scss */
 hr.vertical {
   display: block;
   width: 1px;
@@ -471,7 +485,7 @@ hr.vertical {
   border: none;
 }
 
-/* line 230, src/scss/partials/globals/_global.scss */
+/* line 244, src/scss/partials/globals/_global.scss */
 .glyph-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -479,7 +493,7 @@ hr.vertical {
   margin: 20px 0;
 }
 
-/* line 233, src/scss/partials/globals/_global.scss */
+/* line 247, src/scss/partials/globals/_global.scss */
 .glyph-bullet svg {
   margin-right: 16px;
   position: relative;
@@ -487,7 +501,7 @@ hr.vertical {
   opacity: .3;
 }
 
-/* line 239, src/scss/partials/globals/_global.scss */
+/* line 253, src/scss/partials/globals/_global.scss */
 .glyph-bullet a, .glyph-bullet p {
   font-weight: 500;
   text-decoration: none;
@@ -495,19 +509,19 @@ hr.vertical {
   line-height: 1.45em;
 }
 
-/* line 246, src/scss/partials/globals/_global.scss */
+/* line 260, src/scss/partials/globals/_global.scss */
 .animate-in {
   opacity: 0;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
 }
 
-/* line 250, src/scss/partials/globals/_global.scss */
+/* line 264, src/scss/partials/globals/_global.scss */
 .hours-of-operation {
   margin-top: 30px;
 }
 
-/* line 252, src/scss/partials/globals/_global.scss */
+/* line 266, src/scss/partials/globals/_global.scss */
 .hours-of-operation > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,47 +531,65 @@ hr.vertical {
           justify-content: space-between;
 }
 
-/* line 256, src/scss/partials/globals/_global.scss */
+/* line 270, src/scss/partials/globals/_global.scss */
 .hours-of-operation .days {
   font-weight: 500;
 }
 
-/* line 259, src/scss/partials/globals/_global.scss */
+/* line 273, src/scss/partials/globals/_global.scss */
 .hours-of-operation .hours {
   width: 100%;
   max-width: 160px;
 }
 
-/* line 265, src/scss/partials/globals/_global.scss */
+/* line 280, src/scss/partials/globals/_global.scss */
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 286, src/scss/partials/globals/_global.scss */
 .copy-block {
   margin-bottom: 40px;
 }
 
-/* line 269, src/scss/partials/globals/_global.scss */
+/* line 290, src/scss/partials/globals/_global.scss */
 .spacer-60 {
   height: 60px;
   width: 100%;
 }
 
-/* line 274, src/scss/partials/globals/_global.scss */
+/* line 295, src/scss/partials/globals/_global.scss */
 .gray-tile {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   border-radius: 6px;
 }
 
-/* line 277, src/scss/partials/globals/_global.scss */
+/* line 298, src/scss/partials/globals/_global.scss */
 .gray-tile img {
   mix-blend-mode: darken;
 }
 
-/* line 282, src/scss/partials/globals/_global.scss */
+/* line 303, src/scss/partials/globals/_global.scss */
+.gray-bkg {
+  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
+}
+
+/* line 307, src/scss/partials/globals/_global.scss */
 .img-wrap {
   position: relative;
   width: 100%;
   height: 0;
 }
 
-/* line 286, src/scss/partials/globals/_global.scss */
+/* line 311, src/scss/partials/globals/_global.scss */
 .img-wrap img, .img-wrap video {
   height: 100%;
   width: 100%;
@@ -599,13 +631,13 @@ hr.vertical {
   }
 }
 
-/* line 306, src/scss/partials/globals/_global.scss */
+/* line 331, src/scss/partials/globals/_global.scss */
 .no-scrollbars {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-/* line 309, src/scss/partials/globals/_global.scss */
+/* line 334, src/scss/partials/globals/_global.scss */
 .no-scrollbars::-webkit-scrollbar {
   display: none;
 }
@@ -1883,10 +1915,8 @@ body.project-single.mobile-layout .slider-wrap {
 @media screen and (max-width: 400px) {
   /* line 108, src/scss/partials/pages/_project-single.scss */
   .project-single.project-info-panel--is-open .project-info-trigger {
-    bottom: unset;
     left: unset;
-    top: 13px;
-    right: 5px;
+    right: 10px;
     -webkit-transform: unset;
             transform: unset;
     -webkit-transition: unset;
@@ -1894,17 +1924,17 @@ body.project-single.mobile-layout .slider-wrap {
   }
 }
 
-/* line 121, src/scss/partials/pages/_project-single.scss */
+/* line 119, src/scss/partials/pages/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger .close-x {
   opacity: 1;
 }
 
-/* line 124, src/scss/partials/pages/_project-single.scss */
+/* line 122, src/scss/partials/pages/_project-single.scss */
 .project-single.project-info-panel--is-open .project-info-trigger .info {
   opacity: 0;
 }
 
-/* line 134, src/scss/partials/pages/_project-single.scss */
+/* line 132, src/scss/partials/pages/_project-single.scss */
 .project-info-panel {
   position: fixed;
   top: 0;
@@ -1919,7 +1949,7 @@ body.project-single.mobile-layout .slider-wrap {
           transform: translateX(-100%);
 }
 
-/* line 141, src/scss/partials/pages/_project-single.scss */
+/* line 139, src/scss/partials/pages/_project-single.scss */
 .project-info-panel:before {
   content: '';
   display: block;
@@ -1934,26 +1964,26 @@ body.project-single.mobile-layout .slider-wrap {
   pointer-events: none;
 }
 
-/* line 151, src/scss/partials/pages/_project-single.scss */
+/* line 149, src/scss/partials/pages/_project-single.scss */
 .project-info-panel .scroll-inner {
   overflow-y: scroll;
   overflow-scrolling: touch;
   height: 100%;
 }
 
-/* line 156, src/scss/partials/pages/_project-single.scss */
+/* line 154, src/scss/partials/pages/_project-single.scss */
 .project-info-panel main {
   padding: 0 40px 60px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 156, src/scss/partials/pages/_project-single.scss */
+  /* line 154, src/scss/partials/pages/_project-single.scss */
   .project-info-panel main {
     padding: 0 20px 60px;
   }
 }
 
-/* line 162, src/scss/partials/pages/_project-single.scss */
+/* line 160, src/scss/partials/pages/_project-single.scss */
 .project-info-panel .meta {
   padding-top: 160px;
   height: 100vh;
@@ -1961,24 +1991,24 @@ body.project-single.mobile-layout .slider-wrap {
   position: relative;
 }
 
-/* line 167, src/scss/partials/pages/_project-single.scss */
+/* line 165, src/scss/partials/pages/_project-single.scss */
 .project-info-panel .meta > div:not(:last-child) {
   margin-bottom: 20px;
 }
 
-/* line 170, src/scss/partials/pages/_project-single.scss */
+/* line 168, src/scss/partials/pages/_project-single.scss */
 .project-info-panel .meta .more-info {
   position: absolute;
   bottom: 30px;
 }
 
-/* line 173, src/scss/partials/pages/_project-single.scss */
+/* line 171, src/scss/partials/pages/_project-single.scss */
 .project-info-panel .meta .more-info h2 {
   display: inline-block;
   margin: 0;
 }
 
-/* line 177, src/scss/partials/pages/_project-single.scss */
+/* line 175, src/scss/partials/pages/_project-single.scss */
 .project-info-panel .meta .more-info img {
   position: relative;
   top: 5px;
@@ -1987,20 +2017,20 @@ body.project-single.mobile-layout .slider-wrap {
           animation: arrow-bounce 1s ease infinite;
 }
 
-/* line 186, src/scss/partials/pages/_project-single.scss */
+/* line 184, src/scss/partials/pages/_project-single.scss */
 .project-info-panel .cta {
   padding: 40px;
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
 }
 
 @media screen and (max-width: 575px) {
-  /* line 186, src/scss/partials/pages/_project-single.scss */
+  /* line 184, src/scss/partials/pages/_project-single.scss */
   .project-info-panel .cta {
     padding: 40px 20px;
   }
 }
 
-/* line 194, src/scss/partials/pages/_project-single.scss */
+/* line 192, src/scss/partials/pages/_project-single.scss */
 .project-info-trigger {
   position: fixed;
   right: -60px;
@@ -2012,14 +2042,14 @@ body.project-single.mobile-layout .slider-wrap {
   transition: transform 0.6s cubic-bezier(0.35, 0.05, 0.05, 1), -webkit-transform 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
 }
 
-/* line 198, src/scss/partials/pages/_project-single.scss */
+/* line 196, src/scss/partials/pages/_project-single.scss */
 .project-info-trigger svg {
   -webkit-transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   transition: 0.6s cubic-bezier(0.35, 0.05, 0.05, 1);
   pointer-events: none;
 }
 
-/* line 202, src/scss/partials/pages/_project-single.scss */
+/* line 200, src/scss/partials/pages/_project-single.scss */
 .project-info-trigger .close-x {
   position: absolute;
   opacity: 0;
@@ -2098,6 +2128,121 @@ section.service-pillars div:not(.description) {
   height: 40px;
 }
 
+/* line 52, src/scss/partials/pages/_services.scss */
+.service-hero .row {
+  position: relative;
+  padding: 60px 0;
+}
+
+/* line 56, src/scss/partials/pages/_services.scss */
+.service-hero .hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 61, src/scss/partials/pages/_services.scss */
+.service-hero .hero-img:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 56, src/scss/partials/pages/_services.scss */
+  .service-hero .hero-img {
+    width: 100%;
+  }
+}
+
+/* line 71, src/scss/partials/pages/_services.scss */
+.service-hero .content .inner {
+  max-width: 500px;
+  padding: 0 30px;
+  margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 71, src/scss/partials/pages/_services.scss */
+  .service-hero .content .inner {
+    text-align: center;
+    max-width: 600px;
+  }
+}
+
+/* line 80, src/scss/partials/pages/_services.scss */
+.service-hero .content h1, .service-hero .content p {
+  color: #fff;
+}
+
+/* line 83, src/scss/partials/pages/_services.scss */
+.service-hero .content p:not(:last-of-type) {
+  margin-bottom: 60px;
+}
+
+/* line 88, src/scss/partials/pages/_services.scss */
+.service-hero.design .row {
+  background: #00AD8D;
+}
+
+/* line 92, src/scss/partials/pages/_services.scss */
+.service-hero.design .hero-img:after {
+  background: -webkit-gradient(linear, left top, right top, from(#00AD8D), to(rgba(0, 173, 141, 0.1)));
+  background: linear-gradient(to right, #00AD8D, rgba(0, 173, 141, 0.1));
+}
+
+@media screen and (max-width: 767px) {
+  /* line 92, src/scss/partials/pages/_services.scss */
+  .service-hero.design .hero-img:after {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 173, 141, 0.9)), to(rgba(0, 173, 141, 0.9)));
+    background: linear-gradient(to right, rgba(0, 173, 141, 0.9), rgba(0, 173, 141, 0.9));
+  }
+}
+
+/* line 102, src/scss/partials/pages/_services.scss */
+.step-bubble {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #090A0A;
+  margin: auto;
+  font-size: 56px;
+  font-weight: 300;
+}
+
+/* line 112, src/scss/partials/pages/_services.scss */
+.service-content-block p, .service-content-block ul, .service-content-block ol {
+  margin-bottom: 20px;
+}
+
+/* line 115, src/scss/partials/pages/_services.scss */
+.service-content-block .half-col-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 119, src/scss/partials/pages/_services.scss */
+.service-content-block .half-col {
+  width: 48.5%;
+}
+
+/* line 122, src/scss/partials/pages/_services.scss */
+.service-content-block .row.gray-bkg {
+  padding: 60px 0 40px;
+}
+
 /**********************************************
  Garden Center
 **********************************************/
@@ -2118,7 +2263,6 @@ section.service-pillars div:not(.description) {
 
 /* line 13, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .main-content {
-  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2128,7 +2272,7 @@ section.service-pillars div:not(.description) {
           flex-direction: column;
 }
 
-/* line 17, src/scss/partials/pages/_garden-center.scss */
+/* line 16, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .main-content .top {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2149,14 +2293,14 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 1199px) {
-  /* line 17, src/scss/partials/pages/_garden-center.scss */
+  /* line 16, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .main-content .top {
     padding: 70px 30px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  /* line 17, src/scss/partials/pages/_garden-center.scss */
+  /* line 16, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .main-content .top {
     max-width: 767px;
     text-align: center;
@@ -2164,34 +2308,34 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 17, src/scss/partials/pages/_garden-center.scss */
+  /* line 16, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .main-content .top {
     padding: 60px 20px 60px;
   }
 }
 
-/* line 35, src/scss/partials/pages/_garden-center.scss */
+/* line 34, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .main-content .top img {
   max-width: 370px;
   padding-bottom: 60px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 35, src/scss/partials/pages/_garden-center.scss */
+  /* line 34, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .main-content .top img {
     margin: auto;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 35, src/scss/partials/pages/_garden-center.scss */
+  /* line 34, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .main-content .top img {
     max-width: 260px;
     padding-bottom: 40px;
   }
 }
 
-/* line 49, src/scss/partials/pages/_garden-center.scss */
+/* line 48, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2202,14 +2346,14 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (min-width: 576px) {
-  /* line 49, src/scss/partials/pages/_garden-center.scss */
+  /* line 48, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .inpage-nav {
     max-height: 160px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 49, src/scss/partials/pages/_garden-center.scss */
+  /* line 48, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .inpage-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2218,7 +2362,7 @@ section.service-pillars div:not(.description) {
   }
 }
 
-/* line 58, src/scss/partials/pages/_garden-center.scss */
+/* line 57, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2242,20 +2386,20 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 58, src/scss/partials/pages/_garden-center.scss */
+  /* line 57, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .inpage-nav a {
     padding: 15px 0;
   }
 }
 
 @media screen and (min-width: 576px) {
-  /* line 72, src/scss/partials/pages/_garden-center.scss */
+  /* line 71, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .inpage-nav a:not(:last-child) {
     border-right: 1px solid #c8cbcb;
   }
 }
 
-/* line 77, src/scss/partials/pages/_garden-center.scss */
+/* line 76, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a span {
   -webkit-transform: translateX(13px);
           transform: translateX(13px);
@@ -2263,7 +2407,7 @@ section.service-pillars div:not(.description) {
   transition: 0.3s ease-out;
 }
 
-/* line 81, src/scss/partials/pages/_garden-center.scss */
+/* line 80, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a svg {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -2274,69 +2418,69 @@ section.service-pillars div:not(.description) {
   transition: 0.3s ease-out;
 }
 
-/* line 88, src/scss/partials/pages/_garden-center.scss */
+/* line 87, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a:hover {
   background: black;
   color: lightgray;
   border-color: black;
 }
 
-/* line 92, src/scss/partials/pages/_garden-center.scss */
+/* line 91, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a:hover span {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 95, src/scss/partials/pages/_garden-center.scss */
+/* line 94, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a:hover svg {
   -webkit-animation: arrow-bounce 1s ease infinite;
           animation: arrow-bounce 1s ease infinite;
   opacity: .6;
 }
 
-/* line 108, src/scss/partials/pages/_garden-center.scss */
+/* line 107, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase {
   margin-bottom: -30px;
 }
 
-/* line 110, src/scss/partials/pages/_garden-center.scss */
+/* line 109, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .row > div {
   height: 290px;
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 110, src/scss/partials/pages/_garden-center.scss */
+  /* line 109, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .row > div {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 110, src/scss/partials/pages/_garden-center.scss */
+  /* line 109, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .row > div {
     height: 200px;
   }
 }
 
-/* line 120, src/scss/partials/pages/_garden-center.scss */
+/* line 119, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .img-wrap {
   height: 100%;
 }
 
-/* line 123, src/scss/partials/pages/_garden-center.scss */
+/* line 122, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .img-wrap:hover img.primary {
   opacity: 0;
 }
 
-/* line 128, src/scss/partials/pages/_garden-center.scss */
+/* line 127, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .img-wrap img.primary {
   position: absolute;
   -webkit-transition: .4s ease-out;
   transition: .4s ease-out;
 }
 
-/* line 134, src/scss/partials/pages/_garden-center.scss */
+/* line 133, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2350,27 +2494,27 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 134, src/scss/partials/pages/_garden-center.scss */
+  /* line 133, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .content {
     height: inherit !important;
     margin-bottom: 60px !important;
   }
 }
 
-/* line 142, src/scss/partials/pages/_garden-center.scss */
+/* line 141, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .content .inner {
   max-width: 360px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 142, src/scss/partials/pages/_garden-center.scss */
+  /* line 141, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .content .inner {
     text-align: center;
     max-width: 767px;
   }
 }
 
-/* line 154, src/scss/partials/pages/_garden-center.scss */
+/* line 153, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .row {
   background: -webkit-gradient(linear, left bottom, right top, from(#E5EAEA), to(#F2F4F4));
   background: linear-gradient(to top right, #E5EAEA, #F2F4F4);
@@ -2378,13 +2522,13 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 158, src/scss/partials/pages/_garden-center.scss */
+  /* line 157, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .content {
     margin-bottom: 40px;
   }
 }
 
-/* line 162, src/scss/partials/pages/_garden-center.scss */
+/* line 161, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .content .inner {
   max-width: 420px;
   margin: auto;
@@ -2392,19 +2536,19 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 162, src/scss/partials/pages/_garden-center.scss */
+  /* line 161, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .content .inner {
     max-width: 767px;
     text-align: center;
   }
 }
 
-/* line 171, src/scss/partials/pages/_garden-center.scss */
+/* line 170, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .content .top {
   margin-bottom: 60px;
 }
 
-/* line 176, src/scss/partials/pages/_garden-center.scss */
+/* line 175, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .icon-bullets .inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2412,14 +2556,14 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 176, src/scss/partials/pages/_garden-center.scss */
+  /* line 175, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .icon-bullets .inner {
     padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 176, src/scss/partials/pages/_garden-center.scss */
+  /* line 175, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .icon-bullets .inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2428,7 +2572,7 @@ section.service-pillars div:not(.description) {
   }
 }
 
-/* line 186, src/scss/partials/pages/_garden-center.scss */
+/* line 185, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .icon-col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2436,13 +2580,13 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 188, src/scss/partials/pages/_garden-center.scss */
+  /* line 187, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .icon-col:first-child {
     margin-bottom: 28px;
   }
 }
 
-/* line 195, src/scss/partials/pages/_garden-center.scss */
+/* line 194, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .icon-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2452,13 +2596,13 @@ section.service-pillars div:not(.description) {
           align-items: center;
 }
 
-/* line 198, src/scss/partials/pages/_garden-center.scss */
+/* line 197, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .icon-row:not(:last-child) {
   margin-bottom: 28px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 195, src/scss/partials/pages/_garden-center.scss */
+  /* line 194, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .icon-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2467,29 +2611,29 @@ section.service-pillars div:not(.description) {
   }
 }
 
-/* line 204, src/scss/partials/pages/_garden-center.scss */
+/* line 203, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .icon-row p {
   margin-left: 14px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 204, src/scss/partials/pages/_garden-center.scss */
+  /* line 203, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .icon-row p {
     margin-left: 0;
   }
 }
 
-/* line 217, src/scss/partials/pages/_garden-center.scss */
+/* line 216, src/scss/partials/pages/_garden-center.scss */
 .gc-events .title {
   margin-bottom: 60px;
 }
 
-/* line 219, src/scss/partials/pages/_garden-center.scss */
+/* line 218, src/scss/partials/pages/_garden-center.scss */
 .gc-events .title h1 {
   text-align: center;
 }
 
-/* line 223, src/scss/partials/pages/_garden-center.scss */
+/* line 222, src/scss/partials/pages/_garden-center.scss */
 .gc-events .calendar {
   background: lightgray;
   height: 600px;
@@ -2504,7 +2648,7 @@ section.service-pillars div:not(.description) {
           justify-content: center;
 }
 
-/* line 235, src/scss/partials/pages/_garden-center.scss */
+/* line 234, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2512,14 +2656,13 @@ section.service-pillars div:not(.description) {
   position: relative;
 }
 
-/* line 238, src/scss/partials/pages/_garden-center.scss */
+/* line 237, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .row {
   position: relative;
 }
 
-/* line 241, src/scss/partials/pages/_garden-center.scss */
+/* line 240, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .main-content {
-  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2533,7 +2676,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 247, src/scss/partials/pages/_garden-center.scss */
+  /* line 245, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content h1 {
     text-align: center;
     color: #fff;
@@ -2541,7 +2684,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 241, src/scss/partials/pages/_garden-center.scss */
+  /* line 240, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content {
     z-index: 1;
     background: rgba(9, 10, 10, 0.6);
@@ -2549,7 +2692,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 258, src/scss/partials/pages/_garden-center.scss */
+  /* line 256, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content .rs-form input:not([type=submit]),
   .gc-ask-a-gardener .main-content .rs-form textarea {
     background: rgba(255, 255, 255, 0.9);
@@ -2558,25 +2701,25 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 265, src/scss/partials/pages/_garden-center.scss */
+  /* line 263, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content .rs-form .form-submit {
     display: block;
   }
 }
 
-/* line 271, src/scss/partials/pages/_garden-center.scss */
+/* line 269, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .main-content h1 {
   margin-bottom: 30px;
 }
 
-/* line 274, src/scss/partials/pages/_garden-center.scss */
+/* line 272, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .main-content .inner {
   width: 100%;
   max-width: 575px;
   padding: 0 30px;
 }
 
-/* line 280, src/scss/partials/pages/_garden-center.scss */
+/* line 278, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .image {
   background-size: cover;
   background-position: center;
@@ -2584,7 +2727,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 280, src/scss/partials/pages/_garden-center.scss */
+  /* line 278, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .image {
     position: absolute;
     top: 0;
@@ -2594,7 +2737,7 @@ section.service-pillars div:not(.description) {
   }
 }
 
-/* line 287, src/scss/partials/pages/_garden-center.scss */
+/* line 285, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .image img {
   width: 100%;
   height: 100%;
@@ -2603,7 +2746,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 297, src/scss/partials/pages/_garden-center.scss */
+  /* line 295, src/scss/partials/pages/_garden-center.scss */
   .gc-visit-us .map {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -2611,7 +2754,7 @@ section.service-pillars div:not(.description) {
   }
 }
 
-/* line 302, src/scss/partials/pages/_garden-center.scss */
+/* line 300, src/scss/partials/pages/_garden-center.scss */
 .gc-visit-us .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2625,28 +2768,28 @@ section.service-pillars div:not(.description) {
   padding: 80px 0 110px;
 }
 
-/* line 307, src/scss/partials/pages/_garden-center.scss */
+/* line 305, src/scss/partials/pages/_garden-center.scss */
 .gc-visit-us .content .inner {
   max-width: 410px;
   padding: 0 30px;
 }
 
-/* line 310, src/scss/partials/pages/_garden-center.scss */
+/* line 308, src/scss/partials/pages/_garden-center.scss */
 .gc-visit-us .content .inner > p {
   margin-bottom: 30px;
 }
 
-/* line 317, src/scss/partials/pages/_garden-center.scss */
+/* line 315, src/scss/partials/pages/_garden-center.scss */
 .schedule-tour {
   margin: 40px 0 100px;
 }
 
-/* line 319, src/scss/partials/pages/_garden-center.scss */
+/* line 317, src/scss/partials/pages/_garden-center.scss */
 .schedule-tour h1 {
   margin-top: 60px;
 }
 
-/* line 322, src/scss/partials/pages/_garden-center.scss */
+/* line 320, src/scss/partials/pages/_garden-center.scss */
 .schedule-tour [class^='col'] {
   text-align: center;
 }
@@ -2812,16 +2955,15 @@ section.service-pillars div:not(.description) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   padding: 80px 30px 110px;
 }
 
-/* line 21, src/scss/partials/pages/_contact.scss */
+/* line 20, src/scss/partials/pages/_contact.scss */
 .contact-gc .content .inner {
   max-width: 420px;
 }
 
-/* line 23, src/scss/partials/pages/_contact.scss */
+/* line 22, src/scss/partials/pages/_contact.scss */
 .contact-gc .content .inner > p {
   margin-bottom: 30px;
 }

@@ -111,10 +111,8 @@ body.project-single {
 				transform: translateX(-70px);
 			}
 			@media screen and (max-width: 400px) {
-				bottom: unset;
 				left: unset;
-				top: 13px;
-				right: 5px;
+				right: 10px;
 				transform: unset;
 				transition: unset;
 			}

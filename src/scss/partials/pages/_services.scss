@@ -48,4 +48,78 @@ section.service-pillars {
 	}	
 }
 
+.service-hero {
+	.row {
+		position: relative;
+		padding: 60px 0;
+	}
+	.hero-img {
+		@include position(absolute, 0 0 0 null);
+		width: 70%;
+		background-size: cover;
+		background-position: center;
+		&:after {
+			content: '';
+			display: block;
+			@include position(absolute, 0);
+		}
+		@media screen and (max-width: $mq-max-md) {
+			width: 100%;
+		}
+	}
+	.content {
+		.inner {
+			max-width: 500px;
+			padding: 0 30px;
+			margin: auto;
+			@media screen and (max-width: $mq-max-md) {
+				text-align: center;
+				max-width: 600px;
+			}
+		}
+		h1, p {
+			color: #fff;
+		}
+		p:not(:last-of-type) {
+			margin-bottom: 60px;
+		}
+	}
+	&.design {
+		.row {
+			background: $green;
+		}
+		.hero-img {
+			&:after {
+				background: linear-gradient(to right, $green, rgba($green, .1));
+				@media screen and (max-width: $mq-max-md) {
+					background: linear-gradient(to right, rgba($green, .9), rgba($green, .9));
+				}
+			}
+		}
+	}
+}
 
+.step-bubble {
+	@include size(100px);
+	border-radius: 50%;
+	border: 1px solid $black;
+	margin: auto;
+	font-size: 56px;
+	font-weight: 300;
+}
+
+.service-content-block {
+	p, ul, ol {
+		margin-bottom: 20px;
+	}
+	.half-col-row {
+		display: flex;
+		justify-content: space-between;
+	}
+	.half-col {
+		width: 48.5%;
+	}
+	.row.gray-bkg {
+		padding: 60px 0 40px;
+	}
+}

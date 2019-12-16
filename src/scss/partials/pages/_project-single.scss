@@ -109,7 +109,6 @@ body.project-single {
 			transform: translateX(-36px);
 			@media screen and (max-width: $mq-max-md) {
 				transform: translateX(-70px);
-				background: transparent;
 			}
 			@media screen and (max-width: 400px) {
 				bottom: unset;
@@ -167,12 +166,28 @@ body.project-single {
 	}
 	.meta {
 		padding-top: 160px;
-		height: calc(100vh + 60px);
+		height: 100vh;
 		min-height: 600px;
+		position: relative;
 		& > div:not(:last-child) {
 			margin-bottom: 20px;
 		}
+		.more-info {
+			position: absolute;
+			bottom: 30px;
+			h2 {
+				display: inline-block;
+				margin: 0;
+			}
+			img {
+				position: relative;
+				top: 5px;
+				margin-left: 15px;
+				animation: arrow-bounce 1s ease infinite;
+			}
+		}
 	}
+
 	.cta {
 		padding: 40px;
 		background: $gray-gradient;

@@ -42,7 +42,7 @@ if(body.classList.contains('project-single')) {
           ease: "power4.out"
         })
         
-      } else {
+      } else if (target == infoTrigger && body.classList.contains('project-info-panel--is-open') || !target.closest('.project-info-panel')) {
         body.classList.remove('project-info-panel--is-open');
         bodyScrollLock.enableBodyScroll(infoPanel);
       }

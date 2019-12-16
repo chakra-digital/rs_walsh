@@ -17,22 +17,38 @@
     }
     @media screen and (max-width: $mq-max-md) {
       max-width: inherit;
+      @include position(fixed, null 0 0 0);
+      z-index: 100;
+      background: #fff;
+      margin: 0;
+      padding: 15px 15px 18px;
+      box-shadow: 0 0 10px rgba(0,0,0,.2);
+      overflow-x: scroll;
+      overflow-scrolling: touch;
     }
     nav {
       position: fixed;
+
       @media screen and (max-width: $mq-max-md) {
         position: relative;
+        white-space: nowrap;
       }
       & > div {
         margin-bottom: 20px;
         position: relative;
+        @media screen and (max-width: $mq-max-md) {
+          margin: 0 15px 0 0;
+          display: inline-block;
+        }
         &.active {
           img {
             opacity: 1;
           }
           a {
             opacity: 1;
-            transform: translateX(40px);
+            @media screen and (min-width: $mq-min-md) {
+              transform: translateX(40px);
+            }
           }
         }
         &:hover {
@@ -49,12 +65,17 @@
         text-decoration: none;
         color: $black;
         opacity: .4;
-        
+        @media screen and (max-width: $mq-max-md) {
+          font-size: 15px;
+        }
       }
       img {
         position: absolute;
         opacity: 0;
         pointer-events: none;
+        @media screen and (max-width: $mq-max-md) {
+          display: none;
+        }
       }
     }
     

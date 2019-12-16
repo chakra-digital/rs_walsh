@@ -137,7 +137,13 @@ strong, b { font-weight: 500 }
 }
 
 .wrapper {
-	margin-top: $header-height + 40px;
+  margin-top: $header-height + 40px;
+  @media screen and (max-width: $mq-max-md) {
+		margin-top: $header-height + 30px;
+  }
+  @media screen and (max-width: $mq-max-sm) {
+		margin-top: $header-height + 20px;
+	}
 }
 
 .absolute-0 {
@@ -295,5 +301,12 @@ hr.vertical {
   }
   100% {
     transform: translateY(-3px);
+  }
+}
+.no-scrollbars {
+  -ms-overflow-style: none;
+  scrollbar-width: none; // firefox
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

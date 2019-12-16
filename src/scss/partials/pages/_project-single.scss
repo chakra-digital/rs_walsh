@@ -152,11 +152,6 @@ body.project-single {
 		overflow-y: scroll;
 		overflow-scrolling: touch;
 		height: 100%;
-		-ms-overflow-style: none;
-		scrollbar-width: none; // firefox
-		&::-webkit-scrollbar {
-			display: none;
-		}
 	}
 	main {
 		padding: 0 40px 60px;

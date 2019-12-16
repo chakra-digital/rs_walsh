@@ -14,6 +14,9 @@ section.projects {
 	@media screen and (max-width: $mq-max-lg) {
 		margin-bottom: 20px;
 	}
+	@media screen and (max-width: $mq-max-sm) {
+		margin-bottom: 15px;
+	}
 	&.cta {
 		& > div {
 			text-align: center;

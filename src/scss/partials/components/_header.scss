@@ -17,9 +17,11 @@ header {
 		height: $header-height-mobile;
 		padding-left: 30px;
 	}
-	
-	@media screen and (max-width: $mq-max-sm) {
+	@media screen and (max-width: $mq-max-md) {
 		padding-left: 20px;
+	}
+	@media screen and (max-width: $mq-max-sm) {
+		padding-left: 15px;
 	}
 	.logo {
 		font-size: 0;
@@ -119,8 +121,11 @@ header {
 	@media screen and (max-width: $mq-max-lg) {
 		display: flex;
 	}
-	@media screen and (max-width: $mq-max-sm) {
+	@media screen and (max-width: $mq-max-md) {
 		padding: 0 20px;
+	}
+	@media screen and (max-width: $mq-max-sm) {
+		padding: 0 15px;
 	}
 	span {
 		display: block;

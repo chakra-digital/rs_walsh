@@ -32,7 +32,7 @@ if(body.classList.contains('project-single')) {
     if(target == infoTrigger && !body.classList.contains('project-info-panel--is-open')) {
 
       body.classList.add('project-info-panel--is-open');
-      //bodyScrollLock.disableBodyScroll(infoPanel);
+      bodyScrollLock.disableBodyScroll(infoPanel);
       
       gsap.from('.meta > div', {
         opacity: 0,
@@ -45,7 +45,7 @@ if(body.classList.contains('project-single')) {
       
     } else if (target == infoTrigger && body.classList.contains('project-info-panel--is-open') || !target.closest('.project-info-panel')) {
       body.classList.remove('project-info-panel--is-open');
-      //bodyScrollLock.enableBodyScroll(infoPanel);
+      bodyScrollLock.enableBodyScroll(infoPanel);
     }
     
   });

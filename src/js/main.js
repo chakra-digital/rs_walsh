@@ -89,15 +89,15 @@ if(mouseInteractItems.length) {
 
 
 if(header) {
-  var hamburger = document.getElementById('hamburger');
-  var topLevelNavItems = document.querySelectorAll('header nav a');
-  var mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
-  var dropdownWrappers = document.querySelectorAll('#mobile-menu .has-submenu');
+  const hamburger = document.getElementById('hamburger');
+  const topLevelNavItems = document.querySelectorAll('header nav a');
+  const mobileNavWrapper = document.getElementById('mobile-menu');
+  const dropdownWrappers = document.querySelectorAll('#mobile-menu .has-submenu');
 
   /********************************
    Add class 'active' to current parent page
   ********************************/
-  var topLevelPages = [
+  const topLevelPages = [
     "projects",
     "services",
     "garden-center",
@@ -106,7 +106,7 @@ if(header) {
     "contact"
   ];
   
-  var currentPage = '';
+  let currentPage = '';
   topLevelPages.forEach( item => {
     currentPage = body.classList.contains(item) ? item : false;
     if(currentPage) {
@@ -126,7 +126,7 @@ if(header) {
     body.classList.contains('mobile-nav-is-open') ? bodyScrollLock.disableBodyScroll(mobileNavWrapper) : bodyScrollLock.enableBodyScroll(mobileNavWrapper);
   });
   
-  var mq = window.matchMedia('(min-width: 992px)');
+  const mq = window.matchMedia('(min-width: 992px)');
 
   function normalize() {
     // Hide Mobile Nav if it's open when user reduces browser width

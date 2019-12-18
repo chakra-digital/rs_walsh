@@ -97,15 +97,15 @@ if(mouseInteractItems.length) {
 
 
 if(header) {
-  const hamburger = document.getElementById('hamburger');
-  const topLevelNavItems = document.querySelectorAll('header nav a');
-  const mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
-  const dropdownWrappers = document.querySelectorAll('#mobile-menu .has-submenu');
+  var hamburger = document.getElementById('hamburger');
+  var topLevelNavItems = document.querySelectorAll('header nav a');
+  var mobileNavWrapper = document.querySelector('.mobile-nav-wrapper');
+  var dropdownWrappers = document.querySelectorAll('#mobile-menu .has-submenu');
 
   /********************************
    Add class 'active' to current parent page
   ********************************/
-  const topLevelPages = [
+  var topLevelPages = [
     "projects",
     "services",
     "garden-center",
@@ -114,7 +114,7 @@ if(header) {
     "contact"
   ];
   
-  let currentPage = '';
+  var currentPage = '';
   topLevelPages.forEach( item => {
     currentPage = body.classList.contains(item) ? item : false;
     if(currentPage) {

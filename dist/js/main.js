@@ -135,9 +135,10 @@ if(header) {
   });
   
   const mq = window.matchMedia('(min-width: 992px)');
-
+  
   function normalize() {
     // Hide Mobile Nav if it's open when user reduces browser width
+    console.log(mq);
     if(mq.matches && body.classList.contains('mobile-nav-is-open')) {
       body.classList.remove('mobile-nav-is-open');
       bodyScrollLock.enableBodyScroll(mobileNavWrapper);

@@ -108,8 +108,8 @@ if(header) {
   
   let currentPage = '';
   topLevelPages.forEach( item => {
-    currentPage = body.classList.contains(item) ? item : '';
-    if(currentPage !== '') {
+    currentPage = body.classList.contains(item) ? item : false;
+    if(currentPage) {
       topLevelNavItems.forEach( item => {
         if(item.dataset.page === currentPage) {
           item.classList.add('active');
@@ -125,8 +125,8 @@ if(header) {
     body.classList.toggle('mobile-nav-is-open');
     body.classList.contains('mobile-nav-is-open') ? bodyScrollLock.disableBodyScroll(mobileNavWrapper) : bodyScrollLock.enableBodyScroll(mobileNavWrapper);
   });
-
-  const mq = window.matchMedia('(min-width: 992px)');
+  
+  var mq = window.matchMedia('(min-width: 992px)');
 
   function normalize() {
     // Hide Mobile Nav if it's open when user reduces browser width

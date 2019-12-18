@@ -171,42 +171,6 @@
       margin-bottom: 60px;
     }
   }
-  .icon-bullets {
-    .inner {
-      display: flex;
-      @media screen and (max-width: $mq-max-md) {
-        padding: 0 20px;
-      }
-      @media screen and (max-width: $mq-max-sm) {
-        flex-direction: column;
-      }
-    }
-  }
-  .icon-col {
-    flex: 1;
-    &:first-child {
-      @media screen and (max-width: $mq-max-sm) {
-        margin-bottom:28px;
-      }
-    }
-    
-  }
-  .icon-row {
-    display: flex;
-    align-items: center;
-    &:not(:last-child) {
-      margin-bottom:28px
-    }
-    @media screen and (max-width: $mq-max-lg) {
-      flex-direction: column;
-    }
-    p {
-      margin-left: 14px;
-      @media screen and (max-width: $mq-max-lg) {
-        margin-left: 0;
-      }
-    }
-  }
 }
 
 

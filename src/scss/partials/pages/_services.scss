@@ -109,6 +109,14 @@ section.service-pillars {
 }
 
 .service-content-block {
+	.inner {
+		width: 94%;
+		margin: auto;
+		@media screen and (max-width: $mq-max-lg) {
+			width: inherit;
+			padding: 0 30px;
+		}
+	}
 	p, ul, ol {
 		margin-bottom: 20px;
 	}

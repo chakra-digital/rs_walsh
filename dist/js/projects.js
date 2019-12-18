@@ -24,31 +24,31 @@ if(body.classList.contains('project-single')) {
   const infoPanel = document.querySelector('.project-info-panel');
   const infoTrigger = document.querySelector('.project-info-trigger');
 
-  ['click'].forEach( event => {
-    window.addEventListener(event, e => {
-      const target = e.target;
-      console.log(target)
-      if(target == infoTrigger && !body.classList.contains('project-info-panel--is-open')) {
+  
+  window.addEventListener('click', e => {
 
-        body.classList.add('project-info-panel--is-open');
-        bodyScrollLock.disableBodyScroll(infoPanel);
-        
-        gsap.from('.meta > div', {
-          opacity: 0,
-          y: 60,
-          delay: .4,
-          duration: 1,
-          stagger: .075,
-          ease: "power4.out"
-        })
-        
-      } else if (target == infoTrigger && body.classList.contains('project-info-panel--is-open') || !target.closest('.project-info-panel')) {
-        body.classList.remove('project-info-panel--is-open');
-        bodyScrollLock.enableBodyScroll(infoPanel);
-      }
+    const target = e.target;
+    
+    if(target == infoTrigger && !body.classList.contains('project-info-panel--is-open')) {
+
+      body.classList.add('project-info-panel--is-open');
+      //bodyScrollLock.disableBodyScroll(infoPanel);
       
-    });
-  })
+      gsap.from('.meta > div', {
+        opacity: 0,
+        y: 60,
+        delay: .4,
+        duration: 1,
+        stagger: .075,
+        ease: "power4.out"
+      })
+      
+    } else if (target == infoTrigger && body.classList.contains('project-info-panel--is-open') || !target.closest('.project-info-panel')) {
+      body.classList.remove('project-info-panel--is-open');
+      //bodyScrollLock.enableBodyScroll(infoPanel);
+    }
+    
+  });
 
   function initMobileLayout() {
     slider.destroy(true);

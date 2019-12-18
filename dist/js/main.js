@@ -10,6 +10,23 @@ const header = document.querySelector('header');
 const body = document.body;
 const wrapper = document.querySelector('.wrapper');
 
+/********************************
+ Animate elements in with class .animate-in
+********************************/
+const animateIn = document.querySelectorAll('.animate-in');
+if(animateIn.length) {
+  //window.addEventListener('load', function(){
+    gsap.to(animateIn, {
+      stagger: .1,
+      delay: .2,
+      duration: 1.5,
+      y: 0,
+      opacity: 1,
+      ease: 'expo.out'
+    })
+  //})
+  
+}
 
 /********************************
  Mouse Interactions (if existing)
@@ -134,7 +151,7 @@ if(header) {
     body.classList.contains('mobile-nav-is-open') ? bodyScrollLock.disableBodyScroll(mobileNavWrapper) : bodyScrollLock.enableBodyScroll(mobileNavWrapper);
   });
   
-  const mq = window.matchMedia('(min-width: 992px)');
+  var mq = window.matchMedia('(min-width: 992px)');
   
   function normalize() {
     // Hide Mobile Nav if it's open when user reduces browser width
@@ -253,25 +270,6 @@ function expandAccordion(element){
 }
 
 
-
-
-/********************************
- Animate elements in with class .animate-in
-********************************/
-const animateIn = document.querySelectorAll('.animate-in');
-if(animateIn.length) {
-  //window.addEventListener('load', function(){
-    gsap.to(animateIn, {
-      stagger: .1,
-      delay: .2,
-      duration: 1.5,
-      y: 0,
-      opacity: 1,
-      ease: 'expo.out'
-    })
-  //})
-  
-}
 
 
 /********************************

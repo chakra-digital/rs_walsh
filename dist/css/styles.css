@@ -179,13 +179,21 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* line 24, src/scss/partials/globals/_global.scss */
+@media screen and (max-width: 767px) {
+  /* line 19, src/scss/partials/globals/_global.scss */
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+/* line 28, src/scss/partials/globals/_global.scss */
 h1.display {
   font-size: 54px;
   letter-spacing: -0.05em;
 }
 
-/* line 29, src/scss/partials/globals/_global.scss */
+/* line 33, src/scss/partials/globals/_global.scss */
 h2 {
   font-size: 24px;
   line-height: 1.25em;
@@ -193,29 +201,29 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* line 35, src/scss/partials/globals/_global.scss */
+/* line 39, src/scss/partials/globals/_global.scss */
 h3, p {
   font-size: 17px;
   line-height: 1.45em;
 }
 
-/* line 40, src/scss/partials/globals/_global.scss */
+/* line 44, src/scss/partials/globals/_global.scss */
 p {
   font-weight: 300;
 }
 
-/* line 42, src/scss/partials/globals/_global.scss */
+/* line 46, src/scss/partials/globals/_global.scss */
 p.small {
   font-size: 15px;
 }
 
-/* line 45, src/scss/partials/globals/_global.scss */
+/* line 49, src/scss/partials/globals/_global.scss */
 p.large {
   font-size: 22px;
   line-height: 1.3em;
 }
 
-/* line 49, src/scss/partials/globals/_global.scss */
+/* line 53, src/scss/partials/globals/_global.scss */
 p.quote {
   font-size: 24px;
   line-height: 1.25em;
@@ -225,23 +233,23 @@ p.quote {
   border-left: 1px solid #00AD8D;
 }
 
-/* line 59, src/scss/partials/globals/_global.scss */
+/* line 63, src/scss/partials/globals/_global.scss */
 a {
   color: #00AD8D;
   font-weight: 500;
 }
 
-/* line 64, src/scss/partials/globals/_global.scss */
+/* line 68, src/scss/partials/globals/_global.scss */
 strong, b {
   font-weight: 500;
 }
 
-/* line 67, src/scss/partials/globals/_global.scss */
+/* line 71, src/scss/partials/globals/_global.scss */
 ul, ol {
   padding-left: 15px;
 }
 
-/* line 69, src/scss/partials/globals/_global.scss */
+/* line 73, src/scss/partials/globals/_global.scss */
 ul li, ol li {
   font-size: 17px;
   line-height: 1.45em;
@@ -250,7 +258,7 @@ ul li, ol li {
   padding-left: 5px;
 }
 
-/* line 80, src/scss/partials/globals/_global.scss */
+/* line 84, src/scss/partials/globals/_global.scss */
 .btn {
   display: inline-block;
   position: relative;
@@ -270,23 +278,23 @@ ul li, ol li {
   text-decoration: none;
 }
 
-/* line 96, src/scss/partials/globals/_global.scss */
+/* line 100, src/scss/partials/globals/_global.scss */
 .btn.white {
   border-color: #fff;
   color: #fff;
 }
 
-/* line 99, src/scss/partials/globals/_global.scss */
+/* line 103, src/scss/partials/globals/_global.scss */
 .btn.white:before {
   background: #fff;
 }
 
-/* line 102, src/scss/partials/globals/_global.scss */
+/* line 106, src/scss/partials/globals/_global.scss */
 .btn.white:hover {
   color: #090A0A;
 }
 
-/* line 106, src/scss/partials/globals/_global.scss */
+/* line 110, src/scss/partials/globals/_global.scss */
 .btn:before {
   content: '';
   display: block;
@@ -301,41 +309,41 @@ ul li, ol li {
   z-index: -1;
 }
 
-/* line 118, src/scss/partials/globals/_global.scss */
+/* line 122, src/scss/partials/globals/_global.scss */
 .btn:hover {
   color: #fff;
 }
 
-/* line 120, src/scss/partials/globals/_global.scss */
+/* line 124, src/scss/partials/globals/_global.scss */
 .btn:hover:before {
   height: 100%;
   bottom: 0;
   top: unset;
 }
 
-/* line 128, src/scss/partials/globals/_global.scss */
+/* line 132, src/scss/partials/globals/_global.scss */
 .btn.btn-small {
   line-height: 36px;
 }
 
-/* line 132, src/scss/partials/globals/_global.scss */
+/* line 136, src/scss/partials/globals/_global.scss */
 .btn.green {
   background: #00AD8D;
   border-color: #00AD8D;
   color: #fff;
 }
 
-/* line 136, src/scss/partials/globals/_global.scss */
+/* line 140, src/scss/partials/globals/_global.scss */
 .btn.green:before {
   background: #26b99e;
 }
 
-/* line 139, src/scss/partials/globals/_global.scss */
+/* line 143, src/scss/partials/globals/_global.scss */
 .btn.green:hover {
   border-color: #26b99e;
 }
 
-/* line 145, src/scss/partials/globals/_global.scss */
+/* line 149, src/scss/partials/globals/_global.scss */
 .chevron-arrow-right:after {
   content: '';
   display: inline-block;
@@ -348,26 +356,26 @@ ul li, ol li {
   margin-left: 5px;
 }
 
-/* line 155, src/scss/partials/globals/_global.scss */
+/* line 159, src/scss/partials/globals/_global.scss */
 .wrapper {
   margin-top: 120px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 155, src/scss/partials/globals/_global.scss */
+  /* line 159, src/scss/partials/globals/_global.scss */
   .wrapper {
     margin-top: 110px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 155, src/scss/partials/globals/_global.scss */
+  /* line 159, src/scss/partials/globals/_global.scss */
   .wrapper {
     margin-top: 100px;
   }
 }
 
-/* line 165, src/scss/partials/globals/_global.scss */
+/* line 169, src/scss/partials/globals/_global.scss */
 .absolute-0 {
   position: absolute;
   top: 0;
@@ -376,25 +384,25 @@ ul li, ol li {
   left: 0;
 }
 
-/* line 169, src/scss/partials/globals/_global.scss */
+/* line 173, src/scss/partials/globals/_global.scss */
 .half-col {
   width: 50%;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 169, src/scss/partials/globals/_global.scss */
+  /* line 173, src/scss/partials/globals/_global.scss */
   .half-col {
     width: 100%;
   }
 }
 
-/* line 176, src/scss/partials/globals/_global.scss */
+/* line 180, src/scss/partials/globals/_global.scss */
 .slider-wrap-pagination {
   position: relative;
   height: 100%;
 }
 
-/* line 181, src/scss/partials/globals/_global.scss */
+/* line 185, src/scss/partials/globals/_global.scss */
 .dot-container {
   position: absolute;
   bottom: 20px;
@@ -403,7 +411,7 @@ ul li, ol li {
           transform: translateX(-50%);
 }
 
-/* line 184, src/scss/partials/globals/_global.scss */
+/* line 188, src/scss/partials/globals/_global.scss */
 .dot-container .dot {
   cursor: pointer;
   height: 14px;
@@ -421,12 +429,12 @@ ul li, ol li {
   transition: .3s ease;
 }
 
-/* line 195, src/scss/partials/globals/_global.scss */
+/* line 199, src/scss/partials/globals/_global.scss */
 .dot-container .dot.active {
   opacity: 1;
 }
 
-/* line 201, src/scss/partials/globals/_global.scss */
+/* line 205, src/scss/partials/globals/_global.scss */
 .map-placeholder {
   background: url("https://chakra-digital.github.io/rs_walsh/dist/images/map-placeholder.jpg");
   background-size: cover;
@@ -444,7 +452,7 @@ ul li, ol li {
   min-height: 500px;
 }
 
-/* line 210, src/scss/partials/globals/_global.scss */
+/* line 214, src/scss/partials/globals/_global.scss */
 .map-placeholder p {
   background: white;
   padding: 10px 20px;
@@ -453,12 +461,12 @@ ul li, ol li {
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* line 219, src/scss/partials/globals/_global.scss */
+/* line 223, src/scss/partials/globals/_global.scss */
 .section-padding {
   padding: 100px 0;
 }
 
-/* line 222, src/scss/partials/globals/_global.scss */
+/* line 224, src/scss/partials/globals/_global.scss */
 .section-padding-bottom {
   padding-bottom: 100px;
 }
@@ -468,17 +476,63 @@ ul li, ol li {
   padding-top: 100px;
 }
 
-/* line 228, src/scss/partials/globals/_global.scss */
+/* line 226, src/scss/partials/globals/_global.scss */
 .section-margin-top {
   margin-top: 100px;
 }
 
-/* line 232, src/scss/partials/globals/_global.scss */
+/* line 227, src/scss/partials/globals/_global.scss */
 .section-margin-bottom {
   margin-bottom: 100px;
 }
 
-/* line 237, src/scss/partials/globals/_global.scss */
+@media screen and (max-width: 767px) {
+  /* line 230, src/scss/partials/globals/_global.scss */
+  .section-padding {
+    padding: 80px 0;
+  }
+  /* line 231, src/scss/partials/globals/_global.scss */
+  .section-padding-bottom {
+    padding-bottom: 80px;
+  }
+  /* line 232, src/scss/partials/globals/_global.scss */
+  .section-padding-top {
+    padding-top: 80px;
+  }
+  /* line 233, src/scss/partials/globals/_global.scss */
+  .section-margin-top {
+    margin-top: 80px;
+  }
+  /* line 234, src/scss/partials/globals/_global.scss */
+  .section-margin-bottom {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  /* line 238, src/scss/partials/globals/_global.scss */
+  .section-padding {
+    padding: 60px 0;
+  }
+  /* line 239, src/scss/partials/globals/_global.scss */
+  .section-padding-bottom {
+    padding-bottom: 60px;
+  }
+  /* line 240, src/scss/partials/globals/_global.scss */
+  .section-padding-top {
+    padding-top: 60px;
+  }
+  /* line 241, src/scss/partials/globals/_global.scss */
+  .section-margin-top {
+    margin-top: 60px;
+  }
+  /* line 242, src/scss/partials/globals/_global.scss */
+  .section-margin-bottom {
+    margin-bottom: 60px;
+  }
+}
+
+/* line 246, src/scss/partials/globals/_global.scss */
 hr.vertical {
   display: block;
   width: 1px;
@@ -487,7 +541,7 @@ hr.vertical {
   border: none;
 }
 
-/* line 246, src/scss/partials/globals/_global.scss */
+/* line 255, src/scss/partials/globals/_global.scss */
 .glyph-bullet {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,7 +549,7 @@ hr.vertical {
   margin: 20px 0;
 }
 
-/* line 249, src/scss/partials/globals/_global.scss */
+/* line 258, src/scss/partials/globals/_global.scss */
 .glyph-bullet svg {
   margin-right: 16px;
   position: relative;
@@ -503,7 +557,7 @@ hr.vertical {
   opacity: .3;
 }
 
-/* line 255, src/scss/partials/globals/_global.scss */
+/* line 264, src/scss/partials/globals/_global.scss */
 .glyph-bullet a, .glyph-bullet p {
   font-weight: 500;
   text-decoration: none;
@@ -511,17 +565,17 @@ hr.vertical {
   line-height: 1.45em;
 }
 
-/* line 262, src/scss/partials/globals/_global.scss */
+/* line 271, src/scss/partials/globals/_global.scss */
 .animate-in {
   visibility: hidden;
 }
 
-/* line 265, src/scss/partials/globals/_global.scss */
+/* line 274, src/scss/partials/globals/_global.scss */
 .hours-of-operation {
   margin-top: 30px;
 }
 
-/* line 267, src/scss/partials/globals/_global.scss */
+/* line 276, src/scss/partials/globals/_global.scss */
 .hours-of-operation > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -531,18 +585,18 @@ hr.vertical {
           justify-content: space-between;
 }
 
-/* line 271, src/scss/partials/globals/_global.scss */
+/* line 280, src/scss/partials/globals/_global.scss */
 .hours-of-operation .days {
   font-weight: 500;
 }
 
-/* line 274, src/scss/partials/globals/_global.scss */
+/* line 283, src/scss/partials/globals/_global.scss */
 .hours-of-operation .hours {
   width: 100%;
   max-width: 160px;
 }
 
-/* line 281, src/scss/partials/globals/_global.scss */
+/* line 290, src/scss/partials/globals/_global.scss */
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,41 +609,41 @@ hr.vertical {
           align-items: center;
 }
 
-/* line 287, src/scss/partials/globals/_global.scss */
+/* line 296, src/scss/partials/globals/_global.scss */
 .copy-block {
   margin-bottom: 40px;
 }
 
-/* line 291, src/scss/partials/globals/_global.scss */
+/* line 300, src/scss/partials/globals/_global.scss */
 .spacer-60 {
   height: 60px;
   width: 100%;
 }
 
-/* line 296, src/scss/partials/globals/_global.scss */
+/* line 305, src/scss/partials/globals/_global.scss */
 .gray-tile {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   border-radius: 6px;
 }
 
-/* line 299, src/scss/partials/globals/_global.scss */
+/* line 308, src/scss/partials/globals/_global.scss */
 .gray-tile img {
   mix-blend-mode: darken;
 }
 
-/* line 304, src/scss/partials/globals/_global.scss */
+/* line 313, src/scss/partials/globals/_global.scss */
 .gray-bkg {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
 }
 
-/* line 308, src/scss/partials/globals/_global.scss */
+/* line 317, src/scss/partials/globals/_global.scss */
 .img-wrap {
   position: relative;
   width: 100%;
   height: 0;
 }
 
-/* line 312, src/scss/partials/globals/_global.scss */
+/* line 321, src/scss/partials/globals/_global.scss */
 .img-wrap img, .img-wrap video {
   height: 100%;
   width: 100%;
@@ -600,12 +654,12 @@ hr.vertical {
   position: relative;
 }
 
-/* line 318, src/scss/partials/globals/_global.scss */
+/* line 327, src/scss/partials/globals/_global.scss */
 .img-wrap > .absolute-0 {
   background: #f6f6f6;
 }
 
-/* line 320, src/scss/partials/globals/_global.scss */
+/* line 329, src/scss/partials/globals/_global.scss */
 .img-wrap > .absolute-0 .loader {
   content: '';
   display: block;
@@ -643,18 +697,18 @@ hr.vertical {
   }
 }
 
-/* line 345, src/scss/partials/globals/_global.scss */
+/* line 354, src/scss/partials/globals/_global.scss */
 .no-scrollbars {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-/* line 348, src/scss/partials/globals/_global.scss */
+/* line 357, src/scss/partials/globals/_global.scss */
 .no-scrollbars::-webkit-scrollbar {
   display: none;
 }
 
-/* line 355, src/scss/partials/globals/_global.scss */
+/* line 364, src/scss/partials/globals/_global.scss */
 .icon-bullets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -662,23 +716,13 @@ hr.vertical {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 355, src/scss/partials/globals/_global.scss */
+  /* line 364, src/scss/partials/globals/_global.scss */
   .icon-bullets {
     padding: 0 20px;
   }
 }
 
-@media screen and (max-width: 575px) {
-  /* line 355, src/scss/partials/globals/_global.scss */
-  .icon-bullets {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-/* line 365, src/scss/partials/globals/_global.scss */
+/* line 372, src/scss/partials/globals/_global.scss */
 .icon-col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -686,13 +730,20 @@ hr.vertical {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 367, src/scss/partials/globals/_global.scss */
+  /* line 374, src/scss/partials/globals/_global.scss */
   .icon-col:first-child {
     margin-bottom: 28px;
   }
 }
 
-/* line 374, src/scss/partials/globals/_global.scss */
+@media screen and (max-width: 575px) {
+  /* line 372, src/scss/partials/globals/_global.scss */
+  .icon-col {
+    padding: 0 15px;
+  }
+}
+
+/* line 384, src/scss/partials/globals/_global.scss */
 .icon-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,13 +753,13 @@ hr.vertical {
           align-items: center;
 }
 
-/* line 377, src/scss/partials/globals/_global.scss */
+/* line 387, src/scss/partials/globals/_global.scss */
 .icon-row:not(:last-child) {
   margin-bottom: 28px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 374, src/scss/partials/globals/_global.scss */
+  /* line 384, src/scss/partials/globals/_global.scss */
   .icon-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -717,19 +768,19 @@ hr.vertical {
   }
 }
 
-/* line 383, src/scss/partials/globals/_global.scss */
+/* line 393, src/scss/partials/globals/_global.scss */
 .icon-row img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-/* line 386, src/scss/partials/globals/_global.scss */
+/* line 396, src/scss/partials/globals/_global.scss */
 .icon-row p {
   margin-left: 14px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 386, src/scss/partials/globals/_global.scss */
+  /* line 396, src/scss/partials/globals/_global.scss */
   .icon-row p {
     margin-left: 0;
   }
@@ -2227,7 +2278,7 @@ section.service-pillars div:not(.description) {
   /* line 50, src/scss/partials/pages/_services.scss */
   .pillar h1 {
     left: 13px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
     font-size: 44px;
   }
 }
@@ -2470,7 +2521,7 @@ section.service-pillars div:not(.description) {
 @media screen and (max-width: 575px) {
   /* line 16, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .main-content .top {
-    padding: 60px 20px 60px;
+    padding: 40px 20px;
   }
 }
 
@@ -2490,8 +2541,8 @@ section.service-pillars div:not(.description) {
 @media screen and (max-width: 575px) {
   /* line 34, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .main-content .top img {
-    max-width: 260px;
-    padding-bottom: 40px;
+    max-width: 220px;
+    padding-bottom: 30px;
   }
 }
 
@@ -2512,17 +2563,7 @@ section.service-pillars div:not(.description) {
   }
 }
 
-@media screen and (max-width: 575px) {
-  /* line 48, src/scss/partials/pages/_garden-center.scss */
-  .gc-hero .inpage-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-/* line 57, src/scss/partials/pages/_garden-center.scss */
+/* line 55, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -2546,28 +2587,29 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 57, src/scss/partials/pages/_garden-center.scss */
+  /* line 55, src/scss/partials/pages/_garden-center.scss */
   .gc-hero .inpage-nav a {
-    padding: 15px 0;
+    padding: 15px;
+    font-size: 14px;
   }
+}
+
+/* line 70, src/scss/partials/pages/_garden-center.scss */
+.gc-hero .inpage-nav a:not(:last-child) {
+  border-right: 1px solid #c8cbcb;
 }
 
 @media screen and (min-width: 576px) {
-  /* line 71, src/scss/partials/pages/_garden-center.scss */
-  .gc-hero .inpage-nav a:not(:last-child) {
-    border-right: 1px solid #c8cbcb;
+  /* line 74, src/scss/partials/pages/_garden-center.scss */
+  .gc-hero .inpage-nav a span {
+    -webkit-transform: translateX(13px);
+            transform: translateX(13px);
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
   }
 }
 
-/* line 76, src/scss/partials/pages/_garden-center.scss */
-.gc-hero .inpage-nav a span {
-  -webkit-transform: translateX(13px);
-          transform: translateX(13px);
-  -webkit-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-}
-
-/* line 80, src/scss/partials/pages/_garden-center.scss */
+/* line 81, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a svg {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -2578,69 +2620,84 @@ section.service-pillars div:not(.description) {
   transition: 0.3s ease-out;
 }
 
-/* line 87, src/scss/partials/pages/_garden-center.scss */
+@media screen and (max-width: 575px) {
+  /* line 81, src/scss/partials/pages/_garden-center.scss */
+  .gc-hero .inpage-nav a svg {
+    display: none;
+  }
+}
+
+/* line 91, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a:hover {
   background: black;
   color: lightgray;
   border-color: black;
 }
 
-/* line 91, src/scss/partials/pages/_garden-center.scss */
+/* line 95, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a:hover span {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-/* line 94, src/scss/partials/pages/_garden-center.scss */
+/* line 98, src/scss/partials/pages/_garden-center.scss */
 .gc-hero .inpage-nav a:hover svg {
   -webkit-animation: arrow-bounce 1s ease infinite;
           animation: arrow-bounce 1s ease infinite;
   opacity: .6;
 }
 
-/* line 107, src/scss/partials/pages/_garden-center.scss */
+/* line 111, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase {
   margin-bottom: -30px;
 }
 
-/* line 109, src/scss/partials/pages/_garden-center.scss */
+/* line 113, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .row > div {
   height: 290px;
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 109, src/scss/partials/pages/_garden-center.scss */
+  /* line 113, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .row > div {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  /* line 109, src/scss/partials/pages/_garden-center.scss */
+  /* line 113, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .row > div {
     height: 200px;
   }
 }
 
-/* line 119, src/scss/partials/pages/_garden-center.scss */
+@media screen and (max-width: 575px) {
+  /* line 113, src/scss/partials/pages/_garden-center.scss */
+  .gc-tile-showcase .row > div {
+    height: 130px;
+  }
+}
+
+/* line 126, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .img-wrap {
   height: 100%;
 }
 
-/* line 122, src/scss/partials/pages/_garden-center.scss */
+/* line 129, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .img-wrap:hover img.primary {
   opacity: 0;
 }
 
-/* line 127, src/scss/partials/pages/_garden-center.scss */
+/* line 134, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .img-wrap img.primary {
   position: absolute;
   -webkit-transition: .4s ease-out;
   transition: .4s ease-out;
+  z-index: 1;
 }
 
-/* line 133, src/scss/partials/pages/_garden-center.scss */
+/* line 141, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2654,27 +2711,27 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 133, src/scss/partials/pages/_garden-center.scss */
+  /* line 141, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .content {
     height: inherit !important;
     margin-bottom: 60px !important;
   }
 }
 
-/* line 141, src/scss/partials/pages/_garden-center.scss */
+/* line 149, src/scss/partials/pages/_garden-center.scss */
 .gc-tile-showcase .content .inner {
   max-width: 360px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 141, src/scss/partials/pages/_garden-center.scss */
+  /* line 149, src/scss/partials/pages/_garden-center.scss */
   .gc-tile-showcase .content .inner {
     text-align: center;
     max-width: 767px;
   }
 }
 
-/* line 153, src/scss/partials/pages/_garden-center.scss */
+/* line 161, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .row {
   background: -webkit-gradient(linear, left bottom, right top, from(#E5EAEA), to(#F2F4F4));
   background: linear-gradient(to top right, #E5EAEA, #F2F4F4);
@@ -2682,13 +2739,13 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 157, src/scss/partials/pages/_garden-center.scss */
+  /* line 165, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .content {
     margin-bottom: 40px;
   }
 }
 
-/* line 161, src/scss/partials/pages/_garden-center.scss */
+/* line 169, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .content .inner {
   max-width: 420px;
   margin: auto;
@@ -2696,29 +2753,29 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 161, src/scss/partials/pages/_garden-center.scss */
+  /* line 169, src/scss/partials/pages/_garden-center.scss */
   .gc-get-inspired .content .inner {
     max-width: 767px;
     text-align: center;
   }
 }
 
-/* line 170, src/scss/partials/pages/_garden-center.scss */
+/* line 178, src/scss/partials/pages/_garden-center.scss */
 .gc-get-inspired .content .top {
   margin-bottom: 60px;
 }
 
-/* line 180, src/scss/partials/pages/_garden-center.scss */
+/* line 188, src/scss/partials/pages/_garden-center.scss */
 .gc-events .title {
   margin-bottom: 60px;
 }
 
-/* line 182, src/scss/partials/pages/_garden-center.scss */
+/* line 190, src/scss/partials/pages/_garden-center.scss */
 .gc-events .title h1 {
   text-align: center;
 }
 
-/* line 186, src/scss/partials/pages/_garden-center.scss */
+/* line 194, src/scss/partials/pages/_garden-center.scss */
 .gc-events .calendar {
   background: lightgray;
   height: 600px;
@@ -2733,7 +2790,7 @@ section.service-pillars div:not(.description) {
           justify-content: center;
 }
 
-/* line 198, src/scss/partials/pages/_garden-center.scss */
+/* line 206, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2741,12 +2798,12 @@ section.service-pillars div:not(.description) {
   position: relative;
 }
 
-/* line 201, src/scss/partials/pages/_garden-center.scss */
+/* line 209, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .row {
   position: relative;
 }
 
-/* line 204, src/scss/partials/pages/_garden-center.scss */
+/* line 212, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2761,7 +2818,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 209, src/scss/partials/pages/_garden-center.scss */
+  /* line 217, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content h1 {
     text-align: center;
     color: #fff;
@@ -2769,7 +2826,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 204, src/scss/partials/pages/_garden-center.scss */
+  /* line 212, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content {
     z-index: 1;
     background: rgba(9, 10, 10, 0.6);
@@ -2777,7 +2834,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 220, src/scss/partials/pages/_garden-center.scss */
+  /* line 228, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content .rs-form input:not([type=submit]),
   .gc-ask-a-gardener .main-content .rs-form textarea {
     background: rgba(255, 255, 255, 0.9);
@@ -2786,25 +2843,25 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 227, src/scss/partials/pages/_garden-center.scss */
+  /* line 235, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .main-content .rs-form .form-submit {
     display: block;
   }
 }
 
-/* line 233, src/scss/partials/pages/_garden-center.scss */
+/* line 241, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .main-content h1 {
   margin-bottom: 30px;
 }
 
-/* line 236, src/scss/partials/pages/_garden-center.scss */
+/* line 244, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .main-content .inner {
   width: 100%;
   max-width: 575px;
   padding: 0 30px;
 }
 
-/* line 242, src/scss/partials/pages/_garden-center.scss */
+/* line 250, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .image {
   background-size: cover;
   background-position: center;
@@ -2812,7 +2869,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 991px) {
-  /* line 242, src/scss/partials/pages/_garden-center.scss */
+  /* line 250, src/scss/partials/pages/_garden-center.scss */
   .gc-ask-a-gardener .image {
     position: absolute;
     top: 0;
@@ -2822,7 +2879,7 @@ section.service-pillars div:not(.description) {
   }
 }
 
-/* line 249, src/scss/partials/pages/_garden-center.scss */
+/* line 257, src/scss/partials/pages/_garden-center.scss */
 .gc-ask-a-gardener .image img {
   width: 100%;
   height: 100%;
@@ -2831,7 +2888,7 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 259, src/scss/partials/pages/_garden-center.scss */
+  /* line 267, src/scss/partials/pages/_garden-center.scss */
   .gc-visit-us .map {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -2839,7 +2896,7 @@ section.service-pillars div:not(.description) {
   }
 }
 
-/* line 264, src/scss/partials/pages/_garden-center.scss */
+/* line 272, src/scss/partials/pages/_garden-center.scss */
 .gc-visit-us .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2853,28 +2910,28 @@ section.service-pillars div:not(.description) {
   padding: 80px 0 110px;
 }
 
-/* line 269, src/scss/partials/pages/_garden-center.scss */
+/* line 277, src/scss/partials/pages/_garden-center.scss */
 .gc-visit-us .content .inner {
   max-width: 410px;
   padding: 0 30px;
 }
 
-/* line 272, src/scss/partials/pages/_garden-center.scss */
+/* line 280, src/scss/partials/pages/_garden-center.scss */
 .gc-visit-us .content .inner > p {
   margin-bottom: 30px;
 }
 
-/* line 279, src/scss/partials/pages/_garden-center.scss */
+/* line 287, src/scss/partials/pages/_garden-center.scss */
 .schedule-tour {
   margin: 40px 0 100px;
 }
 
-/* line 281, src/scss/partials/pages/_garden-center.scss */
+/* line 289, src/scss/partials/pages/_garden-center.scss */
 .schedule-tour h1 {
   margin-top: 60px;
 }
 
-/* line 284, src/scss/partials/pages/_garden-center.scss */
+/* line 292, src/scss/partials/pages/_garden-center.scss */
 .schedule-tour [class^='col'] {
   text-align: center;
 }

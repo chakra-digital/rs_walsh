@@ -8,6 +8,7 @@ const wrapper = document.querySelector('.wrapper');
 const animateIn = document.querySelectorAll('.animate-in');
 const imgWraps = document.querySelectorAll('.img-wrap > .absolute-0');
 
+
 // Add loading spinners while images load
 imgWraps.forEach( img => {
   const loader = document.createElement('div');
@@ -15,36 +16,28 @@ imgWraps.forEach( img => {
   img.prepend(loader);
 });
 
+// Animate in elements with .animate-in class
+if(animateIn.length) {
+  gsap.fromTo(animateIn, {
+    y: 100
+  },{
+    stagger: .1,
+    delay: .2,
+    duration: 1.5,
+    y: 0,
+    autoAlpha: 1,
+    ease: 'expo.out'
+  })
+}
 
-document.addEventListener('DOMContentLoaded', function(){
+window.onload = function() {
+  // remove loading spinners
+  imgWraps.forEach( img => {
+    const loader = img.querySelector('.loader');
+    img.removeChild(loader);
+  })
+}
 
-
-  // Animate in elements with .animate-in class
-  if(animateIn.length) {
-    gsap.fromTo(animateIn, {
-      y: 100
-    },{
-      stagger: .1,
-      delay: .2,
-      duration: 1.5,
-      y: 0,
-      autoAlpha: 1,
-      ease: 'expo.out'
-    })
-  }
-
-  window.onload = function() {
-
-    // remove loading spinners
-    imgWraps.forEach( img => {
-      const loader = img.querySelector('.loader');
-      img.removeChild(loader);
-    })
-
-    
-
-  }
-})
 
 /********************************
  Mouse Interactions (if existing)

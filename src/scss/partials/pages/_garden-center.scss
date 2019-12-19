@@ -29,7 +29,7 @@
         text-align: center;
       }
       @media screen and (max-width: $mq-max-sm) {
-        padding: 60px 20px 60px;
+        padding: 40px 20px;
       }
       img {
         max-width: 370px;
@@ -38,8 +38,8 @@
           margin: auto;
         }
         @media screen and (max-width: $mq-max-sm) {
-          max-width: 260px;
-          padding-bottom: 40px;
+          max-width: 220px;
+          padding-bottom: 30px;
         }
       }
     }
@@ -51,9 +51,7 @@
     @media screen and (min-width: $mq-min-sm) {
       max-height: 160px;
     }
-    @media screen and (max-width: $mq-max-sm) {
-      flex-direction: column;
-    }
+    
     a {
       flex: 1;
       display: flex;
@@ -66,16 +64,19 @@
       text-align: center;
       padding: 37px 0;
       @media screen and (max-width: $mq-max-sm) {
-        padding: 15px 0;
+        padding: 15px;
+        font-size: 14px;
       }
       &:not(:last-child) {
-        @media screen and (min-width: $mq-min-sm) {
-          border-right: 1px solid #c8cbcb;
-        }
+        border-right: 1px solid #c8cbcb;
       }
+      
       span {
-        transform: translateX(13px);
-        transition: 0.3s ease-out;
+        @media screen and (min-width: $mq-min-sm) {
+          transform: translateX(13px);
+          transition: 0.3s ease-out;
+
+        }
       }
       svg {
         transform: translateY(-3px);
@@ -83,6 +84,9 @@
         margin-left: 11px;
         opacity: 0;
         transition: 0.3s ease-out;
+        @media screen and (max-width: $mq-max-sm) {
+          display: none;
+        }
       }
       &:hover {
         background: black;
@@ -115,6 +119,9 @@
     @media screen and (max-width: $mq-max-md) {
       height: 200px;
     }
+    @media screen and (max-width: $mq-max-sm) {
+      height: 130px;
+    }
   }
   .img-wrap {
     height: 100%;
@@ -127,6 +134,7 @@
       &.primary {
         position: absolute;
         transition: .4s ease-out;
+        z-index: 1;
       }
     }
   }

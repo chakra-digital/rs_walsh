@@ -259,9 +259,9 @@ hr.vertical {
     line-height: 1.45em;
   }
 }
-.animate-in {
-  visibility: hidden;
-}
+// .animate-in {
+//   visibility: hidden;
+// }
 .hours-of-operation {
   margin-top: 30px;
   & > div {
@@ -313,22 +313,35 @@ hr.vertical {
     @include size(100%);
     object-fit: cover;
     object-position: center;
+    position: relative;
   }
-  
+  & > .absolute-0 {
+    background: #f6f6f6;
+    .loader {
+      content: '';
+      display: block;
+      @include size(50px);
+      border: 5px solid lightgray;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      animation: 1s loader-03 linear infinite;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+    }
+  }
 }
 
-@keyframes arrow-bounce {
+
+@keyframes loader-03 {
   0% {
-    transform: translateY(-3px);
-  }
-  50% {
-    transform: translateY(3px);
-    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    transform: translateY(-3px);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
 .no-scrollbars {
   -ms-overflow-style: none;
   scrollbar-width: none; // firefox

@@ -14,25 +14,42 @@ const wrapper = document.querySelector('.wrapper');
  Animate elements in with class .animate-in
 ********************************/
 const animateIn = document.querySelectorAll('.animate-in');
+const imgWraps = document.querySelectorAll('.img-wrap > .absolute-0');
+
 
 document.addEventListener('DOMContentLoaded', (function(){
+
+
+  // Add loading spinners while images load
+  imgWraps.forEach( img => {
+    const loader = document.createElement('div');
+    loader.classList.add('loader');
+    img.prepend(loader);
+  });
+
+  // Animate in elements with .animate-in class
+  if(animateIn.length) {
+    gsap.fromTo(animateIn, {
+      y: 100
+    },{
+      stagger: .1,
+      delay: .2,
+      duration: 1.5,
+      y: 0,
+      autoAlpha: 1,
+      ease: 'expo.out'
+    })
+  }
+
   window.onload = function() {
 
-    if(animateIn.length) {
-      //window.addEventListener('load', function(){
-        gsap.fromTo(animateIn, {
-          y: 100
-        },{
-          stagger: .1,
-          delay: .2,
-          duration: 1.5,
-          y: 0,
-          autoAlpha: 1,
-          ease: 'expo.out'
-        })
-      //})
-      
-    }
+    // remove loading spinners
+    imgWraps.forEach( img => {
+      const loader = img.querySelector('.loader');
+      img.removeChild(loader);
+    })
+
+    
 
   }
 }))

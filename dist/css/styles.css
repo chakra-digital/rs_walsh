@@ -511,11 +511,6 @@ hr.vertical {
   line-height: 1.45em;
 }
 
-/* line 262, src/scss/partials/globals/_global.scss */
-.animate-in {
-  visibility: hidden;
-}
-
 /* line 265, src/scss/partials/globals/_global.scss */
 .hours-of-operation {
   margin-top: 30px;
@@ -597,52 +592,64 @@ hr.vertical {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  position: relative;
 }
 
-@-webkit-keyframes arrow-bounce {
+/* line 318, src/scss/partials/globals/_global.scss */
+.img-wrap > .absolute-0 {
+  background: #f6f6f6;
+}
+
+/* line 320, src/scss/partials/globals/_global.scss */
+.img-wrap > .absolute-0 .loader {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 50px;
+  border: 5px solid lightgray;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 1s loader-03 linear infinite;
+          animation: 1s loader-03 linear infinite;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes loader-03 {
   0% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-  50% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
-    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-@keyframes arrow-bounce {
+@keyframes loader-03 {
   0% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-  50% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
-    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+            transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
-/* line 332, src/scss/partials/globals/_global.scss */
+/* line 345, src/scss/partials/globals/_global.scss */
 .no-scrollbars {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-/* line 335, src/scss/partials/globals/_global.scss */
+/* line 348, src/scss/partials/globals/_global.scss */
 .no-scrollbars::-webkit-scrollbar {
   display: none;
 }
 
-/* line 342, src/scss/partials/globals/_global.scss */
+/* line 355, src/scss/partials/globals/_global.scss */
 .icon-bullets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,14 +657,14 @@ hr.vertical {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 342, src/scss/partials/globals/_global.scss */
+  /* line 355, src/scss/partials/globals/_global.scss */
   .icon-bullets {
     padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 342, src/scss/partials/globals/_global.scss */
+  /* line 355, src/scss/partials/globals/_global.scss */
   .icon-bullets {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -666,7 +673,7 @@ hr.vertical {
   }
 }
 
-/* line 352, src/scss/partials/globals/_global.scss */
+/* line 365, src/scss/partials/globals/_global.scss */
 .icon-col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -674,13 +681,13 @@ hr.vertical {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 354, src/scss/partials/globals/_global.scss */
+  /* line 367, src/scss/partials/globals/_global.scss */
   .icon-col:first-child {
     margin-bottom: 28px;
   }
 }
 
-/* line 361, src/scss/partials/globals/_global.scss */
+/* line 374, src/scss/partials/globals/_global.scss */
 .icon-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,13 +697,13 @@ hr.vertical {
           align-items: center;
 }
 
-/* line 364, src/scss/partials/globals/_global.scss */
+/* line 377, src/scss/partials/globals/_global.scss */
 .icon-row:not(:last-child) {
   margin-bottom: 28px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 361, src/scss/partials/globals/_global.scss */
+  /* line 374, src/scss/partials/globals/_global.scss */
   .icon-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -705,19 +712,19 @@ hr.vertical {
   }
 }
 
-/* line 370, src/scss/partials/globals/_global.scss */
+/* line 383, src/scss/partials/globals/_global.scss */
 .icon-row img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-/* line 373, src/scss/partials/globals/_global.scss */
+/* line 386, src/scss/partials/globals/_global.scss */
 .icon-row p {
   margin-left: 14px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 373, src/scss/partials/globals/_global.scss */
+  /* line 386, src/scss/partials/globals/_global.scss */
   .icon-row p {
     margin-left: 0;
   }

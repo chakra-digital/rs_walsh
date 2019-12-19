@@ -2163,17 +2163,39 @@ section.service-pillars {
   min-height: 400px;
 }
 
-/* line 12, src/scss/partials/pages/_services.scss */
+@media screen and (max-width: 767px) {
+  /* line 8, src/scss/partials/pages/_services.scss */
+  section.service-pillars {
+    height: calc(100vh - 80px - 20px);
+    padding-bottom: inherit;
+  }
+}
+
+/* line 16, src/scss/partials/pages/_services.scss */
 section.service-pillars div:not(.description) {
   height: 100%;
 }
 
-/* line 17, src/scss/partials/pages/_services.scss */
+@media screen and (max-width: 767px) {
+  /* line 20, src/scss/partials/pages/_services.scss */
+  section.service-pillars .container-fluid .row {
+    height: 33.3333%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 25, src/scss/partials/pages/_services.scss */
+  section.service-pillars .container-fluid .col-md-4 {
+    padding-bottom: 15px;
+  }
+}
+
+/* line 33, src/scss/partials/pages/_services.scss */
 .pillar-mask {
   overflow: hidden;
 }
 
-/* line 21, src/scss/partials/pages/_services.scss */
+/* line 37, src/scss/partials/pages/_services.scss */
 .pillar {
   height: 100%;
   position: relative;
@@ -2182,7 +2204,7 @@ section.service-pillars div:not(.description) {
   color: #090A0A;
 }
 
-/* line 27, src/scss/partials/pages/_services.scss */
+/* line 43, src/scss/partials/pages/_services.scss */
 .pillar .main {
   position: relative;
   z-index: 1;
@@ -2192,7 +2214,7 @@ section.service-pillars div:not(.description) {
   transition: height 0.5s cubic-bezier(0.25, 0.1, 0, 1);
 }
 
-/* line 34, src/scss/partials/pages/_services.scss */
+/* line 50, src/scss/partials/pages/_services.scss */
 .pillar h1 {
   position: absolute;
   right: 2vw;
@@ -2201,7 +2223,16 @@ section.service-pillars div:not(.description) {
   color: #fff;
 }
 
-/* line 38, src/scss/partials/pages/_services.scss */
+@media screen and (max-width: 767px) {
+  /* line 50, src/scss/partials/pages/_services.scss */
+  .pillar h1 {
+    left: 13px;
+    padding-bottom: 15px;
+    font-size: 44px;
+  }
+}
+
+/* line 59, src/scss/partials/pages/_services.scss */
 .pillar .description {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   position: absolute;
@@ -2211,23 +2242,45 @@ section.service-pillars div:not(.description) {
   padding: 2vw;
 }
 
-/* line 42, src/scss/partials/pages/_services.scss */
+@media screen and (max-width: 767px) {
+  /* line 59, src/scss/partials/pages/_services.scss */
+  .pillar .description {
+    padding: 15px;
+  }
+}
+
+/* line 66, src/scss/partials/pages/_services.scss */
 .pillar .description p {
   margin-bottom: 20px;
 }
 
-/* line 45, src/scss/partials/pages/_services.scss */
+@media screen and (max-width: 767px) {
+  /* line 66, src/scss/partials/pages/_services.scss */
+  .pillar .description p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
+
+/* line 73, src/scss/partials/pages/_services.scss */
 .pillar .description svg {
   height: 40px;
 }
 
-/* line 52, src/scss/partials/pages/_services.scss */
+@media screen and (max-width: 767px) {
+  /* line 73, src/scss/partials/pages/_services.scss */
+  .pillar .description svg {
+    display: none;
+  }
+}
+
+/* line 83, src/scss/partials/pages/_services.scss */
 .service-hero .row {
   position: relative;
   padding: 60px 0;
 }
 
-/* line 56, src/scss/partials/pages/_services.scss */
+/* line 87, src/scss/partials/pages/_services.scss */
 .service-hero .hero-img {
   position: absolute;
   top: 0;
@@ -2238,7 +2291,7 @@ section.service-pillars div:not(.description) {
   background-position: center;
 }
 
-/* line 61, src/scss/partials/pages/_services.scss */
+/* line 92, src/scss/partials/pages/_services.scss */
 .service-hero .hero-img:after {
   content: '';
   display: block;
@@ -2250,13 +2303,13 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 56, src/scss/partials/pages/_services.scss */
+  /* line 87, src/scss/partials/pages/_services.scss */
   .service-hero .hero-img {
     width: 100%;
   }
 }
 
-/* line 71, src/scss/partials/pages/_services.scss */
+/* line 102, src/scss/partials/pages/_services.scss */
 .service-hero .content .inner {
   max-width: 500px;
   padding: 0 30px;
@@ -2264,43 +2317,43 @@ section.service-pillars div:not(.description) {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 71, src/scss/partials/pages/_services.scss */
+  /* line 102, src/scss/partials/pages/_services.scss */
   .service-hero .content .inner {
     text-align: center;
     max-width: 600px;
   }
 }
 
-/* line 80, src/scss/partials/pages/_services.scss */
+/* line 111, src/scss/partials/pages/_services.scss */
 .service-hero .content h1, .service-hero .content p {
   color: #fff;
 }
 
-/* line 83, src/scss/partials/pages/_services.scss */
+/* line 114, src/scss/partials/pages/_services.scss */
 .service-hero .content p:not(:last-of-type) {
   margin-bottom: 60px;
 }
 
-/* line 88, src/scss/partials/pages/_services.scss */
+/* line 119, src/scss/partials/pages/_services.scss */
 .service-hero.design .row {
   background: #00AD8D;
 }
 
-/* line 92, src/scss/partials/pages/_services.scss */
+/* line 123, src/scss/partials/pages/_services.scss */
 .service-hero.design .hero-img:after {
   background: -webkit-gradient(linear, left top, right top, from(#00AD8D), to(rgba(0, 173, 141, 0.1)));
   background: linear-gradient(to right, #00AD8D, rgba(0, 173, 141, 0.1));
 }
 
 @media screen and (max-width: 767px) {
-  /* line 92, src/scss/partials/pages/_services.scss */
+  /* line 123, src/scss/partials/pages/_services.scss */
   .service-hero.design .hero-img:after {
     background: -webkit-gradient(linear, left top, right top, from(rgba(0, 173, 141, 0.9)), to(rgba(0, 173, 141, 0.9)));
     background: linear-gradient(to right, rgba(0, 173, 141, 0.9), rgba(0, 173, 141, 0.9));
   }
 }
 
-/* line 102, src/scss/partials/pages/_services.scss */
+/* line 133, src/scss/partials/pages/_services.scss */
 .step-bubble {
   height: 100px;
   width: 100px;
@@ -2311,26 +2364,26 @@ section.service-pillars div:not(.description) {
   font-weight: 300;
 }
 
-/* line 112, src/scss/partials/pages/_services.scss */
+/* line 143, src/scss/partials/pages/_services.scss */
 .service-content-block .inner {
   width: 94%;
   margin: auto;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 112, src/scss/partials/pages/_services.scss */
+  /* line 143, src/scss/partials/pages/_services.scss */
   .service-content-block .inner {
     width: inherit;
     padding: 0 30px;
   }
 }
 
-/* line 120, src/scss/partials/pages/_services.scss */
+/* line 151, src/scss/partials/pages/_services.scss */
 .service-content-block p, .service-content-block ul, .service-content-block ol {
   margin-bottom: 20px;
 }
 
-/* line 123, src/scss/partials/pages/_services.scss */
+/* line 154, src/scss/partials/pages/_services.scss */
 .service-content-block .half-col-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2340,12 +2393,12 @@ section.service-pillars div:not(.description) {
           justify-content: space-between;
 }
 
-/* line 127, src/scss/partials/pages/_services.scss */
+/* line 158, src/scss/partials/pages/_services.scss */
 .service-content-block .half-col {
   width: 48.5%;
 }
 
-/* line 130, src/scss/partials/pages/_services.scss */
+/* line 161, src/scss/partials/pages/_services.scss */
 .service-content-block .row.gray-bkg {
   padding: 60px 0 40px;
 }

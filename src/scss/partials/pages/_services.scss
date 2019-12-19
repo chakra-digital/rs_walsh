@@ -9,8 +9,24 @@ section.service-pillars {
 	height: calc(100vh - #{$header-height} - 40px);
 	padding-bottom: 40px;
 	min-height: 400px;
+	@media screen and (max-width: $mq-max-md) {
+		height: calc(100vh - #{$header-height} - 20px);
+		padding-bottom: inherit;
+	}
 	div:not(.description) {
 		height: 100%;
+	}
+	.container-fluid {
+		.row {
+			@media screen and (max-width: $mq-max-md) {
+				height: 33.3333%;
+			}
+		}
+		.col-md-4 {
+			@media screen and (max-width: $mq-max-md) {
+				padding-bottom: 15px;
+			}
+		}
 	}
 }
 
@@ -34,16 +50,31 @@ section.service-pillars {
 	h1 {
 		@include position(absolute, null 2vw 0 2vw);
 		color: #fff;
+		@media screen and (max-width: $mq-max-md) {
+			left: 13px;
+			padding-bottom: 15px;
+			font-size: 44px;
+		}
 	}
 	.description {
 		background: $gray-gradient;
 		@include position(absolute, null 0 0 0);
 		padding: 2vw;
+		@media screen and (max-width: $mq-max-md) {
+			padding: 15px;
+		}
 		p {
 			margin-bottom: 20px;
+			@media screen and (max-width: $mq-max-md) {
+				font-size: 15px;
+				margin-bottom: 0;
+			}
 		}
 		svg {
 			height: 40px;
+			@media screen and (max-width: $mq-max-md) {
+				display: none;
+			}
 		}
 	}	
 }

@@ -511,6 +511,11 @@ hr.vertical {
   line-height: 1.45em;
 }
 
+/* line 262, src/scss/partials/globals/_global.scss */
+.animate-in {
+  visibility: hidden;
+}
+
 /* line 265, src/scss/partials/globals/_global.scss */
 .hours-of-operation {
   margin-top: 30px;

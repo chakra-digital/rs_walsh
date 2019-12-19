@@ -8,16 +8,16 @@ const wrapper = document.querySelector('.wrapper');
 const animateIn = document.querySelectorAll('.animate-in');
 const imgWraps = document.querySelectorAll('.img-wrap > .absolute-0');
 
+// Add loading spinners while images load
+imgWraps.forEach( img => {
+  const loader = document.createElement('div');
+  loader.classList.add('loader');
+  img.prepend(loader);
+});
+
 
 document.addEventListener('DOMContentLoaded', function(){
 
-
-  // Add loading spinners while images load
-  imgWraps.forEach( img => {
-    const loader = document.createElement('div');
-    loader.classList.add('loader');
-    img.prepend(loader);
-  });
 
   // Animate in elements with .animate-in class
   if(animateIn.length) {

@@ -513,17 +513,15 @@ hr.vertical {
 
 /* line 262, src/scss/partials/globals/_global.scss */
 .animate-in {
-  opacity: 0;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  visibility: hidden;
 }
 
-/* line 266, src/scss/partials/globals/_global.scss */
+/* line 265, src/scss/partials/globals/_global.scss */
 .hours-of-operation {
   margin-top: 30px;
 }
 
-/* line 268, src/scss/partials/globals/_global.scss */
+/* line 267, src/scss/partials/globals/_global.scss */
 .hours-of-operation > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,18 +531,18 @@ hr.vertical {
           justify-content: space-between;
 }
 
-/* line 272, src/scss/partials/globals/_global.scss */
+/* line 271, src/scss/partials/globals/_global.scss */
 .hours-of-operation .days {
   font-weight: 500;
 }
 
-/* line 275, src/scss/partials/globals/_global.scss */
+/* line 274, src/scss/partials/globals/_global.scss */
 .hours-of-operation .hours {
   width: 100%;
   max-width: 160px;
 }
 
-/* line 282, src/scss/partials/globals/_global.scss */
+/* line 281, src/scss/partials/globals/_global.scss */
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -557,41 +555,41 @@ hr.vertical {
           align-items: center;
 }
 
-/* line 288, src/scss/partials/globals/_global.scss */
+/* line 287, src/scss/partials/globals/_global.scss */
 .copy-block {
   margin-bottom: 40px;
 }
 
-/* line 292, src/scss/partials/globals/_global.scss */
+/* line 291, src/scss/partials/globals/_global.scss */
 .spacer-60 {
   height: 60px;
   width: 100%;
 }
 
-/* line 297, src/scss/partials/globals/_global.scss */
+/* line 296, src/scss/partials/globals/_global.scss */
 .gray-tile {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
   border-radius: 6px;
 }
 
-/* line 300, src/scss/partials/globals/_global.scss */
+/* line 299, src/scss/partials/globals/_global.scss */
 .gray-tile img {
   mix-blend-mode: darken;
 }
 
-/* line 305, src/scss/partials/globals/_global.scss */
+/* line 304, src/scss/partials/globals/_global.scss */
 .gray-bkg {
   background: linear-gradient(45deg, #E5EAEA, #F2F4F4);
 }
 
-/* line 309, src/scss/partials/globals/_global.scss */
+/* line 308, src/scss/partials/globals/_global.scss */
 .img-wrap {
   position: relative;
   width: 100%;
   height: 0;
 }
 
-/* line 313, src/scss/partials/globals/_global.scss */
+/* line 312, src/scss/partials/globals/_global.scss */
 .img-wrap img, .img-wrap video {
   height: 100%;
   width: 100%;
@@ -633,18 +631,18 @@ hr.vertical {
   }
 }
 
-/* line 333, src/scss/partials/globals/_global.scss */
+/* line 332, src/scss/partials/globals/_global.scss */
 .no-scrollbars {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
 
-/* line 336, src/scss/partials/globals/_global.scss */
+/* line 335, src/scss/partials/globals/_global.scss */
 .no-scrollbars::-webkit-scrollbar {
   display: none;
 }
 
-/* line 343, src/scss/partials/globals/_global.scss */
+/* line 342, src/scss/partials/globals/_global.scss */
 .icon-bullets {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,14 +650,14 @@ hr.vertical {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 343, src/scss/partials/globals/_global.scss */
+  /* line 342, src/scss/partials/globals/_global.scss */
   .icon-bullets {
     padding: 0 20px;
   }
 }
 
 @media screen and (max-width: 575px) {
-  /* line 343, src/scss/partials/globals/_global.scss */
+  /* line 342, src/scss/partials/globals/_global.scss */
   .icon-bullets {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -668,7 +666,7 @@ hr.vertical {
   }
 }
 
-/* line 353, src/scss/partials/globals/_global.scss */
+/* line 352, src/scss/partials/globals/_global.scss */
 .icon-col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -676,13 +674,13 @@ hr.vertical {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 355, src/scss/partials/globals/_global.scss */
+  /* line 354, src/scss/partials/globals/_global.scss */
   .icon-col:first-child {
     margin-bottom: 28px;
   }
 }
 
-/* line 362, src/scss/partials/globals/_global.scss */
+/* line 361, src/scss/partials/globals/_global.scss */
 .icon-row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,13 +690,13 @@ hr.vertical {
           align-items: center;
 }
 
-/* line 365, src/scss/partials/globals/_global.scss */
+/* line 364, src/scss/partials/globals/_global.scss */
 .icon-row:not(:last-child) {
   margin-bottom: 28px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 362, src/scss/partials/globals/_global.scss */
+  /* line 361, src/scss/partials/globals/_global.scss */
   .icon-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -707,19 +705,19 @@ hr.vertical {
   }
 }
 
-/* line 371, src/scss/partials/globals/_global.scss */
+/* line 370, src/scss/partials/globals/_global.scss */
 .icon-row img {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
 
-/* line 374, src/scss/partials/globals/_global.scss */
+/* line 373, src/scss/partials/globals/_global.scss */
 .icon-row p {
   margin-left: 14px;
 }
 
 @media screen and (max-width: 991px) {
-  /* line 374, src/scss/partials/globals/_global.scss */
+  /* line 373, src/scss/partials/globals/_global.scss */
   .icon-row p {
     margin-left: 0;
   }

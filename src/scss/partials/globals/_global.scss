@@ -260,8 +260,7 @@ hr.vertical {
   }
 }
 .animate-in {
-  opacity: 0;
-  transform: translateY(100px);
+  visibility: hidden;
 }
 .hours-of-operation {
   margin-top: 30px;

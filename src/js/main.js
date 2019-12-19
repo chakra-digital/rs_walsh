@@ -6,19 +6,28 @@ const wrapper = document.querySelector('.wrapper');
  Animate elements in with class .animate-in
 ********************************/
 const animateIn = document.querySelectorAll('.animate-in');
-if(animateIn.length) {
-  //window.addEventListener('load', function(){
-    gsap.to(animateIn, {
-      stagger: .1,
-      delay: .2,
-      duration: 1.5,
-      y: 0,
-      opacity: 1,
-      ease: 'expo.out'
-    })
-  //})
-  
-}
+
+document.addEventListener('DOMContentLoaded', function(){
+  window.onload = function() {
+
+    if(animateIn.length) {
+      //window.addEventListener('load', function(){
+        gsap.fromTo(animateIn, {
+          y: 100
+        },{
+          stagger: .1,
+          delay: .2,
+          duration: 1.5,
+          y: 0,
+          autoAlpha: 1,
+          ease: 'expo.out'
+        })
+      //})
+      
+    }
+
+  }
+})
 
 /********************************
  Mouse Interactions (if existing)

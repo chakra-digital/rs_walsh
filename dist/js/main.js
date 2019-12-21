@@ -17,35 +17,44 @@ const animateIn = document.querySelectorAll('.animate-in');
 const imgWraps = document.querySelectorAll('.img-wrap > .absolute-0');
 
 
-// Add loading spinners while images load
-imgWraps.forEach( img => {
-  const loader = document.createElement('div');
-  loader.classList.add('loader');
-  img.prepend(loader);
-});
+document.addEventListener('DOMContentLoaded', (function(){
 
-// Animate in elements with .animate-in class
-if(animateIn.length) {
-  gsap.fromTo(animateIn, {
-    y: 100
-  },{
-    stagger: .1,
-    delay: .2,
-    duration: 1.5,
-    y: 0,
-    autoAlpha: 1,
-    ease: 'expo.out'
-  })
-}
+  // Add loading spinners while images load
+  // imgWraps.forEach( img => {
+  //   const loader = document.createElement('div');
+  //   loader.classList.add('loader');
+  //   img.prepend(loader);
+  // });
 
-window.onload = function() {
-  // remove loading spinners
-  imgWraps.forEach( img => {
-    const loader = img.querySelector('.loader');
-    img.removeChild(loader);
-  })
-}
+  
+  window.onload = function() {
 
+    requestAnimationFrame((function(){
+
+      // Animate in elements with .animate-in class
+      if(animateIn.length) {
+        gsap.fromTo(animateIn, {
+          y: 100
+        },{
+          stagger: .1,
+          delay: .2,
+          duration: 1.5,
+          y: 0,
+          autoAlpha: 1,
+          ease: 'expo.out'
+        })
+      }
+      
+      // remove loading spinners
+      // imgWraps.forEach( img => {
+      //   const loader = img.querySelector('.loader');
+      //   img.removeChild(loader);
+      // })
+    }))
+    
+  }
+  
+}));
 
 /********************************
  Mouse Interactions (if existing)
@@ -174,7 +183,6 @@ if(header) {
   
   function normalize() {
     // Hide Mobile Nav if it's open when user reduces browser width
-    console.log(mq);
     if(mq.matches && body.classList.contains('mobile-nav-is-open')) {
       body.classList.remove('mobile-nav-is-open');
       bodyScrollLock.enableBodyScroll(mobileNavWrapper);

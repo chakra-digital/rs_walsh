@@ -26,6 +26,8 @@
     position: relative;
     transform: translateY(200%);
     margin: 0;
+    padding: 20px;
+    text-align: center;
   }
   &:hover {
     .overlay {

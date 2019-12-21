@@ -21,7 +21,7 @@ if(body.classList.contains('project-single')) {
     else slider.prev();
   });
 
-  const infoPanel = document.querySelector('.project-info-panel');
+  const infoPanel = document.querySelector('.project-info-panel .scroll-inner');
   const infoTrigger = document.querySelector('.project-info-trigger');
 
   

@@ -2,6 +2,22 @@
  Garden Center
 **********************************************/
 
+@keyframes arrow-bounce {
+  0% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+  50% {
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px);
+  }
+}
+
 .gc-hero {
   .slider {
     max-height: 700px;
@@ -14,7 +30,6 @@
     display: flex;
     flex-direction: column;
     .top {
-      flex: 1;
       display: flex;
       flex-direction: column;
       max-width: 520px;
@@ -74,8 +89,7 @@
       span {
         @media screen and (min-width: $mq-min-sm) {
           transform: translateX(13px);
-          transition: 0.3s ease-out;
-
+          transition: transform 0.3s ease-out;
         }
       }
       svg {
@@ -90,8 +104,8 @@
       }
       &:hover {
         background: black;
-        color: lightgray;
         border-color: black;
+        color: #fff;
         span {
           transform: translateX(0);
         }
@@ -110,6 +124,9 @@
 
 .gc-tile-showcase {
   margin-bottom: -30px;
+  @media screen and (max-width: $mq-max-lg) {
+    margin-bottom: -20px;
+  }
   .row > div {
     height: 290px;
     margin-bottom: 30px;
@@ -158,10 +175,6 @@
 
 
 .gc-get-inspired {
-  .row {
-    background: linear-gradient(to top right, #E5EAEA, #F2F4F4);
-    padding: 80px 0 90px
-  }
   .content {
     @media screen and (max-width: $mq-max-lg) {
       margin-bottom: 40px;
@@ -245,6 +258,9 @@
       width: 100%;
       max-width: 575px;
       padding: 0 30px;
+      @media screen and (max-width: $mq-max-lg) {
+        padding: 0 20px;
+      }
     }
   }
   .image {

@@ -313,6 +313,15 @@ hr.vertical {
 .gray-bkg {
   background: $gray-gradient;
 }
+.row.gray-bkg {
+  padding: 100px 0;
+  @media screen and (max-width: $mq-max-md) {
+    padding: 80px 0;
+  }
+  @media screen and (max-width: $mq-max-sm) {
+    padding: 60px 0;
+  }
+}
 
 .img-wrap {
   position: relative;
@@ -363,8 +372,10 @@ hr.vertical {
 
 .icon-bullets {
   display: flex;
-  @media screen and (max-width: $mq-max-md) {
+  @media screen and (max-width: $mq-max-lg) {
+    max-width: 650px;
     padding: 0 20px;
+    margin: auto;
   }
   
 }
@@ -389,6 +400,7 @@ hr.vertical {
   }
   @media screen and (max-width: $mq-max-lg) {
     flex-direction: column;
+    text-align: center;
   }
   img {
     flex-shrink: 0;
@@ -400,3 +412,5 @@ hr.vertical {
     }
   }
 }
+
+

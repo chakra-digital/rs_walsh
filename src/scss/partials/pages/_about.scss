@@ -26,6 +26,11 @@
   .img-wrap {
     padding-bottom: 80%;
     margin-bottom: 5px;
+    h2 {
+      @media screen and (max-width: $mq-max-sm) {
+        font-size: 17px;
+      }
+    }
   }
   .meta {
     * {
@@ -46,10 +51,14 @@
 #awards {
   margin-bottom: -30px;
   .gray-tile {
-    padding: 20px 20px 25px;
+    padding: 25px 20px;
     text-align: center;
     margin-bottom: 30px;
     height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     img {
       max-width: 85px;
       margin-bottom: 16px;

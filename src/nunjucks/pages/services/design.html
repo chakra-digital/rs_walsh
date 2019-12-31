@@ -10,7 +10,7 @@
 
 <section class="service-hero design animate-in">
 	<div class="container-fluid">
-		<div class="row no-gutters">
+		<div class="row no-gutters section-padding">
 
 			<div class="hero-img" style="background-image:url({{root_url}}/images/service-poster-design.jpg)"></div>
 
@@ -18,7 +18,9 @@
 				<div class="inner">
 					<h1 class="display">Design</h1>
 					<p class="large">Our detailed design process and landscape design professionals ensure a quality landscape that will enhance the enjoyment of your property.</p>
-					<p><strong>Here's what you can expect</strong></p>
+					<div class="path-start">
+						<p><strong>Here's what you can expect</strong></p>
+					</div>
 				</div>
 			</div>
 
@@ -26,24 +28,27 @@
 	</div>
 </section>
 
-<section class="animate-in section-margin-top service-content-block">
+<section class="animate-in section-padding service-content-block">
 	<div class="container-fluid">
 		<div class="row no-gutters">
 
 			<div class="col-lg-2">
 				<div class="inner">
+					<!-- <hr class="step-line above"> -->
 					<div class="step-bubble flex-center">1</div>
+					<!-- <hr class="step-line below"> -->
 				</div>
 			</div>
 
-			<div class="col-lg-4 content">
+			<div class="col-lg-4">
 				<div class="inner">
 					<h1>Initial Consultation</h1>
 					<p class="large">To ensure that we best understand the opportunities and constraints of your landscape, we offer a complimentary initial consultation. The initial consultation is a concise conversation that will help determine the best avenue for us to assist with your landscape objectives.</p>
+					<div class="spacer"></div>
 				</div>
 			</div>
 
-			<div class="col-lg-5 content">
+			<div class="col-lg-6">
 				<div class="inner">
 					<p>In your initial consultation, you can expect a FREE 30-45 minute meeting with one of our experienced landscape designers where we will:</p>
 					
@@ -68,9 +73,9 @@
 
 
 
-<section class="animate-in section-margin-top service-content-block">
+<section class="animate-in service-content-block">
 	<div class="container-fluid">
-		<div class="row no-gutters gray-bkg">
+		<div class="row no-gutters gray-bkg section-padding">
 
 			<div class="col-lg-2">
 				<div class="inner">
@@ -78,17 +83,19 @@
 				</div>
 			</div>
 
-			<div class="col-lg-4 content">
+			<div class="col-lg-4">
 				<div class="inner">
 					<h1>Site Visit</h1>
 					<p class="large">This initial site visit is an opportunity for our designers to gather site inventory and to take photos.</p>
 					<p class="large">A site survey and any relevant architectural plans or elevations should be provided by the homeowner. Drawn plans are not prepared during the site visit except in cases where a simple hand-drawn sketch is adequate and can be accomplished within the hour consultation.</p>
+					<div class="spacer"></div>
 				</div>
 			</div>
 
-			<div class="col-lg-5 content">
+			<div class="col-lg-6">
 				<div class="inner">
 					<p class="large">The site visit will be used to provide:</p>
+					<div class="spacer"></div>
 					
 					<div class="icon-bullets">
 
@@ -125,6 +132,85 @@
 					</div>
 
 				</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="animate-in section-padding service-content-block">
+	<div class="container-fluid">
+		<div class="row no-gutters">
+
+			<div class="col-lg-2">
+				<div class="inner">
+					<div class="step-bubble flex-center">3</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="inner">
+					<h1>Landscape Plan</h1>
+					<p class="large">Based on the scope of your landscape project, plan deliverables can include a conceptual design, detailed landscape plan, color plan rendering, AutoCAD drawings and details, and Photoshop realistic images. Once compiled, clients will receive a colorful presentation books that directly relate to each landscape plan, identifying specific landscape plants and design concepts.<br><br>
+						Designs and landscape plans are copyrighted and prepared by an experienced landscape designer. They become your property when they are completed and full payment is received. </p>
+					<div class="spacer"></div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="inner">
+					<p>In addition to the detailed use of plant material, plans can include (but not limited to):</p>
+					
+					<div class="half-col-row">
+						<div class="half-col">
+							<ul>
+								<li>Grading & Drainage</li>
+								<li>Retaining or free-standing walls</li>
+								<li>Patios</li>
+								<li>Decks & arbors</li>
+								<li>Lighting</li>
+							</ul>
+						</div>
+						<div class="half-col">
+							<ul>
+								<li>Irrigation</li>
+								<li>Berms</li>
+								<li>Siting of home or building on lot</li>
+								<li>Storm water remediation</li>
+								<li>Shoreline/Dune restoration</li>
+								<li>Children’s environments</li>
+							</ul>
+						</div>
+					</div>
+
+					<p>Our designs and landscape plans are based off the site plan provided by you or survey provided by a registered survey company to ensure accuracy.<br><br>
+						The design or landscape plan can be purchased for your personal use or the cost of your design or landscape plan can be reduced or eliminated in the form of a discount on subsequent work performed by R.S. Walsh Landscaping.<br><br>						
+						It is important to discuss and identify a realistic financial commitment, so we can design appropriate to your budget and meet your landscape expectations.<br><br>						
+						The charge for designs or landscape plans varies depending on your specific property and design objectives. We will be happy to provide a quotation for material and services at no charge.</p>
+				</div>
+			</div>
+
+</section>
+
+<section class="service-segment">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				{% include "partials/service-segment-build.html" %}
+			</div>
+
+			<div class="col-sm-6">
+				{% include "partials/service-segment-maintain.html" %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service-bottom-cta section-margin-bottom">
+	<div class="container-fluid">
+		<div class="row no-gutters gray-bkg">
+			<div class="col">
+				{% include "partials/project-inquiries-cta.html" %}
+			</div>
 		</div>
 	</div>
 </section>

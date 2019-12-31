@@ -13,7 +13,6 @@ form.rs-form {
   input[type='email'],
   textarea {
     width: 100%;
-    outline: none;
     appearance: none;
     border: 1px solid rgba($black,.3);
     border-radius: 0;
@@ -31,6 +30,7 @@ form.rs-form {
     }
   }
   input {
+    outline: none;
     &[type=submit] {
       font-size: 17px;
       font-weight: 500;
@@ -42,6 +42,7 @@ form.rs-form {
   }
   textarea {
     resize: none;
+    outline: none;
   }
   input[type='radio'] {
     width: 0;
@@ -84,10 +85,12 @@ form.rs-form {
   }
   .form-row {
     margin-bottom: 30px;
+    clear: both;
     &.half {
       width: 47.3%;
       float: left;
       margin-right: 5.4%;
+      clear: none;
       &.last {
         margin: 0;
       }
@@ -101,11 +104,25 @@ form.rs-form {
   }
   .form-submit {
     display: inline-block;
+    .ajax-loader {
+      display: none;
+    }
   }
 }
 
-
-
+span.wpcf7-not-valid-tip {
+  font-size: 12px;
+  position: absolute;
+  display: block;
+  margin-top: 4px;
+  white-space: nowrap;
+  color: #ff4444;
+}
+.wpcf7-response-output {
+  border: none!important;
+  padding: 0!important;
+  margin: 0!important;
+}
 
 
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon /  Fire Pit</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 48 47.664 48 47.664 0.116 0 0.116"></polygon>
+    </defs>
+    <g id="Icon-/--Fire-Pit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12" transform="translate(6.000000, 5.000000)">
+            <polygon id="Stroke-1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="12.606 6.4156 34.177 6.4156 34.177 1.4996 12.606 1.4996"></polygon>
+            <polygon id="Stroke-3" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="32.4407 11.503 32.4407 6.416 23.3917 6.416 14.3427 6.416 14.3427 11.503 2.9947 20.992 2.9947 43.199 23.3917 43.199 43.7887 43.199 43.7887 20.992"></polygon>
+            <g id="Group-11" transform="translate(0.000000, 0.883600)">
+                <path d="M37.6863,42.3152 L37.6863,31.4382 C37.6863,23.5562 31.2733,17.1432 23.3913,17.1432 C15.5093,17.1432 9.0963,23.5562 9.0963,31.4382 L9.0963,42.3152 M23.3913,20.8242 C29.2533,20.8242 34.0053,25.5762 34.0053,31.4382 L34.0053,42.3152 M12.7773,42.3152 L12.7773,31.4382 C12.7773,25.5762 17.5293,20.8242 23.3913,20.8242" id="Stroke-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-7"></g>
+                <polygon id="Stroke-6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="0.499 47.5 47.163 47.5 47.163 42.315 0.499 42.315"></polygon>
+                <line x1="7.5984" y1="42.3152" x2="7.5984" y2="47.5002" id="Stroke-8" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+                <line x1="40.0648" y1="42.3152" x2="40.0648" y2="47.5002" id="Stroke-9" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+                <polygon id="Stroke-10" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="30.7845 36.0334 28.4125 36.6314 29.1605 31.3194 26.5545 32.7004 26.5545 28.7264 24.8875 29.6234 23.3915 26.5894 21.8955 29.6234 20.2295 28.7264 20.2295 32.7004 17.6225 31.3194 18.3705 36.6314 15.9985 36.0334 17.9645 40.0074 16.6395 42.3154 23.3915 42.3154 30.1435 42.3154 28.8185 40.0074"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

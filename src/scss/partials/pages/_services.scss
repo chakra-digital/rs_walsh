@@ -1,5 +1,5 @@
 /**********************************************
- Services
+ Services - Parent Page
 **********************************************/
 .service-content {
 	position: relative;
@@ -79,10 +79,21 @@ section.service-pillars {
 	}	
 }
 
+
+/**********************************************
+ Services - Individual Pages
+**********************************************/
+
 .service-hero {
 	.row {
 		position: relative;
-		padding: 60px 0;
+		padding: 100px 0 110px;
+		@media screen and (max-width: $mq-max-md) {
+			padding: 80px 0 90px;
+		}
+		@media screen and (max-width: $mq-max-sm) {
+			padding: 60px 0 70px;
+		}
 	}
 	.hero-img {
 		@include position(absolute, 0 0 0 null);
@@ -127,7 +138,57 @@ section.service-pillars {
 				}
 			}
 		}
+		.path-start {
+			margin-top: 60px;
+			position: relative;
+			p {
+				font-size: 24px;
+				line-height: 1.2em;
+				max-width: 160px;
+				@media screen and (max-width: $mq-max-md) {
+					margin: auto;
+					max-width: inherit;
+				}
+			}
+		}
 	}
+	&.build {
+		.row {
+			background: $blue;
+		}
+		.hero-img {
+			&:after {
+				background: linear-gradient(to right, $blue, rgba($blue, .1));
+				@media screen and (max-width: $mq-max-md) {
+					background: linear-gradient(to right, rgba($blue, .9), rgba($blue, .9));
+				}
+			}
+		}
+	}
+	&.maintain {
+		.row {
+			background: shade($skyblue, 10%);
+		}
+		.hero-img {
+			&:after {
+				background: linear-gradient(to right, shade($skyblue, 10%), rgba(shade($skyblue, 10%), .1));
+				@media screen and (max-width: $mq-max-md) {
+					background: linear-gradient(to right, rgba(shade($skyblue, 10%), .9), rgba(shade($skyblue, 10%), .9));
+				}
+			}
+		}
+	}
+}
+
+hr.step-line {
+	width: 1px;
+	height: 200px;
+	border: none;
+	background-image: linear-gradient($black 43%,	rgba($black, 0) 0%);
+	background-position: right;
+	background-size: 1px 13px;
+	background-repeat: repeat-y;
+	position: absolute;
 }
 
 .step-bubble {
@@ -137,11 +198,14 @@ section.service-pillars {
 	margin: auto;
 	font-size: 56px;
 	font-weight: 300;
+	@media screen and (max-width: $mq-max-lg) {
+		margin-bottom: 40px;
+	}
 }
 
 .service-content-block {
 	.inner {
-		width: 94%;
+		width: 85%;
 		margin: auto;
 		@media screen and (max-width: $mq-max-lg) {
 			width: inherit;
@@ -158,7 +222,72 @@ section.service-pillars {
 	.half-col {
 		width: 48.5%;
 	}
-	.row.gray-bkg {
-		padding: 60px 0 40px;
+	.spacer {
+		@media screen and (max-width: $mq-max-lg) {
+			margin-top: 40px;
+		}
+	}
+}
+
+
+
+.service-segment {
+	.row {
+		margin-bottom: 10px;
+	}
+	[class^="col"] {
+		margin-bottom: 20px;
+	}
+	.segment {
+		padding: 80px 30px 90px;
+		position: relative;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		@media screen and (max-width: $mq-max-sm) {
+			padding: 60px 30px 70px;
+		}
+		&:before {
+			content: '';
+			display: block;
+			@include position(absolute, 0);
+			background: $green;
+			opacity: .9;
+		}
+		&.build {
+			&:before {
+				background: $blue;
+			}
+		}
+		&.maintain {
+			&:before {
+				background: shade($skyblue, 20%);
+			}
+		}
+		.inner {
+			max-width: 560px;
+			margin: auto;
+			text-align: center;
+			position: relative;
+			h1, p {
+				color: #fff;
+			}
+			h1 {
+				margin-bottom: 15px;
+			}
+			p {
+				margin-bottom: 25px;
+			}
+			
+		}
+	}
+}
+
+.service-bottom-cta {
+	.project-inquiry-cta {
+		margin: auto;
+		text-align: center;
+		max-width: 700px;
+		padding: 0 30px;
 	}
 }

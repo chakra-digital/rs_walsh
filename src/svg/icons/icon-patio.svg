@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon /  Patio</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.2836 0.0001 8.7396 0.0001 8.7396 1 0.2836 1"></polygon>
+    </defs>
+    <g id="Icon-/--Patio" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-30" transform="translate(5.000000, 4.000000)">
+            <polyline id="Stroke-1" stroke="#000000" stroke-linecap="round" points="0.4999 20.895 2.7699 40.192 0.4999 50.844"></polyline>
+            <path d="M2.1874,35.2427 L13.9534,35.2427 C15.0024,35.2427 15.8534,36.0937 15.8534,37.1427 L15.8534,40.1927 L2.7694,40.1927" id="Stroke-3" stroke="#000000" stroke-linecap="round"></path>
+            <line x1="15.8535" y1="40.1924" x2="17.6785" y2="50.8444" id="Stroke-5" stroke="#000000" stroke-linecap="round"></line>
+            <polyline id="Stroke-7" stroke="#000000" stroke-linecap="round" points="50.5224 20.895 48.2524 40.192 50.5224 50.844"></polyline>
+            <path d="M48.8349,35.2427 L37.0689,35.2427 C36.0199,35.2427 35.1689,36.0937 35.1689,37.1427 L35.1689,40.1927 L48.2529,40.1927" id="Stroke-9" stroke="#000000" stroke-linecap="round"></path>
+            <line x1="35.1689" y1="40.1924" x2="33.3439" y2="50.8444" id="Stroke-11" stroke="#000000" stroke-linecap="round"></line>
+            <line x1="25.5112" y1="29.1558" x2="25.5112" y2="50.8438" id="Stroke-13" stroke="#000000" stroke-linecap="round"></line>
+            <g id="Group-17" transform="translate(21.000000, 50.344100)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-16"></g>
+                <line x1="0.2836" y1="0.5001" x2="8.7396" y2="0.5001" id="Stroke-15" stroke="#000000" stroke-linecap="round" mask="url(#mask-2)"></line>
+            </g>
+            <path d="M40.1088,26.0898 L11.0648,26.0898 C10.6788,26.0898 10.3668,26.4018 10.3668,26.7878 L10.3668,28.4578 C10.3668,28.8428 10.6788,29.1558 11.0648,29.1558 L40.1088,29.1558 C40.4938,29.1558 40.8068,28.8428 40.8068,28.4578 L40.8068,26.7878 C40.8068,26.4018 40.4938,26.0898 40.1088,26.0898 Z" id="Stroke-18" stroke="#000000" stroke-linecap="round"></path>
+            <path d="M29.8901,17.2783 L25.5871,17.2783 L21.2841,17.2783 C21.2841,17.2783 19.0001,22.8853 22.8281,26.0903 L25.5871,26.0903 L28.3461,26.0903 C32.1731,22.8853 29.8901,17.2783 29.8901,17.2783 Z" id="Stroke-20" stroke="#000000" stroke-linecap="round"></path>
+            <line x1="25.5869" y1="17.2783" x2="25.5869" y2="6.9533" id="Stroke-22" stroke="#000000" stroke-linecap="round"></line>
+            <path d="M25.5869,14.5854 C25.5869,14.5854 25.9199,9.5124 19.9129,8.2444 C19.9129,8.2444 19.7119,13.4504 25.5869,14.5854 Z" id="Stroke-24" stroke="#000000" stroke-linecap="round"></path>
+            <path d="M25.5869,6.9531 C25.5869,6.9531 25.9199,1.8801 19.9129,0.6121 C19.9129,0.6121 19.7119,5.8181 25.5869,6.9531 Z" id="Stroke-26" stroke="#000000" stroke-linecap="round"></path>
+            <path d="M25.5146,10.6133 C25.5146,10.6133 25.1816,5.5403 31.1886,4.2713 C31.1886,4.2713 31.3896,9.4783 25.5146,10.6133 Z" id="Stroke-28" stroke="#000000" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

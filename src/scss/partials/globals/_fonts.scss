@@ -3,16 +3,16 @@
 **********************************************/
 @font-face {
     font-family: 'Barlow';
-    src: url('../fonts/Barlow/Barlow-Medium.woff2') format('woff2'),
-        url('../fonts/Barlow/Barlow-Medium.woff') format('woff');
+    src: url('http://localhost:3000/fonts/Barlow/Barlow-Medium.woff2') format('woff2'),
+         url('http://localhost:3000/fonts/Barlow/Barlow-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Barlow';
-    src: url('../fonts/Barlow/Barlow-Light.woff2') format('woff2'),
-        url('../fonts/Barlow/Barlow-Light.woff') format('woff');
+    src: url('http://localhost:3000/fonts/Barlow/Barlow-Light.woff2') format('woff2'),
+         url('http://localhost:3000/fonts/Barlow/Barlow-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }

@@ -192,6 +192,19 @@
       margin-bottom: 60px;
     }
   }
+  .icon-bullets {
+    @media screen and (max-width: $mq-max-lg) {
+      max-width: 650px;
+      padding: 0 20px;
+      margin: auto;
+    }
+  }
+  .icon-row {
+    @media screen and (max-width: $mq-max-lg) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 }
 
 
@@ -203,13 +216,6 @@
     h1 {
       text-align: center;
     }
-  }
-  .calendar {
-    background: lightgray;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -283,6 +289,9 @@
   .map {
     @media screen and (max-width: $mq-max-md) {
       order: 2;
+      .wpgmza_map {
+        height: 500px;
+      }
     }
   }
   .content {

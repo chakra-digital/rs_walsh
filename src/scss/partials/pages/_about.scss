@@ -43,8 +43,17 @@
 }
 
 #space {
+  .meta {
+    margin-top: 10px;
+    * {
+      display: inline-block;
+    }
+    span {
+      margin: 0 5px;
+    }
+  }
   .img-wrap {
-    padding-top: 72%;
+    padding-bottom: 72%;
   }
 }
 

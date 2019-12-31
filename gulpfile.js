@@ -65,7 +65,7 @@ var paths = {
 	find_replace: {
 		input: 'dist/**/*',
 		find: 'http://localhost:3000',
-		replace_local_wp: 'http://localhost:8888/rswalsh/wp-content/themes/rswalsh',
+		replace_local_wp: 'http://localhost:8888/rs_walsh/wp-content/themes/rswalsh',
 		replace_git: 'https://chakra-digital.github.io/rs_walsh/dist'
 	}
 };
@@ -77,20 +77,23 @@ var paths = {
 
 var banner = {
 	full:
-		'/*!\n' +
-		' * <%= package.name %> v<%= package.version %>\n' +
-		' * <%= package.description %>\n' +
-		' * (c) ' + new Date().getFullYear() + ' <%= package.author.name %>\n' +
-		' * <%= package.license %> License\n' +
-		' * <%= package.repository.url %>\n' +
-		' */\n\n',
+		'/*\n' +
+		'Theme Name: R.S. Walsh Landscaping\n' +
+		'Author: Matt McDonald\n' +
+		'Author URI: mattmcdonalddesign.com\n' +
+		'Description: \n' +
+		'Version: 1.0\n\n' +
+		'This theme was built by Chakra Digital\n' +
+		'*/\n\n\n\n',
 	min:
-		'/*!' +
-		' <%= package.name %> v<%= package.version %>' +
-		' | (c) ' + new Date().getFullYear() + ' <%= package.author.name %>' +
-		' | <%= package.license %> License' +
-		' | <%= package.repository.url %>' +
-		' */\n'
+		'/*\n' +
+		'Theme Name: R.S. Walsh Landscaping\n' +
+		'Author: Matt McDonald\n' +
+		'Author URI: mattmcdonalddesign.com\n' +
+		'Description: \n' +
+		'Version: 1.0\n\n' +
+		'This theme was built by Chakra Digital\n' +
+		'*/\n',
 };
 
 
@@ -120,6 +123,7 @@ var optimizejs = require('gulp-optimize-js');
 // Styles
 var sass = require('gulp-sass');
 var prefix = require('gulp-autoprefixer');
+var gcmq = require('gulp-group-css-media-queries');
 var minify = require('gulp-cssnano');
 
 // SVGs
@@ -232,13 +236,14 @@ var buildStyles = function (done) {
 	return src(paths.styles.input, { sourcemaps: true })
 		.pipe(sass({
 			outputStyle: 'expanded',
-			sourceComments: true
+			sourceComments: false
 		}))
 		.pipe(prefix({
 			Browserslist: ['last 2 version', '> 0.25%'],
 			cascade: true,
 			remove: true
 		}))
+		.pipe(gcmq())
 		.pipe(header(banner.full, { package : package }))
 		.pipe(dest(paths.styles.output))
 		.pipe(rename({suffix: '.min'}))
@@ -374,10 +379,17 @@ var watchSource = function (done) {
 };
 
 
-// Find and replace root url in dist folder for local WP
+// Find and replace root url in dist folder
 function replaceLocal() {
 	return src(paths.find_replace.input)
 		.pipe(replace(paths.find_replace.find, paths.find_replace.replace_local))
+		.pipe(dest(paths.copy.root.output));
+};
+
+// Find and replace root url in dist folder for Local WP
+function replaceLocalWp() {
+	return src(paths.find_replace.input)
+		.pipe(replace(paths.find_replace.find, paths.find_replace.replace_local_wp))
 		.pipe(dest(paths.copy.root.output));
 };
 
@@ -387,6 +399,10 @@ function replaceGit() {
 		.pipe(replace(paths.find_replace.find, paths.find_replace.replace_git))
 		.pipe(dest(paths.copy.root.output));
 };
+
+
+
+
 
 
 
@@ -428,4 +444,5 @@ exports.watch = series(
 );
 
 exports.replace_local = replaceLocal;
+exports.replace_local_wp = replaceLocalWp;
 exports.replace_git = replaceGit;

@@ -33,7 +33,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
 	<script src="{{root_url}}/js/plugins/headroom.min.js"></script>
 
-	{% if body_class == 'project-single' or body_class == 'garden-center' %}
+	{% if body_class == 'project-single' or body_class == 'garden-center' or body_class == 'services'%}
 		<script type="text/javascript" src="{{root_url}}/js/plugins/siema.min.js"></script>
 	{% endif %}
 

@@ -101,7 +101,19 @@ header {
 
 
 
-
+body.logged-in {
+	#hamburger {
+		top: 32px;
+		@media screen and (max-width: 782px) {
+			top: 46px;
+		}
+	}
+	header {
+		@media screen and (min-width: 992px) {
+			top: 32px;
+		}
+	}
+}
 
 
 #hamburger {

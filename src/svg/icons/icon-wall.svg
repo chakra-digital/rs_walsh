@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon /  Wall</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 49 48.735 49 48.735 0.629 0 0.629"></polygon>
+    </defs>
+    <g id="Icon-/--Wall" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-19" transform="translate(6.000000, 4.000000)">
+            <polygon id="Stroke-1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" points="28.1797 10.0609 18.3547 28.1969 38.5167 23.7169"></polygon>
+            <g id="Group-18" transform="translate(0.000000, 0.371200)">
+                <path d="M29.1192,19.7098 L36.3092,14.5298 C36.7672,14.2008 36.9822,13.6288 36.8562,13.0798 L36.4982,11.5218 C36.3752,10.9838 36.5782,10.4238 37.0172,10.0908 L39.6062,8.1308" id="Stroke-2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M40.7764,9.7312 L38.3334,6.3882 L45.0564,1.4742 C45.8564,0.8902 46.9784,1.0642 47.5634,1.8642 L47.8894,2.3112 C48.4744,3.1102 48.2994,4.2322 47.5004,4.8172 L40.7764,9.7312 Z" id="Stroke-4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-7"></g>
+                <polygon id="Stroke-6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="0.5 32.268 13.913 32.268 13.913 24.152 0.5 24.152"></polygon>
+                <polygon id="Stroke-8" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="7.206 40.384 20.619 40.384 20.619 32.268 7.206 32.268"></polygon>
+                <polygon id="Stroke-9" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="20.618 40.384 34.031 40.384 34.031 32.268 20.618 32.268"></polygon>
+                <polygon id="Stroke-10" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="34.031 40.384 47.444 40.384 47.444 32.268 34.031 32.268"></polygon>
+                <polygon id="Stroke-11" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="13.912 48.5 27.325 48.5 27.325 40.384 13.912 40.384"></polygon>
+                <polygon id="Stroke-12" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="27.325 48.5 40.738 48.5 40.738 40.384 27.325 40.384"></polygon>
+                <polygon id="Stroke-13" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="0.5 48.5 13.913 48.5 13.913 40.384 0.5 40.384"></polygon>
+                <line x1="3.6611" y1="27.826" x2="7.2061" y2="27.826" id="Stroke-14" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+                <line x1="10.0093" y1="27.826" x2="11.1143" y2="27.826" id="Stroke-15" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)"></line>
+                <polygon id="Stroke-16" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="18.355 27.826 20.345 24.152 13.913 24.152 13.913 32.268 27.325 32.268 27.325 25.833"></polygon>
+                <polygon id="Stroke-17" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" mask="url(#mask-2)" points="34.8882 24.1521 27.3252 25.8331 27.3252 32.2681 40.7382 32.2681 40.7382 24.1521"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

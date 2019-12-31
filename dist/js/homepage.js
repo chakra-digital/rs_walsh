@@ -1,10 +1,14 @@
-/*!
- * rs_walsh v0.0.1
- * A luxury landscaping company based in Florida
- * (c) 2019 Matt McDonald
- * MIT License
- * http://link-to-your-git-repo.com
- */
+/*
+Theme Name: R.S. Walsh Landscaping
+Author: Matt McDonald
+Author URI: mattmcdonalddesign.com
+Description: 
+Version: 1.0
+
+This theme was built by Chakra Digital
+*/
+
+
 
 const homepageProjectImages = document.querySelectorAll('.homepage-projects-wrap div');
 const homepageProjectLinks = document.querySelectorAll('.homepage-project-links a');

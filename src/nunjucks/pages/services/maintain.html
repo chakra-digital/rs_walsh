@@ -1,0 +1,84 @@
+{% set body_class = "services" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+
+
+<section class="service-hero maintain animate-in">
+	<div class="container-fluid">
+		<div class="row no-gutters section-padding">
+
+			<div class="hero-img" style="background-image:url({{root_url}}/images/service-poster-maintain.jpg)"></div>
+
+			<div class="col-md-6 content">
+				<div class="inner">
+					<h1 class="display">Maintain</h1>
+					<p class="large">We offer all-inclusive maintenance services that are targeted for the specific needs of your landscape.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="animate-in section-padding service-content-block">
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-lg-6 content">
+				<div class="inner">
+					<p class="large">Proper, knowledgeable and consistent maintenance is the key to uphold the health and quality of a well-designed, beautiful landscape.<br><br>
+						Your landscape is a valuable asset and we are committed to helping you protect and grow this investment.<br><br>						
+						Our landscape maintenance services are only offered on a weekly basis, are full-service, and are customized for each landscape.</p>
+					<div class="spacer"></div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 content">
+				<div class="slider-wrap-pagination">
+					<div class="slide-wrap"><img src="{{root_url}}/images/garden-center/gc-hero-slide-1.jpg"></div>
+					<div class="slide-wrap"><img src="{{root_url}}/images/garden-center/gc-hero-slide-2.jpg"></div>
+					<div class="slide-wrap"><img src="{{root_url}}/images/garden-center/gc-hero-slide-3.jpg"></div>
+				</div>
+				
+			</div>
+
+</section>
+
+
+
+
+
+<section class="service-segment">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				{% include "partials/service-segment-design.html" %}
+			</div>
+
+			<div class="col-sm-6">
+				{% include "partials/service-segment-build.html" %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service-bottom-cta section-margin-bottom">
+	<div class="container-fluid">
+		<div class="row no-gutters gray-bkg">
+			<div class="col">
+				{% include "partials/project-inquiries-cta.html" %}
+			</div>
+		</div>
+	</div>
+</section>
+
+			
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

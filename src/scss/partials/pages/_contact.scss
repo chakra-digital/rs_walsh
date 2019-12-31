@@ -4,6 +4,9 @@
 
 .contact-main {
   margin-bottom: -60px;
+  h1.display {
+    margin: 0;
+  }
   .row > div {
     margin-bottom: 60px;
   }
@@ -21,6 +24,13 @@
       max-width: 420px;
       & > p {
         margin-bottom: 30px;
+      }
+    }
+  }
+  .map {
+    .wpgmza_map {
+      @media screen and (max-width: $mq-max-md) {
+        height: 500px;
       }
     }
   }

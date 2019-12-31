@@ -65,6 +65,7 @@
         text-decoration: none;
         color: $black;
         opacity: .4;
+        text-transform: lowercase;
         @media screen and (max-width: $mq-max-md) {
           font-size: 15px;
         }

@@ -1,0 +1,139 @@
+{% set body_class = "services" %}
+
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% include "partials/header.html" %}
+
+
+
+<section class="service-hero build animate-in">
+	<div class="container-fluid">
+		<div class="row no-gutters">
+
+			<div class="hero-img" style="background-image:url({{root_url}}/images/service-poster-build.jpg)"></div>
+
+			<div class="col-md-6 content">
+				<div class="inner">
+					<h1 class="display">Build</h1>
+					<p class="large">Our combination of experienced installers and a comprehensive list of services enables us to provide our clients with meticulous, precise and detailed landscape elements to complete their landscape project.</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="animate-in section-padding service-content-block">
+	<div class="container-fluid">
+		<div class="row no-gutters">
+
+			<div class="col-lg-6 content">
+				<div class="inner">
+					<h1>Building a Landscape Project</h1>
+					<p class="large">We pride ourselves on our long history as a premiere landscape design/build firm in the Southwest Florida marketplace. We custom tailor each project to our client’s vision of their outdoor space. We are committed to exceeding the quality standards of our clients and that is reflected in the superior materials and services we provide.<br><br>
+						In addition to customized and detailed landscape architecture and design services, below is a list of other notable services we can include within the scope of a client’s landscape project:</p>
+					<div class="spacer"></div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 content">
+				<div class="inner">
+					
+					<div class="icon-bullets">
+
+						<div class="icon-col">
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-pools.svg">
+								<p>Pool & Design Layout</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-fountain.svg">
+								<p>Water features & fountains (ponds, waterfalls, streams)</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-fire-pit.svg">
+								<p>Custom Fire Pits and Features</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-turf.svg">
+								<p>Artificial Turf Lawns and Putting Greens</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-arbor.svg">
+								<p>Pergolas and Arbors</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-ideas.svg">
+								<p>Custom Landscape Lighting</p>
+							</div>
+						</div>
+
+						<div class="icon-col">
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-patio.svg">
+								<p>Paver & natural stone decks, driveways and patios</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-outdoor-kitchen.svg">
+								<p>Outdoor Kitchens</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-gate.svg">
+								<p>Fences & Gates</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-hut.svg">
+								<p>Tiki Huts & Bars</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-wall.svg">
+								<p>Retaining walls</p>
+							</div>
+							<div class="icon-row">
+								<img src="{{root_url}}/svg/icons/icon-irrigation.svg">
+								<p>Efficient Irrigation Systems</p>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+</section>
+
+
+
+
+
+<section class="service-segment">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6">
+				{% include "partials/service-segment-design.html" %}
+			</div>
+
+			<div class="col-sm-6">
+				{% include "partials/service-segment-maintain.html" %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="service-bottom-cta section-margin-bottom">
+	<div class="container-fluid">
+		<div class="row no-gutters gray-bkg">
+			<div class="col">
+				{% include "partials/project-inquiries-cta.html" %}
+			</div>
+		</div>
+	</div>
+</section>
+
+			
+
+{% include "partials/footer.html" %}
+	
+{% endblock %}

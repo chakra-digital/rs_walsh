@@ -11,7 +11,7 @@
     @include size(50px);
     border-radius: 50%;
     border: 1px solid $black;
-    transition: .3s $cubic-btn;
+    transition: .3s ease-out;
     opacity: .3;
     color: $black;
     text-decoration: none;
@@ -21,7 +21,7 @@
     svg {
       transform: translateX(1px);
       path {
-        transition: .3s $cubic-btn;
+        transition: .3s ease-out;
       }
     }
     &.prev,
@@ -30,7 +30,8 @@
         transform: rotate(180deg) translateX(1px);
       }
     }
-    &:hover {
+    &:hover,
+    &.active {
       opacity: 1;
       background: $black;
       color: #fff;
@@ -50,7 +51,7 @@
   .nav-back {
     position: fixed;
     left: 30px;
-    @media screen and (max-width: $mq-max-md) {
+    @media screen and (max-width: $mq-max-lg) {
       position: inherit;
       left: unset;
       display: block;
@@ -71,9 +72,13 @@
   .blog-content {
     padding-bottom: 60px;
     border-bottom: 1px solid $black;
+    p {
+      margin-bottom: 1.6em;
+    }
   }
   .blog-prev-next {
     margin-top: 30px;
+    display: flex;
     a {
       display: flex;
       align-items: center;
@@ -86,7 +91,9 @@
         font-size: 15px;
         padding: 15px;
       } 
-
+    }
+    svg {
+      flex-shrink: 0;
     }
     .prev { 
       justify-content: flex-start;
@@ -95,6 +102,61 @@
     .next { 
       justify-content: flex-end;
       text-align: right;
+    }
+  }
+}
+
+.blog-share {
+  position: fixed;
+  left: 30px;
+  transform: rotate(-90deg) translateX(-50%);
+  top: 50%;
+  transform-origin: top left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: $mq-max-lg) {
+    position: inherit;
+    left: unset;
+    top: unset;
+    transform: unset;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+  p {
+    font-weight: 500;
+    margin-right: 10px;
+    @media screen and (max-width: $mq-max-lg) {
+      flex-basis: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-right: inherit;
+    }
+  }
+  a {
+    display: block;
+    @include size(50px);
+    border: 1px solid $black;
+    border-radius: 50%;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    transition: .3s ease-out;
+    flex-shrink: 0;
+    @media screen and (max-width: $mq-max-lg) {
+      transform: unset;
+      margin: 8px;
+    }
+    svg path {
+      transition: .3s ease-out;
+    }
+    &:hover {
+      background: $black;
+      svg path {
+        fill: #fff;
+      }
     }
   }
 }

@@ -165,6 +165,12 @@ body.project-single {
 		& > div:not(:last-child) {
 			margin-bottom: 20px;
 		}
+		@media screen and (max-width: $mq-max-md) {
+			padding-top: 140px;
+		}
+		@media screen and (max-width: $mq-max-sm) {
+			padding-top: 120px;
+		}
 		.more-info {
 			position: absolute;
 			bottom: 30px;
@@ -179,6 +185,9 @@ body.project-single {
 				animation: arrow-bounce 1s ease infinite;
 			}
 		}
+	}
+	.description p:not(:last-of-type) {
+		margin-bottom: 20px;
 	}
 
 	.cta {
@@ -205,3 +214,19 @@ body.project-single {
 
 
 
+body.logged-in {
+	&.project-single {
+		.title {
+			top: 62px;
+			@media screen and (max-width: 782px) {
+				top: 76px;
+			}
+		}
+		.back-to-all {
+			top: 52px;
+			@media screen and (max-width: 782px) {
+				top: 66px;
+			}
+		}
+	}
+}
